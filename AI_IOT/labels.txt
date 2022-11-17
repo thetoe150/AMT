@@ -1,0 +1,4 @@
+0 Glasses on
+1 Glass off
+2 Khong nguoi
+3 Lot chuot
