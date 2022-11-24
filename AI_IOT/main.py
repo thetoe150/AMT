@@ -1,18 +1,18 @@
+import random
 import sys
 import time
 
 import serial.tools.list_ports
-import serial.tools.list_ports
 from Adafruit_IO import MQTTClient
+from pytorch_ai import *
 
-from simple_ai import image_detector
-
-AIO_FEED_IDS =["LED", "BBC_PUMP", "ai", "temp", "BBC_TEMP"]
+AIO_FEED_IDS =["led", "bbc-pump", "ai", "temp", "bbc-temp"]
 AIO_USERNAME = "duy_ngotu"
-AIO_KEY = "aio_rQHF85iqWjQDhZCe4qXj7ZOb54N9"
+AIO_KEY = "aio_zIlq48W0YTspqI5TsXjSiPe7gZC5"
 
 counter = 10
 counterAI = 5
+
 
 def  connected(client):
     print("Ket noi thanh cong...")
@@ -49,11 +49,12 @@ def getPort():
         if "USB Serial Device" in strPort:
             splitPort = strPort.split(" ")
             commPort = (splitPort[0])
-    return "COM4"
+    return commPort
+
 
 isMicrobitConnected = False
 if getPort() != "None":
-    ser = serial.Serial( port=getPort(), baudrate=115200)
+    ser = serial.Serial(port=getPort(), baudrate=115200)
     isMicrobitConnected = True
 
 
@@ -62,10 +63,11 @@ def processData(data):
     data = data.replace("#", "")
     splitData = data.split(":")
     print(splitData)
- #   print(splitData[1])
-    if splitData[0] == "TEMP":
-        print("publishing")
-        client.publish("BBC_TEMP", splitData[1])
+    try:
+        if splitData[1] == "temp":
+            client.publish("bbc-temp", splitData[2])
+    except:
+        pass
 
 mess = ""
 def readSerial():
@@ -85,19 +87,22 @@ def readSerial():
 while True:
     print("Looping: c= ", counter," cAI= ", counterAI)
     counter = counter - 1
+    counterAI = counterAI - 1
     if counter <= 0:
-        counter = 10
+        counter = 5
         if isMicrobitConnected:
             print("read microbit ")
             readSerial()
         else:
-            print("send random to temp feed ")
-            client.publish("temp", 0)
-    counterAI=counterAI-1
+            print("microbit not connect, send random to temp feed ")
+            client.publish("temp", -1)
+
     if counterAI <= 0:
         counterAI = 5
-        ai_result = image_detector()
-        print("AI Output: ", ai_result)
-        client.publish("ai", ai_result)
+        ai_result = str(image_detector2())
+        print("AI Output: ", ai_result, "\nstring length:", len(ai_result))
+        if ai_result.__contains__("fire"):
+            print("publish ai... ")
+            client.publish("ai", "fire!")
 
     time.sleep(1)
