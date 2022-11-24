@@ -8,7 +8,7 @@ from pytorch_ai import *
 
 AIO_FEED_IDS =["led", "bbc-pump", "ai", "temp", "bbc-temp"]
 AIO_USERNAME = "duy_ngotu"
-AIO_KEY = "aio_zIlq48W0YTspqI5TsXjSiPe7gZC5"
+AIO_KEY = "aio_abcxyz"
 
 counter = 10
 counterAI = 5
