@@ -1,15 +1,18 @@
-import cv2
-import torch
-import time
+import random
 import sys
+import time
+
 import serial.tools.list_ports
 from Adafruit_IO import MQTTClient
-vid = cv2.VideoCapture(0)
-model = torch.hub.load('ultralytics/yolov5', 'custom', 'best.pt')
-counter = 10
+from pytorch_ai import *
+
 AIO_FEED_IDS =["led", "bbc-pump", "ai", "temp", "bbc-temp"]
 AIO_USERNAME = "duy_ngotu"
-AIO_KEY = "aio_YTrq60ESZzTgFii2z5P2vmZK8tDw"
+AIO_KEY = "aio_abcxyz"
+
+counter = 10
+counterAI = 5
+
 
 def  connected(client):
     print("Ket noi thanh cong...")
@@ -28,12 +31,11 @@ def  message(client , feed_id , payload):
     if isMicrobitConnected:
         ser.write((str(payload) + "#").encode())
 
-
 client = MQTTClient(AIO_USERNAME , AIO_KEY)
 client.on_connect = connected
 client.on_disconnect = disconnected
-client.on_subscribe = subscribe
 client.on_message = message
+client.on_subscribe = subscribe
 client.connect()
 client.loop_background()
 
@@ -49,10 +51,12 @@ def getPort():
             commPort = (splitPort[0])
     return commPort
 
+
 isMicrobitConnected = False
 if getPort() != "None":
     ser = serial.Serial(port=getPort(), baudrate=115200)
     isMicrobitConnected = True
+
 
 def processData(data):
     data = data.replace("!", "")
@@ -80,12 +84,10 @@ def readSerial():
             else:
                 mess = mess[end+1:]
 
-while(True):
-    ret, frame = vid.read()
-    cv2.imshow('frame', frame)
-    res = model(frame)
-    print("Looping: c= ", counter)
+while True:
+    print("Looping: c= ", counter," cAI= ", counterAI)
     counter = counter - 1
+    counterAI = counterAI - 1
     if counter <= 0:
         counter = 5
         if isMicrobitConnected:
@@ -94,17 +96,13 @@ while(True):
         else:
             print("microbit not connect, send random to temp feed ")
             client.publish("temp", -1)
-    res.print()
-    result = str(res)
-    if result.__contains__("fire"):
-        print("publish ai... ")
-        client.publish("ai", "fire!")
-    time.sleep(2)
-    if cv2.waitKey(1) & 0xFF == ord('q'):
-        break
-    
-  
-# After the loop release the cap object
-vid.release()
-# Destroy all the windows
-cv2.destroyAllWindows()
+
+    if counterAI <= 0:
+        counterAI = 5
+        ai_result = str(image_detector2())
+        print("AI Output: ", ai_result, "\nstring length:", len(ai_result))
+        if ai_result.__contains__("fire"):
+            print("publish ai... ")
+            client.publish("ai", "fire!")
+
+    time.sleep(1)
