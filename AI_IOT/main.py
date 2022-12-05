@@ -114,7 +114,9 @@ def processData(data):
     try:
         if splitData[1] == "temp":
             client.publish("temp", splitData[2])
+            print('publishing....')
     except:
+        print('pulish failed')
         pass
 
 def readSerial():
