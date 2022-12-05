@@ -48,6 +48,7 @@ model = torch.hub.load('ultralytics/yolov5', 'custom', 'best.pt')
 isMicrobitConnected = False
 init_time = time.time()
 counter = 5
+cAI = 5
 isFire = False
 fires = 0
 
@@ -134,15 +135,18 @@ def counting(count, prev_time, period):
 
 while(True):
     counter, init_time = counting(counter, init_time, 1)
-    if vid != 0:
-        ret, frame = vid.read()
-        # cv2.imshow('frame', frame)
-        res = model(frame)
-        res.print()
-        result = str(res)
-        if result.__contains__("fire"):
-            isFire = True
-        else: isFire = False    
+    if counter == cAI:
+        cAI = cAI - 2
+        if cAI <0: cAI = 5
+        if vid != 0:
+            ret, frame = vid.read()
+            # cv2.imshow('frame', frame)
+            res = model(frame)
+            res.print()
+            result = str(res)
+            if result.__contains__("fire"):
+                isFire = True
+            else: isFire = False    
 
     if counter <= 0:
         counter = 5
