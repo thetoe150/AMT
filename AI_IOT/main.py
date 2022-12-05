@@ -35,7 +35,7 @@ def list_ports():
     return available_ports, working_ports, non_working_ports
 camPort = list_ports()
 print(camPort)
-if camPort.__len__() != 0:
+if camPort[1].__len__() != 0:
     vid = cv2.VideoCapture(camPort[1][0])
 else:
     print("no camera detected!!!")
