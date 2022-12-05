@@ -115,9 +115,16 @@ def readSerial():
                 mess = mess[end+1:]
 
 while(True):
-    ret, frame = vid.read()
-    cv2.imshow('frame', frame)
-    res = model(frame)
+    if vid != 0:
+        ret, frame = vid.read()
+        # cv2.imshow('frame', frame)
+        res = model(frame)
+        res.print()
+        result = str(res)
+        if result.__contains__("fire"):
+            print("publish ai... ")
+            client.publish("ai", "fire!")
+        time.sleep(2)
     print("Looping: c= ", counter)
     counter = counter - 1
     if counter <= 0:
@@ -128,14 +135,8 @@ while(True):
         else:
             print("microbit not connect, send random to temp feed ")
             client.publish("temp", -1)
-    res.print()
-    result = str(res)
-    if result.__contains__("fire"):
-        print("publish ai... ")
-        client.publish("ai", "fire!")
-    time.sleep(2)
-    if cv2.waitKey(1) & 0xFF == ord('q'):
-        break
+    # if cv2.waitKey(1) & 0xFF == ord('q'):
+    #     break
     
   
 # After the loop release the cap object
