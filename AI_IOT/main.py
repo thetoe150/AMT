@@ -7,7 +7,13 @@ from Adafruit_IO import MQTTClient
 import os
 from dotenv import load_dotenv
 
+
+AIO_FEED_IDS =["led", "bbc-pump", "ai", "temp", "bbc-temp"]
+AIO_USERNAME = os.environ.get('AIO_USERNAME')
+AIO_KEY = os.environ.get('AIO_KEY')
+
 load_dotenv()
+
 def list_ports():
     """
     Test the ports and returns a tuple with the available ports and the ones that are working.
@@ -35,16 +41,21 @@ def list_ports():
     return available_ports, working_ports, non_working_ports
 camPort = list_ports()
 # print(camPort)
+
 vid = 0
+mess = ""
+model = torch.hub.load('ultralytics/yolov5', 'custom', 'best.pt')
+isMicrobitConnected = False
+init_time = time.time()
+counter = 5
+isFire = False
+fires = 0
+
 if camPort[1].__len__() != 0:
     vid = cv2.VideoCapture(camPort[1][0])
 else:
     print("no camera detected!!!")
-model = torch.hub.load('ultralytics/yolov5', 'custom', 'best.pt')
-counter = 10
-AIO_FEED_IDS =["led", "bbc-pump", "ai", "temp", "bbc-temp"]
-AIO_USERNAME = os.environ.get('AIO_USERNAME')
-AIO_KEY = os.environ.get('AIO_KEY')
+
 def  connected(client):
     print("Ket noi thanh cong...")
     for feed in AIO_FEED_IDS:
@@ -83,7 +94,6 @@ def getPort():
             commPort = (splitPort[0])
     return commPort
 
-isMicrobitConnected = False
 if getPort() != "None":
     ser = serial.Serial(port=getPort(), baudrate=115200)
     isMicrobitConnected = True
@@ -99,7 +109,6 @@ def processData(data):
     except:
         pass
 
-mess = ""
 def readSerial():
     bytesToRead = ser.inWaiting()
     if (bytesToRead > 0):
@@ -114,7 +123,17 @@ def readSerial():
             else:
                 mess = mess[end+1:]
 
+def counting(count, prev_time, period):
+    now = time.time()
+    #print("func called, now = ", now, " prev= ", prev_time)
+    if now > prev_time + period:
+        prev_time = now
+        count = count - 1
+        print("Looping: counter = ", count)
+    return count, prev_time
+
 while(True):
+    counter, init_time = counting(counter, init_time, 1)
     if vid != 0:
         ret, frame = vid.read()
         # cv2.imshow('frame', frame)
@@ -122,19 +141,24 @@ while(True):
         res.print()
         result = str(res)
         if result.__contains__("fire"):
-            print("publish ai... ")
-            client.publish("ai", "fire!")
-        time.sleep(2)
-    print("Looping: c= ", counter)
-    counter = counter - 1
+            isFire = True
+        else: isFire = False    
+
     if counter <= 0:
         counter = 5
         if isMicrobitConnected:
             print("read microbit ")
             readSerial()
         else:
-            print("microbit not connect, send random to temp feed ")
+            print("microbit not connect, send -1 to temp feed ")
             client.publish("temp", -1)
+        if isFire:
+            fires = fires + 1
+        else: fires = 0
+        #false positive check: detect fire 2 time in a row
+        if fires >= 2:
+            print("publish ai... ")
+            client.publish("ai", "there is fire!")
     # if cv2.waitKey(1) & 0xFF == ord('q'):
     #     break
     
