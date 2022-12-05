@@ -4,7 +4,10 @@ import time
 import sys
 import serial.tools.list_ports
 from Adafruit_IO import MQTTClient
+import os
+from dotenv import load_dotenv
 
+load_dotenv()
 def list_ports():
     """
     Test the ports and returns a tuple with the available ports and the ones that are working.
@@ -36,9 +39,8 @@ vid = cv2.VideoCapture(camPort[1][0])
 model = torch.hub.load('ultralytics/yolov5', 'custom', 'best.pt')
 counter = 10
 AIO_FEED_IDS =["led", "bbc-pump", "ai", "temp", "bbc-temp"]
-AIO_USERNAME = "duy_ngotu"
-AIO_KEY = "aio_YTrq60ESZzTgFii2z5P2vmZK8tDw"
-
+AIO_USERNAME = os.environ.get('AIO_USERNAME')
+AIO_KEY = os.environ.get('AIO_KEY')
 def  connected(client):
     print("Ket noi thanh cong...")
     for feed in AIO_FEED_IDS:
