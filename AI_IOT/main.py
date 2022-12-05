@@ -9,11 +9,9 @@ from dotenv import load_dotenv
 
 
 AIO_FEED_IDS =["led", "bbc-pump", "ai", "temp", "bbc-temp"]
+load_dotenv()
 AIO_USERNAME = os.environ.get('AIO_USERNAME')
 AIO_KEY = os.environ.get('AIO_KEY')
-
-load_dotenv()
-
 def list_ports():
     """
     Test the ports and returns a tuple with the available ports and the ones that are working.
