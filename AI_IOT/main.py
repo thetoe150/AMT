@@ -5,6 +5,7 @@ import sys
 import serial.tools.list_ports
 from Adafruit_IO import MQTTClient
 import os
+import platform
 from dotenv import load_dotenv
 
 
@@ -49,6 +50,8 @@ counter = 5
 cAI = 5
 isFire = False
 fires = 0
+OS = platform.system()
+print("This OS is: ", OS)
 
 if camPort[1].__len__() != 0:
     vid = cv2.VideoCapture(camPort[1][0])
@@ -90,7 +93,11 @@ def getPort():
         port = ports[i]
         strPort = str(port)
         print(strPort)
-        if "micro:bit" in strPort:
+        if OS == 'Windows':
+            portStr = "USB Serial Device"
+        else:
+            portStr = "micro:bit"
+        if portStr in strPort:
             splitPort = strPort.split(" ")
             commPort = (splitPort[0])
     return commPort
