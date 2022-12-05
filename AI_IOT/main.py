@@ -35,7 +35,10 @@ def list_ports():
     return available_ports, working_ports, non_working_ports
 camPort = list_ports()
 print(camPort)
-vid = cv2.VideoCapture(camPort[1][0])
+if camPort.__len__() != 0:
+    vid = cv2.VideoCapture(camPort[1][0])
+else:
+    print("no camera detected!!!")
 model = torch.hub.load('ultralytics/yolov5', 'custom', 'best.pt')
 counter = 10
 AIO_FEED_IDS =["led", "bbc-pump", "ai", "temp", "bbc-temp"]
