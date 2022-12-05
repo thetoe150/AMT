@@ -113,7 +113,7 @@ def processData(data):
     print(splitData)
     try:
         if splitData[1] == "temp":
-            client.publish("bbc-temp", splitData[2])
+            client.publish("temp", splitData[2])
     except:
         pass
 
