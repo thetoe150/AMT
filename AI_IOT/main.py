@@ -113,7 +113,7 @@ def processData(data):
     splitData = data.split(":")
     print(splitData)
     try:
-        if splitData[1] == "TEMP":
+        if splitData[1] == "temp":
             client.publish("temp", splitData[2])
             print('publishing....')
     except:
