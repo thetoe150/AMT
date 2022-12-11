@@ -129,12 +129,12 @@ def readSerial():
         while ("#" in mess) and ("!" in mess):
             start = mess.find("!")
             end = mess.find("#")
-            data = processData(mess[start:end + 1])
+            temp = processData(mess[start:end + 1])
             if (end == len(mess)):
                 mess = ""
             else:
                 mess = mess[end+1:]
-        return data
+        return temp
 def counting(count, prev_time, period):
     now = time.time()
     #print("func called, now = ", now, " prev= ", prev_time)
