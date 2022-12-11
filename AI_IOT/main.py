@@ -123,7 +123,7 @@ def processData(data):
     #     pass
 
 def readSerial():
-    temp = -1
+    data = -1
     bytesToRead = ser.inWaiting()
     if (bytesToRead > 0):
         global mess
@@ -131,12 +131,13 @@ def readSerial():
         while ("#" in mess) and ("!" in mess):
             start = mess.find("!")
             end = mess.find("#")
-            temp = processData(mess[start:end + 1])
+            data = processData(mess[start:end + 1])
             if (end == len(mess)):
                 mess = ""
             else:
                 mess = mess[end+1:]
-        return temp
+    print(data)
+    return data
 def counting(count, prev_time, period):
     now = time.time()
     #print("func called, now = ", now, " prev= ", prev_time)
@@ -148,8 +149,6 @@ def counting(count, prev_time, period):
 
 while(True):
     counter, init_time = counting(counter, init_time, 1)
-    dataToPush = readSerial()
-    print("Data to pulish: ", dataToPush)
     if counter == cAI:
         cAI = cAI - 2
         if cAI <0: cAI = 5
@@ -167,6 +166,8 @@ while(True):
         if isMicrobitConnected:
             print("publish data...")
             try:
+                dataToPush = readSerial()
+                print("Data to pulish: ", dataToPush)
                 client.publish("temp", dataToPush)
                 print('publishing....')
             except:
