@@ -112,13 +112,14 @@ def processData(data):
     data = data.replace("#", "")
     splitData = data.split(":")
     print(splitData)
-    try:
-        if splitData[0] == "temp":
-            client.publish("temp", splitData[1])
-            print('publishing....')
-    except:
-        print('pulish failed')
-        pass
+    # try:
+    if splitData[0] == "temp":
+        return splitData[1]
+            # client.publish("temp", splitData[1])
+            # print('publishing....')
+    # except:
+    #     print('pulish failed')
+    #     pass
 
 def readSerial():
     bytesToRead = ser.inWaiting()
@@ -128,12 +129,12 @@ def readSerial():
         while ("#" in mess) and ("!" in mess):
             start = mess.find("!")
             end = mess.find("#")
-            processData(mess[start:end + 1])
+            data = processData(mess[start:end + 1])
             if (end == len(mess)):
                 mess = ""
             else:
                 mess = mess[end+1:]
-
+        return data
 def counting(count, prev_time, period):
     now = time.time()
     #print("func called, now = ", now, " prev= ", prev_time)
@@ -157,12 +158,17 @@ while(True):
             if result.__contains__("fire"):
                 isFire = True
             else: isFire = False    
-
+    data = readSerial()
     if counter <= 0:
         counter = 5
         if isMicrobitConnected:
-            print("read microbit ")
-            readSerial()
+            print("publish data...")
+            try:
+                client.publish("temp", data)
+                print('publishing....')
+            except:
+                print('pulish failed')
+                pass
         else:
             print("microbit not connect, send -1 to temp feed ")
             client.publish("temp", -1)
