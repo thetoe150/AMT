@@ -52,7 +52,7 @@ isFire = False
 fires = 0
 OS = platform.system()
 node_name = "STM32" #for Linux OS
-dataTemp = 0
+# dataTemp = 0
 print("This OS is: ", OS)
 
 if camPort[1].__len__() != 0:
@@ -148,6 +148,8 @@ def counting(count, prev_time, period):
 
 while(True):
     counter, init_time = counting(counter, init_time, 1)
+    dataToPush = readSerial()
+    print("Data to pulish: ", dataToPush)
     if counter == cAI:
         cAI = cAI - 2
         if cAI <0: cAI = 5
@@ -160,7 +162,6 @@ while(True):
             if result.__contains__("fire"):
                 isFire = True
             else: isFire = False    
-    dataToPush = readSerial()
     if counter <= 0:
         counter = 5
         if isMicrobitConnected:
