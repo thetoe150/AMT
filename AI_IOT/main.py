@@ -43,7 +43,7 @@ camPort = list_ports()
 
 vid = 0
 mess = ""
-model = torch.hub.load('./yolov5', 'custom', 'best.pt', source='local')
+model = torch.hub.load('ultralytics/yolov5', 'custom', 'best.pt', source='local')
 isMicrobitConnected = False
 init_time = time.time()
 counter = 5
