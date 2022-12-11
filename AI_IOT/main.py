@@ -158,13 +158,13 @@ while(True):
             if result.__contains__("fire"):
                 isFire = True
             else: isFire = False    
-    data = readSerial()
+    dataToPush = readSerial()
     if counter <= 0:
         counter = 5
         if isMicrobitConnected:
             print("publish data...")
             try:
-                client.publish("temp", data)
+                client.publish("temp", dataToPush)
                 print('publishing....')
             except:
                 print('pulish failed')
