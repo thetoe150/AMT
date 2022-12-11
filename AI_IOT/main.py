@@ -114,7 +114,7 @@ def processData(data):
     print(splitData)
     try:
         if splitData[0] == "temp":
-            client.publish("temp", splitData[2])
+            client.publish("temp", splitData[1])
             print('publishing....')
     except:
         print('pulish failed')
