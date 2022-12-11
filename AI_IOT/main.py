@@ -52,6 +52,7 @@ isFire = False
 fires = 0
 OS = platform.system()
 node_name = "STM32" #for Linux OS
+dataTemp = 0
 print("This OS is: ", OS)
 
 if camPort[1].__len__() != 0:
@@ -122,6 +123,7 @@ def processData(data):
     #     pass
 
 def readSerial():
+    temp = -1
     bytesToRead = ser.inWaiting()
     if (bytesToRead > 0):
         global mess
