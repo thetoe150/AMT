@@ -43,7 +43,7 @@ camPort = list_ports()
 
 vid = 0
 mess = ""
-model = torch.hub.load('ultralytics/yolov5', 'custom', 'best.pt')
+model = torch.hub.load('./yolov5', 'custom', 'best.pt', source='local')
 isMicrobitConnected = False
 init_time = time.time()
 counter = 5
@@ -51,6 +51,7 @@ cAI = 5
 isFire = False
 fires = 0
 OS = platform.system()
+node_name = "STM32" #for Linux OS
 print("This OS is: ", OS)
 
 if camPort[1].__len__() != 0:
@@ -96,7 +97,7 @@ def getPort():
         if OS == 'Windows':
             portStr = "USB Serial Device"
         else:
-            portStr = "micro:bit"
+            portStr = node_name
         if portStr in strPort:
             splitPort = strPort.split(" ")
             commPort = (splitPort[0])
