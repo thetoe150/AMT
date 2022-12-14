@@ -163,23 +163,23 @@ while(True):
             else: isFire = False    
     if counter <= 0:
         counter = 5
-        if isMicrobitConnected:
-            print("publish data...")
-            try:
-                temp = physical.readTemperature()
-                mois = physical.readMoisture()
-                # print("Data to pulish: ", dataToPush)
-                client.publish("temp", temp)
-                print('publishing temperature....')
-                client.publish("bbc-pump", mois)
-                print('publishing moisture....')
+        # if isMicrobitConnected:
+        print("publish data...")
+        try:
+            temp = physical.readTemperature()
+            mois = physical.readMoisture()
+            # print("Data to pulish: ", dataToPush)
+            client.publish("temp", temp)
+            print('publishing temperature....')
+            client.publish("bbc-pump", mois)
+            print('publishing moisture....')
 
-            except:
-                print('pulish failed')
-                pass
-        else:
-            print("microbit not connect, send -1 to temp feed ")
-            client.publish("temp", -1)
+        except:
+            print('pulish failed')
+            pass
+        # else:
+        #     print("microbit not connect, send -1 to temp feed ")
+        #     client.publish("temp", -1)
         if isFire:
             fires = fires + 1
         else: fires = 0
