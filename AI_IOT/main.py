@@ -104,40 +104,40 @@ client.loop_background()
 #             commPort = (splitPort[0])
 #     return commPort
 
-if getPort() != "None":
-    ser = serial.Serial(port=getPort(), baudrate=115200)
-    isMicrobitConnected = True
+# if getPort() != "None":
+#     ser = serial.Serial(port=getPort(), baudrate=115200)
+#     isMicrobitConnected = True
 
-def processData(data):
-    data = data.replace("!", "")
-    data = data.replace("#", "")
-    splitData = data.split(":")
-    print(splitData)
-    # try:
-    if splitData[0] == "temp":
-        return splitData[1]
-            # client.publish("temp", splitData[1])
-            # print('publishing....')
-    # except:
-    #     print('pulish failed')
+# def processData(data):
+#     data = data.replace("!", "")
+#     data = data.replace("#", "")
+#     splitData = data.split(":")
+#     print(splitData)
+#     # try:
+#     if splitData[0] == "temp":
+#         return splitData[1]
+#             # client.publish("temp", splitData[1])
+#             # print('publishing....')
+#     # except:
+#     #     print('pulish failed')
     #     pass
 
-def readSerial():
-    data = -1
-    bytesToRead = ser.inWaiting()
-    if (bytesToRead > 0):
-        global mess
-        mess = mess + ser.read(bytesToRead).decode("UTF-8")
-        while ("#" in mess) and ("!" in mess):
-            start = mess.find("!")
-            end = mess.find("#")
-            data = processData(mess[start:end + 1])
-            if (end == len(mess)):
-                mess = ""
-            else:
-                mess = mess[end+1:]
-    print(data)
-    return data
+# def readSerial():
+#     data = -1
+#     bytesToRead = ser.inWaiting()
+#     if (bytesToRead > 0):
+#         global mess
+#         mess = mess + ser.read(bytesToRead).decode("UTF-8")
+#         while ("#" in mess) and ("!" in mess):
+#             start = mess.find("!")
+#             end = mess.find("#")
+#             data = processData(mess[start:end + 1])
+#             if (end == len(mess)):
+#                 mess = ""
+#             else:
+#                 mess = mess[end+1:]
+#     print(data)
+#     return data
 def counting(count, prev_time, period):
     now = time.time()
     #print("func called, now = ", now, " prev= ", prev_time)
