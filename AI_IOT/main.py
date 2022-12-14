@@ -9,7 +9,7 @@ import platform
 from dotenv import load_dotenv
 import physical
 
-AIO_FEED_IDS =["led", "bbc-pump", "ai", "temp", "bbc-temp"]
+AIO_FEED_IDS =["led", "bbc-pump", "ai", "temp", "bbc-temp", "bbc-humid"]
 load_dotenv()
 AIO_USERNAME = os.environ.get('AIO_USERNAME')
 AIO_KEY = os.environ.get('AIO_KEY')
