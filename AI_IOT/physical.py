@@ -1,8 +1,11 @@
 import time
-
+import platform
 print("Sensors and Actuators")
 import serial.tools.list_ports
 
+
+OS = platform.system
+deviceName = "FT232R USB UART"
 def getPort():
     ports = serial.tools.list_ports.comports()
     N = len(ports)
@@ -10,7 +13,11 @@ def getPort():
     for i in range(0, N):
         port = ports[i]
         strPort = str(port)
-        if "FT232R USB UART" in strPort:
+        if OS == "Windows":
+            portStr = "USB Serial Device"
+        else:
+            portStr = deviceName
+        if deviceName in strPort:
             splitPort = strPort.split(" ")
             commPort = (splitPort[0])
     return commPort

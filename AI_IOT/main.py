@@ -7,7 +7,7 @@ from Adafruit_IO import MQTTClient
 import os
 import platform
 from dotenv import load_dotenv
-
+import physical
 
 AIO_FEED_IDS =["led", "bbc-pump", "ai", "temp", "bbc-temp"]
 load_dotenv()
@@ -86,23 +86,23 @@ client.on_message = message
 client.connect()
 client.loop_background()
 
-def getPort():
-    ports = serial.tools.list_ports.comports()
-    print(ports)
-    N = len(ports)
-    commPort = "None"
-    for i in range(0, N):
-        port = ports[i]
-        strPort = str(port)
-        print(strPort)
-        if OS == 'Windows':
-            portStr = "USB Serial Device"
-        else:
-            portStr = node_name
-        if portStr in strPort:
-            splitPort = strPort.split(" ")
-            commPort = (splitPort[0])
-    return commPort
+# def getPort():
+#     ports = serial.tools.list_ports.comports()
+#     print(ports)
+#     N = len(ports)
+#     commPort = "None"
+#     for i in range(0, N):
+#         port = ports[i]
+#         strPort = str(port)
+#         print(strPort)
+#         if OS == 'Windows':
+#             portStr = "USB Serial Device"
+#         else:
+#             portStr = node_name
+#         if portStr in strPort:
+#             splitPort = strPort.split(" ")
+#             commPort = (splitPort[0])
+#     return commPort
 
 if getPort() != "None":
     ser = serial.Serial(port=getPort(), baudrate=115200)
@@ -166,10 +166,14 @@ while(True):
         if isMicrobitConnected:
             print("publish data...")
             try:
-                dataToPush = readSerial()
-                print("Data to pulish: ", dataToPush)
-                client.publish("temp", dataToPush)
-                print('publishing....')
+                temp = physical.readTemperature()
+                mois = physical.readMoisture()
+                # print("Data to pulish: ", dataToPush)
+                client.publish("temp", temp)
+                print('publishing temperature....')
+                client.publish("bbc-pump", mois)
+                print('publishing moisture....')
+
             except:
                 print('pulish failed')
                 pass
