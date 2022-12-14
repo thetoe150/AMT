@@ -75,18 +75,18 @@ def readMoisture():
     time.sleep(1)
     return serial_read_data(ser)
 
-while True:
-    # print("TEST MOTOR")
-    # setDevice1(True)
-    # time.sleep(2)
-    # setDevice1(False)
-    # time.sleep(2)
-    #
-    # setDevice2(True)
-    # time.sleep(2)
-    # setDevice2(False)
-    # time.sleep(2)
-    print("TEST SENSOR")
-    print(readTemperature())
-    print(readMoisture())
-    time.sleep(2)
+# while True:
+#     # print("TEST MOTOR")
+#     # setDevice1(True)
+#     # time.sleep(2)
+#     # setDevice1(False)
+#     # time.sleep(2)
+#     #
+#     # setDevice2(True)
+#     # time.sleep(2)
+#     # setDevice2(False)
+#     # time.sleep(2)
+#     print("TEST SENSOR")
+#     print(readTemperature())
+#     print(readMoisture())
+#     time.sleep(2)
