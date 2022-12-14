@@ -50,21 +50,20 @@ def serial_read_data(ser):
         if len(data_array) >= 7:
             array_size = len(data_array)
             value = data_array[array_size - 4] * 256 + data_array[array_size - 3]
-            return value
+            return value/10
         else:
             return -1
     return 0
 
-soil_temperature =[1, 3, 0, 6, 0, 1, 100, 11]
+soil_temperature =[3, 3, 0, 0, 0, 1, 133, 232]
 def readTemperature():
     serial_read_data(ser)
     ser.write(soil_temperature)
     time.sleep(1)
     return serial_read_data(ser)
 
-soil_moisture = [1, 3, 0, 7, 0, 1, 53, 203]
+soil_moisture = [3, 3, 0, 1, 0, 1, 212, 40]
 def readMoisture():
-    serial_read_data(ser)
     ser.write(soil_moisture)
     time.sleep(1)
     return serial_read_data(ser)
