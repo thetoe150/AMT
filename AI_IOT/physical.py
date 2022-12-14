@@ -10,7 +10,7 @@ def getPort():
     for i in range(0, N):
         port = ports[i]
         strPort = str(port)
-        if "USB Serial" in strPort:
+        if "FT232R USB UART" in strPort:
             splitPort = strPort.split(" ")
             commPort = (splitPort[0])
     return commPort
