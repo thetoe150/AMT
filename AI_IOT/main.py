@@ -162,7 +162,7 @@ while(True):
                 isFire = True
             else: isFire = False    
     if counter <= 0:
-        counter = 5
+        counter = 10
         # if isMicrobitConnected:
         print("publish data...")
         try:
@@ -171,7 +171,7 @@ while(True):
             # print("Data to pulish: ", dataToPush)
             client.publish("temp", temp)
             print('publishing temperature....')
-            client.publish("bbc-pump", mois)
+            client.publish("bbc-humid", mois)
             print('publishing moisture....')
 
         except:
