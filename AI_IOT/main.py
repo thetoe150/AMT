@@ -21,7 +21,7 @@ def list_ports():
     dev_port = 0
     working_ports = []
     available_ports = []
-    while len(non_working_ports) < 3:  # if there are more than 8 non working ports stop the testing.
+    while len(non_working_ports) < 3:  # if there are more than 4 non working ports stop the testing.
         camera = cv2.VideoCapture(dev_port)
         if not camera.isOpened():
             non_working_ports.append(dev_port)
@@ -73,9 +73,18 @@ def  disconnected(client):
     sys.exit (1)
 
 def  message(client , feed_id , payload):
-    print("Nhan du lieu: " + payload)
+    print("Nhan du lieu: " + payload, " feeid:" + feed_id)
     if isMicrobitConnected:
         ser.write((str(payload) + "#").encode())
+        if feed_id == "led":
+            if payload == "1":
+                #print("command relay on\n")
+                #ser.write(str.encode('LED_ONN'))
+                setDevice1(True)
+            if payload == "0":
+                #print("command relay off\n")
+                #ser.write(str.encode('LED_OFF'))
+                setDevice1(False)
 
 
 client = MQTTClient(AIO_USERNAME , AIO_KEY)
@@ -167,12 +176,12 @@ while(True):
         print("publish data...")
         try:
             temp = physical.readTemperature()
-            mois = physical.readMoisture()
+            mois = physical.readHumidity()
             # print("Data to pulish: ", dataToPush)
             client.publish("temp", temp)
             print('publishing temperature....')
             client.publish("bbc-humid", mois)
-            print('publishing moisture....')
+            print('publishing humidity...')
 
         except:
             print('pulish failed')
