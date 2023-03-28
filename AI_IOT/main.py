@@ -9,10 +9,14 @@ import platform
 from dotenv import load_dotenv
 import physical
 
+
+
 AIO_FEED_IDS =["led", "bbc-pump", "ai", "temp", "bbc-temp", "bbc-humid"]
 load_dotenv()
-AIO_USERNAME = os.environ.get('AIO_USERNAME')
-AIO_KEY = os.environ.get('AIO_KEY')
+AIO_USERNAME = os.environ.get('IO_USERNAME')
+AIO_KEY = os.environ.get('IO_KEY')
+
+
 def list_ports():
     """
     Test the ports and returns a tuple with the available ports and the ones that are working.
@@ -59,6 +63,8 @@ if camPort[1].__len__() != 0:
     vid = cv2.VideoCapture(camPort[1][0])
 else:
     print("no camera detected!!!")
+    print("try wifi cam...")
+    vid = cv2.VideoCapture('http://192.168.8.109:4747/video')
 
 def  connected(client):
     print("Ket noi thanh cong...")

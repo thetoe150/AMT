@@ -1,8 +1,28 @@
 import time
 import platform
-print("Sensors and Actuators")
 import serial.tools.list_ports
 
+print("Sensors and Actuators")
+
+TEMPERATURE = [3, 3, 0, 0, 0, 1, 133, 232]
+HUMIDITY = [3, 3, 0, 1, 0, 1, 212, 40]
+
+CO2 = [2, 3, 0, 4, 0, 1, 197, 248]
+PM2_5 = [4, 3, 0, 12, 0, 1, 68, 92]
+PM10 = [4, 3, 0, 13, 0, 1, 21, 156]
+
+NO2 = [0x0C, 0x03, 0x00, 0x02, 0x00, 0x01, 0x24, 0xD7]
+CO = [0x0E, 0x03, 0x00, 0x02, 0x00, 0x01, 0x25, 0x35]
+SO2 = [0x0D, 0x03, 0x00, 0x02, 0x00, 0x01, 0x25, 0x06]
+
+NITO = [1, 3, 0, 30, 0, 1, 228, 12]
+KALI = [1, 3, 0, 32, 0, 1, 133, 192]
+PHOTPHO = [1, 3, 0, 31, 0, 1, 181, 204]
+
+HUMIDITY_EPCB = [1, 3, 0, 0, 0, 1, 132, 10]
+TEMPERATURE_EPCB = [1, 3, 0, 1, 0, 1, 213, 202]
+EC_EPCB = [1, 3, 0, 2, 0, 1, 37, 202]
+PH_EPCB = [1, 3, 0, 3, 0, 1, 116, 10]
 
 OS = platform.system
 deviceName = "FT232R USB UART"
@@ -46,8 +66,6 @@ def setDevice2(state):
         ser.write(relay2_OFF)
 
 
-
-
 def serial_read_data(ser):
     bytesToRead = ser.inWaiting()
     if bytesToRead > 0:
@@ -62,31 +80,64 @@ def serial_read_data(ser):
             return -1
     return 0
 
-temperature =[3, 3, 0, 0, 0, 1, 133, 232]
 def readTemperature():
-    serial_read_data(ser)
-    ser.write(temperature)
+    print('Temperature:')
+    ser.write(TEMPERATURE)
     time.sleep(1)
     return serial_read_data(ser)
 
-humidity = [3, 3, 0, 1, 0, 1, 212, 40]
 def readHumidity():
-    ser.write(humidity)
+    print('Humidity:')
+    ser.write(HUMIDITY)
     time.sleep(1)
     return serial_read_data(ser)
 
-# while True:
-#     # print("TEST MOTOR")
-#     # setDevice1(True)
-#     # time.sleep(2)
-#     # setDevice1(False)
-#     # time.sleep(2)
-#     #
-#     # setDevice2(True)
-#     # time.sleep(2)
-#     # setDevice2(False)
-#     # time.sleep(2)
-#     print("TEST SENSOR")
-#     print(readTemperature())
-#     print(readMoisture())
-#     time.sleep(2)
+def readCO():
+    print('CO:')
+    ser.write(CO)
+    time.sleep(1)
+    return serial_read_data(ser)
+
+def readSO2():
+    print('SO2:')
+    ser.write(SO2)
+    time.sleep(1)
+    return serial_read_data(ser)
+
+def readNO2():
+    print('NO2:')
+    ser.write(NO2)
+    time.sleep(1)
+    return serial_read_data(ser)
+
+def readPM2_5():
+    print('PM2_5:')
+    ser.write(PM2_5)
+    time.sleep(1)
+    return serial_read_data(ser)
+
+def readPM10():
+    print('PM10:')
+    ser.write(PM10)
+    time.sleep(1)
+    return serial_read_data(ser)
+
+while True:
+    print("TEST MOTOR")
+    setDevice1(True)
+    time.sleep(2)
+    setDevice1(False)
+    time.sleep(2)
+    setDevice2(True)
+    time.sleep(2)
+    setDevice2(False)
+    time.sleep(2)
+    print("TEST SENSOR")
+    print(readTemperature())
+    print(readHumidity())
+    print(readNO2())
+    print(readCO())
+    print(readSO2())
+    print(readPM2_5())
+    print(readPM10())
+    time.sleep(2)

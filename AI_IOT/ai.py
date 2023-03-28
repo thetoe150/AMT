@@ -12,8 +12,6 @@ from Adafruit_IO import MQTTClient
 from ai import *
 
 AIO_FEED_IDS =["led", "bbc-pump", "ai", "temp", "bbc-temp"]
-AIO_USERNAME = "duy_ngotu"
-AIO_KEY = "aio_YTrq60ESZzTgFii2z5P2vmZK8tDw"
 
 model = torch.hub.load('ultralytics/yolov5', 'custom', 'best.pt')
 camera = cv2.VideoCapture(0)
