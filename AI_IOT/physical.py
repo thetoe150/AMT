@@ -24,8 +24,13 @@ TEMPERATURE_EPCB = [1, 3, 0, 1, 0, 1, 213, 202]
 EC_EPCB = [1, 3, 0, 2, 0, 1, 37, 202]
 PH_EPCB = [1, 3, 0, 3, 0, 1, 116, 10]
 
-OS = platform.system
-deviceName = "FT232R USB UART"
+# The name of OS on window isn't Windows
+#OS = platform.system
+#if OS == "Windows":
+    #deviceName = "USB Serial Port"
+#else:
+    #deviceName = "FT232R USB UART"
+
 def getPort():
     ports = serial.tools.list_ports.comports()
     N = len(ports)
@@ -33,19 +38,19 @@ def getPort():
     for i in range(0, N):
         port = ports[i]
         strPort = str(port)
-        if OS == "Windows":
-            portStr = "USB Serial Device"
-        else:
-            portStr = deviceName
-        if deviceName in strPort:
-            splitPort = strPort.split(" ")
-            commPort = (splitPort[0])
+        print(strPort)
+
+        # assum that the fisrt word is the port name
+        splitPort = strPort.split(" ")
+        commPort = (splitPort[0])
     return commPort
 
 portName = getPort()
 print(portName)
 if portName != "None":
     ser = serial.Serial(port=portName, baudrate=9600)
+else:
+    print("Found no Port")
 
 relay1_ON  = [0, 6, 0, 0, 0, 255, 200, 91]
 relay1_OFF = [0, 6, 0, 0, 0, 0, 136, 27]
@@ -122,22 +127,22 @@ def readPM10():
     time.sleep(1)
     return serial_read_data(ser)
 
-while True:
-    print("TEST MOTOR")
-    setDevice1(True)
-    time.sleep(2)
-    setDevice1(False)
-    time.sleep(2)
-    setDevice2(True)
-    time.sleep(2)
-    setDevice2(False)
-    time.sleep(2)
-    print("TEST SENSOR")
-    print(readTemperature())
-    print(readHumidity())
-    print(readNO2())
-    print(readCO())
-    print(readSO2())
-    print(readPM2_5())
-    print(readPM10())
-    time.sleep(2)
+#while True:
+    #print("TEST MOTOR")
+    #setDevice1(True)
+    #time.sleep(2)
+    #setDevice1(False)
+    #time.sleep(2)
+    #setDevice2(True)
+    #time.sleep(2)
+    #setDevice2(False)
+    #time.sleep(2)
+    #print("TEST SENSOR")
+    #print(readTemperature())
+    #print(readHumidity())
+    #print(readNO2())
+    #print(readCO())
+    #print(readSO2())
+    #print(readPM2_5())
+    #print(readPM10())
+    #time.sleep(2)
