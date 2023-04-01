@@ -103,6 +103,12 @@ def readCO():
     time.sleep(1)
     return serial_read_data(ser)
 
+def readCO2():
+    print('CO2:')
+    ser.write(CO2)
+    time.sleep(1)
+    return serial_read_data(ser)
+
 def readSO2():
     print('SO2:')
     ser.write(SO2)

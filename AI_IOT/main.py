@@ -11,7 +11,7 @@ import physical
 
 
 
-AIO_FEED_IDS =["led", "bbc-pump", "ai", "temp", "bbc-temp", "bbc-humid"]
+AIO_FEED_IDS =["nanojetson.co", "nanojetson.co2", "nanojetson.no2", "nanojetson.so2", "nanojetson.humidity", "nanojetson.temperature"]
 load_dotenv()
 AIO_USERNAME = os.environ.get('ADAFRUIT_IO_USERNAME')
 AIO_KEY = os.environ.get('ADAFRUIT_IO_KEY')
@@ -59,12 +59,12 @@ node_name = "STM32" #for Linux OS
 # dataTemp = 0
 print("This OS is: ", OS)
 
-if camPort[1].__len__() != 0:
-    vid = cv2.VideoCapture(camPort[1][0])
+if camPort[1].__len__() == 0:
+    vid = cv2.VideoCapture(camPort[1][1])
 else:
     print("no camera detected!!!")
     print("try wifi cam...")
-    vid = cv2.VideoCapture('http://192.168.8.109:4747/video')
+    vid = cv2.VideoCapture('http://192.168.50.116:8080/video')
 
 def  connected(client):
     print("Ket noi thanh cong...")
@@ -93,7 +93,7 @@ def  message(client , feed_id , payload):
                 setDevice1(False)
 
 
-client = MQTTClient(AIO_USERNAME , AIO_KEY)
+client = MQTTClient(AIO_USERNAME, AIO_KEY)
 client.on_connect = connected
 client.on_disconnect = disconnected
 client.on_subscribe = subscribe
@@ -169,7 +169,7 @@ while(True):
         if cAI <0: cAI = 5
         if vid != 0:
             ret, frame = vid.read()
-            # cv2.imshow('frame', frame)
+            #cv2.imshow('frame', frame)
             res = model(frame)
             res.print()
             result = str(res)
@@ -177,17 +177,29 @@ while(True):
                 isFire = True
             else: isFire = False    
     if counter <= 0:
-        counter = 60
+        counter = 30
         # if isMicrobitConnected:
         print("publish data...")
         try:
             temp = physical.readTemperature()
             mois = physical.readHumidity()
+            so2 = physical.readSO2()
+            no2 = physical.readNO2()
+            co = physical.readCO()
+            co2 = physical.readCO2()
             # print("Data to pulish: ", dataToPush)
-            client.publish("temp", temp)
+            client.publish("nanojetson.temperature", temp)
             print('publishing temperature....')
-            client.publish("bbc-humid", mois)
+            client.publish("nanojetson.humidity", mois)
             print('publishing humidity...')
+            client.publish("nanojetson.so2", so2)
+            print('publishing so2....')
+            client.publish("nanojetson.no2", no2)
+            print('publishing no2...')
+            client.publish("nanojetson.co", co)
+            print('publishing co....')
+            client.publish("nanojetson.co2", co2)
+            print('publishing co2...')
 
         except:
             print('pulish failed')
