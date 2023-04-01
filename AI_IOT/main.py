@@ -13,8 +13,8 @@ import physical
 
 AIO_FEED_IDS =["led", "bbc-pump", "ai", "temp", "bbc-temp", "bbc-humid"]
 load_dotenv()
-AIO_USERNAME = os.environ.get('IO_USERNAME')
-AIO_KEY = os.environ.get('IO_KEY')
+AIO_USERNAME = os.environ.get('ADAFRUIT_IO_USERNAME')
+AIO_KEY = os.environ.get('ADAFRUIT_IO_KEY')
 
 
 def list_ports():
@@ -177,7 +177,7 @@ while(True):
                 isFire = True
             else: isFire = False    
     if counter <= 0:
-        counter = 10
+        counter = 60
         # if isMicrobitConnected:
         print("publish data...")
         try:
