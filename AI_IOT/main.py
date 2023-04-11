@@ -1,21 +1,13 @@
 import cv2
 import torch
 import time
-import sys
 import serial.tools.list_ports
-from Adafruit_IO import MQTTClient
-import os
 import platform
-from dotenv import load_dotenv
+import IOT
 import physical
 
-
-
-AIO_FEED_IDS =["nanojetson.co", "nanojetson.co2", "nanojetson.no2", "nanojetson.so2", "nanojetson.humidity", "nanojetson.temperature"]
-load_dotenv()
-AIO_USERNAME = os.environ.get('ADAFRUIT_IO_USERNAME')
-AIO_KEY = os.environ.get('ADAFRUIT_IO_KEY')
-
+if __name__ == "__main__":
+    print("Hello, World!")
 
 def list_ports():
     """
@@ -59,100 +51,14 @@ node_name = "STM32" #for Linux OS
 # dataTemp = 0
 print("This OS is: ", OS)
 
-if camPort[1].__len__() == 0:
-    vid = cv2.VideoCapture(camPort[1][1])
+if camPort[1].__len__() != 0:
+    vid = cv2.VideoCapture(camPort[1][0])
 else:
     print("no camera detected!!!")
     print("try wifi cam...")
     vid = cv2.VideoCapture('http://192.168.50.116:8080/video')
 
-def  connected(client):
-    print("Ket noi thanh cong...")
-    for feed in AIO_FEED_IDS:
-        client.subscribe(feed)
 
-def  subscribe(client , userdata , mid , granted_qos):
-    print("Subcribe thanh cong...")
-
-def  disconnected(client):
-    print("Ngat ket noi...")
-    sys.exit (1)
-
-def  message(client , feed_id , payload):
-    print("Nhan du lieu: " + payload, " feeid:" + feed_id)
-    if isMicrobitConnected:
-        ser.write((str(payload) + "#").encode())
-        if feed_id == "led":
-            if payload == "1":
-                #print("command relay on\n")
-                #ser.write(str.encode('LED_ONN'))
-                setDevice1(True)
-            if payload == "0":
-                #print("command relay off\n")
-                #ser.write(str.encode('LED_OFF'))
-                setDevice1(False)
-
-
-client = MQTTClient(AIO_USERNAME, AIO_KEY)
-client.on_connect = connected
-client.on_disconnect = disconnected
-client.on_subscribe = subscribe
-client.on_message = message
-client.connect()
-client.loop_background()
-
-# def getPort():
-#     ports = serial.tools.list_ports.comports()
-#     print(ports)
-#     N = len(ports)
-#     commPort = "None"
-#     for i in range(0, N):
-#         port = ports[i]
-#         strPort = str(port)
-#         print(strPort)
-#         if OS == 'Windows':
-#             portStr = "USB Serial Device"
-#         else:
-#             portStr = node_name
-#         if portStr in strPort:
-#             splitPort = strPort.split(" ")
-#             commPort = (splitPort[0])
-#     return commPort
-
-# if getPort() != "None":
-#     ser = serial.Serial(port=getPort(), baudrate=115200)
-#     isMicrobitConnected = True
-
-# def processData(data):
-#     data = data.replace("!", "")
-#     data = data.replace("#", "")
-#     splitData = data.split(":")
-#     print(splitData)
-#     # try:
-#     if splitData[0] == "temp":
-#         return splitData[1]
-#             # client.publish("temp", splitData[1])
-#             # print('publishing....')
-#     # except:
-#     #     print('pulish failed')
-    #     pass
-
-# def readSerial():
-#     data = -1
-#     bytesToRead = ser.inWaiting()
-#     if (bytesToRead > 0):
-#         global mess
-#         mess = mess + ser.read(bytesToRead).decode("UTF-8")
-#         while ("#" in mess) and ("!" in mess):
-#             start = mess.find("!")
-#             end = mess.find("#")
-#             data = processData(mess[start:end + 1])
-#             if (end == len(mess)):
-#                 mess = ""
-#             else:
-#                 mess = mess[end+1:]
-#     print(data)
-#     return data
 def counting(count, prev_time, period):
     now = time.time()
     #print("func called, now = ", now, " prev= ", prev_time)
@@ -179,46 +85,34 @@ while(True):
     if counter <= 0:
         counter = 30
         # if isMicrobitConnected:
-        print("publish data...")
+        print("trying to read sensor and publish data...")
         try:
-            temp = physical.readTemperature()
-            mois = physical.readHumidity()
-            so2 = physical.readSO2()
-            no2 = physical.readNO2()
-            co = physical.readCO()
-            co2 = physical.readCO2()
-            # print("Data to pulish: ", dataToPush)
-            client.publish("nanojetson.temperature", temp)
-            print('publishing temperature....')
-            client.publish("nanojetson.humidity", mois)
-            print('publishing humidity...')
-            client.publish("nanojetson.so2", so2)
-            print('publishing so2....')
-            client.publish("nanojetson.no2", no2)
-            print('publishing no2...')
-            client.publish("nanojetson.co", co)
-            print('publishing co....')
-            client.publish("nanojetson.co2", co2)
-            print('publishing co2...')
-
-        except:
-            print('pulish failed')
+            print("Trying to read sersors from all serial ports")
+            publishedJson = physicalSensors.buildJson()
+        except Exception as ex:
+            print('read sensor fail: ', ex)
             pass
-        # else:
-        #     print("microbit not connect, send -1 to temp feed ")
-        #     client.publish("temp", -1)
+
+        try:
+            print("Trying to pushlish data")
+            clientIOT = IOT.Client()
+            clientIOT.publishFeed("nj1.jdata", publishedJson)
+        except Exception as ex:
+            print('pulish failed: ', ex)
+
+
         if isFire:
             fires = fires + 1
         else: fires = 0
         #false positive check: detect fire 2 time in a row
         if fires >= 2:
-            print("publish ai... ")
-            client.publish("ai", "there is fire!")
+            print("FIRE!!!!!!!")
+
     # if cv2.waitKey(1) & 0xFF == ord('q'):
     #     break
     
   
-# After the loop release the cap object
-vid.release()
-# Destroy all the windows
-cv2.destroyAllWindows()
+## After the loop release the cap object
+#vid.release()
+## Destroy all the windows
+#cv2.destroyAllWindows()

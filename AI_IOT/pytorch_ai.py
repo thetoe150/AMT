@@ -13,8 +13,6 @@ model = torch.hub.load('ultralytics/yolov5', 'custom', 'best.pt')
 # model = model.to(device)
 camera = cv2.VideoCapture(0)
 
-
-
 def image_detector2():
     ret, image = camera.read()
     # image = cv2.resize(image, (720, 720), interpolation=cv2.INTER_AREA)
