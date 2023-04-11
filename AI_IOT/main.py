@@ -6,9 +6,6 @@ import platform
 import IOT
 import physical
 
-if __name__ == "__main__":
-    print("Hello, World!")
-
 def list_ports():
     """
     Test the ports and returns a tuple with the available ports and the ones that are working.
@@ -88,13 +85,13 @@ while(True):
         print("trying to read sensor and publish data...")
         try:
             print("Trying to read sersors from all serial ports")
+            physicalSensors = physical.Physical()
             publishedJson = physicalSensors.buildJson()
         except Exception as ex:
             print('read sensor fail: ', ex)
-            pass
 
         try:
-            print("Trying to pushlish data")
+            print("Trying to pushlish")
             clientIOT = IOT.Client()
             clientIOT.publishFeed("nj1.jdata", publishedJson)
         except Exception as ex:

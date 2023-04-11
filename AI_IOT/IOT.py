@@ -21,7 +21,7 @@ def disconnected(client):
     sys.exit (1)
 
 def message(client, feed_id, payload):
-    pass
+    print("hello")
     #if isMicrobitConnected:
         #ser.write((str(payload) + "#").encode())
         #if feed_id == "led":
