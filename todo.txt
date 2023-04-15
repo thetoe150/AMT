@@ -1,0 +1,7 @@
+Ngọ Từ Duy
+à m config lại cái adafruit
+1 cái nhận file json chứa full data
+1 cái ai lửa
+1 cái main pollutant
+1 cái aqi index lớn nhất/của main pollutant
+2 cái nhiệt độ độ ẩm
