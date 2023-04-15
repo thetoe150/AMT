@@ -4,7 +4,7 @@ import multiprocessing
 from time import time, gmtime, sleep, asctime
 
 import physical
-import AI
+import ai
 import IOT
 
 OS = platform.system()
@@ -31,7 +31,7 @@ class systemAMT:
     def __init__(self):
         print("******************* Trying to read sersors from all serial ports *******************")
         self.physicalSensors = physical.Physical()
-        self.aiCamera = AI.AICam()
+        self.aiCamera = ai.AICam()
         self.clientIOT = IOT.Client()
         self.thread_list = []
 

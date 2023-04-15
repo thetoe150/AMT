@@ -47,10 +47,15 @@ class AICam:
             vid = cv2.VideoCapture('http://192.168.50.116:8080/video')
     
     def readCams(self):
+        port_idx = 0
         for cam in self.camCaps:
             is_reading, frame = cam.read()
             if not is_reading:
                 print('cannot read frame at cam', cam)
+                break
+
+            cv2.imshow('Tesing cam' + str(port_idx), frame)
+            if cv2.waitKey(1) == ord('q'):
                 break
 
             res = self.model(frame)
@@ -59,6 +64,8 @@ class AICam:
             if result.__contains__("fire"):
                 print('Fire detected')
                 self.isFire = True
+
+            port_idx += 1
 
 
     def buildJson(self):
