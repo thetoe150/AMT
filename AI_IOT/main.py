@@ -1,63 +1,25 @@
-import cv2
-import torch
-import time
-import serial.tools.list_ports
 import platform
-import IOT
+import threading
+import multiprocessing
+from time import time, gmtime, sleep, asctime
+
 import physical
+import AI
+import IOT
 
-def list_ports():
-    """
-    Test the ports and returns a tuple with the available ports and the ones that are working.
-    """
-    non_working_ports = []
-    dev_port = 0
-    working_ports = []
-    available_ports = []
-    while len(non_working_ports) < 3:  # if there are more than 4 non working ports stop the testing.
-        camera = cv2.VideoCapture(dev_port)
-        if not camera.isOpened():
-            non_working_ports.append(dev_port)
-            print("Port %s is not working." % dev_port)
-        else:
-            is_reading, img = camera.read()
-            w = camera.get(3)
-            h = camera.get(4)
-            if is_reading:
-                print("Port %s is working and reads images (%s x %s)" % (dev_port, h, w))
-                working_ports.append(dev_port)
-            else:
-                print("Port %s for camera ( %s x %s) is present but does not reads." % (dev_port, h, w))
-                available_ports.append(dev_port)
-        dev_port += 1
-    return available_ports, working_ports, non_working_ports
-camPort = list_ports()
-# print(camPort)
-
-vid = 0
-mess = ""
-model = torch.hub.load('ultralytics/yolov5', 'custom', 'best.pt')
-isMicrobitConnected = False
-init_time = time.time()
-counter = 5
-cAI = 5
-isFire = False
-fires = 0
 OS = platform.system()
 node_name = "STM32" #for Linux OS
 # dataTemp = 0
 print("This OS is: ", OS)
 
-if camPort[1].__len__() != 0:
-    vid = cv2.VideoCapture(camPort[1][0])
-else:
-    print("no camera detected!!!")
-    print("try wifi cam...")
-    vid = cv2.VideoCapture('http://192.168.50.116:8080/video')
-
+SYSTEM_COMPONENT_COUNTER = {
+    'AI_Camera' : 3,
+    'Physical' : 60,
+    'IOT_Client': 6
+}
 
 def counting(count, prev_time, period):
-    now = time.time()
+    now = time()
     #print("func called, now = ", now, " prev= ", prev_time)
     if now > prev_time + period:
         prev_time = now
@@ -65,51 +27,82 @@ def counting(count, prev_time, period):
         print("Looping: counter = ", count)
     return count, prev_time
 
-while(True):
-    counter, init_time = counting(counter, init_time, 1)
-    if counter == cAI:
-        cAI = cAI - 2
-        if cAI <0: cAI = 5
-        if vid != 0:
-            ret, frame = vid.read()
-            #cv2.imshow('frame', frame)
-            res = model(frame)
-            res.print()
-            result = str(res)
-            if result.__contains__("fire"):
-                isFire = True
-            else: isFire = False    
-    if counter <= 0:
-        counter = 30
-        # if isMicrobitConnected:
-        print("trying to read sensor and publish data...")
-        try:
-            print("Trying to read sersors from all serial ports")
-            physicalSensors = physical.Physical()
-            publishedJson = physicalSensors.buildJson()
-        except Exception as ex:
-            print('read sensor fail: ', ex)
+class systemAMT:
+    def __init__(self):
+        print("******************* Trying to read sersors from all serial ports *******************")
+        self.physicalSensors = physical.Physical()
+        self.aiCamera = AI.AICam()
+        self.clientIOT = IOT.Client()
+        self.thread_list = []
 
-        try:
-            print("Trying to pushlish")
-            clientIOT = IOT.Client()
-            clientIOT.publishFeed("nj1.jdata", publishedJson)
-        except Exception as ex:
-            print('pulish failed: ', ex)
+        self.physicalJson = ''
+        self.fireJson = ''
+
+    def componentThread(self, name, interval):
+
+        while True:
+            start_time = time()
+            print('At', end=' ')
+            print(asctime(gmtime(start_time)))
+
+            if name == 'Physical':
+                try:
+                    print("******************* Trying to read sersors from all serial ports *******************")
+                    self.physicalSensors.readSensors()
+                    self.physicalSensors.analyzeData()
+                    self.physicalJson = self.physicalSensors.buildJson()
+                except Exception as ex:
+                    print('read sensor fail: ', ex)
+
+            if name == 'AI_Camera':
+                try:
+                    print("******************* Trying to detect fire from all cam ports *******************")
+                    self.aiCamera.readCams()
+                    self.fireJson = self.aiCamera.buildJson()
+                except Exception as ex:
+                    print('detect fire fail:', ex)
 
 
-        if isFire:
-            fires = fires + 1
-        else: fires = 0
-        #false positive check: detect fire 2 time in a row
-        if fires >= 2:
-            print("FIRE!!!!!!!")
+            if name == 'IOT_Client':
+                try:
+                    print("******************* Trying to pushlish data from both sensors and cams *******************")
+                    if self.physicalJson != '':
+                        self.clientIOT.publishFeed("nj1.jdata", self.physicalJson)
 
-    # if cv2.waitKey(1) & 0xFF == ord('q'):
-    #     break
-    
-  
-## After the loop release the cap object
-#vid.release()
-## Destroy all the windows
-#cv2.destroyAllWindows()
+                    if self.fireJson != '':
+                        self.clientIOT.publishFeed("nj1.isfire", self.fireJson)
+                        
+                except Exception as ex:
+                    print('pulish data failed: ', ex)
+
+            remain_time = interval - (time() - start_time)
+            if remain_time > 0:
+                sleep(remain_time)
+
+    def runThreading(self):        
+        for name, interval in SYSTEM_COMPONENT_COUNTER.items():
+            #process = multiprocessing.Process(target=call_hello, args=(name, interval))
+            process = threading.Thread(target=self.componentThread, args=(name, interval))
+            self.thread_list.append(process)
+            process.start()
+
+        for process in self.thread_list:
+            process.join()
+
+if __name__ == "__main__":
+
+    system = systemAMT()
+    system.runThreading()
+
+
+
+#CPU_CONST = 10000
+#IO_CONST = 10
+
+#def CPU_bound_func(name):
+    #time.sleep(IO_CONST)
+
+#def CPU_bound_func(name, interval):
+    #i = 0
+    #while i < CPU_CONST:
+        #i = i + 1

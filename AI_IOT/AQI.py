@@ -29,21 +29,26 @@ class AQI:
 
     @staticmethod
     def calculateAQI(particle_type, pC):
+        # Concentration < 0
+        if pC < 0:
+            print('AQI warning: Invalid AQI input, negative concentration.')
+            return -1, -1
+    
         breakpoint = []
         for name, bp in particle_breakpoints.items():
             if name == particle_type:
                 breakpoint = bp
         
+        # No breakpoint info for the current particle
         if len(breakpoint) == 0:
-            print('have no breakpoint data for this particle')
+            print('AQI warning: have no breakpoint data for this particle')
             return -1, -1
         
         low_idx = 0
-        category = 'concentration is out of breakpoint bound' 
+        category = 'Beyone the AQI - Extremely Hazadous' 
         for i in range(CATEGORY_NUM):
             if pC >= breakpoint[i] and pC < breakpoint[i+1]:
                 low_idx = i
-                print(low_idx)
                 category = Category[i]
                 break
         
@@ -55,6 +60,5 @@ class AQI:
 
         return aqi, category
     
-
-
-#print(AQI.calculateAQI("no2", 200))
+if __name__ == '__main__':
+    print(AQI.calculateAQI("no2", 5800))

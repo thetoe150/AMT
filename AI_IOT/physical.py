@@ -1,5 +1,4 @@
 import time
-import platform
 import serial.tools.list_ports
 import AQI
 import json
@@ -68,11 +67,9 @@ class Physical:
 
         self.sensorsData = {}
 
-        self.jsonData = ""
-
         self.sensorFaulty = False
 
-        self.run()
+        self.ports = self.getPortName()
 
     def printAQI(self):
 
@@ -140,7 +137,7 @@ class Physical:
 
     def readSensors(self):
         # check input serial ports every reading cycle
-        self.ports = self.getPortName()
+        #self.ports = self.getPortName()
 
         # loop through all detected ports
         for port_idx in range (self.portsLength):
@@ -203,39 +200,37 @@ class Physical:
 
 
     def buildJson(self):
+        # check if any data have been read
+        if not self.sensorsData:
+            print('There is no sensor data to build Json')
+            return ''
         
-        self.jsonData += '{'
-        # calibrated data for publishing 
+        jsonData = '{'
         for sensor in self.sensorsData:
             pubValue = self.sensorsData[sensor][0]
 
             if(pubValue == -1):
-                self.jsonData += '"' + str(sensor) + '"' + ": " + '"sensor reading error"' + ', '
+                jsonData += '"' + str(sensor) + '"' + ": " + '"sensor reading error"' + ', '
             elif (pubValue >= 0):
                 aqi_val, category = AQI.AQI.calculateAQI(sensor, pubValue)
                 if aqi_val == -1:
-                    self.jsonData += '"' + str(sensor) + '"' + ": " + '{"value": ' + str(pubValue) + '}, '
+                    jsonData += '"' + str(sensor) + '"' + ": " + '{"value": ' + str(pubValue) + '}, '
                 else:
-                    self.jsonData += '"' + str(sensor) + '"' + ": " + '{"value": ' + str(pubValue) + '}, '
-                    self.jsonData += '"' + str(sensor) + '"' + ": " + '{"value": ' + str(pubValue) + \
+                    jsonData += '"' + str(sensor) + '"' + ": " + '{"value": ' + str(pubValue) + '}, '
+                    jsonData += '"' + str(sensor) + '"' + ": " + '{"value": ' + str(pubValue) + \
                     ', "AQI": ' + str(aqi_val) + ', "quality": "' + category + '"}, '
 
-        # TODO: sensor faulty and AQI
+        # TODO: sensor faulty 
 
-        self.jsonData = self.jsonData[:-2] + '}'
+        jsonData = jsonData[:-2] + '}'
 
         # check to see whether the string is correct in json format
-        parsed = json.loads(self.jsonData)
+        parsed = json.loads(jsonData)
         print(json.dumps(parsed, indent=4))
 
-        return self.jsonData
+        return jsonData
 
-    def run(self):
-        self.readSensors()
-        self.analyzeData()
-        #print(self.buildJson())
-
-
-#while True:
-    #physical = Physical()
-    #physical.run()
+if __name__ == '__main__':
+    while True:
+        physical = Physical()
+        physical.run()
