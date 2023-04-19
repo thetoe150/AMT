@@ -3,9 +3,9 @@ import threading
 import multiprocessing
 from time import time, gmtime, sleep, asctime
 
+import database
 import physical
 import ai
-import IOT
 
 OS = platform.system()
 node_name = "STM32" #for Linux OS
@@ -13,9 +13,12 @@ node_name = "STM32" #for Linux OS
 print("This OS is: ", OS)
 
 SYSTEM_COMPONENT_COUNTER = {
-    'AI_Camera' : 3,
-    'Physical' : 60,
-    'IOT_Client': 6
+    # CPU bounded - often takes around 2s
+    # recieve number should be > 3
+    'AI_Camera' : 10,  
+    # IO bounded - takes 1s for each of 16 total sensors
+    # recieve number should be > 20
+    'Physical' : 10    
 }
 
 def counting(count, prev_time, period):
@@ -32,11 +35,7 @@ class systemAMT:
         print("******************* Trying to read sersors from all serial ports *******************")
         self.physicalSensors = physical.Physical()
         self.aiCamera = ai.AICam()
-        self.clientIOT = IOT.Client()
         self.thread_list = []
-
-        self.physicalJson = ''
-        self.fireJson = ''
 
     def componentThread(self, name, interval):
 
@@ -50,7 +49,8 @@ class systemAMT:
                     print("******************* Trying to read sersors from all serial ports *******************")
                     self.physicalSensors.readSensors()
                     self.physicalSensors.analyzeData()
-                    self.physicalJson = self.physicalSensors.buildJson()
+                    self.physicalSensors.publishData()
+                    print('Time take to read sensor: ', str(time() - start_time))
                 except Exception as ex:
                     print('read sensor fail: ', ex)
 
@@ -58,22 +58,12 @@ class systemAMT:
                 try:
                     print("******************* Trying to detect fire from all cam ports *******************")
                     self.aiCamera.readCams()
-                    self.fireJson = self.aiCamera.buildJson()
+                    self.aiCamera.processImages()
+                    self.aiCamera.publishData()
+                    print('Time take to read camera: ', str(time() - start_time))
                 except Exception as ex:
                     print('detect fire fail:', ex)
 
-
-            if name == 'IOT_Client':
-                try:
-                    print("******************* Trying to pushlish data from both sensors and cams *******************")
-                    if self.physicalJson != '':
-                        self.clientIOT.publishFeed("nj1.jdata", self.physicalJson)
-
-                    if self.fireJson != '':
-                        self.clientIOT.publishFeed("nj1.isfire", self.fireJson)
-                        
-                except Exception as ex:
-                    print('pulish data failed: ', ex)
 
             remain_time = interval - (time() - start_time)
             if remain_time > 0:

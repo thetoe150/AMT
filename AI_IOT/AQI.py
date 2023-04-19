@@ -41,7 +41,7 @@ class AQI:
         
         # No breakpoint info for the current particle
         if len(breakpoint) == 0:
-            print('AQI warning: have no breakpoint data for this particle')
+            print('AQI warning: have no breakpoint data for this particle: ', particle_type)
             return -1, -1
         
         low_idx = 0

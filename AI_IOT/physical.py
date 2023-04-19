@@ -2,6 +2,7 @@ import time
 import serial.tools.list_ports
 import AQI
 import json
+import IOT
 
 #TEMPERATURE = [3, 3, 0, 0, 0, 1, 133, 232]
 #HUMIDITY = [3, 3, 0, 1, 0, 1, 212, 40]
@@ -53,6 +54,17 @@ sensors_calibrate = {
     "pm2_5": 1.0,
     "pm10":  1.0
 }
+
+accuracy_truncate = {
+    "temperature" : 0,
+    "humidity" : 2,
+    "co" : 1,
+    "co2": 2,
+    "so2": 0,
+    "no2": 0,
+    "pm2_5": 1,
+    "pm10":  0
+}
 # The name of OS on window isn't Windows
 #OS = platform.system
 #if OS == "Windows":
@@ -70,6 +82,8 @@ class Physical:
         self.sensorFaulty = False
 
         self.ports = self.getPortName()
+
+        self.physicalClient = IOT.Client()
 
     def printAQI(self):
 
@@ -162,15 +176,15 @@ class Physical:
                 else: 
                     print("fail to read sensor")
 
-            print("Controling relays of Port number ", self.ports[port_idx])
-            self.setDevice1(ser, True)
-            time.sleep(2)
-            self.setDevice1(ser, False)
-            time.sleep(2)
-            self.setDevice2(ser, True)
-            time.sleep(2)
-            self.setDevice2(ser, False)
-            time.sleep(2)
+            #print("Controling relays of Port number ", self.ports[port_idx])
+            #self.setDevice1(ser, True)
+            #time.sleep(2)
+            #self.setDevice1(ser, False)
+            #time.sleep(2)
+            #self.setDevice2(ser, True)
+            #time.sleep(2)
+            #self.setDevice2(ser, False)
+            #time.sleep(2)
         
     def analyzeData(self):
         for sensor in self.sensorsData:
@@ -191,7 +205,7 @@ class Physical:
                     self.sensorFaulty = True
                 # will publish this average value to server
                 average = sum / sensorCount
-                self.sensorsData[sensor][0] = average
+                self.sensorsData[sensor][0] = round(average, accuracy_truncate[sensor])
                 # only the average value remain
                 del self.sensorsData[sensor][1:]
         
@@ -230,7 +244,14 @@ class Physical:
 
         return jsonData
 
+    def publishData(self):
+        json = self.buildJson()
+        if json != '':
+            self.physicalClient.publishFeed("nj1.jdata", json)
+
 if __name__ == '__main__':
     while True:
         physical = Physical()
-        physical.run()
+        physical.readSensors()
+        physical.analyzeData()
+        physical.publishData()

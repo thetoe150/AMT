@@ -1,6 +1,7 @@
 import cv2
 import torch
 import json
+import IOT
 
 class AICam:
     def __init__(self):
@@ -12,6 +13,8 @@ class AICam:
         # initCam() have to be called after getPort()
         self.camCaps = []
         self.initCams()
+
+        self.camClient = IOT.Client()
 
     def getPorts(self):
         """
@@ -54,7 +57,8 @@ class AICam:
                 print('cannot read frame at cam', cam)
                 break
 
-            cv2.imshow('Tesing cam' + str(port_idx), frame)
+            cv2.imshow('Tesing cam' + str(self.camPorts[port_idx]), frame)
+            # magic if statement - don't delete
             if cv2.waitKey(1) == ord('q'):
                 break
 
@@ -62,11 +66,14 @@ class AICam:
             res.print()
             result = str(res)
             if result.__contains__("fire"):
-                print('Fire detected')
+                print('Fire detected at port: ', self.camPorts[port_idx])
                 self.isFire = True
 
             port_idx += 1
 
+    def processImages(self):
+        # TODO: process camera images and inferred camera images and ouput isFire
+        pass
 
     def buildJson(self):
         # check if any data have been read
@@ -86,3 +93,16 @@ class AICam:
         print(json.dumps(parsed, indent=4))
 
         return jsonData
+
+    def publishData(self):
+        json = self.buildJson()
+        if json != '':
+            self.camClient.publishFeed("nj1.isfire", json)
+
+
+if __name__ == '__main__':
+    while True:
+        fireDetector = AICam()
+        fireDetector.readCams()
+        fireDetector.processImages()
+        fireDetector.publishData()
