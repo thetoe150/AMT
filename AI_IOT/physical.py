@@ -93,7 +93,7 @@ class Physical:
 
     def printData(self):
         for sensor in self.sensorsData:
-            print(self.sensorsData[sensor])
+            print(sensor, " value is: ", self.sensorsData[sensor])
 
     # find all port names string
     def getPortName(self):
@@ -185,6 +185,7 @@ class Physical:
             #time.sleep(2)
             #self.setDevice2(ser, False)
             #time.sleep(2)
+        self.printData()
         
     def analyzeData(self):
         for sensor in self.sensorsData:
@@ -205,11 +206,15 @@ class Physical:
                     self.sensorFaulty = True
                 # will publish this average value to server
                 average = sum / sensorCount
-                self.sensorsData[sensor][0] = round(average, accuracy_truncate[sensor])
+                if accuracy_truncate[sensor] == 0:
+                    self.sensorsData[sensor][0] = int(average)
+                else:
+                    self.sensorsData[sensor][0] = round(average, accuracy_truncate[sensor])
+
                 # only the average value remain
                 del self.sensorsData[sensor][1:]
         
-        #self.printData()
+        self.printData()
         #self.printAQI()
 
 
@@ -230,7 +235,6 @@ class Physical:
                 if aqi_val == -1:
                     jsonData += '"' + str(sensor) + '"' + ": " + '{"value": ' + str(pubValue) + '}, '
                 else:
-                    jsonData += '"' + str(sensor) + '"' + ": " + '{"value": ' + str(pubValue) + '}, '
                     jsonData += '"' + str(sensor) + '"' + ": " + '{"value": ' + str(pubValue) + \
                     ', "AQI": ' + str(aqi_val) + ', "quality": "' + category + '"}, '
 
@@ -250,8 +254,8 @@ class Physical:
             self.physicalClient.publishFeed("nj1.jdata", json)
 
 if __name__ == '__main__':
+    physical = Physical()
     while True:
-        physical = Physical()
         physical.readSensors()
         physical.analyzeData()
         physical.publishData()

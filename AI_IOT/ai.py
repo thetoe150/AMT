@@ -101,8 +101,8 @@ class AICam:
 
 
 if __name__ == '__main__':
+    fireDetector = AICam()
     while True:
-        fireDetector = AICam()
         fireDetector.readCams()
         fireDetector.processImages()
         fireDetector.publishData()

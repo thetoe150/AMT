@@ -55,6 +55,9 @@ class AQI:
         high_idx = i + 1
         lerp_factor = (I[high_idx] - I[low_idx]) / (breakpoint[high_idx] - breakpoint[low_idx])
         aqi = (pC - breakpoint[low_idx]) * lerp_factor + I[low_idx]
+
+        aqi = int(round(aqi, 0))
+
         if aqi > 500:
             aqi = 500
 
