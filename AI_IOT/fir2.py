@@ -7,6 +7,7 @@ import time,board,busio
 import numpy as np
 import adafruit_mlx90640
 import matplotlib.pyplot as plt
+import matplotlib.patches as patches
 
 print("Initializing MLX90640")
 i2c = busio.I2C(board.SCL, board.SDA, frequency=800000) # setup I2C
