@@ -15,6 +15,13 @@ mlx.refresh_rate = adafruit_mlx90640.RefreshRate.REFRESH_2_HZ # set refresh rate
 mlx_shape = (24,32)
 print("Initialized")
 
+
+#simulate fire bounding box coordinates
+x= 6
+y= 6
+w= 15
+h= 10
+
 # setup the figure for plotting
 plt.ion() # enables interactive plotting
 fig,ax = plt.subplots(figsize=(12,7))
@@ -33,6 +40,12 @@ while True:
         therm1.set_data(np.fliplr(data_array)) # flip left to right
         therm1.set_clim(vmin=np.min(data_array),vmax=np.max(data_array)) # set bounds
         cbar.update_normal(therm1) # update colorbar range
+
+        # Create a rectangle patch with coordinates
+        rect = patches.Rectangle((x,y), w, h, linewidth=2, edgecolor='b', facecolor='none')
+        # Add the patch to the axis object
+        ax.add_patch(rect)
+
         plt.title(f"Max Temp: {np.max(data_array):.1f}C")
         plt.pause(0.001) # required
         #fig.savefig('mlx90640_test_fliplr.png',dpi=300,facecolor='#FCFCFC', bbox_inches='tight') # comment out to speed up
