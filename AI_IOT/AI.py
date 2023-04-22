@@ -1,6 +1,7 @@
 import cv2
 import torch
 import json
+import IOT
 
 class AICam:
     def __init__(self):
@@ -12,6 +13,8 @@ class AICam:
         # initCam() have to be called after getPort()
         self.camCaps = []
         self.initCams()
+
+        self.camClient = IOT.Client()
 
     def getPorts(self):
         """
@@ -47,19 +50,33 @@ class AICam:
             vid = cv2.VideoCapture('http://192.168.50.116:8080/video')
     
     def readCams(self):
+        port_idx = 0
         for cam in self.camCaps:
             is_reading, frame = cam.read()
             if not is_reading:
                 print('cannot read frame at cam', cam)
                 break
 
+            cv2.imshow('Tesing cam' + str(self.camPorts[port_idx]), frame)
+            # magic if statement - don't delete
+            if cv2.waitKey(1) == ord('q'):
+                break
+
             res = self.model(frame)
             res.print()
+            # Data
+            print('\n', res.xyxy[0])  # print img1 predictions
+
             result = str(res)
             if result.__contains__("fire"):
-                print('Fire detected')
+                print('Fire detected at port: ', self.camPorts[port_idx])
                 self.isFire = True
 
+            port_idx += 1
+
+    def processImages(self):
+        # TODO: process camera images and inferred camera images and ouput isFire
+        pass
 
     def buildJson(self):
         # check if any data have been read
@@ -79,3 +96,16 @@ class AICam:
         print(json.dumps(parsed, indent=4))
 
         return jsonData
+
+    def publishData(self):
+        json = self.buildJson()
+        if json != '':
+            self.camClient.publishFeed("nj1.isfire", json)
+
+
+if __name__ == '__main__':
+    fireDetector = AICam()
+    while True:
+        fireDetector.readCams()
+        fireDetector.processImages()
+        fireDetector.publishData()
