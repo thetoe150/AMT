@@ -64,6 +64,9 @@ class AICam:
 
             res = self.model(frame)
             res.print()
+            # Data
+            print('\n', res.xyxy[0])  # print img1 predictions
+
             result = str(res)
             if result.__contains__("fire"):
                 print('Fire detected at port: ', self.camPorts[port_idx])
