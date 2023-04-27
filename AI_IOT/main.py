@@ -1,9 +1,9 @@
 import platform
 import threading
 import multiprocessing
-from time import time, gmtime, sleep, asctime
+from time import time, sleep
+from datetime import datetime
 
-import database
 import physical
 import ai
 
@@ -12,27 +12,23 @@ node_name = "STM32" #for Linux OS
 # dataTemp = 0
 print("This OS is: ", OS)
 
+PHYSICAL_READ_TIME_INTERVAL = 10
+NUMBER_OF_DATAPOINTS = 2
+PHYSICAL_PUBLISH_TIME_INTERVAL = PHYSICAL_READ_TIME_INTERVAL * NUMBER_OF_DATAPOINTS
+
 SYSTEM_COMPONENT_COUNTER = {
     # CPU bounded - often takes around 2s
     # recieve number should be > 3
-    'AI_Camera' : 10,  
+    'AI_Camera' : 60,
     # IO bounded - takes 1s for each of 16 total sensors
     # recieve number should be > 20
-    'Physical' : 10    
+    'Physical' : PHYSICAL_READ_TIME_INTERVAL, 
+    'PublishingPhysical' : PHYSICAL_PUBLISH_TIME_INTERVAL
 }
-
-def counting(count, prev_time, period):
-    now = time()
-    #print("func called, now = ", now, " prev= ", prev_time)
-    if now > prev_time + period:
-        prev_time = now
-        count = count - 1
-        print("Looping: counter = ", count)
-    return count, prev_time
 
 class systemAMT:
     def __init__(self):
-        print("******************* Trying to read sersors from all serial ports *******************")
+        print('Initialing System with Thread {} executing at: {}'.format(threading.get_ident(), datetime.now()) ,end=' ')
         self.physicalSensors = physical.Physical()
         self.aiCamera = ai.AICam()
         self.thread_list = []
@@ -41,14 +37,25 @@ class systemAMT:
 
         while True:
             start_time = time()
-            print('At', end=' ')
-            print(asctime(gmtime(start_time)))
+            now = datetime.now()
+            date = now.strftime('%Y-%m-%d %H:%M:%S')
+            print('Thread {} executing at: {}'.format(threading.get_ident(), date) ,end=' ')
+            print(date)
 
             if name == 'Physical':
                 try:
                     print("******************* Trying to read sersors from all serial ports *******************")
                     self.physicalSensors.readSensors()
                     self.physicalSensors.analyzeData()
+                    self.physicalSensors.storeInstanceData()
+                    print('Time take to read sensor: ', str(time() - start_time))
+                except Exception as ex:
+                    print('read sensor fail: ', ex)
+
+            if name == 'PublishingPhysical':
+                try:
+                    print("******************* Trying to publish sensors data to server *******************")
+                    self.physicalSensors.getAverageData()
                     self.physicalSensors.publishData()
                     print('Time take to read sensor: ', str(time() - start_time))
                 except Exception as ex:

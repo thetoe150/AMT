@@ -3,6 +3,7 @@ import serial.tools.list_ports
 import AQI
 import json
 import IOT
+import database
 
 #TEMPERATURE = [3, 3, 0, 0, 0, 1, 133, 232]
 #HUMIDITY = [3, 3, 0, 1, 0, 1, 212, 40]
@@ -71,6 +72,7 @@ accuracy_truncate = {
     #deviceName = "USB Serial Port"
 #else:
     #deviceName = "FT232R USB UART"
+PUBLISH_INTERVAL = 60
 
 class Physical:
     def __init__(self):
@@ -83,7 +85,10 @@ class Physical:
 
         self.ports = self.getPortName()
 
+        self.dataStorage =  database.SensorDataStorage()
+
         self.physicalClient = IOT.Client()
+
 
     def printAQI(self):
 
@@ -146,7 +151,7 @@ class Physical:
 
     def readSerial(self, serial, sensor_name):
         serial.write(sensors_write_bytes[sensor_name])
-        time.sleep(1)
+        time.sleep(0.5)
         return self.serial_read_data(serial) * sensors_calibrate[sensor_name]
 
     def readSensors(self):
@@ -215,8 +220,14 @@ class Physical:
                 del self.sensorsData[sensor][1:]
         
         self.printData()
+        return self.sensorsData
         #self.printAQI()
 
+    def storeInstanceData(self):
+        self.dataStorage.addDataPoints(self.sensorsData)
+
+    def getAverageData(self):
+        self.sensorsData = self.dataStorage.dumpDataPoints()
 
     def buildJson(self):
         # check if any data have been read
@@ -226,7 +237,7 @@ class Physical:
         
         jsonData = '{'
         for sensor in self.sensorsData:
-            pubValue = self.sensorsData[sensor][0]
+            pubValue = self.sensorsData[sensor]
 
             if(pubValue == -1):
                 jsonData += '"' + str(sensor) + '"' + ": " + '"sensor reading error"' + ', '
@@ -246,6 +257,10 @@ class Physical:
         parsed = json.loads(jsonData)
         print(json.dumps(parsed, indent=4))
 
+        # very careful with this dictionary variable, it's server multi purpose
+        # which is easilly to do wrong
+        self.sensorsData.clear()
+
         return jsonData
 
     def publishData(self):
@@ -253,9 +268,18 @@ class Physical:
         if json != '':
             self.physicalClient.publishFeed("nj1.jdata", json)
 
+
 if __name__ == '__main__':
     physical = Physical()
     while True:
+        # these 4 physical method have to be called in the following order
+        # because they operate on the same data member self.sensorsData
+
         physical.readSensors()
+        # analyze data of 1 instace of data point
         physical.analyzeData()
+        # store 1 instace of data point
+        physical.storeInstanceData()
+
+        physical.getAverageData()
         physical.publishData()
