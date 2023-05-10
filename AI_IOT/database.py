@@ -77,18 +77,17 @@ class SensorDataStorage:
 				print("data Point of {}: {}".format(sensor, dataPoint))
 				# average value
 				store_data /= len(dataPoint)
+				# return res containing hourly average for calculating AQI
 				res[sensor] = store_data
 
+				# insert this hourly average into database
 				c = self.sensorDatabase.cursor()
 				c.execute("INSERT INTO sensorDatabase VALUES (:category, :concentration, :date)", 
 						{'category': sensor, 'concentration': store_data, 'date': date})
 
-
 		self.resetDataPoints()
 		self.sensorDatabase.commit()
 
-		print("resssssssssssssss: ", res)
-		
 		return res
 
 	def resetDataPoints(self):

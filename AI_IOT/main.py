@@ -90,16 +90,3 @@ if __name__ == "__main__":
 
     system = systemAMT()
     system.runThreading()
-
-
-
-#CPU_CONST = 10000
-#IO_CONST = 10
-
-#def CPU_bound_func(name):
-    #time.sleep(IO_CONST)
-
-#def CPU_bound_func(name, interval):
-    #i = 0
-    #while i < CPU_CONST:
-        #i = i + 1

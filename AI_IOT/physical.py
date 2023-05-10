@@ -79,6 +79,12 @@ class Physical:
         self.ports = []
         self.portsLength = 0
 
+        # very careful with this dictionary variable, it's server multi purpose
+        # python is a fking dynamic type language so this allow this dict to be
+        # a dict of list at first but become a dict of float later
+        # after the method pulish is called, we clear this dict (it's a dict of float)
+        # so it start a new life of dict of list again
+        # maybe bad design but it is quite convinent to just have 1 variable like this
         self.sensorsData = {}
 
         self.sensorFaulty = False
@@ -216,7 +222,7 @@ class Physical:
                 else:
                     self.sensorsData[sensor][0] = round(average, accuracy_truncate[sensor])
 
-                # only the average value remain
+                # only the average value remain in dict
                 del self.sensorsData[sensor][1:]
         
         self.printData()
@@ -249,8 +255,8 @@ class Physical:
                     jsonData += '"' + str(sensor) + '"' + ": " + '{"value": ' + str(pubValue) + \
                     ', "AQI": ' + str(aqi_val) + ', "quality": "' + category + '"}, '
 
-        # TODO: sensor faulty 
-
+        # TODO: sensor faul
+        # exclude 2 character ", "
         jsonData = jsonData[:-2] + '}'
 
         # check to see whether the string is correct in json format
