@@ -7,17 +7,35 @@ import numpy as np
 import adafruit_mlx90640
 import matplotlib.pyplot as plt
 
-class AICam:
-    def __init__(self):
-        self.model = torch.hub.load('ultralytics/yolov5', 'custom', 'best.pt')
-        self.isFire = False
+FIRE_THRESHOLD = 90 # temperature threshold for fire detection
+MLX_SHAPE = (24,32)
 
+class AICam:
+    def __init__(self, visualize = False):
+        self.isVisualize = visualize
+        self.isFire = False
+        ######## Set up AI model ########
+        self.model = torch.hub.load('ultralytics/yolov5', 'custom', 'best.pt')
+
+        ######## Set up ports and camera Capture instance for normal camera ########
         self.camPorts = []
         self.getPorts()
         # initCam() have to be called after getPort()
         self.camCaps = []
         self.initCams()
 
+        ######## Set up I2C communication and MLX instance ##########
+        self.i2c = None
+        self.mlx = None
+        self.initInferedCam()
+
+        ######## Set up plot ##########
+        if self.isVisualize:
+            self.therm1 = None
+            self.cbar = None
+            self.initInferedCam()
+
+        ######## Init adafruit instance for camera component ########
         self.camClient = IOT.Client()
 
     def getPorts(self):
@@ -77,38 +95,39 @@ class AICam:
                 self.isFire = True
 
             port_idx += 1
-
-    def processImages(self):
-        # TODO: process camera images and inferred camera images and ouput isFire
-#         pass
+        
+    def initInferedCam(self):
         print("Initializing MLX90640")
-        i2c = busio.I2C(board.SCL, board.SDA, frequency=800000) # setup I2C
-        mlx = adafruit_mlx90640.MLX90640(i2c) # begin MLX90640 with I2C comm
-        mlx.refresh_rate = adafruit_mlx90640.RefreshRate.REFRESH_2_HZ # set refresh rate
-        mlx_shape = (24,32)
+        self.i2c = busio.I2C(board.SCL, board.SDA, frequency=800000) # setup I2C
+        self.mlx = adafruit_mlx90640.MLX90640(self.i2c) # begin MLX90640 with I2C comm
+        self.mlx.refresh_rate = adafruit_mlx90640.RefreshRate.REFRESH_2_HZ # set refresh rate
         print("Initialized")
-
-        fire_threshold = 90 # temperature threshold for fire detection
-
+    
+    def initInferedImage(self):
         # setup the figure for plotting
         plt.ion() # enables interactive plotting
         fig,ax = plt.subplots(figsize=(12,7))
-        therm1 = ax.imshow(np.zeros(mlx_shape),vmin=0,vmax=60) #start plot with zeros
-        cbar = fig.colorbar(therm1) # setup colorbar for temps
-        cbar.set_label('Temperature [$^{\circ}$C]',fontsize=14) # colorbar label
+        self.therm1 = ax.imshow(np.zeros(MLX_SHAPE),vmin=0,vmax=60) #start plot with zeros
+        self.cbar = fig.colorbar(self.therm1) # setup colorbar for temps
+        self.cbar.set_label('Temperature [$^{\circ}$C]',fontsize=14) # colorbar label
 
+    def readInferedCam(self):
         frame = np.zeros((24*32,)) # setup array for storing all 768 temperatures
         # t_array = []
             # t1 = time.monotonic()
         try:
-            mlx.getFrame(frame) # read MLX temperatures into frame var
-            data_array = (np.reshape(frame,mlx_shape)) # reshape to 24x32
-            therm1.set_data(np.fliplr(data_array)) # flip left to right
-            therm1.set_clim(vmin=np.min(data_array),vmax=np.max(data_array)) # set bounds
-            cbar.update_normal(therm1) # update colorbar range
+            self.mlx.getFrame(frame) # read MLX temperatures into frame var
+            data_array = (np.reshape(frame, MLX_SHAPE)) # reshape to 24x32
+            
+            # Draw image if enabe visualize in the constructor
+            if self.isVisualize:
+                self.therm1.set_data(np.fliplr(data_array)) # flip left to right
+                self.therm1.set_clim(vmin=np.min(data_array),vmax=np.max(data_array)) # set bounds
+                self.cbar.update_normal(self.therm1) # update colorbar range
 
-            fire_count = np.sum(data_array > fire_threshold) # count the number of pixels above the fire threshold
-            if (fire_count > (0.5 * mlx_shape[0] * mlx_shape[1]) or self.isFire): # if more than half of the pixels exceed the threshold
+            # detect fire
+            fire_count = np.sum(data_array > FIRE_THRESHOLD) # count the number of pixels above the fire threshold
+            if (fire_count > (0.5 * MLX_SHAPE[0] * MLX_SHAPE[1]) or self.isFire): # if more than half of the pixels exceed the threshold
                 self.isFire = True
             else:
                 self.isFire = False
@@ -120,6 +139,7 @@ class AICam:
             # print('Sample Rate: {0:2.1f}fps'.format(len(t_array)/np.sum(t_array)))
         except ValueError:
             print('Error reading thermal camera')
+
 
     def buildJson(self):
         # check if any data have been read
@@ -147,8 +167,8 @@ class AICam:
 
 
 if __name__ == '__main__':
-    fireDetector = AICam()
+    fireDetector = AICam(True)
     while True:
         fireDetector.readCams()
-        fireDetector.processImages()
+        fireDetector.readInferedCam()
         fireDetector.publishData()

@@ -99,7 +99,6 @@ class SensorDataStorage:
 		c = self.sensorDatabase.cursor()
 		c.execute("DELETE  FROM sensorDatabase")
 		self.sensorDatabase.commit()
-	
 
 if __name__ == '__main__':
 	data1 = {
@@ -126,4 +125,4 @@ if __name__ == '__main__':
 	dataStorage.dumpDataPoints()
 	dataStorage.printDatabase()
 
-	dataStorage.resetDatabase()
+	# dataStorage.resetDatabase()
