@@ -1,4 +1,6 @@
 import time
+import numpy as np
+import statsmodels.api as sm
 import serial.tools.list_ports
 import AQI
 import json
@@ -274,6 +276,16 @@ class Physical:
         if json != '':
             self.physicalClient.publishFeed("nj1.jdata", json)
 
+def testingARMA():
+    np.random.seed(42)
+    y = np.random.randn(100)
+
+    # Fit an ARMA(1,1) model
+    model = sm.tsa.ARIMA(y, order=(1, 0, 1))
+    results = model.fit()
+
+    # Print the model summary
+    print(results.summary())
 
 if __name__ == '__main__':
     physical = Physical()
@@ -289,3 +301,4 @@ if __name__ == '__main__':
 
         physical.getAverageData()
         physical.publishData()
+        sm.tsa.ARMA()
