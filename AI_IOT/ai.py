@@ -72,6 +72,7 @@ class AICam:
             vid = cv2.VideoCapture('http://192.168.50.116:8080/video')
     
     def readCams(self):
+        self.isFire = False
         port_idx = 0
         for cam in self.camCaps:
             is_reading, frame = cam.read()
