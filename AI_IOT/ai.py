@@ -33,7 +33,7 @@ class AICam:
         if self.isVisualize:
             self.therm1 = None
             self.cbar = None
-            self.initInferedCam()
+            self.initInferedImage()
 
         ######## Init adafruit instance for camera component ########
         self.camClient = IOT.Client()
