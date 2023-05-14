@@ -126,8 +126,9 @@ class AICam:
                 self.cbar.update_normal(self.therm1) # update colorbar range
 
             # detect fire
-            fire_count = np.sum(data_array > FIRE_THRESHOLD) # count the number of pixels above the fire threshold
-            if (fire_count > (0.5 * MLX_SHAPE[0] * MLX_SHAPE[1]) or self.isFire): # if more than half of the pixels exceed the threshold
+#             fire_count = np.sum(data_array > FIRE_THRESHOLD) # count the number of pixels above the fire threshold
+            max_temp = np.max(data_array)
+            if (max_temp >= 80 or self.isFire): # if more than half of the pixels exceed the threshold
                 self.isFire = True
             else:
                 self.isFire = False
