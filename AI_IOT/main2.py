@@ -1,6 +1,6 @@
 import platform
 import threading
-import multiprocessing
+import multiprocessing as mp
 from time import time, sleep
 from datetime import datetime
 import physical
