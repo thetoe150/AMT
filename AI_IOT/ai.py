@@ -146,7 +146,7 @@ class AICam:
         except ValueError:
             print('Error reading thermal camera')
 
-    def readCOData:
+    def readCOData(self):
         fire_threshold = 10
         data=self.camClient.receiveFeed("nj1.jdata")
         data_json = json.loads(data)
