@@ -180,6 +180,7 @@ class AICam:
         
         jsonData = '{"alert": '
         jsonData += self.alertLevel
+        jsonData += '}'
 
 
 
