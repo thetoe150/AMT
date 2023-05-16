@@ -8,7 +8,6 @@ import physical
 import ai
 
 OS = platform.system()
-node_name = "STM32" #for Linux OS
 # dataTemp = 0
 print("This OS is: ", OS)
 
