@@ -181,7 +181,7 @@ class AICam:
         jsonData = '{"alert": '
         jsonData += self.alertLevel
         jsonData += '}'
-
+        print(jsonData)
 
 
         # check to see whether the string is correct in json format
