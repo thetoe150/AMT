@@ -72,9 +72,9 @@ class AICam:
                 self.camCaps.append(cv2.VideoCapture(cam))
         else:
             print("no camera detected!!!")
-            print("try wifi cam at  http://192.168.50.116:8080/video")
-            vid = cv2.VideoCapture('http://192.168.50.116:8080/video')
-    
+            #print("try wifi cam at  http://192.168.50.116:8080/video")
+            #vid = cv2.VideoCapture('http://192.168.50.116:8080/video')
+            
     def readCams(self):
         self.isFire = False
         port_idx = 0
