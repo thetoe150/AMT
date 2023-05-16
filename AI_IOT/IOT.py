@@ -50,3 +50,6 @@ class Client:
         print('Publishing json: ')
         self.client.publish(feedName, data)
         print(data)
+    
+    def receiveFeed(self, feedName):
+        self.client.receive(feedName).value
