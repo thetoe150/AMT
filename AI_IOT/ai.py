@@ -171,7 +171,7 @@ class AICam:
         elif not self.co_fire and self.thermal and self.isFire:
             self.alertLevel = "High"
         elif self.co_fire and self.thermal and self.isFire:
-            self.alertLevel = "High
+            self.alertLevel = "High"
     def buildJson(self):
         # check if any data have been read
         if not self.camCaps:
