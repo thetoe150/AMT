@@ -72,8 +72,8 @@ class AICam:
                 self.camCaps.append(cv2.VideoCapture(cam))
         else:
             print("no camera detected!!!")
-            print("try wifi cam at  http://192.168.50.116:8080/video")
-            vid = cv2.VideoCapture('http://192.168.50.116:8080/video')
+#             print("try wifi cam at  http://192.168.50.116:8080/video")
+#             vid = cv2.VideoCapture('http://192.168.50.116:8080/video')
     
     def readCams(self):
         self.isFire = False
@@ -146,7 +146,7 @@ class AICam:
         except ValueError:
             print('Error reading thermal camera')
 
-    def readCOData:
+    def readCOData(self):
         fire_threshold = 10
         data=self.camClient.receiveFeed("nj1.jdata")
         data_json = json.loads(data)
