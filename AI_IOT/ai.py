@@ -6,6 +6,7 @@ import board,busio
 import numpy as np
 import adafruit_mlx90640
 import matplotlib.pyplot as plt
+import json
 
 FIRE_THRESHOLD = 90 # temperature threshold for fire detection
 MLX_SHAPE = (24,32)
@@ -14,9 +15,12 @@ class AICam:
     def __init__(self, visualize = False):
         self.isVisualize = visualize
         self.isFire = False
+        self.co_fire = False
+        self.thermal = False
+        self.alertLevel = "Low"
         ######## Set up AI model ########
-        self.model = torch.hub.load('ultralytics/yolov5', 'custom', 'best.pt')
 
+        self.model = torch.hub.load('ultralytics/yolov5', 'custom', 'best.pt')
         ######## Set up ports and camera Capture instance for normal camera ########
         self.camPorts = []
         self.getPorts()
@@ -33,7 +37,7 @@ class AICam:
         if self.isVisualize:
             self.therm1 = None
             self.cbar = None
-            self.initInferedCam()
+            self.initInferedImage()
 
         ######## Init adafruit instance for camera component ########
         self.camClient = IOT.Client()
@@ -68,10 +72,11 @@ class AICam:
                 self.camCaps.append(cv2.VideoCapture(cam))
         else:
             print("no camera detected!!!")
-            print("try wifi cam at  http://192.168.50.116:8080/video")
-            vid = cv2.VideoCapture('http://192.168.50.116:8080/video')
-    
+            #print("try wifi cam at  http://192.168.50.116:8080/video")
+            #vid = cv2.VideoCapture('http://192.168.50.116:8080/video')
+            
     def readCams(self):
+        self.isFire = False
         port_idx = 0
         for cam in self.camCaps:
             is_reading, frame = cam.read()
@@ -126,11 +131,12 @@ class AICam:
                 self.cbar.update_normal(self.therm1) # update colorbar range
 
             # detect fire
-            fire_count = np.sum(data_array > FIRE_THRESHOLD) # count the number of pixels above the fire threshold
-            if (fire_count > (0.5 * MLX_SHAPE[0] * MLX_SHAPE[1]) or self.isFire): # if more than half of the pixels exceed the threshold
-                self.isFire = True
+#             fire_count = np.sum(data_array > FIRE_THRESHOLD) # count the number of pixels above the fire threshold
+            max_temp = np.max(data_array)
+            if (max_temp >= 80): # if more than half of the pixels exceed the threshold
+                self.thermal = True
             else:
-                self.isFire = False
+                self.thermal = False
 
             plt.title(f"Max Temp: {np.max(data_array):.1f}C")
             plt.pause(0.001) # required
@@ -140,18 +146,53 @@ class AICam:
         except ValueError:
             print('Error reading thermal camera')
 
-
+    def readCOData(self):
+        fire_threshold = 10
+        data=self.camClient.receiveFeed("nj1.jdata")
+        data_json = json.loads(data)
+        co_value = int(data_json['co']['value'])
+        if co_value > fire_threshold:
+            self.co_fire = True
+        else:
+            self.co_fire = False
+    def get_alert_level(self):
+        if not self.co_fire and not self.thermal and not self.isFire:
+            self.alertLevel = "Low"
+        elif self.co_fire and not self.thermal and not self.isFire:
+            self.alertLevel = "Medium"
+        elif not self.co_fire and self.thermal and not self.isFire:
+            self.alertLevel = "Medium"
+        elif not self.co_fire and not self.thermal and self.isFire:
+            self.alertLevel = "Medium"
+        elif self.co_fire and self.thermal and not self.isFire:
+            self.alertLevel = "High"
+        elif self.co_fire and not self.thermal and self.isFire:
+            self.alertLevel = "High"
+        elif not self.co_fire and self.thermal and self.isFire:
+            self.alertLevel = "High"
+        elif self.co_fire and self.thermal and self.isFire:
+            self.alertLevel = "High"
+    
+    def get_alert_level_wo_sensor(self):
+        if not self.thermal and not self.isFire:
+            self.alertLevel = "Low"
+        elif self.thermal and not self.isFire:
+            self.alertLevel = "Medium"
+        elif not self.thermal and self.isFire:
+            self.alertLevel = "Medium"
+        elif self.thermal and self.isFire:
+            self.alertLevel = "High"
+    
     def buildJson(self):
         # check if any data have been read
         if not self.camCaps:
             print('There is no camera data to build Json for fire detection')
             return ''
         
-        jsonData = '{"isFire": '
-        if self.isFire:
-            jsonData += 'true}'
-        else:
-            jsonData += 'false}'
+        jsonData = '{"alert": "'
+        jsonData += self.alertLevel
+        jsonData += '"}'
+        print(jsonData)
 
 
         # check to see whether the string is correct in json format

@@ -8,7 +8,6 @@ import physical
 import ai
 
 OS = platform.system()
-node_name = "STM32" #for Linux OS
 # dataTemp = 0
 print("This OS is: ", OS)
 
@@ -19,7 +18,7 @@ PHYSICAL_PUBLISH_TIME_INTERVAL = PHYSICAL_READ_TIME_INTERVAL * NUMBER_OF_DATAPOI
 SYSTEM_COMPONENT_COUNTER = {
     # CPU bounded - often takes around 2s
     # recieve number should be > 3
-    'AI_Camera' : 60,
+    'AI_Camera' : 4,
     # IO bounded - takes 1s for each of 16 total sensors
     # recieve number should be > 20
     'Physical' : PHYSICAL_READ_TIME_INTERVAL, 
@@ -65,7 +64,8 @@ class systemAMT:
                 try:
                     print("******************* Trying to detect fire from all cam ports *******************")
                     self.aiCamera.readCams()
-                    self.aiCamera.processImages()
+                    self.aiCamera.readInferedCam()
+                    self.aiCamera.get_alert_level_wo_sensor()
                     self.aiCamera.publishData()
                     print('Time take to read camera: ', str(time() - start_time))
                 except Exception as ex:
