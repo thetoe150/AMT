@@ -69,6 +69,12 @@ accuracy_truncate = {
     "pm10":  0
 }
 
+def RelayMessage(client, feed_id, payload):
+    if feed_id == "led":
+        return payload
+
+
+
 CO_THRESHOLD = 60
 TEM_THRESHOLD = 60
 # The name of OS on window isn't Windows
@@ -99,8 +105,7 @@ class Physical:
         self.dataStorage =  database.SensorDataStorage()
 
         self.physicalClient = IOT.Client()
-        self.physicalClient.client.subscribe('led', self.handleRelay)
-
+        self.physicalClient.client.on_message = self.handleRelay
 
     def printAQI(self):
 
@@ -135,16 +140,17 @@ class Physical:
 
         return commPort
 
-    def handleRelay(self, data):
+    def handleRelay(self, client, feed_id, payload):
         #relay_state = self.physicalClient.receiveFeed("led")
-        for port_idx in range (self.portsLength):
-            read_port = self.ports[port_idx]
-            ser = serial.Serial(port = read_port, baudrate=9600) 
+        if feed_id == "led":
+            for port_idx in range (self.portsLength):
+                read_port = self.ports[port_idx]
+                ser = serial.Serial(port = read_port, baudrate=9600) 
 
-            if data.value == '1':
-                ser.write(relay1_ON)
-            elif data.value == '0':
-                ser.write(relay1_OFF)
+                if payload == '1':
+                    ser.write(relay1_ON)
+                elif payload == '0':
+                    ser.write(relay1_OFF)
 
 
     def serial_read_data(self, ser):
