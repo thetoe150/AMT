@@ -62,4 +62,3 @@ if __name__ == '__main__':
     print(y)
     print(MAPE_detect(y, 1))
     #testingARMA()
-    

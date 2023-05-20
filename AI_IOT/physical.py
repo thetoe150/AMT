@@ -212,7 +212,7 @@ class Physical:
                 max = 0
                 min = 9999
                 for value in self.sensorsData[sensor]:
-                    sum += value 
+                    sum += value
                     if value > max:
                         max = value
                     if value < min:
