@@ -14,9 +14,8 @@ MLX_SHAPE = (24,32)
 class AICam:
     def __init__(self, visualize = False):
         self.isVisualize = visualize
-        self.isFire = False
-        self.co_fire = False
-        self.thermal = False
+        self.isFireAI = False
+        self.isFireThermal = False
         self.alertLevel = "Low"
         ######## Set up AI model ########
 
@@ -76,7 +75,6 @@ class AICam:
             #vid = cv2.VideoCapture('http://192.168.50.116:8080/video')
             
     def readCams(self):
-        self.isFire = False
         port_idx = 0
         for cam in self.camCaps:
             is_reading, frame = cam.read()
@@ -97,7 +95,9 @@ class AICam:
             result = str(res)
             if result.__contains__("fire"):
                 print('Fire detected at port: ', self.camPorts[port_idx])
-                self.isFire = True
+                self.isFireAI = True
+            else:
+                self.isFireAI = False
 
             port_idx += 1
         
@@ -134,9 +134,9 @@ class AICam:
 #             fire_count = np.sum(data_array > FIRE_THRESHOLD) # count the number of pixels above the fire threshold
             max_temp = np.max(data_array)
             if (max_temp >= 80): # if more than half of the pixels exceed the threshold
-                self.thermal = True
+                self.isFireThermal = True
             else:
-                self.thermal = False
+                self.isFireThermal = False
 
             plt.title(f"Max Temp: {np.max(data_array):.1f}C")
             plt.pause(0.001) # required
@@ -144,72 +144,29 @@ class AICam:
             # t_array.append(time.monotonic()-t1)
             # print('Sample Rate: {0:2.1f}fps'.format(len(t_array)/np.sum(t_array)))
         except ValueError:
-            print('Error reading thermal camera')
-
-    def readCOData(self):
-        fire_threshold = 10
-        data=self.camClient.receiveFeed("nj1.jdata")
-        data_json = json.loads(data)
-        co_value = int(data_json['co']['value'])
-        if co_value > fire_threshold:
-            self.co_fire = True
-        else:
-            self.co_fire = False
-    def get_alert_level(self):
-        if not self.co_fire and not self.thermal and not self.isFire:
+            print('Error reading isFireThermal camera')
+    
+    def integrateResult(self):
+        if not self.isFireThermal and not self.isFireAI:
+            self.alertLevel = "None"
+        elif self.isFireThermal and not self.isFireAI:
             self.alertLevel = "Low"
-        elif self.co_fire and not self.thermal and not self.isFire:
-            self.alertLevel = "Medium"
-        elif not self.co_fire and self.thermal and not self.isFire:
-            self.alertLevel = "Medium"
-        elif not self.co_fire and not self.thermal and self.isFire:
-            self.alertLevel = "Medium"
-        elif self.co_fire and self.thermal and not self.isFire:
-            self.alertLevel = "High"
-        elif self.co_fire and not self.thermal and self.isFire:
-            self.alertLevel = "High"
-        elif not self.co_fire and self.thermal and self.isFire:
-            self.alertLevel = "High"
-        elif self.co_fire and self.thermal and self.isFire:
+        elif not self.isFireThermal and self.isFireAI:
+            self.alertLevel = "Low"
+        elif self.isFireThermal and self.isFireAI:
             self.alertLevel = "High"
     
-    def get_alert_level_wo_sensor(self):
-        if not self.thermal and not self.isFire:
-            self.alertLevel = "Low"
-        elif self.thermal and not self.isFire:
-            self.alertLevel = "Medium"
-        elif not self.thermal and self.isFire:
-            self.alertLevel = "Medium"
-        elif self.thermal and self.isFire:
-            self.alertLevel = "High"
-    
-    def buildJson(self):
-        # check if any data have been read
-        if not self.camCaps:
-            print('There is no camera data to build Json for fire detection')
-            return ''
-        
-#         jsonData = '{"alert": "'
-        jsonData = self.alertLevel
-#         jsonData += '"}'
-        print(jsonData)
+    def setGlobalDetectVal(self):
+        global isFireCam
+        isFireCam = self.alertLevel
 
-
-        # check to see whether the string is correct in json format
-#         parsed = json.loads(jsonData)
-#         print(json.dumps(parsed, indent=4))
-
-        return jsonData
-
-    def publishData(self):
-        json = self.buildJson()
-        if json != '':
-            self.camClient.publishFeed("nj1.isfire", json)
-
+    def publishData(self, value):
+        if value != '':
+            self.camClient.publishFeed("nj1.isfire", value)
 
 if __name__ == '__main__':
     fireDetector = AICam(True)
     while True:
         fireDetector.readCams()
         fireDetector.readInferedCam()
-        fireDetector.publishData()
+        fireDetector.integrateResult()

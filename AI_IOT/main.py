@@ -25,6 +25,37 @@ SYSTEM_COMPONENT_COUNTER = {
     'PublishingPhysical' : PHYSICAL_PUBLISH_TIME_INTERVAL
 }
 
+isFireSensor = 0
+isFireCam = 'None'
+
+def GetAlertLevel():
+    # cam have 3 stage
+    # None
+    # Low
+    # High
+    global isFireCam
+
+    # sensors have 3 stage
+    # 0: don't have sensors or we don't consider sensors data
+    # 1: Usual data
+    # 2: Unpredicted data
+    global isFireSensor
+
+    if isFireCam == 'None':
+        return 'None'
+    if isFireSensor == 0: # the case we don't consider sensor data
+        return isFireCam
+    else:
+        if isFireCam == 'Low' and isFireSensor == 1:
+            return 'Low'
+        if isFireCam == 'Low' and isFireSensor == 2:
+            return 'Low'
+        if isFireCam == 'High' and isFireSensor == 1:
+            return 'Low'
+        if isFireCam == 'High' and isFireSensor == 2:
+            return 'High'
+
+
 class systemAMT:
     def __init__(self):
         print('Initialing System with Thread {} executing at: {}'.format(threading.get_ident(), datetime.now()) ,end=' ')
@@ -46,6 +77,7 @@ class systemAMT:
                     print("******************* Trying to read sersors from all serial ports *******************")
                     self.physicalSensors.readSensors()
                     self.physicalSensors.analyzeData()
+                    self.physicalSensors.setGlobalDetectVal()
                     self.physicalSensors.storeInstanceData()
                     print('Time take to read sensor: ', str(time() - start_time))
                 except Exception as ex:
@@ -65,8 +97,8 @@ class systemAMT:
                     print("******************* Trying to detect fire from all cam ports *******************")
                     self.aiCamera.readCams()
                     self.aiCamera.readInferedCam()
-                    self.aiCamera.get_alert_level_wo_sensor()
-                    self.aiCamera.publishData()
+                    self.aiCamera.setGlobalDetectVal()
+                    self.aiCamera.publishData(GetAlertLevel())
                     print('Time take to read camera: ', str(time() - start_time))
                 except Exception as ex:
                     print('detect fire fail:', ex)

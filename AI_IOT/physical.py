@@ -68,6 +68,9 @@ accuracy_truncate = {
     "pm2_5": 1,
     "pm10":  0
 }
+
+CO_THRESHOLD = 60
+TEM_THRESHOLD = 60
 # The name of OS on window isn't Windows
 #OS = platform.system
 #if OS == "Windows":
@@ -230,6 +233,17 @@ class Physical:
         self.printData()
         return self.sensorsData
         #self.printAQI()
+
+    def setGlobalDetectVal(self):
+        global isFireSensor
+        if 'co' in self.sensorsData or 'temperature' in self.sensorsData:
+            if self.sensorsData['co'] > CO_THRESHOLD or self.sensorsData['temperature'] > TEM_THRESHOLD:
+                isFireSensor = 2
+            else:
+                isFireSensor = 1
+        else:
+            isFireSensor = 0
+
 
     def storeInstanceData(self):
         self.dataStorage.addDataPoints(self.sensorsData)
