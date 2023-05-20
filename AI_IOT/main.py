@@ -65,6 +65,7 @@ class systemAMT:
                     print("******************* Trying to detect fire from all cam ports *******************")
                     self.aiCamera.readCams()
                     self.aiCamera.readInferedCam()
+                    self.get_alert_level_wo_sensor()
                     self.aiCamera.publishData()
                     print('Time take to read camera: ', str(time() - start_time))
                 except Exception as ex:
