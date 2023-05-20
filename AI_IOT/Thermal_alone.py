@@ -8,8 +8,9 @@ import adafruit_mlx90640
 MLX_SHAPE = (24,32)
 
 class ThermoCam:
-    def __init__(self, isVisualvize):
+    def __init__(self, isVisualize):
         ######## Set up I2C communication and MLX instance ##########
+        self.isVisualize = isVisualize
         self.i2c = None
         self.mlx = None
         self.initInferedCam()
@@ -18,7 +19,7 @@ class ThermoCam:
         if self.isVisualize:
             self.therm1 = None
             self.cbar = None
-            self.initInferedCam()
+            self.initInferedImage()
 
     def initInferedCam(self):
         print("Initializing MLX90640")

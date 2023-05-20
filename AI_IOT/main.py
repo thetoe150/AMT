@@ -60,7 +60,7 @@ class systemAMT:
     def __init__(self):
         print('Initialing System with Thread {} executing at: {}'.format(threading.get_ident(), datetime.now()) ,end=' ')
         self.physicalSensors = physical.Physical()
-        self.aiCamera = ai.AICam()
+        self.aiCamera = ai.AICam(True)
         self.thread_list = []
 
     def componentThread(self, name, interval):

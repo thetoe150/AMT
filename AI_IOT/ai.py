@@ -82,7 +82,8 @@ class AICam:
                 print('cannot read frame at cam', cam)
                 break
 
-            cv2.imshow('Tesing cam' + str(self.camPorts[port_idx]), frame)
+            if self.isVisualize:
+                cv2.imshow('Tesing cam' + str(self.camPorts[port_idx]), frame)
             # magic if statement - don't delete
             if cv2.waitKey(1) == ord('q'):
                 break
@@ -117,6 +118,7 @@ class AICam:
         self.cbar.set_label('Temperature [$^{\circ}$C]',fontsize=14) # colorbar label
 
     def readInferedCam(self):
+        print("im reading infered cam")
         frame = np.zeros((24*32,)) # setup array for storing all 768 temperatures
         # t_array = []
             # t1 = time.monotonic()
@@ -167,6 +169,6 @@ class AICam:
 if __name__ == '__main__':
     fireDetector = AICam(True)
     while True:
-        fireDetector.readCams()
+        #fireDetector.readCams()
         fireDetector.readInferedCam()
-        fireDetector.integrateResult()
+        #fireDetector.integrateResult()
