@@ -189,15 +189,15 @@ class AICam:
             print('There is no camera data to build Json for fire detection')
             return ''
         
-        jsonData = '{"alert": "'
-        jsonData += self.alertLevel
-        jsonData += '"}'
+#         jsonData = '{"alert": "'
+        jsonData = self.alertLevel
+#         jsonData += '"}'
         print(jsonData)
 
 
         # check to see whether the string is correct in json format
-        parsed = json.loads(jsonData)
-        print(json.dumps(parsed, indent=4))
+#         parsed = json.loads(jsonData)
+#         print(json.dumps(parsed, indent=4))
 
         return jsonData
 
