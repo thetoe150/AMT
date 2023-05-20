@@ -99,6 +99,7 @@ class Physical:
         self.dataStorage =  database.SensorDataStorage()
 
         self.physicalClient = IOT.Client()
+        self.physicalClient.client.subscribe('led', self.handleRelay)
 
 
     def printAQI(self):
@@ -134,18 +135,17 @@ class Physical:
 
         return commPort
 
-    def setDevice1(self, ser, state):
-        if state == True:
-            ser.write(relay1_ON)
-        else:
-            ser.write(relay1_OFF)
+    def handleRelay(self, data):
+        #relay_state = self.physicalClient.receiveFeed("led")
+        for port_idx in range (self.portsLength):
+            read_port = self.ports[port_idx]
+            ser = serial.Serial(port = read_port, baudrate=9600) 
 
+            if data.value == '1':
+                ser.write(relay1_ON)
+            elif data.value == '0':
+                ser.write(relay1_OFF)
 
-    def setDevice2(self, ser, state):
-        if state == True:
-            ser.write(relay2_ON)
-        else:
-            ser.write(relay2_OFF)
 
     def serial_read_data(self, ser):
         bytesToRead = ser.inWaiting()
