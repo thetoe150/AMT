@@ -172,15 +172,26 @@ class AICam:
             self.alertLevel = "High"
         elif self.co_fire and self.thermal and self.isFire:
             self.alertLevel = "High"
+    
+    def get_alert_level_wo_sensor(self):
+        if not self.thermal and not self.isFire:
+            self.alertLevel = "Low"
+        elif self.thermal and not self.isFire:
+            self.alertLevel = "Medium"
+        elif not self.thermal and self.isFire:
+            self.alertLevel = "Medium"
+        elif self.thermal and self.isFire:
+            self.alertLevel = "High"
+    
     def buildJson(self):
         # check if any data have been read
         if not self.camCaps:
             print('There is no camera data to build Json for fire detection')
             return ''
         
-        jsonData = '{"alert": '
+        jsonData = '{"alert": "'
         jsonData += self.alertLevel
-        jsonData += '}'
+        jsonData += '"}'
         print(jsonData)
 
 
