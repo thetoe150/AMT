@@ -106,6 +106,8 @@ class Physical:
 
         self.physicalClient = IOT.Client()
         self.physicalClient.client.on_message = self.handleRelay
+        self.physicalClient.client.connect()
+        self.physicalClient.client.loop_background()
 
     def printAQI(self):
 
@@ -147,9 +149,9 @@ class Physical:
                 read_port = self.ports[port_idx]
                 ser = serial.Serial(port = read_port, baudrate=9600) 
 
-                if payload == '1':
+                if payload == "1":
                     ser.write(relay1_ON)
-                elif payload == '0':
+                elif payload == "0":
                     ser.write(relay1_OFF)
 
 
@@ -184,7 +186,6 @@ class Physical:
 
             # loop through all sensors of the detected port
             for sensor in sensors:
-                print('Reading ', sensor, 'sensor', end=": ")
                 data = self.readSerial(ser, sensor)
 
                 if(data >= 0):
@@ -321,4 +322,4 @@ if __name__ == '__main__':
 
         physical.getAverageData()
         physical.publishData()
-        sm.tsa.ARMA()
+        #sm.tsa.ARMA()
