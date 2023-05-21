@@ -2,3 +2,4 @@ venv/
 .env
 AI_IOT/.env
 todo
+AI_IOT/__pycache__/AI.cpython-38.pyc
