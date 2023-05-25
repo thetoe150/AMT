@@ -157,21 +157,32 @@ class Physical:
 
     def serial_read_data(self, ser):
         bytesToRead = ser.inWaiting()
-        if bytesToRead > 0:
-            out = ser.read(bytesToRead)
-            data_array = [b for b in out]
-            if len(data_array) >= 7:
-                array_size = len(data_array)
-                value = data_array[array_size - 4] * 256 + data_array[array_size - 3]
-                return value
-            else:
-                return -1
-        return -2
+        # no byte to read because there is no sensor
+        if bytesToRead <= 0:
+            return -2
+
+        out = ser.read(bytesToRead)
+        data_array = [b for b in out]
+
+        # there are bytes to read but with invalid length
+        if len(data_array) < 7:
+            return -1
+
+        array_size = len(data_array)
+        value = data_array[array_size - 4] * 256 + data_array[array_size - 3]
+        return value
 
     def readSerial(self, serial, sensor_name):
         serial.write(sensors_write_bytes[sensor_name])
         time.sleep(0.5)
-        return self.serial_read_data(serial) * sensors_calibrate[sensor_name]
+        value = self.serial_read_data(serial)
+
+        if value == -1:
+            return -1
+        if value == -2:
+            return -2
+
+        return value * sensors_calibrate[sensor_name]
 
     def readSensors(self):
         # check input serial ports every reading cycle
