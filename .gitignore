@@ -1,5 +1,5 @@
 venv/
-.env
-AI_IOT/.env
+*.env
+AI_IOT/*.env
 todo
 AI_IOT/__pycache__/
