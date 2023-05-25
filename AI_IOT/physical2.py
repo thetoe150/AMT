@@ -105,13 +105,6 @@ class Physical:
 
         self.ports = self.getPortName()
 
-        self.dataStorage =  database.SensorDataStorage()
-
-        self.physicalClient = IOT.Client()
-        self.physicalClient.client.on_message = self.handleRelay
-        self.physicalClient.client.connect()
-        self.physicalClient.client.loop_background()
-
     def printAQI(self):
 
         for sensor in self.sensorsData:
