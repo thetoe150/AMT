@@ -7,6 +7,8 @@ import json
 import IOT
 import database
 
+from time import sleep
+
 #TEMPERATURE = [3, 3, 0, 0, 0, 1, 133, 232]
 #HUMIDITY = [3, 3, 0, 1, 0, 1, 212, 40]
 
@@ -69,11 +71,6 @@ accuracy_truncate = {
     "pm10":  0
 }
 
-def RelayMessage(client, feed_id, payload):
-    if feed_id == "led":
-        return payload
-
-
 
 CO_THRESHOLD = 60
 TEM_THRESHOLD = 60
@@ -110,7 +107,6 @@ class Physical:
         self.physicalClient.client.loop_background()
 
     def printAQI(self):
-
         for sensor in self.sensorsData:
             value = self.sensorsData[sensor][0]
             print(AQI.AQI.calculateAQI(sensor, value))
@@ -144,6 +140,7 @@ class Physical:
 
     def handleRelay(self, client, feed_id, payload):
         #relay_state = self.physicalClient.receiveFeed("led")
+        print('Im handling relay')
         if feed_id == "led":
             for port_idx in range (self.portsLength):
                 read_port = self.ports[port_idx]
@@ -171,6 +168,13 @@ class Physical:
     def readSerial(self, serial, sensor_name):
         serial.write(sensors_write_bytes[sensor_name])
         time.sleep(0.5)
+        value = self.serial_read_data(serial)
+        
+        if value == -1:
+            return -1
+        if value == -2:
+            return -2
+        
         return self.serial_read_data(serial) * sensors_calibrate[sensor_name]
 
     def readSensors(self):
@@ -308,6 +312,65 @@ def testingARMA():
     # Print the model summary
     print(results.summary())
 
+def message(client, feed_id, payload):
+    print("hello")
+    if feed_id == "led":
+        if payload == "1":
+            #print("command relay on\n")
+            #ser.write(str.encode('LED_ONN'))
+            print("relay = 1")
+        if payload == "0":
+            #print("command relay off\n")
+            #ser.write(str.encode('LED_OFF'))
+            print("relay = 0")
+
+class relayPhysical:
+    def __init__(self):
+        self.ports = []
+        self.portsLength = 0
+        self.ports = self.getPortName()
+
+        self.physicalClient = IOT.Client()
+        self.physicalClient.client.on_message = self.handleRelay
+        self.physicalClient.client.connect()
+        self.physicalClient.client.loop_background()
+
+    def getPortName(self):
+        fullPortsName = serial.tools.list_ports.comports()
+        self.portsLength = len(fullPortsName)
+        commPort = []
+        print('\n ---------Check for existing ports---------')
+        if self.portsLength == 0:
+            print('Detect no port')
+        else: print('List of detected ports:')
+
+        for i in range(0, self.portsLength):
+            port = fullPortsName[i]
+            strPort = str(port)
+            print(strPort)
+
+            # assum that the fisrt word is the port name
+            splitPort = strPort.split(" ")
+            commPort.append(splitPort[0])
+        
+        print()
+
+        return commPort
+
+    def handleRelay(self, client, feed_id, payload):
+        #relay_state = self.physicalClient.receiveFeed("led")
+        print("im handling relay")
+        if feed_id == "led":
+            for port_idx in range (self.portsLength):
+                read_port = self.ports[port_idx]
+                ser = serial.Serial(port = read_port, baudrate=9600) 
+
+                if payload == '1':
+                    ser.write(relay1_ON)
+                elif payload == '0':
+                    ser.write(relay1_OFF)
+
+
 if __name__ == '__main__':
     physical = Physical()
     while True:
@@ -322,4 +385,5 @@ if __name__ == '__main__':
 
         physical.getAverageData()
         physical.publishData()
-        #sm.tsa.ARMA()
+
+        sleep(1)
