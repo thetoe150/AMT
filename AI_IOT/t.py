@@ -22,6 +22,7 @@ t2 = threading.Thread(target=reader)
 t1.start()
 t2.start()
 
+
 # wait for both threads to complete
 t1.join()
 t2.join()

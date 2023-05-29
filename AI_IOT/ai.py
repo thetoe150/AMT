@@ -8,12 +8,14 @@ import adafruit_mlx90640
 import matplotlib.pyplot as plt
 import json
 
+from time import time, sleep
+
 FIRE_THRESHOLD = 90 # temperature threshold for fire detection
 MLX_SHAPE = (24,32)
 
 class AICam:
-    def __init__(self, visualize = False):
-        self.isVisualize = visualize
+    def __init__(self, debug = False):
+        self.isDebug = debug
         self.isFireAI = False
         self.isFireThermal = False
         self.alertLevel = "Low"
@@ -33,7 +35,7 @@ class AICam:
         self.initInferedCam()
 
         ######## Set up plot ##########
-        if self.isVisualize:
+        if self.isDebug:
             self.therm1 = None
             self.cbar = None
             self.initInferedImage()
@@ -63,7 +65,6 @@ class AICam:
                 else:
                     print("Port %s for camera ( %s x %s) is present but does not reads." % (dev_port, h, w))
             dev_port += 1
-        
     
     def initCams(self):
         if self.camPorts.__len__() != 0:
@@ -75,33 +76,59 @@ class AICam:
             #vid = cv2.VideoCapture('http://192.168.50.116:8080/video')
             
     def readCams(self):
-        port_idx = 0
-        for cam in self.camCaps:
-            is_reading, frame = cam.read()
-            if not is_reading:
-                print('cannot read frame at cam', cam)
-                break
+        # WARNING: using for loop to iterate through the list of camture objects
+                # significantly reduce speed
 
-            if self.isVisualize:
-                cv2.imshow('Tesing cam' + str(self.camPorts[port_idx]), frame)
-            # magic if statement - don't delete
-            if cv2.waitKey(1) == ord('q'):
-                break
+        #port_idx = 0
+        #for cam in self.camCaps:
+            #is_reading, frame = cam.read()
+            #if not is_reading:
+                #print('cannot read frame at cam', cam)
+                #break
 
-            res = self.model(frame)
-            res.print()
-            # Data
-            print('\n', res.xyxy[0])  # print img1 predictions
+            #if self.isDebug:
+                #cv2.imshow('Tesing cam' + str(self.camPorts[port_idx]), frame)
+            ## magic if statement - don't delete
+            #if cv2.waitKey(1) == ord('q'):
+                #break
 
-            result = str(res)
-            if result.__contains__("fire"):
-                print('Fire detected at port: ', self.camPorts[port_idx])
-                self.isFireAI = True
-            else:
-                self.isFireAI = False
+            #res = self.model(frame)
+            #res.print()
+            ## Data
+            #print('\n', res.xyxy[0])  # print img1 predictions
 
-            port_idx += 1
-        
+            #result = str(res)
+            #if result.__contains__("fire"):
+                #print('Fire detected at port: ', self.camPorts[port_idx])
+                #self.isFireAI = True
+            #else:
+                #self.isFireAI = False
+
+            #port_idx += 1
+
+        cam = self.camCaps[0]
+        is_reading, frame = cam.read()
+        if not is_reading:
+            print('cannot read frame at cam', cam)
+
+        if self.isDebug:
+            cv2.imshow('Tesing cam', frame)
+        # magic if statement - don't delete
+        if cv2.waitKey(1) == ord('q'):
+            pass
+
+        res = self.model(frame)
+        res.print()
+        # Data
+        print('\n', res.xyxy[0])  # print img1 predictions
+
+        result = str(res)
+        if result.__contains__("fire"):
+            print('Fire detected ! ')
+            self.isFireAI = True
+        else:
+            self.isFireAI = False
+
     def initInferedCam(self):
         print("Initializing MLX90640")
         self.i2c = busio.I2C(board.SCL, board.SDA, frequency=800000) # setup I2C
@@ -127,7 +154,7 @@ class AICam:
             data_array = (np.reshape(frame, MLX_SHAPE)) # reshape to 24x32
             
             # Draw image if enabe visualize in the constructor
-            if self.isVisualize:
+            if self.isDebug:
                 self.therm1.set_data(np.fliplr(data_array)) # flip left to right
                 self.therm1.set_clim(vmin=np.min(data_array),vmax=np.max(data_array)) # set bounds
                 self.cbar.update_normal(self.therm1) # update colorbar range
@@ -169,6 +196,8 @@ class AICam:
 if __name__ == '__main__':
     fireDetector = AICam(True)
     while True:
-        #fireDetector.readCams()
-        fireDetector.readInferedCam()
+        fireDetector.readCams()
+        #fireDetector.readInferedCam()
+
         #fireDetector.integrateResult()
+        fireDetector.setGlobalDetectVal()
