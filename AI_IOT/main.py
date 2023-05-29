@@ -7,18 +7,19 @@ import sys
 
 import physical
 import ai
+import log
 
 OS = platform.system()
 # dataTemp = 0
 print("This OS is: ", OS)
 
-IS_DEBUG = False
-n = len(sys.argv)
-def SetDebugOption():
-    global IS_DEBUG
+def GetDebugOption():
+    n = len(sys.argv)
     for str in range(1, n):
         if(sys.argv[str] == '-d'):
-            IS_DEBUG = True
+            return True
+    
+    return False
 
 PHYSICAL_READ_TIME_INTERVAL = 10
 NUMBER_OF_DATAPOINTS = 2
@@ -30,8 +31,8 @@ SYSTEM_COMPONENT_COUNTER = {
     'AI_Camera' : 0,
     # IO bounded - takes 1s for each of 16 total sensors
     # recieve number should be > 20
-    #'Physical' : PHYSICAL_READ_TIME_INTERVAL, 
-    #'PublishingPhysical' : PHYSICAL_PUBLISH_TIME_INTERVAL
+    'Physical' : PHYSICAL_READ_TIME_INTERVAL, 
+    'PublishingPhysical' : PHYSICAL_PUBLISH_TIME_INTERVAL
 }
 
 isFireSensor = 0
@@ -66,20 +67,19 @@ def GetAlertLevel():
 
 
 class systemAMT:
-    def __init__(self):
+    def __init__(self, isDebug):
         print('Initialing System with Thread {} executing at: {}'.format(threading.get_ident(), datetime.now()) ,end=' ')
-        self.physicalSensors = physical.Physical()
-        self.aiCamera = ai.AICam(IS_DEBUG)
+        self.physicalSensors = physical.Physical(isDebug)
+        self.aiCamera = ai.AICam(isDebug)
         self.thread_list = []
+
+        self.log = log.setupLogger('thread_log', 'log/thread.log')
 
     def componentThread(self, name, interval):
 
         while True:
             start_time = time()
-            now = datetime.now()
-            date = now.strftime('%Y-%m-%d %H:%M:%S')
-            print('Thread {} executing at: {}'.format(threading.get_ident(), date) ,end=' ')
-            print(date)
+            self.log.info('Thread {} is executed'.format(threading.get_ident()))
 
             if name == 'Physical':
                 try:
@@ -88,18 +88,19 @@ class systemAMT:
                     self.physicalSensors.analyzeData()
                     self.physicalSensors.setGlobalDetectVal()
                     self.physicalSensors.storeInstanceData()
-                    print('Time take to read sensor: ', str(time() - start_time))
+
+                    self.log.info('Time to read sensor: {}'.format(str(time() - start_time)))
                 except Exception as ex:
-                    print('read sensor fail: ', ex)
+                    self.log.error('Failed to read sensor: {}'.format(ex))
 
             elif name == 'PublishingPhysical':
                 try:
                     print("******************* Trying to publish sensors data to server *******************")
                     self.physicalSensors.getAverageData()
                     self.physicalSensors.publishData()
-                    print('Time take to read sensor: ', str(time() - start_time))
+                    self.log.info('Time to publish sensor data: {}'.format(str(time() - start_time)))
                 except Exception as ex:
-                    print('publish sensor data fail: ', ex)
+                    self.log.error('Failed to publish sensor data: {}'.format(ex))
 
             elif name == 'AI_Camera':
                 try:
@@ -108,9 +109,9 @@ class systemAMT:
                     #self.aiCamera.readInferedCam()
                     #self.aiCamera.setGlobalDetectVal()
                     #self.aiCamera.publishData(GetAlertLevel())
-                    print('Time take to read camera and use model to detect fire: ', str(time() - start_time))
+                    self.log.info('Time to read cam and detect fire: {}'.format(str(time() - start_time)))
                 except Exception as ex:
-                    print('detect fire fail:', ex)
+                    self.log.error('Failed to read cam and detect fire: {}'.format(ex))
 
 
             remain_time = interval - (time() - start_time)
@@ -129,8 +130,7 @@ class systemAMT:
             process.join()
 
 if __name__ == "__main__":
-    SetDebugOption()
-    print("is debug is: ", IS_DEBUG)
+    IsDebug = GetDebugOption()
 
-    system = systemAMT()
+    system = systemAMT(IsDebug)
     system.runThreading()

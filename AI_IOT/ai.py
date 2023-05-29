@@ -1,12 +1,12 @@
 import cv2
 import torch
-import json
 import IOT
-import board,busio
+#import board,busio
 import numpy as np
-import adafruit_mlx90640
+#import adafruit_mlx90640
 import matplotlib.pyplot as plt
-import json
+
+import log
 
 from time import time, sleep
 
@@ -16,6 +16,10 @@ MLX_SHAPE = (24,32)
 class AICam:
     def __init__(self, debug = False):
         self.isDebug = debug
+        ########### Set up log #################
+        if self.isDebug:
+            self.log = log.setupLogger('ai_log','log/ai.log')
+
         self.isFireAI = False
         self.isFireThermal = False
         self.alertLevel = "Low"
@@ -32,7 +36,7 @@ class AICam:
         ######## Set up I2C communication and MLX instance ##########
         self.i2c = None
         self.mlx = None
-        self.initInferedCam()
+        #self.initInferedCam()
 
         ######## Set up plot ##########
         if self.isDebug:
@@ -42,6 +46,7 @@ class AICam:
 
         ######## Init adafruit instance for camera component ########
         self.camClient = IOT.Client()
+
 
     def getPorts(self):
         """
@@ -112,7 +117,7 @@ class AICam:
             print('cannot read frame at cam', cam)
 
         if self.isDebug:
-            cv2.imshow('Tesing cam', frame)
+            cv2.imshow('Debug cam', frame)
         # magic if statement - don't delete
         if cv2.waitKey(1) == ord('q'):
             pass
@@ -120,11 +125,14 @@ class AICam:
         res = self.model(frame)
         res.print()
         # Data
-        print('\n', res.xyxy[0])  # print img1 predictions
+        # self.log.info(res.xyxy[0])  # print img1 predictions
 
         result = str(res)
         if result.__contains__("fire"):
-            print('Fire detected ! ')
+
+            if self.isDebug:
+                self.log.info('Fire detected !')
+
             self.isFireAI = True
         else:
             self.isFireAI = False
@@ -145,7 +153,7 @@ class AICam:
         self.cbar.set_label('Temperature [$^{\circ}$C]',fontsize=14) # colorbar label
 
     def readInferedCam(self):
-        print("im reading infered cam")
+        self.log.info("reading infered cam")
         frame = np.zeros((24*32,)) # setup array for storing all 768 temperatures
         # t_array = []
             # t1 = time.monotonic()
@@ -173,7 +181,7 @@ class AICam:
             # t_array.append(time.monotonic()-t1)
             # print('Sample Rate: {0:2.1f}fps'.format(len(t_array)/np.sum(t_array)))
         except ValueError:
-            print('Error reading isFireThermal camera')
+            self.log.error('Error reading isFireThermal camera')
     
     def integrateResult(self):
         if not self.isFireThermal and not self.isFireAI:
@@ -192,6 +200,9 @@ class AICam:
     def publishData(self, value):
         if value != '':
             self.camClient.publishFeed("nj1.isfire", value)
+
+            if self.isDebug:
+                self.log('Publishing fire level: {}'.format(value))
 
 if __name__ == '__main__':
     fireDetector = AICam(True)

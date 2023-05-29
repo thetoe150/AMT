@@ -4,8 +4,10 @@ import statsmodels.api as sm
 import serial.tools.list_ports
 import AQI
 import json
+
 import IOT
 import database
+import log
 
 #TEMPERATURE = [3, 3, 0, 0, 0, 1, 133, 232]
 #HUMIDITY = [3, 3, 0, 1, 0, 1, 212, 40]
@@ -86,16 +88,24 @@ TEM_THRESHOLD = 60
 PUBLISH_INTERVAL = 60
 
 class Physical:
-    def __init__(self):
+    def __init__(self, debug = False):
+        self.isDebug = debug
+
+        if self.isDebug:
+            self.log = log.setupLogger('physical_log', 'log/physical.log')
+
         self.ports = []
         self.portsLength = 0
 
-        # very careful with this dictionary variable, it's server multi purpose
-        # python is a fking dynamic type language so this allow this dict to be
-        # a dict of list at first but become a dict of float later
-        # after the method pulish is called, we clear this dict (it's a dict of float)
-        # so it start a new life of dict of list again
-        # maybe bad design but it is quite convinent to just have 1 variable like this
+        # Careful with this attribute self.sensorsData
+        # It serve multi puspose and are difference thing at diffrence fuction called (Python btw)
+        # readSensor() method put data into sensorsData (sensorsData is a dictionary
+        # of array with each key is sensor type and value are array of value read from
+        # sensor of difference ports)
+        # after AnalyzeData() is called, it turn into a dictionary of array with 1 single value\
+        # of float
+        # after the method pulbish is called, we clear this dict 
+        # so it start a new life of dict of list of multiple value again
         self.sensorsData = {}
 
         self.sensorFaulty = False
@@ -110,15 +120,22 @@ class Physical:
         self.physicalClient.client.loop_background()
 
     def printAQI(self):
-
+        res = ''
         for sensor in self.sensorsData:
             value = self.sensorsData[sensor][0]
-            print(AQI.AQI.calculateAQI(sensor, value))
+            res += '{} AQI value is: {}'.format(sensor, AQI.AQI.calculateAQI(sensor, value))
+        
+        if self.isDebug and res != '':
+            self.log.info(res)
 
     def printData(self):
+        res = ''
         for sensor in self.sensorsData:
-            print(sensor, " value is: ", self.sensorsData[sensor])
+            res += '{} values is: {}'.format(sensor, self.sensorsData[sensor])
 
+        if self.isDebug and res != '':
+            self.log.info(res)
+        
     # find all port names string
     def getPortName(self):
         fullPortsName = serial.tools.list_ports.comports()
@@ -127,19 +144,20 @@ class Physical:
         print('\n ---------Check for existing ports---------')
         if self.portsLength == 0:
             print('Detect no port')
-        else: print('List of detected ports:')
+            if self.isDebug:
+                self.log.warning('Detect no port')
+        else: 
+            print('List of detected ports:')
 
-        for i in range(0, self.portsLength):
-            port = fullPortsName[i]
-            strPort = str(port)
-            print(strPort)
+            for i in range(0, self.portsLength):
+                port = fullPortsName[i]
+                strPort = str(port)
+                print(strPort)
 
-            # assum that the fisrt word is the port name
-            splitPort = strPort.split(" ")
-            commPort.append(splitPort[0])
+                # assum that the fisrt word is the port name
+                splitPort = strPort.split(" ")
+                commPort.append(splitPort[0])
         
-        print()
-
         return commPort
 
     def handleRelay(self, client, feed_id, payload):
@@ -193,7 +211,7 @@ class Physical:
             read_port = self.ports[port_idx]
             ser = serial.Serial(port = read_port, baudrate=9600) 
 
-            print("--------Reading sensors of Port number ", read_port, "--------")
+            self.log.info("--------Reading sensors of Port number {} ----------".format(read_port))
 
             # loop through all sensors of the detected port
             for sensor in sensors:
@@ -204,11 +222,12 @@ class Physical:
                         self.sensorsData[sensor].append(data)
                     else: # don't exist in dict
                         self.sensorsData[sensor] = [data]
-                    print('read ', data)
+
+                    self.log.info('reading {} from sensor type {}'.format(data, sensor))
                 elif (data == -2):
-                    print("have no sensor")
+                    self.log.info('having no sensor type {}'.format(sensor))
                 else: 
-                    print("fail to read sensor")
+                    self.log.info('failed to read sensor type {}'.format(sensor))
 
             #print("Controling relays of Port number ", self.ports[port_idx])
             #self.setDevice1(ser, True)
@@ -248,7 +267,8 @@ class Physical:
                 # only the average value remain in dict
                 del self.sensorsData[sensor][1:]
         
-        self.printData()
+        if self.isDebug:
+            self.printData()
         return self.sensorsData
         #self.printAQI()
 
@@ -272,7 +292,8 @@ class Physical:
     def buildJson(self):
         # check if any data have been read
         if not self.sensorsData:
-            print('There is no sensor data to build Json')
+            if self.isDebug:
+                self.log.warning('There is no sensor data to build Json')
             return ''
         
         jsonData = '{'
@@ -295,13 +316,16 @@ class Physical:
 
         # check to see whether the string is correct in json format
         parsed = json.loads(jsonData)
-        print(json.dumps(parsed, indent=4))
+        formated_jsonData = json.dumps(parsed, indent=4)
+
+        if self.isDebug:
+            self.log.info(formated_jsonData)
 
         # very careful with this dictionary variable, it's server multi purpose
         # which is easilly to do wrong
         self.sensorsData.clear()
 
-        return jsonData
+        return formated_jsonData
 
     def publishData(self):
         json = self.buildJson()
