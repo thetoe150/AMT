@@ -1,9 +1,9 @@
 import cv2
 import torch
 import IOT
-#import board,busio
+import board,busio
 import numpy as np
-#import adafruit_mlx90640
+import adafruit_mlx90640
 import matplotlib.pyplot as plt
 
 import log
@@ -36,7 +36,7 @@ class AICam:
         ######## Set up I2C communication and MLX instance ##########
         self.i2c = None
         self.mlx = None
-        #self.initInferedCam()
+        self.initInferedCam()
 
         ######## Set up plot ##########
         if self.isDebug:
