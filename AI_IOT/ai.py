@@ -127,7 +127,7 @@ class AICam:
 
         if self.isDebug:
             #image = cv2.rectangle(image, start_point, end_point, color, thickness)
-            image = cv2.rectangle(frame, boxes[0,1], boxes[2,3], (255,0,0), 2)
+            image = cv2.rectangle(frame, tuple(boxes[0,1]), tuple(boxes[2,3]), (255,0,0), 2)
             cv2.imshow('Debug cam', image)
         # magic if statement - don't delete
         if cv2.waitKey(1) == ord('q'):
