@@ -1,0 +1,5 @@
+venv/
+AI_IOT/*.env
+AI_IOT/.env
+AI_IOT/__pycache__/
+todo.txt
