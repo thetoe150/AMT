@@ -2764,3 +2764,1412 @@
 2023-05-30 01:24:08,547 INFO Thread 1620 is executed
 2023-05-30 01:24:08,771 INFO Time to read cam and detect fire: 0.22439980506896973
 2023-05-30 01:24:08,772 INFO Thread 1620 is executed
+2023-05-30 12:44:55,933 INFO Thread 11472 is executed
+2023-05-30 12:44:55,934 INFO Thread 11468 is executed
+2023-05-30 12:44:55,934 INFO Thread 16360 is executed
+2023-05-30 12:44:55,944 INFO Time to read sensor: 0.010481834411621094
+2023-05-30 12:44:55,945 INFO Time to publish sensor data: 0.011478185653686523
+2023-05-30 12:44:57,088 INFO Time to read cam and detect fire: 1.154637336730957
+2023-05-30 12:44:57,088 INFO Thread 11472 is executed
+2023-05-30 12:44:57,315 INFO Time to read cam and detect fire: 0.22739219665527344
+2023-05-30 12:44:57,315 INFO Thread 11472 is executed
+2023-05-30 12:44:57,529 INFO Time to read cam and detect fire: 0.21354293823242188
+2023-05-30 12:44:57,529 INFO Thread 11472 is executed
+2023-05-30 12:44:57,738 INFO Time to read cam and detect fire: 0.20958828926086426
+2023-05-30 12:44:57,738 INFO Thread 11472 is executed
+2023-05-30 12:44:57,944 INFO Time to read cam and detect fire: 0.20545220375061035
+2023-05-30 12:44:57,945 INFO Thread 11472 is executed
+2023-05-30 12:44:58,172 INFO Time to read cam and detect fire: 0.22739219665527344
+2023-05-30 12:44:58,173 INFO Thread 11472 is executed
+2023-05-30 12:44:58,420 INFO Time to read cam and detect fire: 0.24733972549438477
+2023-05-30 12:44:58,420 INFO Thread 11472 is executed
+2023-05-30 12:44:58,640 INFO Time to read cam and detect fire: 0.21941494941711426
+2023-05-30 12:44:58,640 INFO Thread 11472 is executed
+2023-05-30 12:44:58,854 INFO Time to read cam and detect fire: 0.21442532539367676
+2023-05-30 12:44:58,854 INFO Thread 11472 is executed
+2023-05-30 12:44:59,060 INFO Time to read cam and detect fire: 0.20545363426208496
+2023-05-30 12:44:59,060 INFO Thread 11472 is executed
+2023-05-30 12:44:59,279 INFO Time to read cam and detect fire: 0.21941065788269043
+2023-05-30 12:44:59,279 INFO Thread 11472 is executed
+2023-05-30 12:44:59,489 INFO Time to read cam and detect fire: 0.2094402313232422
+2023-05-30 12:44:59,489 INFO Thread 11472 is executed
+2023-05-30 12:44:59,698 INFO Time to read cam and detect fire: 0.2094402313232422
+2023-05-30 12:44:59,698 INFO Thread 11472 is executed
+2023-05-30 12:44:59,915 INFO Time to read cam and detect fire: 0.21642160415649414
+2023-05-30 12:44:59,915 INFO Thread 11472 is executed
+2023-05-30 12:45:00,143 INFO Time to read cam and detect fire: 0.22739410400390625
+2023-05-30 12:45:00,143 INFO Thread 11472 is executed
+2023-05-30 12:45:00,374 INFO Time to read cam and detect fire: 0.23137974739074707
+2023-05-30 12:45:00,374 INFO Thread 11472 is executed
+2023-05-30 12:45:00,619 INFO Time to read cam and detect fire: 0.24434733390808105
+2023-05-30 12:45:00,619 INFO Thread 11472 is executed
+2023-05-30 12:45:00,840 INFO Time to read cam and detect fire: 0.22141003608703613
+2023-05-30 12:45:00,840 INFO Thread 11472 is executed
+2023-05-30 12:45:01,041 INFO Time to read cam and detect fire: 0.2014613151550293
+2023-05-30 12:45:01,041 INFO Thread 11472 is executed
+2023-05-30 12:45:01,258 INFO Time to read cam and detect fire: 0.21642041206359863
+2023-05-30 12:45:01,258 INFO Thread 11472 is executed
+2023-05-30 12:45:01,495 INFO Time to read cam and detect fire: 0.2373650074005127
+2023-05-30 12:45:01,495 INFO Thread 11472 is executed
+2023-05-30 12:45:01,695 INFO Time to read cam and detect fire: 0.19946885108947754
+2023-05-30 12:45:01,695 INFO Thread 11472 is executed
+2023-05-30 12:45:01,900 INFO Time to read cam and detect fire: 0.20545172691345215
+2023-05-30 12:45:01,900 INFO Thread 11472 is executed
+2023-05-30 12:45:02,109 INFO Time to read cam and detect fire: 0.20843982696533203
+2023-05-30 12:45:02,109 INFO Thread 11472 is executed
+2023-05-30 12:45:02,343 INFO Time to read cam and detect fire: 0.2343730926513672
+2023-05-30 12:45:02,343 INFO Thread 11472 is executed
+2023-05-30 12:45:02,565 INFO Time to read cam and detect fire: 0.22240591049194336
+2023-05-30 12:45:02,565 INFO Thread 11472 is executed
+2023-05-30 12:45:02,785 INFO Time to read cam and detect fire: 0.21941661834716797
+2023-05-30 12:45:02,785 INFO Thread 11472 is executed
+2023-05-30 12:45:02,978 INFO Time to read cam and detect fire: 0.1934809684753418
+2023-05-30 12:45:02,978 INFO Thread 11472 is executed
+2023-05-30 12:45:03,185 INFO Time to read cam and detect fire: 0.20644640922546387
+2023-05-30 12:45:03,186 INFO Thread 11472 is executed
+2023-05-30 12:45:03,377 INFO Time to read cam and detect fire: 0.19149065017700195
+2023-05-30 12:45:03,377 INFO Thread 11472 is executed
+2023-05-30 12:45:03,597 INFO Time to read cam and detect fire: 0.21941113471984863
+2023-05-30 12:45:03,597 INFO Thread 11472 is executed
+2023-05-30 12:45:03,805 INFO Time to read cam and detect fire: 0.20844340324401855
+2023-05-30 12:45:03,805 INFO Thread 11472 is executed
+2023-05-30 12:45:04,004 INFO Time to read cam and detect fire: 0.1984696388244629
+2023-05-30 12:45:04,004 INFO Thread 11472 is executed
+2023-05-30 12:45:04,221 INFO Time to read cam and detect fire: 0.2174205780029297
+2023-05-30 12:45:04,222 INFO Thread 11472 is executed
+2023-05-30 12:45:04,431 INFO Time to read cam and detect fire: 0.2094428539276123
+2023-05-30 12:45:04,432 INFO Thread 11472 is executed
+2023-05-30 12:45:04,647 INFO Time to read cam and detect fire: 0.21442675590515137
+2023-05-30 12:45:04,647 INFO Thread 11472 is executed
+2023-05-30 12:45:04,837 INFO Time to read cam and detect fire: 0.19049358367919922
+2023-05-30 12:45:04,837 INFO Thread 11472 is executed
+2023-05-30 12:45:05,040 INFO Time to read cam and detect fire: 0.20245838165283203
+2023-05-30 12:45:05,040 INFO Thread 11472 is executed
+2023-05-30 12:45:05,231 INFO Time to read cam and detect fire: 0.19148683547973633
+2023-05-30 12:45:05,231 INFO Thread 11472 is executed
+2023-05-30 12:45:05,437 INFO Time to read cam and detect fire: 0.20545077323913574
+2023-05-30 12:45:05,437 INFO Thread 11472 is executed
+2023-05-30 12:45:05,664 INFO Time to read cam and detect fire: 0.22739362716674805
+2023-05-30 12:45:05,664 INFO Thread 11472 is executed
+2023-05-30 12:45:05,866 INFO Time to read cam and detect fire: 0.2014603614807129
+2023-05-30 12:45:05,866 INFO Thread 11472 is executed
+2023-05-30 12:45:05,935 INFO Thread 11468 is executed
+2023-05-30 12:45:05,938 INFO Time to read sensor: 0.0029914379119873047
+2023-05-30 12:45:06,087 INFO Time to read cam and detect fire: 0.22140836715698242
+2023-05-30 12:45:06,087 INFO Thread 11472 is executed
+2023-05-30 12:45:06,308 INFO Time to read cam and detect fire: 0.22140932083129883
+2023-05-30 12:45:06,308 INFO Thread 11472 is executed
+2023-05-30 12:45:06,508 INFO Time to read cam and detect fire: 0.1994645595550537
+2023-05-30 12:45:06,509 INFO Thread 11472 is executed
+2023-05-30 12:45:06,715 INFO Time to read cam and detect fire: 0.20644903182983398
+2023-05-30 12:45:06,715 INFO Thread 11472 is executed
+2023-05-30 12:45:06,926 INFO Time to read cam and detect fire: 0.21043920516967773
+2023-05-30 12:45:06,927 INFO Thread 11472 is executed
+2023-05-30 12:45:07,130 INFO Time to read cam and detect fire: 0.20345711708068848
+2023-05-30 12:45:07,130 INFO Thread 11472 is executed
+2023-05-30 12:45:07,368 INFO Time to read cam and detect fire: 0.2373645305633545
+2023-05-30 12:45:07,369 INFO Thread 11472 is executed
+2023-05-30 12:45:07,571 INFO Time to read cam and detect fire: 0.20245766639709473
+2023-05-30 12:45:07,571 INFO Thread 11472 is executed
+2023-05-30 12:45:07,769 INFO Time to read cam and detect fire: 0.1984696388244629
+2023-05-30 12:45:07,770 INFO Thread 11472 is executed
+2023-05-30 12:45:07,974 INFO Time to read cam and detect fire: 0.20345544815063477
+2023-05-30 12:45:07,974 INFO Thread 11472 is executed
+2023-05-30 12:45:08,182 INFO Time to read cam and detect fire: 0.20844244956970215
+2023-05-30 12:45:08,182 INFO Thread 11472 is executed
+2023-05-30 12:45:08,393 INFO Time to read cam and detect fire: 0.21043825149536133
+2023-05-30 12:45:08,393 INFO Thread 11472 is executed
+2023-05-30 12:45:08,599 INFO Time to read cam and detect fire: 0.20644807815551758
+2023-05-30 12:45:08,599 INFO Thread 11472 is executed
+2023-05-30 12:45:08,808 INFO Time to read cam and detect fire: 0.20844173431396484
+2023-05-30 12:45:08,808 INFO Thread 11472 is executed
+2023-05-30 12:45:09,014 INFO Time to read cam and detect fire: 0.2064499855041504
+2023-05-30 12:45:09,014 INFO Thread 11472 is executed
+2023-05-30 12:45:09,223 INFO Time to read cam and detect fire: 0.20844316482543945
+2023-05-30 12:45:09,223 INFO Thread 11472 is executed
+2023-05-30 12:45:09,440 INFO Time to read cam and detect fire: 0.21741867065429688
+2023-05-30 12:45:09,440 INFO Thread 11472 is executed
+2023-05-30 12:45:09,641 INFO Time to read cam and detect fire: 0.2014610767364502
+2023-05-30 12:45:09,641 INFO Thread 11472 is executed
+2023-05-30 12:45:09,858 INFO Time to read cam and detect fire: 0.21642065048217773
+2023-05-30 12:45:09,858 INFO Thread 11472 is executed
+2023-05-30 12:45:10,088 INFO Time to read cam and detect fire: 0.2293868064880371
+2023-05-30 12:45:10,088 INFO Thread 11472 is executed
+2023-05-30 12:45:10,307 INFO Time to read cam and detect fire: 0.2184157371520996
+2023-05-30 12:45:10,307 INFO Thread 11472 is executed
+2023-05-30 12:45:10,505 INFO Time to read cam and detect fire: 0.1984717845916748
+2023-05-30 12:45:10,505 INFO Thread 11472 is executed
+2023-05-30 12:45:10,714 INFO Time to read cam and detect fire: 0.20844173431396484
+2023-05-30 12:45:10,714 INFO Thread 11472 is executed
+2023-05-30 12:45:10,919 INFO Time to read cam and detect fire: 0.20545101165771484
+2023-05-30 12:45:10,919 INFO Thread 11472 is executed
+2023-05-30 12:45:11,115 INFO Time to read cam and detect fire: 0.1954784393310547
+2023-05-30 12:45:11,115 INFO Thread 11472 is executed
+2023-05-30 12:45:11,325 INFO Time to read cam and detect fire: 0.21043682098388672
+2023-05-30 12:45:11,325 INFO Thread 11472 is executed
+2023-05-30 12:45:11,532 INFO Time to read cam and detect fire: 0.207444429397583
+2023-05-30 12:45:11,532 INFO Thread 11472 is executed
+2023-05-30 12:45:11,748 INFO Time to read cam and detect fire: 0.2154228687286377
+2023-05-30 12:45:11,748 INFO Thread 11472 is executed
+2023-05-30 12:45:11,980 INFO Time to read cam and detect fire: 0.23237919807434082
+2023-05-30 12:45:11,994 INFO Thread 11472 is executed
+2023-05-30 12:45:12,200 INFO Time to read cam and detect fire: 0.20545291900634766
+2023-05-30 12:45:12,200 INFO Thread 11472 is executed
+2023-05-30 12:45:12,408 INFO Time to read cam and detect fire: 0.20844221115112305
+2023-05-30 12:45:12,408 INFO Thread 11472 is executed
+2023-05-30 12:45:12,617 INFO Time to read cam and detect fire: 0.20744776725769043
+2023-05-30 12:45:12,617 INFO Thread 11472 is executed
+2023-05-30 12:45:12,816 INFO Time to read cam and detect fire: 0.19946765899658203
+2023-05-30 12:45:12,816 INFO Thread 11472 is executed
+2023-05-30 12:45:13,027 INFO Time to read cam and detect fire: 0.21143364906311035
+2023-05-30 12:45:13,027 INFO Thread 11472 is executed
+2023-05-30 12:45:13,236 INFO Time to read cam and detect fire: 0.20844054222106934
+2023-05-30 12:45:13,236 INFO Thread 11472 is executed
+2023-05-30 12:45:13,428 INFO Time to read cam and detect fire: 0.19248676300048828
+2023-05-30 12:45:13,428 INFO Thread 11472 is executed
+2023-05-30 12:45:13,659 INFO Time to read cam and detect fire: 0.23038434982299805
+2023-05-30 12:45:13,659 INFO Thread 11472 is executed
+2023-05-30 12:45:13,881 INFO Time to read cam and detect fire: 0.22240638732910156
+2023-05-30 12:45:13,881 INFO Thread 11472 is executed
+2023-05-30 12:45:14,080 INFO Time to read cam and detect fire: 0.1984696388244629
+2023-05-30 12:45:14,080 INFO Thread 11472 is executed
+2023-05-30 12:45:14,289 INFO Time to read cam and detect fire: 0.20943880081176758
+2023-05-30 12:45:14,289 INFO Thread 11472 is executed
+2023-05-30 12:45:14,511 INFO Time to read cam and detect fire: 0.22240471839904785
+2023-05-30 12:45:14,512 INFO Thread 11472 is executed
+2023-05-30 12:45:14,712 INFO Time to read cam and detect fire: 0.19947028160095215
+2023-05-30 12:45:14,712 INFO Thread 11472 is executed
+2023-05-30 12:45:14,917 INFO Time to read cam and detect fire: 0.20544910430908203
+2023-05-30 12:45:14,917 INFO Thread 11472 is executed
+2023-05-30 12:45:15,121 INFO Time to read cam and detect fire: 0.20345473289489746
+2023-05-30 12:45:15,121 INFO Thread 11472 is executed
+2023-05-30 12:45:15,362 INFO Time to read cam and detect fire: 0.24135589599609375
+2023-05-30 12:45:15,362 INFO Thread 11472 is executed
+2023-05-30 12:45:15,565 INFO Time to read cam and detect fire: 0.20245957374572754
+2023-05-30 12:45:15,565 INFO Thread 11472 is executed
+2023-05-30 12:45:15,780 INFO Time to read cam and detect fire: 0.2154238224029541
+2023-05-30 12:45:15,781 INFO Thread 11472 is executed
+2023-05-30 12:45:15,935 INFO Thread 16360 is executed
+2023-05-30 12:45:15,936 INFO Time to publish sensor data: 0.0009624958038330078
+2023-05-30 12:45:15,937 INFO Thread 11468 is executed
+2023-05-30 12:45:15,937 INFO Time to read sensor: 0.0
+2023-05-30 12:45:16,006 INFO Time to read cam and detect fire: 0.22539734840393066
+2023-05-30 12:45:16,006 INFO Thread 11472 is executed
+2023-05-30 12:45:16,225 INFO Time to read cam and detect fire: 0.21841835975646973
+2023-05-30 12:45:16,225 INFO Thread 11472 is executed
+2023-05-30 12:45:16,438 INFO Time to read cam and detect fire: 0.21342706680297852
+2023-05-30 12:45:16,438 INFO Thread 11472 is executed
+2023-05-30 12:45:16,663 INFO Time to read cam and detect fire: 0.22440052032470703
+2023-05-30 12:45:16,663 INFO Thread 11472 is executed
+2023-05-30 12:45:16,867 INFO Time to read cam and detect fire: 0.20445489883422852
+2023-05-30 12:45:16,867 INFO Thread 11472 is executed
+2023-05-30 12:45:17,085 INFO Time to read cam and detect fire: 0.21741843223571777
+2023-05-30 12:45:17,085 INFO Thread 11472 is executed
+2023-05-30 12:45:17,311 INFO Time to read cam and detect fire: 0.226395845413208
+2023-05-30 12:45:17,311 INFO Thread 11472 is executed
+2023-05-30 12:45:17,518 INFO Time to read cam and detect fire: 0.2074451446533203
+2023-05-30 12:45:17,518 INFO Thread 11472 is executed
+2023-05-30 12:45:17,738 INFO Time to read cam and detect fire: 0.21941494941711426
+2023-05-30 12:45:17,738 INFO Thread 11472 is executed
+2023-05-30 12:45:17,993 INFO Time to read cam and detect fire: 0.25531530380249023
+2023-05-30 12:45:17,994 INFO Thread 11472 is executed
+2023-05-30 12:45:18,203 INFO Time to read cam and detect fire: 0.20844340324401855
+2023-05-30 12:45:18,203 INFO Thread 11472 is executed
+2023-05-30 12:45:18,404 INFO Time to read cam and detect fire: 0.2014627456665039
+2023-05-30 12:45:18,405 INFO Thread 11472 is executed
+2023-05-30 12:45:18,629 INFO Time to read cam and detect fire: 0.22440028190612793
+2023-05-30 12:45:18,629 INFO Thread 11472 is executed
+2023-05-30 12:45:18,846 INFO Time to read cam and detect fire: 0.21641993522644043
+2023-05-30 12:45:18,846 INFO Thread 11472 is executed
+2023-05-30 12:45:19,058 INFO Time to read cam and detect fire: 0.2124316692352295
+2023-05-30 12:45:19,058 INFO Thread 11472 is executed
+2023-05-30 12:45:19,268 INFO Time to read cam and detect fire: 0.2094407081604004
+2023-05-30 12:45:19,268 INFO Thread 11472 is executed
+2023-05-30 12:45:19,485 INFO Time to read cam and detect fire: 0.21741938591003418
+2023-05-30 12:45:19,485 INFO Thread 11472 is executed
+2023-05-30 12:45:19,709 INFO Time to read cam and detect fire: 0.2234020233154297
+2023-05-30 12:45:19,710 INFO Thread 11472 is executed
+2023-05-30 12:45:19,919 INFO Time to read cam and detect fire: 0.20943927764892578
+2023-05-30 12:45:19,919 INFO Thread 11472 is executed
+2023-05-30 12:45:20,123 INFO Time to read cam and detect fire: 0.20445656776428223
+2023-05-30 12:45:20,123 INFO Thread 11472 is executed
+2023-05-30 12:45:20,340 INFO Time to read cam and detect fire: 0.21641945838928223
+2023-05-30 12:45:20,341 INFO Thread 11472 is executed
+2023-05-30 12:45:20,574 INFO Time to read cam and detect fire: 0.23337650299072266
+2023-05-30 12:45:20,574 INFO Thread 11472 is executed
+2023-05-30 12:45:20,799 INFO Time to read cam and detect fire: 0.22440242767333984
+2023-05-30 12:45:20,799 INFO Thread 11472 is executed
+2023-05-30 12:45:21,011 INFO Time to read cam and detect fire: 0.21242952346801758
+2023-05-30 12:45:21,011 INFO Thread 11472 is executed
+2023-05-30 12:45:21,221 INFO Time to read cam and detect fire: 0.2094402313232422
+2023-05-30 12:45:21,221 INFO Thread 11472 is executed
+2023-05-30 12:45:21,425 INFO Time to read cam and detect fire: 0.2044539451599121
+2023-05-30 12:45:21,425 INFO Thread 11472 is executed
+2023-05-30 12:45:21,650 INFO Time to read cam and detect fire: 0.22539782524108887
+2023-05-30 12:45:21,651 INFO Thread 11472 is executed
+2023-05-30 12:45:21,871 INFO Time to read cam and detect fire: 0.21941661834716797
+2023-05-30 12:45:21,871 INFO Thread 11472 is executed
+2023-05-30 12:45:22,071 INFO Time to read cam and detect fire: 0.20046114921569824
+2023-05-30 12:45:22,071 INFO Thread 11472 is executed
+2023-05-30 12:45:22,286 INFO Time to read cam and detect fire: 0.21442699432373047
+2023-05-30 12:45:22,286 INFO Thread 11472 is executed
+2023-05-30 12:45:22,513 INFO Time to read cam and detect fire: 0.22739315032958984
+2023-05-30 12:45:22,513 INFO Thread 11472 is executed
+2023-05-30 12:45:22,724 INFO Time to read cam and detect fire: 0.21043729782104492
+2023-05-30 12:45:22,724 INFO Thread 11472 is executed
+2023-05-30 12:45:22,946 INFO Time to read cam and detect fire: 0.22240495681762695
+2023-05-30 12:45:22,946 INFO Thread 11472 is executed
+2023-05-30 12:45:23,155 INFO Time to read cam and detect fire: 0.2094423770904541
+2023-05-30 12:45:23,155 INFO Thread 11472 is executed
+2023-05-30 12:45:23,364 INFO Time to read cam and detect fire: 0.208449125289917
+2023-05-30 12:45:23,364 INFO Thread 11472 is executed
+2023-05-30 12:45:23,571 INFO Time to read cam and detect fire: 0.20743799209594727
+2023-05-30 12:45:23,571 INFO Thread 11472 is executed
+2023-05-30 12:45:23,820 INFO Time to read cam and detect fire: 0.24833464622497559
+2023-05-30 12:45:23,820 INFO Thread 11472 is executed
+2023-05-30 12:45:24,018 INFO Time to read cam and detect fire: 0.1984729766845703
+2023-05-30 12:45:24,018 INFO Thread 11472 is executed
+2023-05-30 12:45:24,223 INFO Time to read cam and detect fire: 0.20345306396484375
+2023-05-30 12:45:24,223 INFO Thread 11472 is executed
+2023-05-30 12:45:24,432 INFO Time to read cam and detect fire: 0.2094414234161377
+2023-05-30 12:45:24,432 INFO Thread 11472 is executed
+2023-05-30 12:45:24,661 INFO Time to read cam and detect fire: 0.22938871383666992
+2023-05-30 12:45:24,661 INFO Thread 11472 is executed
+2023-05-30 12:45:24,859 INFO Time to read cam and detect fire: 0.19746994972229004
+2023-05-30 12:45:24,859 INFO Thread 11472 is executed
+2023-05-30 12:45:25,055 INFO Time to read cam and detect fire: 0.19647502899169922
+2023-05-30 12:45:25,055 INFO Thread 11472 is executed
+2023-05-30 12:45:25,273 INFO Time to read cam and detect fire: 0.21741843223571777
+2023-05-30 12:45:25,273 INFO Thread 11472 is executed
+2023-05-30 12:45:25,496 INFO Time to read cam and detect fire: 0.223402738571167
+2023-05-30 12:45:25,496 INFO Thread 11472 is executed
+2023-05-30 12:45:25,706 INFO Time to read cam and detect fire: 0.2094402313232422
+2023-05-30 12:45:25,706 INFO Thread 11472 is executed
+2023-05-30 12:45:25,920 INFO Time to read cam and detect fire: 0.21442699432373047
+2023-05-30 12:45:25,920 INFO Thread 11472 is executed
+2023-05-30 12:45:25,938 INFO Thread 11468 is executed
+2023-05-30 12:45:25,939 INFO Time to read sensor: 0.000995635986328125
+2023-05-30 12:45:26,139 INFO Time to read cam and detect fire: 0.21941375732421875
+2023-05-30 12:45:26,139 INFO Thread 11472 is executed
+2023-05-30 12:45:26,342 INFO Time to read cam and detect fire: 0.20245981216430664
+2023-05-30 12:45:26,342 INFO Thread 11472 is executed
+2023-05-30 12:45:26,554 INFO Time to read cam and detect fire: 0.2124326229095459
+2023-05-30 12:45:26,554 INFO Thread 11472 is executed
+2023-05-30 12:45:26,773 INFO Time to read cam and detect fire: 0.21841716766357422
+2023-05-30 12:45:26,773 INFO Thread 11472 is executed
+2023-05-30 12:45:26,987 INFO Time to read cam and detect fire: 0.21442604064941406
+2023-05-30 12:45:26,987 INFO Thread 11472 is executed
+2023-05-30 12:45:27,201 INFO Time to read cam and detect fire: 0.21342897415161133
+2023-05-30 12:45:27,201 INFO Thread 11472 is executed
+2023-05-30 12:45:27,451 INFO Time to read cam and detect fire: 0.25033020973205566
+2023-05-30 12:45:27,451 INFO Thread 11472 is executed
+2023-05-30 12:45:27,655 INFO Time to read cam and detect fire: 0.2044529914855957
+2023-05-30 12:45:27,656 INFO Thread 11472 is executed
+2023-05-30 12:45:27,864 INFO Time to read cam and detect fire: 0.20844268798828125
+2023-05-30 12:45:27,864 INFO Thread 11472 is executed
+2023-05-30 12:45:28,077 INFO Time to read cam and detect fire: 0.21343088150024414
+2023-05-30 12:45:28,078 INFO Thread 11472 is executed
+2023-05-30 12:45:28,281 INFO Time to read cam and detect fire: 0.20245671272277832
+2023-05-30 12:45:28,281 INFO Thread 11472 is executed
+2023-05-30 12:45:28,498 INFO Time to read cam and detect fire: 0.21742010116577148
+2023-05-30 12:45:28,498 INFO Thread 11472 is executed
+2023-05-30 12:45:28,714 INFO Time to read cam and detect fire: 0.215423583984375
+2023-05-30 12:45:28,714 INFO Thread 11472 is executed
+2023-05-30 12:45:28,932 INFO Time to read cam and detect fire: 0.2184162139892578
+2023-05-30 12:45:28,932 INFO Thread 11472 is executed
+2023-05-30 12:45:29,176 INFO Time to read cam and detect fire: 0.24434900283813477
+2023-05-30 12:45:29,176 INFO Thread 11472 is executed
+2023-05-30 12:45:29,386 INFO Time to read cam and detect fire: 0.20943832397460938
+2023-05-30 12:45:29,386 INFO Thread 11472 is executed
+2023-05-30 12:45:29,596 INFO Time to read cam and detect fire: 0.21043729782104492
+2023-05-30 12:45:29,596 INFO Thread 11472 is executed
+2023-05-30 12:45:29,812 INFO Time to read cam and detect fire: 0.2154238224029541
+2023-05-30 12:45:29,813 INFO Thread 11472 is executed
+2023-05-30 12:45:30,024 INFO Time to read cam and detect fire: 0.21140170097351074
+2023-05-30 12:45:30,024 INFO Thread 11472 is executed
+2023-05-30 12:45:30,213 INFO Time to read cam and detect fire: 0.1894972324371338
+2023-05-30 12:45:30,213 INFO Thread 11472 is executed
+2023-05-30 12:45:30,416 INFO Time to read cam and detect fire: 0.2024548053741455
+2023-05-30 12:45:30,416 INFO Thread 11472 is executed
+2023-05-30 12:45:30,630 INFO Time to read cam and detect fire: 0.21442723274230957
+2023-05-30 12:45:30,630 INFO Thread 11472 is executed
+2023-05-30 12:45:30,831 INFO Time to read cam and detect fire: 0.20046520233154297
+2023-05-30 12:45:30,831 INFO Thread 11472 is executed
+2023-05-30 12:45:31,053 INFO Time to read cam and detect fire: 0.22240662574768066
+2023-05-30 12:45:31,053 INFO Thread 11472 is executed
+2023-05-30 12:45:31,284 INFO Time to read cam and detect fire: 0.23038220405578613
+2023-05-30 12:45:31,284 INFO Thread 11472 is executed
+2023-05-30 12:45:31,496 INFO Time to read cam and detect fire: 0.2124333381652832
+2023-05-30 12:45:31,496 INFO Thread 11472 is executed
+2023-05-30 12:45:31,714 INFO Time to read cam and detect fire: 0.2184154987335205
+2023-05-30 12:45:31,714 INFO Thread 11472 is executed
+2023-05-30 12:45:31,926 INFO Time to read cam and detect fire: 0.21143627166748047
+2023-05-30 12:45:31,926 INFO Thread 11472 is executed
+2023-05-30 12:45:32,135 INFO Time to read cam and detect fire: 0.20943999290466309
+2023-05-30 12:45:32,135 INFO Thread 11472 is executed
+2023-05-30 12:45:32,355 INFO Time to read cam and detect fire: 0.21941232681274414
+2023-05-30 12:45:32,355 INFO Thread 11472 is executed
+2023-05-30 12:45:32,562 INFO Time to read cam and detect fire: 0.20744538307189941
+2023-05-30 12:45:32,562 INFO Thread 11472 is executed
+2023-05-30 12:45:32,780 INFO Time to read cam and detect fire: 0.2174229621887207
+2023-05-30 12:45:32,780 INFO Thread 11472 is executed
+2023-05-30 12:45:32,981 INFO Time to read cam and detect fire: 0.20145940780639648
+2023-05-30 12:45:32,981 INFO Thread 11472 is executed
+2023-05-30 12:45:33,222 INFO Time to read cam and detect fire: 0.24135279655456543
+2023-05-30 12:45:33,222 INFO Thread 11472 is executed
+2023-05-30 12:45:33,442 INFO Time to read cam and detect fire: 0.21941351890563965
+2023-05-30 12:45:33,442 INFO Thread 11472 is executed
+2023-05-30 12:45:33,655 INFO Time to read cam and detect fire: 0.21343064308166504
+2023-05-30 12:45:33,655 INFO Thread 11472 is executed
+2023-05-30 12:45:33,858 INFO Time to read cam and detect fire: 0.20245862007141113
+2023-05-30 12:45:33,858 INFO Thread 11472 is executed
+2023-05-30 12:45:34,065 INFO Time to read cam and detect fire: 0.2074446678161621
+2023-05-30 12:45:34,065 INFO Thread 11472 is executed
+2023-05-30 12:45:34,289 INFO Time to read cam and detect fire: 0.2234020233154297
+2023-05-30 12:45:34,290 INFO Thread 11472 is executed
+2023-05-30 12:45:34,497 INFO Time to read cam and detect fire: 0.20744705200195312
+2023-05-30 12:45:34,497 INFO Thread 11472 is executed
+2023-05-30 12:45:34,749 INFO Time to read cam and detect fire: 0.25232648849487305
+2023-05-30 12:45:34,749 INFO Thread 11472 is executed
+2023-05-30 12:45:34,969 INFO Time to read cam and detect fire: 0.21941137313842773
+2023-05-30 12:45:34,969 INFO Thread 11472 is executed
+2023-05-30 12:45:35,182 INFO Time to read cam and detect fire: 0.21343064308166504
+2023-05-30 12:45:35,182 INFO Thread 11472 is executed
+2023-05-30 12:45:35,388 INFO Time to read cam and detect fire: 0.20544934272766113
+2023-05-30 12:45:35,389 INFO Thread 11472 is executed
+2023-05-30 12:45:35,601 INFO Time to read cam and detect fire: 0.21243071556091309
+2023-05-30 12:45:35,601 INFO Thread 11472 is executed
+2023-05-30 12:45:35,825 INFO Time to read cam and detect fire: 0.22440052032470703
+2023-05-30 12:45:35,825 INFO Thread 11472 is executed
+2023-05-30 12:45:35,937 INFO Thread 16360 is executed
+2023-05-30 12:45:35,937 INFO Time to publish sensor data: 0.0
+2023-05-30 12:45:35,940 INFO Thread 11468 is executed
+2023-05-30 12:45:35,940 INFO Time to read sensor: 0.0
+2023-05-30 12:45:36,052 INFO Time to read cam and detect fire: 0.2263951301574707
+2023-05-30 12:45:36,052 INFO Thread 11472 is executed
+2023-05-30 12:45:36,267 INFO Time to read cam and detect fire: 0.21543025970458984
+2023-05-30 12:45:36,267 INFO Thread 11472 is executed
+2023-05-30 12:45:36,498 INFO Time to read cam and detect fire: 0.2303755283355713
+2023-05-30 12:45:36,498 INFO Thread 11472 is executed
+2023-05-30 12:45:36,706 INFO Time to read cam and detect fire: 0.20844435691833496
+2023-05-30 12:45:36,706 INFO Thread 11472 is executed
+2023-05-30 12:45:36,908 INFO Time to read cam and detect fire: 0.20146441459655762
+2023-05-30 12:45:36,908 INFO Thread 11472 is executed
+2023-05-30 12:45:37,121 INFO Time to read cam and detect fire: 0.213425874710083
+2023-05-30 12:45:37,121 INFO Thread 11472 is executed
+2023-05-30 12:45:37,333 INFO Time to read cam and detect fire: 0.2124319076538086
+2023-05-30 12:45:37,333 INFO Thread 11472 is executed
+2023-05-30 12:45:37,579 INFO Time to read cam and detect fire: 0.2453444004058838
+2023-05-30 12:45:37,579 INFO Thread 11472 is executed
+2023-05-30 12:45:37,804 INFO Time to read cam and detect fire: 0.22539782524108887
+2023-05-30 12:45:37,804 INFO Thread 11472 is executed
+2023-05-30 12:45:38,005 INFO Time to read cam and detect fire: 0.20046472549438477
+2023-05-30 12:45:38,005 INFO Thread 11472 is executed
+2023-05-30 12:45:38,248 INFO Time to read cam and detect fire: 0.24334979057312012
+2023-05-30 12:45:38,248 INFO Thread 11472 is executed
+2023-05-30 12:45:38,447 INFO Time to read cam and detect fire: 0.19946694374084473
+2023-05-30 12:45:38,447 INFO Thread 11472 is executed
+2023-05-30 12:45:38,663 INFO Time to read cam and detect fire: 0.2154228687286377
+2023-05-30 12:45:38,663 INFO Thread 11472 is executed
+2023-05-30 12:45:38,857 INFO Time to read cam and detect fire: 0.19447994232177734
+2023-05-30 12:45:38,857 INFO Thread 11472 is executed
+2023-05-30 12:45:39,067 INFO Time to read cam and detect fire: 0.2094407081604004
+2023-05-30 12:45:39,067 INFO Thread 11472 is executed
+2023-05-30 12:45:39,259 INFO Time to read cam and detect fire: 0.1924879550933838
+2023-05-30 12:45:39,259 INFO Thread 11472 is executed
+2023-05-30 12:45:39,479 INFO Time to read cam and detect fire: 0.21941208839416504
+2023-05-30 12:45:39,479 INFO Thread 11472 is executed
+2023-05-30 12:45:39,680 INFO Time to read cam and detect fire: 0.2014610767364502
+2023-05-30 12:45:39,680 INFO Thread 11472 is executed
+2023-05-30 12:45:39,911 INFO Time to read cam and detect fire: 0.23038530349731445
+2023-05-30 12:45:39,911 INFO Thread 11472 is executed
+2023-05-30 12:45:40,117 INFO Time to read cam and detect fire: 0.20644664764404297
+2023-05-30 12:45:40,118 INFO Thread 11472 is executed
+2023-05-30 12:45:40,340 INFO Time to read cam and detect fire: 0.22240734100341797
+2023-05-30 12:45:40,340 INFO Thread 11472 is executed
+2023-05-30 12:45:40,565 INFO Time to read cam and detect fire: 0.2243971824645996
+2023-05-30 12:45:40,565 INFO Thread 11472 is executed
+2023-05-30 12:45:40,782 INFO Time to read cam and detect fire: 0.21741890907287598
+2023-05-30 12:45:40,782 INFO Thread 11472 is executed
+2023-05-30 12:45:40,991 INFO Time to read cam and detect fire: 0.20844531059265137
+2023-05-30 12:45:40,991 INFO Thread 11472 is executed
+2023-05-30 12:45:41,208 INFO Time to read cam and detect fire: 0.21741843223571777
+2023-05-30 12:45:41,209 INFO Thread 11472 is executed
+2023-05-30 12:45:41,415 INFO Time to read cam and detect fire: 0.20544886589050293
+2023-05-30 12:45:41,415 INFO Thread 11472 is executed
+2023-05-30 12:45:41,648 INFO Time to read cam and detect fire: 0.23337721824645996
+2023-05-30 12:45:41,649 INFO Thread 11472 is executed
+2023-05-30 12:45:41,873 INFO Time to read cam and detect fire: 0.22440123558044434
+2023-05-30 12:45:41,873 INFO Thread 11472 is executed
+2023-05-30 12:45:42,108 INFO Time to read cam and detect fire: 0.23437285423278809
+2023-05-30 12:45:42,108 INFO Thread 11472 is executed
+2023-05-30 12:45:42,322 INFO Time to read cam and detect fire: 0.21342849731445312
+2023-05-30 12:45:42,322 INFO Thread 11472 is executed
+2023-05-30 12:45:42,535 INFO Time to read cam and detect fire: 0.21243071556091309
+2023-05-30 12:45:42,535 INFO Thread 11472 is executed
+2023-05-30 12:45:42,761 INFO Time to read cam and detect fire: 0.2263941764831543
+2023-05-30 12:45:42,761 INFO Thread 11472 is executed
+2023-05-30 12:45:42,978 INFO Time to read cam and detect fire: 0.2174208164215088
+2023-05-30 12:45:42,979 INFO Thread 11472 is executed
+2023-05-30 12:45:43,191 INFO Time to read cam and detect fire: 0.21143555641174316
+2023-05-30 12:45:43,191 INFO Thread 11472 is executed
+2023-05-30 12:45:43,395 INFO Time to read cam and detect fire: 0.2044510841369629
+2023-05-30 12:45:43,395 INFO Thread 11472 is executed
+2023-05-30 12:45:43,650 INFO Time to read cam and detect fire: 0.2543210983276367
+2023-05-30 12:45:43,650 INFO Thread 11472 is executed
+2023-05-30 12:45:43,861 INFO Time to read cam and detect fire: 0.21143364906311035
+2023-05-30 12:45:43,861 INFO Thread 11472 is executed
+2023-05-30 12:45:44,086 INFO Time to read cam and detect fire: 0.22439956665039062
+2023-05-30 12:45:44,086 INFO Thread 11472 is executed
+2023-05-30 12:45:44,305 INFO Time to read cam and detect fire: 0.21841716766357422
+2023-05-30 12:45:44,305 INFO Thread 11472 is executed
+2023-05-30 12:45:44,524 INFO Time to read cam and detect fire: 0.21941447257995605
+2023-05-30 12:45:44,524 INFO Thread 11472 is executed
+2023-05-30 12:45:44,738 INFO Time to read cam and detect fire: 0.21342873573303223
+2023-05-30 12:45:44,738 INFO Thread 11472 is executed
+2023-05-30 12:45:44,939 INFO Time to read cam and detect fire: 0.2014608383178711
+2023-05-30 12:45:44,940 INFO Thread 11472 is executed
+2023-05-30 12:45:45,179 INFO Time to read cam and detect fire: 0.23833203315734863
+2023-05-30 12:45:45,179 INFO Thread 11472 is executed
+2023-05-30 12:45:45,393 INFO Time to read cam and detect fire: 0.21442079544067383
+2023-05-30 12:45:45,394 INFO Thread 11472 is executed
+2023-05-30 12:45:45,613 INFO Time to read cam and detect fire: 0.21841835975646973
+2023-05-30 12:45:45,613 INFO Thread 11472 is executed
+2023-05-30 12:45:45,822 INFO Time to read cam and detect fire: 0.20841097831726074
+2023-05-30 12:45:45,822 INFO Thread 11472 is executed
+2023-05-30 12:45:45,940 INFO Thread 11468 is executed
+2023-05-30 12:45:45,940 INFO Time to read sensor: 0.0
+2023-05-30 12:45:46,060 INFO Time to read cam and detect fire: 0.23836255073547363
+2023-05-30 12:45:46,060 INFO Thread 11472 is executed
+2023-05-30 12:45:46,269 INFO Time to read cam and detect fire: 0.20844221115112305
+2023-05-30 12:45:46,269 INFO Thread 11472 is executed
+2023-05-30 12:45:46,494 INFO Time to read cam and detect fire: 0.22539830207824707
+2023-05-30 12:45:46,494 INFO Thread 11472 is executed
+2023-05-30 12:45:46,729 INFO Time to read cam and detect fire: 0.23537254333496094
+2023-05-30 12:45:46,729 INFO Thread 11472 is executed
+2023-05-30 12:45:46,946 INFO Time to read cam and detect fire: 0.21642112731933594
+2023-05-30 12:45:46,947 INFO Thread 11472 is executed
+2023-05-30 12:45:47,178 INFO Time to read cam and detect fire: 0.23138022422790527
+2023-05-30 12:45:47,178 INFO Thread 11472 is executed
+2023-05-30 12:45:47,391 INFO Time to read cam and detect fire: 0.2124338150024414
+2023-05-30 12:45:47,391 INFO Thread 11472 is executed
+2023-05-30 12:45:47,601 INFO Time to read cam and detect fire: 0.21043729782104492
+2023-05-30 12:45:47,601 INFO Thread 11472 is executed
+2023-05-30 12:45:47,808 INFO Time to read cam and detect fire: 0.2074441909790039
+2023-05-30 12:45:47,809 INFO Thread 11472 is executed
+2023-05-30 12:45:48,010 INFO Time to read cam and detect fire: 0.20046782493591309
+2023-05-30 12:45:48,011 INFO Thread 11472 is executed
+2023-05-30 12:45:48,221 INFO Time to read cam and detect fire: 0.21043968200683594
+2023-05-30 12:45:48,221 INFO Thread 11472 is executed
+2023-05-30 12:45:48,441 INFO Time to read cam and detect fire: 0.21941161155700684
+2023-05-30 12:45:48,441 INFO Thread 11472 is executed
+2023-05-30 12:45:48,669 INFO Time to read cam and detect fire: 0.22839045524597168
+2023-05-30 12:45:48,669 INFO Thread 11472 is executed
+2023-05-30 12:45:48,876 INFO Time to read cam and detect fire: 0.2064497470855713
+2023-05-30 12:45:48,876 INFO Thread 11472 is executed
+2023-05-30 12:45:49,097 INFO Time to read cam and detect fire: 0.221405029296875
+2023-05-30 12:45:49,097 INFO Thread 11472 is executed
+2023-05-30 12:45:49,293 INFO Time to read cam and detect fire: 0.19647622108459473
+2023-05-30 12:45:49,293 INFO Thread 11472 is executed
+2023-05-30 12:45:49,509 INFO Time to read cam and detect fire: 0.2154233455657959
+2023-05-30 12:45:49,509 INFO Thread 11472 is executed
+2023-05-30 12:45:49,729 INFO Time to read cam and detect fire: 0.22041058540344238
+2023-05-30 12:45:49,730 INFO Thread 11472 is executed
+2023-05-30 12:45:49,935 INFO Time to read cam and detect fire: 0.20445895195007324
+2023-05-30 12:45:49,935 INFO Thread 11472 is executed
+2023-05-30 12:45:50,153 INFO Time to read cam and detect fire: 0.21841049194335938
+2023-05-30 12:45:50,153 INFO Thread 11472 is executed
+2023-05-30 12:45:50,366 INFO Time to read cam and detect fire: 0.2124340534210205
+2023-05-30 12:45:50,366 INFO Thread 11472 is executed
+2023-05-30 12:45:50,589 INFO Time to read cam and detect fire: 0.22340059280395508
+2023-05-30 12:45:50,589 INFO Thread 11472 is executed
+2023-05-30 12:45:50,809 INFO Time to read cam and detect fire: 0.22041082382202148
+2023-05-30 12:45:50,809 INFO Thread 11472 is executed
+2023-05-30 12:45:51,039 INFO Time to read cam and detect fire: 0.22938919067382812
+2023-05-30 12:45:51,039 INFO Thread 11472 is executed
+2023-05-30 12:45:51,270 INFO Time to read cam and detect fire: 0.23138046264648438
+2023-05-30 12:45:51,270 INFO Thread 11472 is executed
+2023-05-30 12:45:51,512 INFO Time to read cam and detect fire: 0.24135518074035645
+2023-05-30 12:45:51,512 INFO Thread 11472 is executed
+2023-05-30 12:45:51,718 INFO Time to read cam and detect fire: 0.2064504623413086
+2023-05-30 12:45:51,718 INFO Thread 11472 is executed
+2023-05-30 12:45:51,937 INFO Time to read cam and detect fire: 0.21941065788269043
+2023-05-30 12:45:51,937 INFO Thread 11472 is executed
+2023-05-30 12:45:52,169 INFO Time to read cam and detect fire: 0.2313823699951172
+2023-05-30 12:45:52,169 INFO Thread 11472 is executed
+2023-05-30 12:45:52,365 INFO Time to read cam and detect fire: 0.1964735984802246
+2023-05-30 12:45:52,365 INFO Thread 11472 is executed
+2023-05-30 12:45:52,569 INFO Time to read cam and detect fire: 0.20345687866210938
+2023-05-30 12:45:52,569 INFO Thread 11472 is executed
+2023-05-30 12:45:52,782 INFO Time to read cam and detect fire: 0.21342778205871582
+2023-05-30 12:45:52,782 INFO Thread 11472 is executed
+2023-05-30 12:45:53,011 INFO Time to read cam and detect fire: 0.22839069366455078
+2023-05-30 12:45:53,011 INFO Thread 11472 is executed
+2023-05-30 12:45:53,211 INFO Time to read cam and detect fire: 0.20046377182006836
+2023-05-30 12:45:53,211 INFO Thread 11472 is executed
+2023-05-30 12:45:53,409 INFO Time to read cam and detect fire: 0.19747400283813477
+2023-05-30 12:45:53,409 INFO Thread 11472 is executed
+2023-05-30 12:45:53,623 INFO Time to read cam and detect fire: 0.21442747116088867
+2023-05-30 12:45:53,623 INFO Thread 11472 is executed
+2023-05-30 12:45:53,861 INFO Time to read cam and detect fire: 0.23836064338684082
+2023-05-30 12:45:53,862 INFO Thread 11472 is executed
+2023-05-30 12:45:54,076 INFO Time to read cam and detect fire: 0.21343040466308594
+2023-05-30 12:45:54,076 INFO Thread 11472 is executed
+2023-05-30 12:45:54,289 INFO Time to read cam and detect fire: 0.21343111991882324
+2023-05-30 12:45:54,289 INFO Thread 11472 is executed
+2023-05-30 12:45:54,502 INFO Time to read cam and detect fire: 0.2124314308166504
+2023-05-30 12:45:54,503 INFO Thread 11472 is executed
+2023-05-30 12:45:54,717 INFO Time to read cam and detect fire: 0.21442866325378418
+2023-05-30 12:45:54,717 INFO Thread 11472 is executed
+2023-05-30 12:45:54,915 INFO Time to read cam and detect fire: 0.19846773147583008
+2023-05-30 12:45:54,915 INFO Thread 11472 is executed
+2023-05-30 12:45:55,112 INFO Time to read cam and detect fire: 0.19647598266601562
+2023-05-30 12:45:55,112 INFO Thread 11472 is executed
+2023-05-30 12:45:55,346 INFO Time to read cam and detect fire: 0.23437142372131348
+2023-05-30 12:45:55,346 INFO Thread 11472 is executed
+2023-05-30 12:45:55,569 INFO Time to read cam and detect fire: 0.22240543365478516
+2023-05-30 12:45:55,570 INFO Thread 11472 is executed
+2023-05-30 12:45:55,781 INFO Time to read cam and detect fire: 0.21143436431884766
+2023-05-30 12:45:55,781 INFO Thread 11472 is executed
+2023-05-30 12:45:55,939 INFO Thread 16360 is executed
+2023-05-30 12:45:55,940 INFO Time to publish sensor data: 0.0009992122650146484
+2023-05-30 12:45:55,941 INFO Thread 11468 is executed
+2023-05-30 12:45:55,942 INFO Time to read sensor: 0.0009968280792236328
+2023-05-30 12:45:56,012 INFO Time to read cam and detect fire: 0.23038506507873535
+2023-05-30 12:45:56,012 INFO Thread 11472 is executed
+2023-05-30 12:45:56,228 INFO Time to read cam and detect fire: 0.21642041206359863
+2023-05-30 12:45:56,228 INFO Thread 11472 is executed
+2023-05-30 12:45:56,452 INFO Time to read cam and detect fire: 0.22440075874328613
+2023-05-30 12:45:56,452 INFO Thread 11472 is executed
+2023-05-30 12:45:56,652 INFO Time to read cam and detect fire: 0.19946622848510742
+2023-05-30 12:45:56,653 INFO Thread 11472 is executed
+2023-05-30 12:45:56,870 INFO Time to read cam and detect fire: 0.21741962432861328
+2023-05-30 12:45:56,870 INFO Thread 11472 is executed
+2023-05-30 12:45:57,101 INFO Time to read cam and detect fire: 0.23038315773010254
+2023-05-30 12:45:57,102 INFO Thread 11472 is executed
+2023-05-30 12:45:57,322 INFO Time to read cam and detect fire: 0.2204132080078125
+2023-05-30 12:45:57,323 INFO Thread 11472 is executed
+2023-05-30 12:45:57,541 INFO Time to read cam and detect fire: 0.21841645240783691
+2023-05-30 12:45:57,541 INFO Thread 11472 is executed
+2023-05-30 12:45:57,758 INFO Time to read cam and detect fire: 0.21641945838928223
+2023-05-30 12:45:57,758 INFO Thread 11472 is executed
+2023-05-30 12:45:57,981 INFO Time to read cam and detect fire: 0.2234032154083252
+2023-05-30 12:45:57,981 INFO Thread 11472 is executed
+2023-05-30 12:45:58,195 INFO Time to read cam and detect fire: 0.21343135833740234
+2023-05-30 12:45:58,195 INFO Thread 11472 is executed
+2023-05-30 12:45:58,416 INFO Time to read cam and detect fire: 0.22140717506408691
+2023-05-30 12:45:58,416 INFO Thread 11472 is executed
+2023-05-30 12:45:58,622 INFO Time to read cam and detect fire: 0.20544934272766113
+2023-05-30 12:45:58,622 INFO Thread 11472 is executed
+2023-05-30 12:45:58,841 INFO Time to read cam and detect fire: 0.21941542625427246
+2023-05-30 12:45:58,841 INFO Thread 11472 is executed
+2023-05-30 12:45:59,079 INFO Time to read cam and detect fire: 0.23836159706115723
+2023-05-30 12:45:59,079 INFO Thread 11472 is executed
+2023-05-30 12:45:59,297 INFO Time to read cam and detect fire: 0.21741867065429688
+2023-05-30 12:45:59,297 INFO Thread 11472 is executed
+2023-05-30 12:45:59,527 INFO Time to read cam and detect fire: 0.23038434982299805
+2023-05-30 12:45:59,528 INFO Thread 11472 is executed
+2023-05-30 12:45:59,754 INFO Time to read cam and detect fire: 0.22539806365966797
+2023-05-30 12:45:59,754 INFO Thread 11472 is executed
+2023-05-30 12:45:59,957 INFO Time to read cam and detect fire: 0.20345568656921387
+2023-05-30 12:45:59,957 INFO Thread 11472 is executed
+2023-05-30 12:46:00,176 INFO Time to read cam and detect fire: 0.21941661834716797
+2023-05-30 12:46:00,176 INFO Thread 11472 is executed
+2023-05-30 12:46:00,389 INFO Time to read cam and detect fire: 0.21242856979370117
+2023-05-30 12:46:00,389 INFO Thread 11472 is executed
+2023-05-30 12:46:00,600 INFO Time to read cam and detect fire: 0.21143555641174316
+2023-05-30 12:46:00,600 INFO Thread 11472 is executed
+2023-05-30 12:46:00,825 INFO Time to read cam and detect fire: 0.22439956665039062
+2023-05-30 12:46:00,825 INFO Thread 11472 is executed
+2023-05-30 12:46:01,058 INFO Time to read cam and detect fire: 0.23337841033935547
+2023-05-30 12:46:01,059 INFO Thread 11472 is executed
+2023-05-30 12:46:01,284 INFO Time to read cam and detect fire: 0.22539663314819336
+2023-05-30 12:46:01,284 INFO Thread 11472 is executed
+2023-05-30 12:46:01,499 INFO Time to read cam and detect fire: 0.21442747116088867
+2023-05-30 12:46:01,500 INFO Thread 11472 is executed
+2023-05-30 12:46:01,724 INFO Time to read cam and detect fire: 0.22439932823181152
+2023-05-30 12:46:01,724 INFO Thread 11472 is executed
+2023-05-30 12:46:01,948 INFO Time to read cam and detect fire: 0.2234053611755371
+2023-05-30 12:46:01,949 INFO Thread 11472 is executed
+2023-05-30 12:46:02,153 INFO Time to read cam and detect fire: 0.2044539451599121
+2023-05-30 12:46:02,153 INFO Thread 11472 is executed
+2023-05-30 12:46:02,354 INFO Time to read cam and detect fire: 0.20046567916870117
+2023-05-30 12:46:02,355 INFO Thread 11472 is executed
+2023-05-30 12:46:02,552 INFO Time to read cam and detect fire: 0.19747066497802734
+2023-05-30 12:46:02,552 INFO Thread 11472 is executed
+2023-05-30 12:46:02,772 INFO Time to read cam and detect fire: 0.22041106224060059
+2023-05-30 12:46:02,772 INFO Thread 11472 is executed
+2023-05-30 12:46:02,989 INFO Time to read cam and detect fire: 0.21642065048217773
+2023-05-30 12:46:02,989 INFO Thread 11472 is executed
+2023-05-30 12:46:03,208 INFO Time to read cam and detect fire: 0.21941375732421875
+2023-05-30 12:46:03,209 INFO Thread 11472 is executed
+2023-05-30 12:46:03,416 INFO Time to read cam and detect fire: 0.20644831657409668
+2023-05-30 12:46:03,416 INFO Thread 11472 is executed
+2023-05-30 12:46:03,622 INFO Time to read cam and detect fire: 0.20644688606262207
+2023-05-30 12:46:03,622 INFO Thread 11472 is executed
+2023-05-30 12:46:03,836 INFO Time to read cam and detect fire: 0.21342968940734863
+2023-05-30 12:46:03,836 INFO Thread 11472 is executed
+2023-05-30 12:46:04,047 INFO Time to read cam and detect fire: 0.21143651008605957
+2023-05-30 12:46:04,047 INFO Thread 11472 is executed
+2023-05-30 12:46:04,256 INFO Time to read cam and detect fire: 0.20844197273254395
+2023-05-30 12:46:04,257 INFO Thread 11472 is executed
+2023-05-30 12:46:04,482 INFO Time to read cam and detect fire: 0.22441959381103516
+2023-05-30 12:46:04,482 INFO Thread 11472 is executed
+2023-05-30 12:46:04,685 INFO Time to read cam and detect fire: 0.20345830917358398
+2023-05-30 12:46:04,685 INFO Thread 11472 is executed
+2023-05-30 12:46:04,897 INFO Time to read cam and detect fire: 0.21143269538879395
+2023-05-30 12:46:04,897 INFO Thread 11472 is executed
+2023-05-30 12:46:05,097 INFO Time to read cam and detect fire: 0.20046401023864746
+2023-05-30 12:46:05,097 INFO Thread 11472 is executed
+2023-05-30 12:46:05,301 INFO Time to read cam and detect fire: 0.20345759391784668
+2023-05-30 12:46:05,301 INFO Thread 11472 is executed
+2023-05-30 12:46:05,501 INFO Time to read cam and detect fire: 0.20046257972717285
+2023-05-30 12:46:05,501 INFO Thread 11472 is executed
+2023-05-30 12:46:05,696 INFO Time to read cam and detect fire: 0.19448137283325195
+2023-05-30 12:46:05,696 INFO Thread 11472 is executed
+2023-05-30 12:46:05,884 INFO Time to read cam and detect fire: 0.18849635124206543
+2023-05-30 12:46:05,884 INFO Thread 11472 is executed
+2023-05-30 12:46:05,943 INFO Thread 11468 is executed
+2023-05-30 12:46:05,945 INFO Time to read sensor: 0.001993894577026367
+2023-05-30 12:46:06,099 INFO Time to read cam and detect fire: 0.21342730522155762
+2023-05-30 12:46:06,099 INFO Thread 11472 is executed
+2023-05-30 12:46:06,293 INFO Time to read cam and detect fire: 0.19447779655456543
+2023-05-30 12:46:06,294 INFO Thread 11472 is executed
+2023-05-30 12:46:06,528 INFO Time to read cam and detect fire: 0.234375
+2023-05-30 12:46:06,528 INFO Thread 11472 is executed
+2023-05-30 12:46:06,735 INFO Time to read cam and detect fire: 0.20644807815551758
+2023-05-30 12:46:06,735 INFO Thread 11472 is executed
+2023-05-30 12:46:06,928 INFO Time to read cam and detect fire: 0.1934826374053955
+2023-05-30 12:46:06,928 INFO Thread 11472 is executed
+2023-05-30 12:46:07,131 INFO Time to read cam and detect fire: 0.20245862007141113
+2023-05-30 12:46:07,131 INFO Thread 11472 is executed
+2023-05-30 12:46:07,334 INFO Time to read cam and detect fire: 0.20345616340637207
+2023-05-30 12:46:07,334 INFO Thread 11472 is executed
+2023-05-30 12:46:07,528 INFO Time to read cam and detect fire: 0.1934816837310791
+2023-05-30 12:46:07,529 INFO Thread 11472 is executed
+2023-05-30 12:46:07,759 INFO Time to read cam and detect fire: 0.23038697242736816
+2023-05-30 12:46:07,759 INFO Thread 11472 is executed
+2023-05-30 12:46:07,965 INFO Time to read cam and detect fire: 0.20544910430908203
+2023-05-30 12:46:07,965 INFO Thread 11472 is executed
+2023-05-30 12:46:08,161 INFO Time to read cam and detect fire: 0.19647455215454102
+2023-05-30 12:46:08,162 INFO Thread 11472 is executed
+2023-05-30 12:46:08,374 INFO Time to read cam and detect fire: 0.2124314308166504
+2023-05-30 12:46:08,374 INFO Thread 11472 is executed
+2023-05-30 12:46:08,605 INFO Time to read cam and detect fire: 0.23038482666015625
+2023-05-30 12:46:08,605 INFO Thread 11472 is executed
+2023-05-30 12:46:08,813 INFO Time to read cam and detect fire: 0.20844221115112305
+2023-05-30 12:46:08,813 INFO Thread 11472 is executed
+2023-05-30 12:46:09,007 INFO Time to read cam and detect fire: 0.19348597526550293
+2023-05-30 12:46:09,007 INFO Thread 11472 is executed
+2023-05-30 12:46:09,202 INFO Time to read cam and detect fire: 0.19547557830810547
+2023-05-30 12:46:09,203 INFO Thread 11472 is executed
+2023-05-30 12:46:09,420 INFO Time to read cam and detect fire: 0.21641969680786133
+2023-05-30 12:46:09,420 INFO Thread 11472 is executed
+2023-05-30 12:46:09,618 INFO Time to read cam and detect fire: 0.19846868515014648
+2023-05-30 12:46:09,618 INFO Thread 11472 is executed
+2023-05-30 12:46:09,815 INFO Time to read cam and detect fire: 0.19647645950317383
+2023-05-30 12:46:09,815 INFO Thread 11472 is executed
+2023-05-30 12:46:10,032 INFO Time to read cam and detect fire: 0.21741867065429688
+2023-05-30 12:46:10,032 INFO Thread 11472 is executed
+2023-05-30 12:46:10,234 INFO Time to read cam and detect fire: 0.2014627456665039
+2023-05-30 12:46:10,234 INFO Thread 11472 is executed
+2023-05-30 12:46:10,439 INFO Time to read cam and detect fire: 0.20544815063476562
+2023-05-30 12:46:10,439 INFO Thread 11472 is executed
+2023-05-30 12:46:10,638 INFO Time to read cam and detect fire: 0.19946718215942383
+2023-05-30 12:46:10,638 INFO Thread 11472 is executed
+2023-05-30 12:46:10,837 INFO Time to read cam and detect fire: 0.1984729766845703
+2023-05-30 12:46:10,838 INFO Thread 11472 is executed
+2023-05-30 12:46:11,040 INFO Time to read cam and detect fire: 0.20245575904846191
+2023-05-30 12:46:11,040 INFO Thread 11472 is executed
+2023-05-30 12:46:11,255 INFO Time to read cam and detect fire: 0.21442890167236328
+2023-05-30 12:46:11,255 INFO Thread 11472 is executed
+2023-05-30 12:46:11,460 INFO Time to read cam and detect fire: 0.20545244216918945
+2023-05-30 12:46:11,460 INFO Thread 11472 is executed
+2023-05-30 12:46:11,687 INFO Time to read cam and detect fire: 0.2263941764831543
+2023-05-30 12:46:11,687 INFO Thread 11472 is executed
+2023-05-30 12:46:11,896 INFO Time to read cam and detect fire: 0.2094876766204834
+2023-05-30 12:46:11,896 INFO Thread 11472 is executed
+2023-05-30 12:46:12,113 INFO Time to read cam and detect fire: 0.2163715362548828
+2023-05-30 12:46:12,113 INFO Thread 11472 is executed
+2023-05-30 12:46:12,313 INFO Time to read cam and detect fire: 0.20046448707580566
+2023-05-30 12:46:12,314 INFO Thread 11472 is executed
+2023-05-30 12:46:12,526 INFO Time to read cam and detect fire: 0.2124319076538086
+2023-05-30 12:46:12,526 INFO Thread 11472 is executed
+2023-05-30 12:46:12,724 INFO Time to read cam and detect fire: 0.19747304916381836
+2023-05-30 12:46:12,724 INFO Thread 11472 is executed
+2023-05-30 12:46:12,920 INFO Time to read cam and detect fire: 0.19647550582885742
+2023-05-30 12:46:12,920 INFO Thread 11472 is executed
+2023-05-30 12:46:13,129 INFO Time to read cam and detect fire: 0.20844364166259766
+2023-05-30 12:46:13,129 INFO Thread 11472 is executed
+2023-05-30 12:46:13,372 INFO Time to read cam and detect fire: 0.2433478832244873
+2023-05-30 12:46:13,372 INFO Thread 11472 is executed
+2023-05-30 12:46:13,572 INFO Time to read cam and detect fire: 0.19946789741516113
+2023-05-30 12:46:13,572 INFO Thread 11472 is executed
+2023-05-30 12:46:13,778 INFO Time to read cam and detect fire: 0.20644617080688477
+2023-05-30 12:46:13,779 INFO Thread 11472 is executed
+2023-05-30 12:46:13,992 INFO Time to read cam and detect fire: 0.21442961692810059
+2023-05-30 12:46:13,992 INFO Thread 11472 is executed
+2023-05-30 12:46:14,192 INFO Time to read cam and detect fire: 0.1994647979736328
+2023-05-30 12:46:14,192 INFO Thread 11472 is executed
+2023-05-30 12:46:14,396 INFO Time to read cam and detect fire: 0.20445537567138672
+2023-05-30 12:46:14,396 INFO Thread 11472 is executed
+2023-05-30 12:46:14,619 INFO Time to read cam and detect fire: 0.22240400314331055
+2023-05-30 12:46:14,619 INFO Thread 11472 is executed
+2023-05-30 12:46:14,833 INFO Time to read cam and detect fire: 0.21442675590515137
+2023-05-30 12:46:14,833 INFO Thread 11472 is executed
+2023-05-30 12:46:15,043 INFO Time to read cam and detect fire: 0.2094407081604004
+2023-05-30 12:46:15,043 INFO Thread 11472 is executed
+2023-05-30 12:46:15,247 INFO Time to read cam and detect fire: 0.2044529914855957
+2023-05-30 12:46:15,247 INFO Thread 11472 is executed
+2023-05-30 12:46:15,446 INFO Time to read cam and detect fire: 0.1984708309173584
+2023-05-30 12:46:15,446 INFO Thread 11472 is executed
+2023-05-30 12:46:15,666 INFO Time to read cam and detect fire: 0.22041034698486328
+2023-05-30 12:46:15,666 INFO Thread 11472 is executed
+2023-05-30 12:46:15,882 INFO Time to read cam and detect fire: 0.21642136573791504
+2023-05-30 12:46:15,882 INFO Thread 11472 is executed
+2023-05-30 12:46:15,941 INFO Thread 16360 is executed
+2023-05-30 12:46:15,943 INFO Time to publish sensor data: 0.001995563507080078
+2023-05-30 12:46:15,945 INFO Thread 11468 is executed
+2023-05-30 12:46:15,946 INFO Time to read sensor: 0.0009915828704833984
+2023-05-30 12:46:16,097 INFO Time to read cam and detect fire: 0.21442842483520508
+2023-05-30 12:46:16,097 INFO Thread 11472 is executed
+2023-05-30 12:46:16,321 INFO Time to read cam and detect fire: 0.22439813613891602
+2023-05-30 12:46:16,321 INFO Thread 11472 is executed
+2023-05-30 12:46:16,529 INFO Time to read cam and detect fire: 0.20748305320739746
+2023-05-30 12:46:16,529 INFO Thread 11472 is executed
+2023-05-30 12:46:16,737 INFO Time to read cam and detect fire: 0.2084052562713623
+2023-05-30 12:46:16,737 INFO Thread 11472 is executed
+2023-05-30 12:46:16,944 INFO Time to read cam and detect fire: 0.20644879341125488
+2023-05-30 12:46:16,944 INFO Thread 11472 is executed
+2023-05-30 12:46:17,162 INFO Time to read cam and detect fire: 0.21842002868652344
+2023-05-30 12:46:17,162 INFO Thread 11472 is executed
+2023-05-30 12:46:17,378 INFO Time to read cam and detect fire: 0.21641755104064941
+2023-05-30 12:46:17,378 INFO Thread 11472 is executed
+2023-05-30 12:46:17,572 INFO Time to read cam and detect fire: 0.1934819221496582
+2023-05-30 12:46:17,573 INFO Thread 11472 is executed
+2023-05-30 12:46:17,784 INFO Time to read cam and detect fire: 0.21143531799316406
+2023-05-30 12:46:17,785 INFO Thread 11472 is executed
+2023-05-30 12:46:17,983 INFO Time to read cam and detect fire: 0.19747281074523926
+2023-05-30 12:46:17,983 INFO Thread 11472 is executed
+2023-05-30 12:46:18,203 INFO Time to read cam and detect fire: 0.2204115390777588
+2023-05-30 12:46:18,204 INFO Thread 11472 is executed
+2023-05-30 12:46:18,402 INFO Time to read cam and detect fire: 0.19747304916381836
+2023-05-30 12:46:18,402 INFO Thread 11472 is executed
+2023-05-30 12:46:18,620 INFO Time to read cam and detect fire: 0.2184154987335205
+2023-05-30 12:46:18,620 INFO Thread 11472 is executed
+2023-05-30 12:46:18,808 INFO Time to read cam and detect fire: 0.1874995231628418
+2023-05-30 12:46:18,808 INFO Thread 11472 is executed
+2023-05-30 12:46:19,013 INFO Time to read cam and detect fire: 0.20545339584350586
+2023-05-30 12:46:19,013 INFO Thread 11472 is executed
+2023-05-30 12:46:19,204 INFO Time to read cam and detect fire: 0.1904890537261963
+2023-05-30 12:46:19,204 INFO Thread 11472 is executed
+2023-05-30 12:46:19,406 INFO Time to read cam and detect fire: 0.20245790481567383
+2023-05-30 12:46:19,406 INFO Thread 11472 is executed
+2023-05-30 12:46:19,618 INFO Time to read cam and detect fire: 0.2124345302581787
+2023-05-30 12:46:19,618 INFO Thread 11472 is executed
+2023-05-30 12:46:19,847 INFO Time to read cam and detect fire: 0.22838854789733887
+2023-05-30 12:46:19,848 INFO Thread 11472 is executed
+2023-05-30 12:46:20,059 INFO Time to read cam and detect fire: 0.21143245697021484
+2023-05-30 12:46:20,060 INFO Thread 11472 is executed
+2023-05-30 12:46:20,275 INFO Time to read cam and detect fire: 0.21442651748657227
+2023-05-30 12:46:20,276 INFO Thread 11472 is executed
+2023-05-30 12:46:20,477 INFO Time to read cam and detect fire: 0.2014610767364502
+2023-05-30 12:46:20,477 INFO Thread 11472 is executed
+2023-05-30 12:46:20,661 INFO Time to read cam and detect fire: 0.18351125717163086
+2023-05-30 12:46:20,661 INFO Thread 11472 is executed
+2023-05-30 12:46:20,864 INFO Time to read cam and detect fire: 0.20345497131347656
+2023-05-30 12:46:20,864 INFO Thread 11472 is executed
+2023-05-30 12:46:21,068 INFO Time to read cam and detect fire: 0.2034616470336914
+2023-05-30 12:46:21,068 INFO Thread 11472 is executed
+2023-05-30 12:46:21,284 INFO Time to read cam and detect fire: 0.2164163589477539
+2023-05-30 12:46:21,284 INFO Thread 11472 is executed
+2023-05-30 12:46:21,482 INFO Time to read cam and detect fire: 0.1984696388244629
+2023-05-30 12:46:21,482 INFO Thread 11472 is executed
+2023-05-30 12:46:21,693 INFO Time to read cam and detect fire: 0.21043944358825684
+2023-05-30 12:46:21,693 INFO Thread 11472 is executed
+2023-05-30 12:46:21,917 INFO Time to read cam and detect fire: 0.2243971824645996
+2023-05-30 12:46:21,917 INFO Thread 11472 is executed
+2023-05-30 12:46:22,114 INFO Time to read cam and detect fire: 0.19647502899169922
+2023-05-30 12:46:22,114 INFO Thread 11472 is executed
+2023-05-30 12:46:22,323 INFO Time to read cam and detect fire: 0.2094402313232422
+2023-05-30 12:46:22,323 INFO Thread 11472 is executed
+2023-05-30 12:46:22,532 INFO Time to read cam and detect fire: 0.20844388008117676
+2023-05-30 12:46:22,532 INFO Thread 11472 is executed
+2023-05-30 12:46:22,729 INFO Time to read cam and detect fire: 0.19747400283813477
+2023-05-30 12:46:22,729 INFO Thread 11472 is executed
+2023-05-30 12:46:22,932 INFO Time to read cam and detect fire: 0.20245623588562012
+2023-05-30 12:46:22,932 INFO Thread 11472 is executed
+2023-05-30 12:46:23,131 INFO Time to read cam and detect fire: 0.19946670532226562
+2023-05-30 12:46:23,131 INFO Thread 11472 is executed
+2023-05-30 12:46:23,349 INFO Time to read cam and detect fire: 0.2184162139892578
+2023-05-30 12:46:23,349 INFO Thread 11472 is executed
+2023-05-30 12:46:23,550 INFO Time to read cam and detect fire: 0.20046472549438477
+2023-05-30 12:46:23,550 INFO Thread 11472 is executed
+2023-05-30 12:46:23,766 INFO Time to read cam and detect fire: 0.21642184257507324
+2023-05-30 12:46:23,766 INFO Thread 11472 is executed
+2023-05-30 12:46:23,968 INFO Time to read cam and detect fire: 0.2014615535736084
+2023-05-30 12:46:23,969 INFO Thread 11472 is executed
+2023-05-30 12:46:24,175 INFO Time to read cam and detect fire: 0.20644831657409668
+2023-05-30 12:46:24,175 INFO Thread 11472 is executed
+2023-05-30 12:46:24,366 INFO Time to read cam and detect fire: 0.1904909610748291
+2023-05-30 12:46:24,366 INFO Thread 11472 is executed
+2023-05-30 12:46:24,576 INFO Time to read cam and detect fire: 0.21043777465820312
+2023-05-30 12:46:24,576 INFO Thread 11472 is executed
+2023-05-30 12:46:24,759 INFO Time to read cam and detect fire: 0.18251347541809082
+2023-05-30 12:46:24,760 INFO Thread 11472 is executed
+2023-05-30 12:46:24,991 INFO Time to read cam and detect fire: 0.23138189315795898
+2023-05-30 12:46:24,991 INFO Thread 11472 is executed
+2023-05-30 12:46:25,207 INFO Time to read cam and detect fire: 0.2154242992401123
+2023-05-30 12:46:25,207 INFO Thread 11472 is executed
+2023-05-30 12:46:25,404 INFO Time to read cam and detect fire: 0.19747233390808105
+2023-05-30 12:46:25,404 INFO Thread 11472 is executed
+2023-05-30 12:46:25,618 INFO Time to read cam and detect fire: 0.21442556381225586
+2023-05-30 12:46:25,618 INFO Thread 11472 is executed
+2023-05-30 12:46:25,830 INFO Time to read cam and detect fire: 0.21143603324890137
+2023-05-30 12:46:25,830 INFO Thread 11472 is executed
+2023-05-30 12:46:25,947 INFO Thread 11468 is executed
+2023-05-30 12:46:25,947 INFO Time to read sensor: 0.0
+2023-05-30 12:46:26,049 INFO Time to read cam and detect fire: 0.21941423416137695
+2023-05-30 12:46:26,049 INFO Thread 11472 is executed
+2023-05-30 12:46:26,279 INFO Time to read cam and detect fire: 0.2293858528137207
+2023-05-30 12:46:26,279 INFO Thread 11472 is executed
+2023-05-30 12:46:26,480 INFO Time to read cam and detect fire: 0.201462984085083
+2023-05-30 12:46:26,481 INFO Thread 11472 is executed
+2023-05-30 12:46:26,682 INFO Time to read cam and detect fire: 0.2014622688293457
+2023-05-30 12:46:26,683 INFO Thread 11472 is executed
+2023-05-30 12:46:26,884 INFO Time to read cam and detect fire: 0.201462984085083
+2023-05-30 12:46:26,884 INFO Thread 11472 is executed
+2023-05-30 12:46:27,087 INFO Time to read cam and detect fire: 0.20345425605773926
+2023-05-30 12:46:27,087 INFO Thread 11472 is executed
+2023-05-30 12:46:27,290 INFO Time to read cam and detect fire: 0.20246243476867676
+2023-05-30 12:46:27,290 INFO Thread 11472 is executed
+2023-05-30 12:46:27,509 INFO Time to read cam and detect fire: 0.21941065788269043
+2023-05-30 12:46:27,510 INFO Thread 11472 is executed
+2023-05-30 12:46:27,722 INFO Time to read cam and detect fire: 0.21143484115600586
+2023-05-30 12:46:27,722 INFO Thread 11472 is executed
+2023-05-30 12:46:27,923 INFO Time to read cam and detect fire: 0.2014617919921875
+2023-05-30 12:46:27,923 INFO Thread 11472 is executed
+2023-05-30 12:46:28,120 INFO Time to read cam and detect fire: 0.19647455215454102
+2023-05-30 12:46:28,120 INFO Thread 11472 is executed
+2023-05-30 12:46:28,332 INFO Time to read cam and detect fire: 0.2124326229095459
+2023-05-30 12:46:28,332 INFO Thread 11472 is executed
+2023-05-30 12:46:28,534 INFO Time to read cam and detect fire: 0.2014613151550293
+2023-05-30 12:46:28,534 INFO Thread 11472 is executed
+2023-05-30 12:46:28,730 INFO Time to read cam and detect fire: 0.19647574424743652
+2023-05-30 12:46:28,731 INFO Thread 11472 is executed
+2023-05-30 12:46:28,959 INFO Time to read cam and detect fire: 0.22838735580444336
+2023-05-30 12:46:28,959 INFO Thread 11472 is executed
+2023-05-30 12:46:29,149 INFO Time to read cam and detect fire: 0.18949341773986816
+2023-05-30 12:46:29,149 INFO Thread 11472 is executed
+2023-05-30 12:46:29,339 INFO Time to read cam and detect fire: 0.1904904842376709
+2023-05-30 12:46:29,339 INFO Thread 11472 is executed
+2023-05-30 12:46:29,544 INFO Time to read cam and detect fire: 0.2044539451599121
+2023-05-30 12:46:29,544 INFO Thread 11472 is executed
+2023-05-30 12:46:29,735 INFO Time to read cam and detect fire: 0.19148826599121094
+2023-05-30 12:46:29,735 INFO Thread 11472 is executed
+2023-05-30 12:46:29,931 INFO Time to read cam and detect fire: 0.19448256492614746
+2023-05-30 12:46:29,931 INFO Thread 11472 is executed
+2023-05-30 12:46:30,142 INFO Time to read cam and detect fire: 0.21143603324890137
+2023-05-30 12:46:30,143 INFO Thread 11472 is executed
+2023-05-30 12:46:30,366 INFO Time to read cam and detect fire: 0.22240734100341797
+2023-05-30 12:46:30,366 INFO Thread 11472 is executed
+2023-05-30 12:46:30,596 INFO Time to read cam and detect fire: 0.23038172721862793
+2023-05-30 12:46:30,596 INFO Thread 11472 is executed
+2023-05-30 12:46:30,826 INFO Time to read cam and detect fire: 0.23038673400878906
+2023-05-30 12:46:30,826 INFO Thread 11472 is executed
+2023-05-30 12:46:31,092 INFO Time to read cam and detect fire: 0.2642951011657715
+2023-05-30 12:46:31,092 INFO Thread 11472 is executed
+2023-05-30 12:46:31,320 INFO Time to read cam and detect fire: 0.22838783264160156
+2023-05-30 12:46:31,320 INFO Thread 11472 is executed
+2023-05-30 12:46:31,565 INFO Time to read cam and detect fire: 0.24434828758239746
+2023-05-30 12:46:31,565 INFO Thread 11472 is executed
+2023-05-30 12:46:31,794 INFO Time to read cam and detect fire: 0.2293853759765625
+2023-05-30 12:46:31,794 INFO Thread 11472 is executed
+2023-05-30 12:46:32,036 INFO Time to read cam and detect fire: 0.24235272407531738
+2023-05-30 12:46:32,036 INFO Thread 11472 is executed
+2023-05-30 12:46:32,260 INFO Time to read cam and detect fire: 0.2234025001525879
+2023-05-30 12:46:32,261 INFO Thread 11472 is executed
+2023-05-30 12:46:32,483 INFO Time to read cam and detect fire: 0.22240591049194336
+2023-05-30 12:46:32,483 INFO Thread 11472 is executed
+2023-05-30 12:46:32,732 INFO Time to read cam and detect fire: 0.24933433532714844
+2023-05-30 12:46:32,732 INFO Thread 11472 is executed
+2023-05-30 12:46:32,969 INFO Time to read cam and detect fire: 0.23636889457702637
+2023-05-30 12:46:32,969 INFO Thread 11472 is executed
+2023-05-30 12:46:33,198 INFO Time to read cam and detect fire: 0.22938919067382812
+2023-05-30 12:46:33,198 INFO Thread 11472 is executed
+2023-05-30 12:46:33,443 INFO Time to read cam and detect fire: 0.24534034729003906
+2023-05-30 12:46:33,443 INFO Thread 11472 is executed
+2023-05-30 12:46:33,651 INFO Time to read cam and detect fire: 0.20744657516479492
+2023-05-30 12:46:33,651 INFO Thread 11472 is executed
+2023-05-30 12:46:33,864 INFO Time to read cam and detect fire: 0.21343183517456055
+2023-05-30 12:46:33,864 INFO Thread 11472 is executed
+2023-05-30 12:46:34,135 INFO Time to read cam and detect fire: 0.2702758312225342
+2023-05-30 12:46:34,135 INFO Thread 11472 is executed
+2023-05-30 12:46:34,352 INFO Time to read cam and detect fire: 0.21741938591003418
+2023-05-30 12:46:34,352 INFO Thread 11472 is executed
+2023-05-30 12:46:34,556 INFO Time to read cam and detect fire: 0.20345687866210938
+2023-05-30 12:46:34,556 INFO Thread 11472 is executed
+2023-05-30 12:46:34,759 INFO Time to read cam and detect fire: 0.20345354080200195
+2023-05-30 12:46:34,759 INFO Thread 11472 is executed
+2023-05-30 12:46:34,956 INFO Time to read cam and detect fire: 0.19747233390808105
+2023-05-30 12:46:34,956 INFO Thread 11472 is executed
+2023-05-30 12:46:35,188 INFO Time to read cam and detect fire: 0.2313828468322754
+2023-05-30 12:46:35,188 INFO Thread 11472 is executed
+2023-05-30 12:46:35,373 INFO Time to read cam and detect fire: 0.18552947044372559
+2023-05-30 12:46:35,374 INFO Thread 11472 is executed
+2023-05-30 12:46:35,627 INFO Time to read cam and detect fire: 0.25232601165771484
+2023-05-30 12:46:35,627 INFO Thread 11472 is executed
+2023-05-30 12:46:35,848 INFO Time to read cam and detect fire: 0.22140789031982422
+2023-05-30 12:46:35,848 INFO Thread 11472 is executed
+2023-05-30 12:46:35,943 INFO Thread 16360 is executed
+2023-05-30 12:46:35,944 INFO Time to publish sensor data: 0.000997781753540039
+2023-05-30 12:46:35,948 INFO Thread 11468 is executed
+2023-05-30 12:46:35,948 INFO Time to read sensor: 0.0
+2023-05-30 12:46:36,080 INFO Time to read cam and detect fire: 0.2323780059814453
+2023-05-30 12:46:36,080 INFO Thread 11472 is executed
+2023-05-30 12:46:36,293 INFO Time to read cam and detect fire: 0.2124319076538086
+2023-05-30 12:46:36,293 INFO Thread 11472 is executed
+2023-05-30 12:46:36,509 INFO Time to read cam and detect fire: 0.21642470359802246
+2023-05-30 12:46:36,510 INFO Thread 11472 is executed
+2023-05-30 12:46:36,787 INFO Time to read cam and detect fire: 0.27725839614868164
+2023-05-30 12:46:36,788 INFO Thread 11472 is executed
+2023-05-30 12:46:37,059 INFO Time to read cam and detect fire: 0.2712693214416504
+2023-05-30 12:46:37,059 INFO Thread 11472 is executed
+2023-05-30 12:46:37,352 INFO Time to read cam and detect fire: 0.29323601722717285
+2023-05-30 12:46:37,352 INFO Thread 11472 is executed
+2023-05-30 12:46:37,594 INFO Time to read cam and detect fire: 0.24233531951904297
+2023-05-30 12:46:37,594 INFO Thread 11472 is executed
+2023-05-30 12:46:37,828 INFO Time to read cam and detect fire: 0.23337340354919434
+2023-05-30 12:46:37,828 INFO Thread 11472 is executed
+2023-05-30 12:46:38,092 INFO Time to read cam and detect fire: 0.2642936706542969
+2023-05-30 12:46:38,092 INFO Thread 11472 is executed
+2023-05-30 12:46:38,332 INFO Time to read cam and detect fire: 0.2403578758239746
+2023-05-30 12:46:38,332 INFO Thread 11472 is executed
+2023-05-30 12:46:38,535 INFO Time to read cam and detect fire: 0.20245862007141113
+2023-05-30 12:46:38,535 INFO Thread 11472 is executed
+2023-05-30 12:46:38,761 INFO Time to read cam and detect fire: 0.2263956069946289
+2023-05-30 12:46:38,761 INFO Thread 11472 is executed
+2023-05-30 12:46:38,962 INFO Time to read cam and detect fire: 0.20046424865722656
+2023-05-30 12:46:38,962 INFO Thread 11472 is executed
+2023-05-30 12:46:39,180 INFO Time to read cam and detect fire: 0.2184154987335205
+2023-05-30 12:46:39,180 INFO Thread 11472 is executed
+2023-05-30 12:46:39,369 INFO Time to read cam and detect fire: 0.18849968910217285
+2023-05-30 12:46:39,369 INFO Thread 11472 is executed
+2023-05-30 12:46:39,646 INFO Time to read cam and detect fire: 0.2772550582885742
+2023-05-30 12:46:39,646 INFO Thread 11472 is executed
+2023-05-30 12:46:39,862 INFO Time to read cam and detect fire: 0.21642327308654785
+2023-05-30 12:46:39,862 INFO Thread 11472 is executed
+2023-05-30 12:46:40,083 INFO Time to read cam and detect fire: 0.22040915489196777
+2023-05-30 12:46:40,084 INFO Thread 11472 is executed
+2023-05-30 12:46:40,287 INFO Time to read cam and detect fire: 0.20345759391784668
+2023-05-30 12:46:40,287 INFO Thread 11472 is executed
+2023-05-30 12:46:40,557 INFO Time to read cam and detect fire: 0.2702782154083252
+2023-05-30 12:46:40,557 INFO Thread 11472 is executed
+2023-05-30 12:46:40,788 INFO Time to read cam and detect fire: 0.23038482666015625
+2023-05-30 12:46:40,789 INFO Thread 11472 is executed
+2023-05-30 12:46:40,984 INFO Time to read cam and detect fire: 0.19547772407531738
+2023-05-30 12:46:40,984 INFO Thread 11472 is executed
+2023-05-30 12:46:41,209 INFO Time to read cam and detect fire: 0.22440052032470703
+2023-05-30 12:46:41,209 INFO Thread 11472 is executed
+2023-05-30 12:46:41,424 INFO Time to read cam and detect fire: 0.21545648574829102
+2023-05-30 12:46:41,424 INFO Thread 11472 is executed
+2023-05-30 12:46:41,650 INFO Time to read cam and detect fire: 0.22536492347717285
+2023-05-30 12:46:41,650 INFO Thread 11472 is executed
+2023-05-30 12:46:41,890 INFO Time to read cam and detect fire: 0.2403571605682373
+2023-05-30 12:46:41,890 INFO Thread 11472 is executed
+2023-05-30 12:46:42,091 INFO Time to read cam and detect fire: 0.2014622688293457
+2023-05-30 12:46:42,091 INFO Thread 11472 is executed
+2023-05-30 12:46:42,324 INFO Time to read cam and detect fire: 0.23238348960876465
+2023-05-30 12:46:42,324 INFO Thread 11472 is executed
+2023-05-30 12:46:42,542 INFO Time to read cam and detect fire: 0.21841049194335938
+2023-05-30 12:46:42,542 INFO Thread 11472 is executed
+2023-05-30 12:46:42,761 INFO Time to read cam and detect fire: 0.21841907501220703
+2023-05-30 12:46:42,761 INFO Thread 11472 is executed
+2023-05-30 12:46:42,968 INFO Time to read cam and detect fire: 0.2074434757232666
+2023-05-30 12:46:42,969 INFO Thread 11472 is executed
+2023-05-30 12:46:43,190 INFO Time to read cam and detect fire: 0.22141098976135254
+2023-05-30 12:46:43,190 INFO Thread 11472 is executed
+2023-05-30 12:46:43,413 INFO Time to read cam and detect fire: 0.22240161895751953
+2023-05-30 12:46:43,413 INFO Thread 11472 is executed
+2023-05-30 12:46:43,675 INFO Time to read cam and detect fire: 0.2622990608215332
+2023-05-30 12:46:43,675 INFO Thread 11472 is executed
+2023-05-30 12:46:43,942 INFO Time to read cam and detect fire: 0.2672865390777588
+2023-05-30 12:46:43,942 INFO Thread 11472 is executed
+2023-05-30 12:46:44,197 INFO Time to read cam and detect fire: 0.2543210983276367
+2023-05-30 12:46:44,197 INFO Thread 11472 is executed
+2023-05-30 12:46:44,429 INFO Time to read cam and detect fire: 0.23237872123718262
+2023-05-30 12:46:44,429 INFO Thread 11472 is executed
+2023-05-30 12:46:44,624 INFO Time to read cam and detect fire: 0.19447851181030273
+2023-05-30 12:46:44,624 INFO Thread 11472 is executed
+2023-05-30 12:46:44,837 INFO Time to read cam and detect fire: 0.21343016624450684
+2023-05-30 12:46:44,837 INFO Thread 11472 is executed
+2023-05-30 12:46:45,033 INFO Time to read cam and detect fire: 0.1954789161682129
+2023-05-30 12:46:45,033 INFO Thread 11472 is executed
+2023-05-30 12:46:45,241 INFO Time to read cam and detect fire: 0.20844030380249023
+2023-05-30 12:46:45,241 INFO Thread 11472 is executed
+2023-05-30 12:46:45,434 INFO Time to read cam and detect fire: 0.19348454475402832
+2023-05-30 12:46:45,434 INFO Thread 11472 is executed
+2023-05-30 12:46:45,646 INFO Time to read cam and detect fire: 0.21143436431884766
+2023-05-30 12:46:45,646 INFO Thread 11472 is executed
+2023-05-30 12:46:45,844 INFO Time to read cam and detect fire: 0.19846844673156738
+2023-05-30 12:46:45,844 INFO Thread 11472 is executed
+2023-05-30 12:46:45,949 INFO Thread 11468 is executed
+2023-05-30 12:46:45,949 INFO Time to read sensor: 0.0
+2023-05-30 12:46:46,073 INFO Time to read cam and detect fire: 0.2283923625946045
+2023-05-30 12:46:46,074 INFO Thread 11472 is executed
+2023-05-30 12:46:46,269 INFO Time to read cam and detect fire: 0.19547700881958008
+2023-05-30 12:46:46,269 INFO Thread 11472 is executed
+2023-05-30 12:46:46,488 INFO Time to read cam and detect fire: 0.21841645240783691
+2023-05-30 12:46:46,489 INFO Thread 11472 is executed
+2023-05-30 12:46:46,714 INFO Time to read cam and detect fire: 0.22539782524108887
+2023-05-30 12:46:46,714 INFO Thread 11472 is executed
+2023-05-30 12:46:46,909 INFO Time to read cam and detect fire: 0.19547724723815918
+2023-05-30 12:46:46,909 INFO Thread 11472 is executed
+2023-05-30 12:46:47,133 INFO Time to read cam and detect fire: 0.223402738571167
+2023-05-30 12:46:47,133 INFO Thread 11472 is executed
+2023-05-30 12:46:47,370 INFO Time to read cam and detect fire: 0.2373654842376709
+2023-05-30 12:46:47,370 INFO Thread 11472 is executed
+2023-05-30 12:46:47,575 INFO Time to read cam and detect fire: 0.20445466041564941
+2023-05-30 12:46:47,575 INFO Thread 11472 is executed
+2023-05-30 12:46:47,792 INFO Time to read cam and detect fire: 0.21741795539855957
+2023-05-30 12:46:47,793 INFO Thread 11472 is executed
+2023-05-30 12:46:48,018 INFO Time to read cam and detect fire: 0.22440123558044434
+2023-05-30 12:46:48,018 INFO Thread 11472 is executed
+2023-05-30 12:46:48,213 INFO Time to read cam and detect fire: 0.19547605514526367
+2023-05-30 12:46:48,213 INFO Thread 11472 is executed
+2023-05-30 12:46:48,423 INFO Time to read cam and detect fire: 0.21043777465820312
+2023-05-30 12:46:48,423 INFO Thread 11472 is executed
+2023-05-30 12:46:48,635 INFO Time to read cam and detect fire: 0.21143531799316406
+2023-05-30 12:46:48,635 INFO Thread 11472 is executed
+2023-05-30 12:46:48,835 INFO Time to read cam and detect fire: 0.20046734809875488
+2023-05-30 12:46:48,836 INFO Thread 11472 is executed
+2023-05-30 12:46:49,044 INFO Time to read cam and detect fire: 0.20744585990905762
+2023-05-30 12:46:49,044 INFO Thread 11472 is executed
+2023-05-30 12:46:49,261 INFO Time to read cam and detect fire: 0.21741867065429688
+2023-05-30 12:46:49,261 INFO Thread 11472 is executed
+2023-05-30 12:46:49,463 INFO Time to read cam and detect fire: 0.20149683952331543
+2023-05-30 12:46:49,463 INFO Thread 11472 is executed
+2023-05-30 12:46:49,681 INFO Time to read cam and detect fire: 0.21838140487670898
+2023-05-30 12:46:49,681 INFO Thread 11472 is executed
+2023-05-30 12:46:49,889 INFO Time to read cam and detect fire: 0.20744609832763672
+2023-05-30 12:46:49,889 INFO Thread 11472 is executed
+2023-05-30 12:46:50,105 INFO Time to read cam and detect fire: 0.21642088890075684
+2023-05-30 12:46:50,105 INFO Thread 11472 is executed
+2023-05-30 12:46:50,328 INFO Time to read cam and detect fire: 0.2234025001525879
+2023-05-30 12:46:50,328 INFO Thread 11472 is executed
+2023-05-30 12:46:50,542 INFO Time to read cam and detect fire: 0.21342921257019043
+2023-05-30 12:46:50,542 INFO Thread 11472 is executed
+2023-05-30 12:46:50,745 INFO Time to read cam and detect fire: 0.20345664024353027
+2023-05-30 12:46:50,745 INFO Thread 11472 is executed
+2023-05-30 12:46:51,006 INFO Time to read cam and detect fire: 0.26030898094177246
+2023-05-30 12:46:51,006 INFO Thread 11472 is executed
+2023-05-30 12:46:51,225 INFO Time to read cam and detect fire: 0.21941280364990234
+2023-05-30 12:46:51,225 INFO Thread 11472 is executed
+2023-05-30 12:46:51,444 INFO Time to read cam and detect fire: 0.21940898895263672
+2023-05-30 12:46:51,444 INFO Thread 11472 is executed
+2023-05-30 12:46:51,645 INFO Time to read cam and detect fire: 0.20046448707580566
+2023-05-30 12:46:51,645 INFO Thread 11472 is executed
+2023-05-30 12:46:51,878 INFO Time to read cam and detect fire: 0.23337650299072266
+2023-05-30 12:46:51,878 INFO Thread 11472 is executed
+2023-05-30 12:46:52,105 INFO Time to read cam and detect fire: 0.2263948917388916
+2023-05-30 12:46:52,105 INFO Thread 11472 is executed
+2023-05-30 12:46:52,319 INFO Time to read cam and detect fire: 0.21442890167236328
+2023-05-30 12:46:52,319 INFO Thread 11472 is executed
+2023-05-30 12:46:52,559 INFO Time to read cam and detect fire: 0.2403552532196045
+2023-05-30 12:46:52,559 INFO Thread 11472 is executed
+2023-05-30 12:46:52,824 INFO Time to read cam and detect fire: 0.2642948627471924
+2023-05-30 12:46:52,824 INFO Thread 11472 is executed
+2023-05-30 12:46:53,046 INFO Time to read cam and detect fire: 0.22240447998046875
+2023-05-30 12:46:53,046 INFO Thread 11472 is executed
+2023-05-30 12:46:53,347 INFO Time to read cam and detect fire: 0.3011963367462158
+2023-05-30 12:46:53,347 INFO Thread 11472 is executed
+2023-05-30 12:46:53,671 INFO Time to read cam and detect fire: 0.32413220405578613
+2023-05-30 12:46:53,671 INFO Thread 11472 is executed
+2023-05-30 12:46:53,942 INFO Time to read cam and detect fire: 0.2702770233154297
+2023-05-30 12:46:53,943 INFO Thread 11472 is executed
+2023-05-30 12:46:54,220 INFO Time to read cam and detect fire: 0.27725934982299805
+2023-05-30 12:46:54,220 INFO Thread 11472 is executed
+2023-05-30 12:46:54,423 INFO Time to read cam and detect fire: 0.20345520973205566
+2023-05-30 12:46:54,423 INFO Thread 11472 is executed
+2023-05-30 12:46:54,635 INFO Time to read cam and detect fire: 0.21143531799316406
+2023-05-30 12:46:54,635 INFO Thread 11472 is executed
+2023-05-30 12:46:54,847 INFO Time to read cam and detect fire: 0.2124314308166504
+2023-05-30 12:46:54,847 INFO Thread 11472 is executed
+2023-05-30 12:46:55,034 INFO Time to read cam and detect fire: 0.18650293350219727
+2023-05-30 12:46:55,034 INFO Thread 11472 is executed
+2023-05-30 12:46:55,234 INFO Time to read cam and detect fire: 0.20046281814575195
+2023-05-30 12:46:55,234 INFO Thread 11472 is executed
+2023-05-30 12:46:55,463 INFO Time to read cam and detect fire: 0.2283942699432373
+2023-05-30 12:46:55,463 INFO Thread 11472 is executed
+2023-05-30 12:46:55,658 INFO Time to read cam and detect fire: 0.19547748565673828
+2023-05-30 12:46:55,659 INFO Thread 11472 is executed
+2023-05-30 12:46:55,874 INFO Time to read cam and detect fire: 0.21439361572265625
+2023-05-30 12:46:55,874 INFO Thread 11472 is executed
+2023-05-30 12:46:55,944 INFO Thread 16360 is executed
+2023-05-30 12:46:55,945 INFO Time to publish sensor data: 0.0009961128234863281
+2023-05-30 12:46:55,950 INFO Thread 11468 is executed
+2023-05-30 12:46:55,951 INFO Time to read sensor: 0.0009937286376953125
+2023-05-30 12:46:56,112 INFO Time to read cam and detect fire: 0.23836278915405273
+2023-05-30 12:46:56,112 INFO Thread 11472 is executed
+2023-05-30 12:46:56,333 INFO Time to read cam and detect fire: 0.2214055061340332
+2023-05-30 12:46:56,333 INFO Thread 11472 is executed
+2023-05-30 12:46:56,548 INFO Time to read cam and detect fire: 0.21442866325378418
+2023-05-30 12:46:56,548 INFO Thread 11472 is executed
+2023-05-30 12:46:56,758 INFO Time to read cam and detect fire: 0.21043825149536133
+2023-05-30 12:46:56,758 INFO Thread 11472 is executed
+2023-05-30 12:46:56,969 INFO Time to read cam and detect fire: 0.2104358673095703
+2023-05-30 12:46:56,969 INFO Thread 11472 is executed
+2023-05-30 12:46:57,180 INFO Time to read cam and detect fire: 0.2114408016204834
+2023-05-30 12:46:57,180 INFO Thread 11472 is executed
+2023-05-30 12:46:57,418 INFO Time to read cam and detect fire: 0.2383568286895752
+2023-05-30 12:46:57,418 INFO Thread 11472 is executed
+2023-05-30 12:46:57,626 INFO Time to read cam and detect fire: 0.20744585990905762
+2023-05-30 12:46:57,626 INFO Thread 11472 is executed
+2023-05-30 12:46:57,829 INFO Time to read cam and detect fire: 0.2034587860107422
+2023-05-30 12:46:57,829 INFO Thread 11472 is executed
+2023-05-30 12:46:58,041 INFO Time to read cam and detect fire: 0.21143436431884766
+2023-05-30 12:46:58,041 INFO Thread 11472 is executed
+2023-05-30 12:46:58,260 INFO Time to read cam and detect fire: 0.21941184997558594
+2023-05-30 12:46:58,260 INFO Thread 11472 is executed
+2023-05-30 12:46:58,470 INFO Time to read cam and detect fire: 0.20943999290466309
+2023-05-30 12:46:58,470 INFO Thread 11472 is executed
+2023-05-30 12:46:58,684 INFO Time to read cam and detect fire: 0.21442961692810059
+2023-05-30 12:46:58,685 INFO Thread 11472 is executed
+2023-05-30 12:46:58,920 INFO Time to read cam and detect fire: 0.23537015914916992
+2023-05-30 12:46:58,920 INFO Thread 11472 is executed
+2023-05-30 12:46:59,144 INFO Time to read cam and detect fire: 0.2234036922454834
+2023-05-30 12:46:59,144 INFO Thread 11472 is executed
+2023-05-30 12:46:59,363 INFO Time to read cam and detect fire: 0.21941328048706055
+2023-05-30 12:46:59,364 INFO Thread 11472 is executed
+2023-05-30 12:46:59,569 INFO Time to read cam and detect fire: 0.20445632934570312
+2023-05-30 12:46:59,569 INFO Thread 11472 is executed
+2023-05-30 12:46:59,791 INFO Time to read cam and detect fire: 0.22240614891052246
+2023-05-30 12:46:59,792 INFO Thread 11472 is executed
+2023-05-30 12:46:59,989 INFO Time to read cam and detect fire: 0.19647550582885742
+2023-05-30 12:46:59,989 INFO Thread 11472 is executed
+2023-05-30 12:47:00,228 INFO Time to read cam and detect fire: 0.23937153816223145
+2023-05-30 12:47:00,228 INFO Thread 11472 is executed
+2023-05-30 12:47:00,436 INFO Time to read cam and detect fire: 0.20842885971069336
+2023-05-30 12:47:00,436 INFO Thread 11472 is executed
+2023-05-30 12:47:00,656 INFO Time to read cam and detect fire: 0.21941494941711426
+2023-05-30 12:47:00,656 INFO Thread 11472 is executed
+2023-05-30 12:47:00,871 INFO Time to read cam and detect fire: 0.2154252529144287
+2023-05-30 12:47:00,871 INFO Thread 11472 is executed
+2023-05-30 12:47:01,065 INFO Time to read cam and detect fire: 0.1934812068939209
+2023-05-30 12:47:01,066 INFO Thread 11472 is executed
+2023-05-30 12:47:01,280 INFO Time to read cam and detect fire: 0.21442890167236328
+2023-05-30 12:47:01,280 INFO Thread 11472 is executed
+2023-05-30 12:47:01,484 INFO Time to read cam and detect fire: 0.20345473289489746
+2023-05-30 12:47:01,484 INFO Thread 11472 is executed
+2023-05-30 12:47:01,693 INFO Time to read cam and detect fire: 0.20943951606750488
+2023-05-30 12:47:01,693 INFO Thread 11472 is executed
+2023-05-30 12:47:01,922 INFO Time to read cam and detect fire: 0.22938823699951172
+2023-05-30 12:47:01,922 INFO Thread 11472 is executed
+2023-05-30 12:47:02,124 INFO Time to read cam and detect fire: 0.2014598846435547
+2023-05-30 12:47:02,125 INFO Thread 11472 is executed
+2023-05-30 12:47:02,318 INFO Time to read cam and detect fire: 0.1934494972229004
+2023-05-30 12:47:02,318 INFO Thread 11472 is executed
+2023-05-30 12:47:02,525 INFO Time to read cam and detect fire: 0.20644617080688477
+2023-05-30 12:47:02,525 INFO Thread 11472 is executed
+2023-05-30 12:47:02,738 INFO Time to read cam and detect fire: 0.21343255043029785
+2023-05-30 12:47:02,738 INFO Thread 11472 is executed
+2023-05-30 12:47:02,942 INFO Time to read cam and detect fire: 0.20345401763916016
+2023-05-30 12:47:02,942 INFO Thread 11472 is executed
+2023-05-30 12:47:03,172 INFO Time to read cam and detect fire: 0.23038339614868164
+2023-05-30 12:47:03,172 INFO Thread 11472 is executed
+2023-05-30 12:47:03,374 INFO Time to read cam and detect fire: 0.20246005058288574
+2023-05-30 12:47:03,374 INFO Thread 11472 is executed
+2023-05-30 12:47:03,589 INFO Time to read cam and detect fire: 0.21442651748657227
+2023-05-30 12:47:03,589 INFO Thread 11472 is executed
+2023-05-30 12:47:03,812 INFO Time to read cam and detect fire: 0.2234022617340088
+2023-05-30 12:47:03,812 INFO Thread 11472 is executed
+2023-05-30 12:47:04,018 INFO Time to read cam and detect fire: 0.20545125007629395
+2023-05-30 12:47:04,019 INFO Thread 11472 is executed
+2023-05-30 12:47:04,234 INFO Time to read cam and detect fire: 0.2154245376586914
+2023-05-30 12:47:04,234 INFO Thread 11472 is executed
+2023-05-30 12:47:04,462 INFO Time to read cam and detect fire: 0.22739219665527344
+2023-05-30 12:47:04,462 INFO Thread 11472 is executed
+2023-05-30 12:47:04,693 INFO Time to read cam and detect fire: 0.23138117790222168
+2023-05-30 12:47:04,693 INFO Thread 11472 is executed
+2023-05-30 12:47:04,907 INFO Time to read cam and detect fire: 0.21442747116088867
+2023-05-30 12:47:04,907 INFO Thread 11472 is executed
+2023-05-30 12:47:05,121 INFO Time to read cam and detect fire: 0.21342825889587402
+2023-05-30 12:47:05,122 INFO Thread 11472 is executed
+2023-05-30 12:47:05,331 INFO Time to read cam and detect fire: 0.20844173431396484
+2023-05-30 12:47:05,331 INFO Thread 11472 is executed
+2023-05-30 12:47:05,527 INFO Time to read cam and detect fire: 0.195481538772583
+2023-05-30 12:47:05,527 INFO Thread 11472 is executed
+2023-05-30 12:47:05,744 INFO Time to read cam and detect fire: 0.21741485595703125
+2023-05-30 12:47:05,744 INFO Thread 11472 is executed
+2023-05-30 12:47:05,936 INFO Time to read cam and detect fire: 0.19148802757263184
+2023-05-30 12:47:05,936 INFO Thread 11472 is executed
+2023-05-30 12:47:05,953 INFO Thread 11468 is executed
+2023-05-30 12:47:05,954 INFO Time to read sensor: 0.0009963512420654297
+2023-05-30 12:47:06,145 INFO Time to read cam and detect fire: 0.2094416618347168
+2023-05-30 12:47:06,145 INFO Thread 11472 is executed
+2023-05-30 12:47:06,364 INFO Time to read cam and detect fire: 0.21842050552368164
+2023-05-30 12:47:06,364 INFO Thread 11472 is executed
+2023-05-30 12:47:06,568 INFO Time to read cam and detect fire: 0.20345807075500488
+2023-05-30 12:47:06,568 INFO Thread 11472 is executed
+2023-05-30 12:47:06,768 INFO Time to read cam and detect fire: 0.20046186447143555
+2023-05-30 12:47:06,768 INFO Thread 11472 is executed
+2023-05-30 12:47:06,991 INFO Time to read cam and detect fire: 0.22240734100341797
+2023-05-30 12:47:06,991 INFO Thread 11472 is executed
+2023-05-30 12:47:07,192 INFO Time to read cam and detect fire: 0.2014613151550293
+2023-05-30 12:47:07,192 INFO Thread 11472 is executed
+2023-05-30 12:47:07,402 INFO Time to read cam and detect fire: 0.2094411849975586
+2023-05-30 12:47:07,402 INFO Thread 11472 is executed
+2023-05-30 12:47:07,607 INFO Time to read cam and detect fire: 0.20544791221618652
+2023-05-30 12:47:07,607 INFO Thread 11472 is executed
+2023-05-30 12:47:07,820 INFO Time to read cam and detect fire: 0.2124347686767578
+2023-05-30 12:47:07,820 INFO Thread 11472 is executed
+2023-05-30 12:47:08,055 INFO Time to read cam and detect fire: 0.23536920547485352
+2023-05-30 12:47:08,055 INFO Thread 11472 is executed
+2023-05-30 12:47:08,257 INFO Time to read cam and detect fire: 0.20246124267578125
+2023-05-30 12:47:08,257 INFO Thread 11472 is executed
+2023-05-30 12:47:08,483 INFO Time to read cam and detect fire: 0.22539567947387695
+2023-05-30 12:47:08,483 INFO Thread 11472 is executed
+2023-05-30 12:47:08,706 INFO Time to read cam and detect fire: 0.2234044075012207
+2023-05-30 12:47:08,707 INFO Thread 11472 is executed
+2023-05-30 12:47:08,917 INFO Time to read cam and detect fire: 0.20943784713745117
+2023-05-30 12:47:08,918 INFO Thread 11472 is executed
+2023-05-30 12:47:09,129 INFO Time to read cam and detect fire: 0.21143484115600586
+2023-05-30 12:47:09,129 INFO Thread 11472 is executed
+2023-05-30 12:47:09,339 INFO Time to read cam and detect fire: 0.2094419002532959
+2023-05-30 12:47:09,339 INFO Thread 11472 is executed
+2023-05-30 12:47:09,543 INFO Time to read cam and detect fire: 0.2044534683227539
+2023-05-30 12:47:09,543 INFO Thread 11472 is executed
+2023-05-30 12:47:09,791 INFO Time to read cam and detect fire: 0.24833464622497559
+2023-05-30 12:47:09,791 INFO Thread 11472 is executed
+2023-05-30 12:47:10,010 INFO Time to read cam and detect fire: 0.21841788291931152
+2023-05-30 12:47:10,010 INFO Thread 11472 is executed
+2023-05-30 12:47:10,226 INFO Time to read cam and detect fire: 0.21641921997070312
+2023-05-30 12:47:10,226 INFO Thread 11472 is executed
+2023-05-30 12:47:10,414 INFO Time to read cam and detect fire: 0.1874990463256836
+2023-05-30 12:47:10,414 INFO Thread 11472 is executed
+2023-05-30 12:47:10,623 INFO Time to read cam and detect fire: 0.2094407081604004
+2023-05-30 12:47:10,623 INFO Thread 11472 is executed
+2023-05-30 12:47:10,842 INFO Time to read cam and detect fire: 0.2184159755706787
+2023-05-30 12:47:10,842 INFO Thread 11472 is executed
+2023-05-30 12:47:11,033 INFO Time to read cam and detect fire: 0.19148802757263184
+2023-05-30 12:47:11,033 INFO Thread 11472 is executed
+2023-05-30 12:47:11,227 INFO Time to read cam and detect fire: 0.1934828758239746
+2023-05-30 12:47:11,227 INFO Thread 11472 is executed
+2023-05-30 12:47:11,420 INFO Time to read cam and detect fire: 0.19248437881469727
+2023-05-30 12:47:11,421 INFO Thread 11472 is executed
+2023-05-30 12:47:11,625 INFO Time to read cam and detect fire: 0.20445609092712402
+2023-05-30 12:47:11,625 INFO Thread 11472 is executed
+2023-05-30 12:47:11,823 INFO Time to read cam and detect fire: 0.19746947288513184
+2023-05-30 12:47:11,823 INFO Thread 11472 is executed
+2023-05-30 12:47:12,028 INFO Time to read cam and detect fire: 0.20545029640197754
+2023-05-30 12:47:12,028 INFO Thread 11472 is executed
+2023-05-30 12:47:12,240 INFO Time to read cam and detect fire: 0.21143627166748047
+2023-05-30 12:47:12,240 INFO Thread 11472 is executed
+2023-05-30 12:47:12,433 INFO Time to read cam and detect fire: 0.1934816837310791
+2023-05-30 12:47:12,433 INFO Thread 11472 is executed
+2023-05-30 12:47:12,653 INFO Time to read cam and detect fire: 0.21941423416137695
+2023-05-30 12:47:12,653 INFO Thread 11472 is executed
+2023-05-30 12:47:12,862 INFO Time to read cam and detect fire: 0.20943999290466309
+2023-05-30 12:47:12,862 INFO Thread 11472 is executed
+2023-05-30 12:47:13,150 INFO Time to read cam and detect fire: 0.28822970390319824
+2023-05-30 12:47:13,150 INFO Thread 11472 is executed
+2023-05-30 12:47:13,435 INFO Time to read cam and detect fire: 0.2842411994934082
+2023-05-30 12:47:13,435 INFO Thread 11472 is executed
+2023-05-30 12:47:13,669 INFO Time to read cam and detect fire: 0.2343733310699463
+2023-05-30 12:47:13,669 INFO Thread 11472 is executed
+2023-05-30 12:47:13,897 INFO Time to read cam and detect fire: 0.22838830947875977
+2023-05-30 12:47:13,897 INFO Thread 11472 is executed
+2023-05-30 12:47:14,104 INFO Time to read cam and detect fire: 0.20644831657409668
+2023-05-30 12:47:14,104 INFO Thread 11472 is executed
+2023-05-30 12:47:14,329 INFO Time to read cam and detect fire: 0.22539710998535156
+2023-05-30 12:47:14,329 INFO Thread 11472 is executed
+2023-05-30 12:47:14,630 INFO Time to read cam and detect fire: 0.30119776725769043
+2023-05-30 12:47:14,630 INFO Thread 11472 is executed
+2023-05-30 12:47:14,903 INFO Time to read cam and detect fire: 0.27226924896240234
+2023-05-30 12:47:14,903 INFO Thread 11472 is executed
+2023-05-30 12:47:15,205 INFO Time to read cam and detect fire: 0.30219364166259766
+2023-05-30 12:47:15,205 INFO Thread 11472 is executed
+2023-05-30 12:47:15,434 INFO Time to read cam and detect fire: 0.22938847541809082
+2023-05-30 12:47:15,434 INFO Thread 11472 is executed
+2023-05-30 12:47:15,696 INFO Time to read cam and detect fire: 0.26130151748657227
+2023-05-30 12:47:15,696 INFO Thread 11472 is executed
+2023-05-30 12:47:15,913 INFO Time to read cam and detect fire: 0.21741652488708496
+2023-05-30 12:47:15,913 INFO Thread 11472 is executed
+2023-05-30 12:47:15,946 INFO Thread 16360 is executed
+2023-05-30 12:47:15,947 INFO Time to publish sensor data: 0.0009984970092773438
+2023-05-30 12:47:15,955 INFO Thread 11468 is executed
+2023-05-30 12:47:15,956 INFO Time to read sensor: 0.0009856224060058594
+2023-05-30 12:47:16,158 INFO Time to read cam and detect fire: 0.2453446388244629
+2023-05-30 12:47:16,158 INFO Thread 11472 is executed
+2023-05-30 12:47:16,484 INFO Time to read cam and detect fire: 0.3261277675628662
+2023-05-30 12:47:16,484 INFO Thread 11472 is executed
+2023-05-30 12:47:16,809 INFO Time to read cam and detect fire: 0.32413506507873535
+2023-05-30 12:47:16,809 INFO Thread 11472 is executed
+2023-05-30 12:47:17,052 INFO Time to read cam and detect fire: 0.24334931373596191
+2023-05-30 12:47:17,052 INFO Thread 11472 is executed
+2023-05-30 12:47:17,301 INFO Time to read cam and detect fire: 0.24933433532714844
+2023-05-30 12:47:17,301 INFO Thread 11472 is executed
+2023-05-30 12:47:17,524 INFO Time to read cam and detect fire: 0.2229321002960205
+2023-05-30 12:47:17,524 INFO Thread 11472 is executed
+2023-05-30 12:47:17,748 INFO Time to read cam and detect fire: 0.2239084243774414
+2023-05-30 12:47:17,748 INFO Thread 11472 is executed
+2023-05-30 12:47:17,974 INFO Time to read cam and detect fire: 0.22539901733398438
+2023-05-30 12:47:17,974 INFO Thread 11472 is executed
+2023-05-30 12:47:18,218 INFO Time to read cam and detect fire: 0.24434590339660645
+2023-05-30 12:47:18,218 INFO Thread 11472 is executed
+2023-05-30 12:47:18,463 INFO Time to read cam and detect fire: 0.2453453540802002
+2023-05-30 12:47:18,463 INFO Thread 11472 is executed
+2023-05-30 12:47:18,711 INFO Time to read cam and detect fire: 0.24733710289001465
+2023-05-30 12:47:18,711 INFO Thread 11472 is executed
+2023-05-30 12:47:18,924 INFO Time to read cam and detect fire: 0.21343040466308594
+2023-05-30 12:47:18,925 INFO Thread 11472 is executed
+2023-05-30 12:47:19,151 INFO Time to read cam and detect fire: 0.2263932228088379
+2023-05-30 12:47:19,151 INFO Thread 11472 is executed
+2023-05-30 12:47:19,397 INFO Time to read cam and detect fire: 0.2453446388244629
+2023-05-30 12:47:19,397 INFO Thread 11472 is executed
+2023-05-30 12:47:19,620 INFO Time to read cam and detect fire: 0.2234022617340088
+2023-05-30 12:47:19,620 INFO Thread 11472 is executed
+2023-05-30 12:47:19,824 INFO Time to read cam and detect fire: 0.20345616340637207
+2023-05-30 12:47:19,824 INFO Thread 11472 is executed
+2023-05-30 12:47:20,024 INFO Time to read cam and detect fire: 0.20046448707580566
+2023-05-30 12:47:20,025 INFO Thread 11472 is executed
+2023-05-30 12:47:20,245 INFO Time to read cam and detect fire: 0.2204115390777588
+2023-05-30 12:47:20,245 INFO Thread 11472 is executed
+2023-05-30 12:47:20,454 INFO Time to read cam and detect fire: 0.20844531059265137
+2023-05-30 12:47:20,455 INFO Thread 11472 is executed
+2023-05-30 12:47:20,652 INFO Time to read cam and detect fire: 0.19747257232666016
+2023-05-30 12:47:20,652 INFO Thread 11472 is executed
+2023-05-30 12:47:20,845 INFO Time to read cam and detect fire: 0.19248414039611816
+2023-05-30 12:47:20,845 INFO Thread 11472 is executed
+2023-05-30 12:47:21,065 INFO Time to read cam and detect fire: 0.22040987014770508
+2023-05-30 12:47:21,065 INFO Thread 11472 is executed
+2023-05-30 12:47:21,258 INFO Time to read cam and detect fire: 0.19248509407043457
+2023-05-30 12:47:21,258 INFO Thread 11472 is executed
+2023-05-30 12:47:21,482 INFO Time to read cam and detect fire: 0.2234041690826416
+2023-05-30 12:47:21,482 INFO Thread 11472 is executed
+2023-05-30 12:47:21,689 INFO Time to read cam and detect fire: 0.20644760131835938
+2023-05-30 12:47:21,689 INFO Thread 11472 is executed
+2023-05-30 12:47:21,889 INFO Time to read cam and detect fire: 0.20046615600585938
+2023-05-30 12:47:21,889 INFO Thread 11472 is executed
+2023-05-30 12:47:22,100 INFO Time to read cam and detect fire: 0.21143364906311035
+2023-05-30 12:47:22,100 INFO Thread 11472 is executed
+2023-05-30 12:47:22,299 INFO Time to read cam and detect fire: 0.1984694004058838
+2023-05-30 12:47:22,299 INFO Thread 11472 is executed
+2023-05-30 12:47:22,494 INFO Time to read cam and detect fire: 0.19547796249389648
+2023-05-30 12:47:22,494 INFO Thread 11472 is executed
+2023-05-30 12:47:22,717 INFO Time to read cam and detect fire: 0.22240591049194336
+2023-05-30 12:47:22,717 INFO Thread 11472 is executed
+2023-05-30 12:47:22,932 INFO Time to read cam and detect fire: 0.2154254913330078
+2023-05-30 12:47:22,932 INFO Thread 11472 is executed
+2023-05-30 12:47:23,136 INFO Time to read cam and detect fire: 0.20345401763916016
+2023-05-30 12:47:23,136 INFO Thread 11472 is executed
+2023-05-30 12:47:23,329 INFO Time to read cam and detect fire: 0.19348430633544922
+2023-05-30 12:47:23,329 INFO Thread 11472 is executed
+2023-05-30 12:47:23,535 INFO Time to read cam and detect fire: 0.20544934272766113
+2023-05-30 12:47:23,535 INFO Thread 11472 is executed
+2023-05-30 12:47:23,733 INFO Time to read cam and detect fire: 0.1984715461730957
+2023-05-30 12:47:23,733 INFO Thread 11472 is executed
+2023-05-30 12:47:23,933 INFO Time to read cam and detect fire: 0.1994647979736328
+2023-05-30 12:47:23,934 INFO Thread 11472 is executed
+2023-05-30 12:47:24,144 INFO Time to read cam and detect fire: 0.21043801307678223
+2023-05-30 12:47:24,144 INFO Thread 11472 is executed

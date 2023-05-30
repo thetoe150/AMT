@@ -1,9 +1,9 @@
 import cv2
 import torch
 import IOT
-import board,busio
+#import board,busio
 import numpy as np
-import adafruit_mlx90640
+#import adafruit_mlx90640
 import matplotlib.pyplot as plt
 
 import log
@@ -36,7 +36,7 @@ class AICam:
         ######## Set up I2C communication and MLX instance ##########
         self.i2c = None
         self.mlx = None
-        self.initInferedCam()
+        #self.initInferedCam()
 
         ######## Set up plot ##########
         if self.isDebug:
@@ -116,14 +116,23 @@ class AICam:
         if not is_reading:
             print('cannot read frame at cam', cam)
 
+        res = self.model(frame)
+        predictions = res.pred[0]
+        boxes = predictions[:, :4] # x1, y1, x2, y2
+        res.print()
+
+        #predict_image = model(image)
+#im_rgb = cv2.cvtColor(predict_image.imgs[0], cv2.COLOR_BGR2RGB) # Because of OpenCV reading images as BGR
+#cv2_imshow(im_rgb)
+
         if self.isDebug:
-            cv2.imshow('Debug cam', frame)
+            #image = cv2.rectangle(image, start_point, end_point, color, thickness)
+            image = cv2.rectangle(frame, boxes[0,1], boxes[2,3], (255,0,0), 2)
+            cv2.imshow('Debug cam', image)
         # magic if statement - don't delete
         if cv2.waitKey(1) == ord('q'):
             pass
 
-        res = self.model(frame)
-        res.print()
         # Data
         # self.log.info(res.xyxy[0])  # print img1 predictions
 
