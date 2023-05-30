@@ -5,7 +5,7 @@ import IOT
 import numpy as np
 #import adafruit_mlx90640
 import matplotlib.pyplot as plt
-
+from PIL import Image, ImageDraw
 import log
 
 from time import time, sleep
@@ -26,6 +26,7 @@ class AICam:
         ######## Set up AI model ########
 
         self.model = torch.hub.load('ultralytics/yolov5', 'custom', 'best.pt')
+        self.model.conf = 0.1
         ######## Set up ports and camera Capture instance for normal camera ########
         self.camPorts = []
         self.getPorts()
@@ -113,10 +114,23 @@ class AICam:
 
         cam = self.camCaps[0]
         is_reading, frame = cam.read()
+        pil_image = Image.fromarray(frame)
         if not is_reading:
             print('cannot read frame at cam', cam)
 
-        res = self.model(frame)
+        res = self.model(pil_image)
+        # Retrieve bounding box coordinates and class labels
+        boxes = res.xyxy[0][:, :4].tolist()
+        labels = ['fire']
+
+        # Draw bounding boxes on the frame
+        draw = ImageDraw.Draw(pil_image)
+        for box, label in zip(boxes, labels):
+            x_min, y_min, x_max, y_max = box
+            draw.rectangle([(x_min, y_min), (x_max, y_max)], outline='blue')
+            draw.text((x_min, y_min), label, fill='blue')
+        # Convert the annotated image back to OpenCV format
+        annotated_frame = cv2.cvtColor(np.array(pil_image), cv2.COLOR_RGB2RGBA)
         res.print()
 
         #predict_image = model(image)
@@ -127,9 +141,10 @@ class AICam:
             #image = cv2.rectangle(image, start_point, end_point, color, thickness)
             predictions = res.pred[0]
             boxes = predictions[:, :4] # x1, y1, x2, y2
-            cv2.imshow('Debug cam', frame)
+            print(boxes)
+            cv2.imshow('Debug cam', annotated_frame)
         # magic if statement - don't delete
-            image = cv2.rectangle(frame, tuple(boxes[0,1]), tuple(boxes[2,3]), (255,0,0), 2)
+            #image = cv2.rectangle(frame, tuple(boxes[0,1]), tuple(boxes[2,3]), (255,0,0), 2)
         if cv2.waitKey(1) == ord('q'):
             pass
 
