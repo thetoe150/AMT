@@ -117,8 +117,6 @@ class AICam:
             print('cannot read frame at cam', cam)
 
         res = self.model(frame)
-        predictions = res.pred[0]
-        boxes = predictions[:, :4] # x1, y1, x2, y2
         res.print()
 
         #predict_image = model(image)
@@ -127,9 +125,11 @@ class AICam:
 
         if self.isDebug:
             #image = cv2.rectangle(image, start_point, end_point, color, thickness)
-            image = cv2.rectangle(frame, tuple(boxes[0,1]), tuple(boxes[2,3]), (255,0,0), 2)
-            cv2.imshow('Debug cam', image)
+            predictions = res.pred[0]
+            boxes = predictions[:, :4] # x1, y1, x2, y2
+            cv2.imshow('Debug cam', frame)
         # magic if statement - don't delete
+            image = cv2.rectangle(frame, tuple(boxes[0,1]), tuple(boxes[2,3]), (255,0,0), 2)
         if cv2.waitKey(1) == ord('q'):
             pass
 
@@ -207,11 +207,11 @@ class AICam:
         isFireCam = self.alertLevel
 
     def publishData(self, value):
-        if value != '':
+        if value == 'Medium' or value == 'High':
             self.camClient.publishFeed("nj1.isfire", value)
 
-            if self.isDebug:
-                self.log('Publishing fire level: {}'.format(value))
+        if self.isDebug:
+            self.log('Publishing fire level: {}'.format(value))
 
 if __name__ == '__main__':
     fireDetector = AICam(True)

@@ -42,6 +42,7 @@ def GetAlertLevel():
     # cam have 3 stage
     # None
     # Low
+    # Medium
     # High
     global isFireCam
 
@@ -61,7 +62,7 @@ def GetAlertLevel():
         if isFireCam == 'Low' and isFireSensor == 2:
             return 'Low'
         if isFireCam == 'High' and isFireSensor == 1:
-            return 'Low'
+            return 'Medium'
         if isFireCam == 'High' and isFireSensor == 2:
             return 'High'
 

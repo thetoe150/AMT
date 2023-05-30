@@ -4173,3 +4173,1581 @@
 2023-05-30 12:47:23,934 INFO Thread 11472 is executed
 2023-05-30 12:47:24,144 INFO Time to read cam and detect fire: 0.21043801307678223
 2023-05-30 12:47:24,144 INFO Thread 11472 is executed
+2023-05-30 13:20:31,976 INFO Thread 4336 is executed
+2023-05-30 13:20:31,977 INFO Thread 8112 is executed
+2023-05-30 13:20:31,977 INFO Thread 15444 is executed
+2023-05-30 13:20:31,978 INFO Time to read sensor: 0.0009980201721191406
+2023-05-30 13:20:31,979 INFO Time to publish sensor data: 0.0019931793212890625
+2023-05-30 13:20:32,944 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:32,944 INFO Thread 4336 is executed
+2023-05-30 13:20:33,103 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:33,103 INFO Thread 4336 is executed
+2023-05-30 13:20:33,275 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:33,275 INFO Thread 4336 is executed
+2023-05-30 13:20:33,468 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:33,468 INFO Thread 4336 is executed
+2023-05-30 13:20:33,673 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:33,673 INFO Thread 4336 is executed
+2023-05-30 13:20:33,843 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:33,843 INFO Thread 4336 is executed
+2023-05-30 13:20:34,036 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:34,036 INFO Thread 4336 is executed
+2023-05-30 13:20:34,212 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:34,212 INFO Thread 4336 is executed
+2023-05-30 13:20:34,402 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:34,402 INFO Thread 4336 is executed
+2023-05-30 13:20:34,579 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:34,579 INFO Thread 4336 is executed
+2023-05-30 13:20:34,789 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:34,789 INFO Thread 4336 is executed
+2023-05-30 13:20:34,977 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:34,977 INFO Thread 4336 is executed
+2023-05-30 13:20:35,157 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:35,157 INFO Thread 4336 is executed
+2023-05-30 13:20:35,375 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:35,375 INFO Thread 4336 is executed
+2023-05-30 13:20:35,557 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:35,557 INFO Thread 4336 is executed
+2023-05-30 13:20:35,747 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:35,747 INFO Thread 4336 is executed
+2023-05-30 13:20:35,929 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:35,929 INFO Thread 4336 is executed
+2023-05-30 13:20:36,121 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:36,121 INFO Thread 4336 is executed
+2023-05-30 13:20:36,310 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:36,310 INFO Thread 4336 is executed
+2023-05-30 13:20:36,527 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:36,527 INFO Thread 4336 is executed
+2023-05-30 13:20:36,714 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:36,715 INFO Thread 4336 is executed
+2023-05-30 13:20:36,898 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:36,898 INFO Thread 4336 is executed
+2023-05-30 13:20:37,091 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:37,091 INFO Thread 4336 is executed
+2023-05-30 13:20:37,284 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:37,284 INFO Thread 4336 is executed
+2023-05-30 13:20:37,470 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:37,470 INFO Thread 4336 is executed
+2023-05-30 13:20:37,654 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:37,654 INFO Thread 4336 is executed
+2023-05-30 13:20:37,834 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:37,834 INFO Thread 4336 is executed
+2023-05-30 13:20:38,023 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:38,023 INFO Thread 4336 is executed
+2023-05-30 13:20:38,210 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:38,211 INFO Thread 4336 is executed
+2023-05-30 13:20:38,407 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:38,407 INFO Thread 4336 is executed
+2023-05-30 13:20:38,606 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:38,606 INFO Thread 4336 is executed
+2023-05-30 13:20:38,802 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:38,802 INFO Thread 4336 is executed
+2023-05-30 13:20:38,980 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:38,980 INFO Thread 4336 is executed
+2023-05-30 13:20:39,166 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:39,166 INFO Thread 4336 is executed
+2023-05-30 13:20:39,342 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:39,342 INFO Thread 4336 is executed
+2023-05-30 13:20:39,558 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:39,558 INFO Thread 4336 is executed
+2023-05-30 13:20:39,772 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:39,772 INFO Thread 4336 is executed
+2023-05-30 13:20:39,964 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:39,964 INFO Thread 4336 is executed
+2023-05-30 13:20:40,168 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:40,168 INFO Thread 4336 is executed
+2023-05-30 13:20:40,347 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:40,347 INFO Thread 4336 is executed
+2023-05-30 13:20:40,529 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:40,530 INFO Thread 4336 is executed
+2023-05-30 13:20:40,715 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:40,715 INFO Thread 4336 is executed
+2023-05-30 13:20:40,924 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:40,924 INFO Thread 4336 is executed
+2023-05-30 13:20:41,104 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:41,104 INFO Thread 4336 is executed
+2023-05-30 13:20:41,314 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:41,315 INFO Thread 4336 is executed
+2023-05-30 13:20:41,506 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:41,506 INFO Thread 4336 is executed
+2023-05-30 13:20:41,718 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:41,718 INFO Thread 4336 is executed
+2023-05-30 13:20:41,922 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:41,922 INFO Thread 4336 is executed
+2023-05-30 13:20:41,979 INFO Thread 8112 is executed
+2023-05-30 13:20:41,981 INFO Time to read sensor: 0.00199127197265625
+2023-05-30 13:20:42,127 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:42,127 INFO Thread 4336 is executed
+2023-05-30 13:20:42,306 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:42,306 INFO Thread 4336 is executed
+2023-05-30 13:20:42,516 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:42,516 INFO Thread 4336 is executed
+2023-05-30 13:20:42,748 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:42,748 INFO Thread 4336 is executed
+2023-05-30 13:20:42,963 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:42,963 INFO Thread 4336 is executed
+2023-05-30 13:20:43,183 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:43,184 INFO Thread 4336 is executed
+2023-05-30 13:20:43,404 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:43,404 INFO Thread 4336 is executed
+2023-05-30 13:20:43,627 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:43,628 INFO Thread 4336 is executed
+2023-05-30 13:20:43,924 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:43,925 INFO Thread 4336 is executed
+2023-05-30 13:20:44,214 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:44,214 INFO Thread 4336 is executed
+2023-05-30 13:20:44,454 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:44,455 INFO Thread 4336 is executed
+2023-05-30 13:20:44,667 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:44,667 INFO Thread 4336 is executed
+2023-05-30 13:20:44,864 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:44,864 INFO Thread 4336 is executed
+2023-05-30 13:20:45,079 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:45,079 INFO Thread 4336 is executed
+2023-05-30 13:20:45,278 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:45,278 INFO Thread 4336 is executed
+2023-05-30 13:20:45,475 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:45,475 INFO Thread 4336 is executed
+2023-05-30 13:20:45,659 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:45,659 INFO Thread 4336 is executed
+2023-05-30 13:20:45,858 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:45,858 INFO Thread 4336 is executed
+2023-05-30 13:20:46,065 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:46,065 INFO Thread 4336 is executed
+2023-05-30 13:20:46,239 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:46,240 INFO Thread 4336 is executed
+2023-05-30 13:20:46,438 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:46,438 INFO Thread 4336 is executed
+2023-05-30 13:20:46,639 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:46,639 INFO Thread 4336 is executed
+2023-05-30 13:20:46,829 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:46,829 INFO Thread 4336 is executed
+2023-05-30 13:20:47,008 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:47,008 INFO Thread 4336 is executed
+2023-05-30 13:20:47,197 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:47,197 INFO Thread 4336 is executed
+2023-05-30 13:20:47,392 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:47,392 INFO Thread 4336 is executed
+2023-05-30 13:20:47,589 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:47,589 INFO Thread 4336 is executed
+2023-05-30 13:20:47,801 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:47,801 INFO Thread 4336 is executed
+2023-05-30 13:20:47,989 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:47,989 INFO Thread 4336 is executed
+2023-05-30 13:20:48,184 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:48,184 INFO Thread 4336 is executed
+2023-05-30 13:20:48,365 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:48,365 INFO Thread 4336 is executed
+2023-05-30 13:20:48,563 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:48,563 INFO Thread 4336 is executed
+2023-05-30 13:20:48,759 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:48,759 INFO Thread 4336 is executed
+2023-05-30 13:20:48,943 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:48,943 INFO Thread 4336 is executed
+2023-05-30 13:20:49,149 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:49,149 INFO Thread 4336 is executed
+2023-05-30 13:20:49,343 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:20:49,343 INFO Thread 4336 is executed
+2023-05-30 13:22:03,473 INFO Thread 2588 is executed
+2023-05-30 13:22:03,474 INFO Thread 7840 is executed
+2023-05-30 13:22:03,475 INFO Thread 6836 is executed
+2023-05-30 13:22:03,475 INFO Time to read sensor: 0.0009744167327880859
+2023-05-30 13:22:03,477 INFO Time to publish sensor data: 0.001985311508178711
+2023-05-30 13:22:04,454 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:04,454 INFO Thread 2588 is executed
+2023-05-30 13:22:04,654 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:04,654 INFO Thread 2588 is executed
+2023-05-30 13:22:04,856 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:04,856 INFO Thread 2588 is executed
+2023-05-30 13:22:05,041 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:05,041 INFO Thread 2588 is executed
+2023-05-30 13:22:05,245 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:05,245 INFO Thread 2588 is executed
+2023-05-30 13:22:05,473 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:05,473 INFO Thread 2588 is executed
+2023-05-30 13:22:05,665 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:05,665 INFO Thread 2588 is executed
+2023-05-30 13:22:05,852 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:05,852 INFO Thread 2588 is executed
+2023-05-30 13:22:06,043 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:06,043 INFO Thread 2588 is executed
+2023-05-30 13:22:06,257 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:06,257 INFO Thread 2588 is executed
+2023-05-30 13:22:06,479 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:06,479 INFO Thread 2588 is executed
+2023-05-30 13:22:06,684 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:06,684 INFO Thread 2588 is executed
+2023-05-30 13:22:06,870 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:06,871 INFO Thread 2588 is executed
+2023-05-30 13:22:07,091 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:07,091 INFO Thread 2588 is executed
+2023-05-30 13:22:07,287 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:07,287 INFO Thread 2588 is executed
+2023-05-30 13:22:07,494 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:07,494 INFO Thread 2588 is executed
+2023-05-30 13:22:07,681 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:07,681 INFO Thread 2588 is executed
+2023-05-30 13:22:07,898 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:07,899 INFO Thread 2588 is executed
+2023-05-30 13:22:08,092 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:08,092 INFO Thread 2588 is executed
+2023-05-30 13:22:08,293 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:08,293 INFO Thread 2588 is executed
+2023-05-30 13:22:08,491 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:08,491 INFO Thread 2588 is executed
+2023-05-30 13:22:08,699 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:08,699 INFO Thread 2588 is executed
+2023-05-30 13:22:08,886 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:08,886 INFO Thread 2588 is executed
+2023-05-30 13:22:09,080 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:09,081 INFO Thread 2588 is executed
+2023-05-30 13:22:09,284 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:09,284 INFO Thread 2588 is executed
+2023-05-30 13:22:09,486 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:09,486 INFO Thread 2588 is executed
+2023-05-30 13:22:09,674 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:09,674 INFO Thread 2588 is executed
+2023-05-30 13:22:09,874 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:09,874 INFO Thread 2588 is executed
+2023-05-30 13:22:10,076 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:10,076 INFO Thread 2588 is executed
+2023-05-30 13:22:10,284 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:10,284 INFO Thread 2588 is executed
+2023-05-30 13:22:10,520 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:10,520 INFO Thread 2588 is executed
+2023-05-30 13:22:10,718 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:10,718 INFO Thread 2588 is executed
+2023-05-30 13:22:10,935 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:10,935 INFO Thread 2588 is executed
+2023-05-30 13:22:11,157 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:11,157 INFO Thread 2588 is executed
+2023-05-30 13:22:11,359 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:11,359 INFO Thread 2588 is executed
+2023-05-30 13:22:11,569 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:11,569 INFO Thread 2588 is executed
+2023-05-30 13:22:11,800 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:11,800 INFO Thread 2588 is executed
+2023-05-30 13:22:12,032 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:12,032 INFO Thread 2588 is executed
+2023-05-30 13:22:12,252 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:12,252 INFO Thread 2588 is executed
+2023-05-30 13:22:12,472 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:12,472 INFO Thread 2588 is executed
+2023-05-30 13:22:12,790 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:12,790 INFO Thread 2588 is executed
+2023-05-30 13:22:13,071 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:13,071 INFO Thread 2588 is executed
+2023-05-30 13:22:13,317 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:13,317 INFO Thread 2588 is executed
+2023-05-30 13:22:13,475 INFO Thread 7840 is executed
+2023-05-30 13:22:13,477 INFO Time to read sensor: 0.0010013580322265625
+2023-05-30 13:22:13,535 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:13,535 INFO Thread 2588 is executed
+2023-05-30 13:22:13,730 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:13,730 INFO Thread 2588 is executed
+2023-05-30 13:22:13,944 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:13,945 INFO Thread 2588 is executed
+2023-05-30 13:22:14,138 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:14,138 INFO Thread 2588 is executed
+2023-05-30 13:22:14,380 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:14,380 INFO Thread 2588 is executed
+2023-05-30 13:22:14,566 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:14,567 INFO Thread 2588 is executed
+2023-05-30 13:22:14,762 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:14,762 INFO Thread 2588 is executed
+2023-05-30 13:22:14,956 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:14,956 INFO Thread 2588 is executed
+2023-05-30 13:22:15,148 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:15,148 INFO Thread 2588 is executed
+2023-05-30 13:22:15,372 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:15,372 INFO Thread 2588 is executed
+2023-05-30 13:22:15,567 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:15,567 INFO Thread 2588 is executed
+2023-05-30 13:22:15,772 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:15,772 INFO Thread 2588 is executed
+2023-05-30 13:22:15,970 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:15,970 INFO Thread 2588 is executed
+2023-05-30 13:22:16,162 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:16,162 INFO Thread 2588 is executed
+2023-05-30 13:22:16,372 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:16,372 INFO Thread 2588 is executed
+2023-05-30 13:22:16,575 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:22:16,575 INFO Thread 2588 is executed
+2023-05-30 13:23:59,679 INFO Thread 1508 is executed
+2023-05-30 13:23:59,680 INFO Thread 6164 is executed
+2023-05-30 13:23:59,681 INFO Thread 5864 is executed
+2023-05-30 13:23:59,682 INFO Time to read sensor: 0.0019826889038085938
+2023-05-30 13:23:59,683 INFO Time to publish sensor data: 0.0019958019256591797
+2023-05-30 13:24:00,632 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:00,632 INFO Thread 1508 is executed
+2023-05-30 13:24:00,825 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:00,825 INFO Thread 1508 is executed
+2023-05-30 13:24:01,029 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:01,030 INFO Thread 1508 is executed
+2023-05-30 13:24:01,214 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:01,215 INFO Thread 1508 is executed
+2023-05-30 13:24:01,399 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:01,399 INFO Thread 1508 is executed
+2023-05-30 13:24:01,596 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:01,596 INFO Thread 1508 is executed
+2023-05-30 13:24:01,787 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:01,787 INFO Thread 1508 is executed
+2023-05-30 13:24:01,986 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:01,986 INFO Thread 1508 is executed
+2023-05-30 13:24:02,183 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:02,183 INFO Thread 1508 is executed
+2023-05-30 13:24:02,376 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:02,376 INFO Thread 1508 is executed
+2023-05-30 13:24:02,586 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:02,586 INFO Thread 1508 is executed
+2023-05-30 13:24:02,798 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:02,798 INFO Thread 1508 is executed
+2023-05-30 13:24:03,002 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:03,002 INFO Thread 1508 is executed
+2023-05-30 13:24:03,203 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:03,203 INFO Thread 1508 is executed
+2023-05-30 13:24:03,407 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:03,407 INFO Thread 1508 is executed
+2023-05-30 13:24:03,641 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:03,641 INFO Thread 1508 is executed
+2023-05-30 13:24:03,836 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:03,836 INFO Thread 1508 is executed
+2023-05-30 13:24:04,032 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:04,032 INFO Thread 1508 is executed
+2023-05-30 13:24:04,267 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:04,267 INFO Thread 1508 is executed
+2023-05-30 13:24:04,491 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:04,491 INFO Thread 1508 is executed
+2023-05-30 13:24:04,694 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:04,694 INFO Thread 1508 is executed
+2023-05-30 13:24:04,896 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:04,896 INFO Thread 1508 is executed
+2023-05-30 13:24:05,097 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:05,097 INFO Thread 1508 is executed
+2023-05-30 13:24:05,307 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:05,308 INFO Thread 1508 is executed
+2023-05-30 13:24:05,597 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:05,597 INFO Thread 1508 is executed
+2023-05-30 13:24:05,830 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:05,831 INFO Thread 1508 is executed
+2023-05-30 13:24:06,032 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:06,032 INFO Thread 1508 is executed
+2023-05-30 13:24:06,264 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:06,264 INFO Thread 1508 is executed
+2023-05-30 13:24:06,537 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:06,537 INFO Thread 1508 is executed
+2023-05-30 13:24:06,737 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:06,737 INFO Thread 1508 is executed
+2023-05-30 13:24:06,964 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:06,964 INFO Thread 1508 is executed
+2023-05-30 13:24:07,167 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:07,167 INFO Thread 1508 is executed
+2023-05-30 13:24:07,412 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:07,412 INFO Thread 1508 is executed
+2023-05-30 13:24:07,651 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:07,651 INFO Thread 1508 is executed
+2023-05-30 13:24:07,884 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:07,884 INFO Thread 1508 is executed
+2023-05-30 13:24:08,116 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:08,117 INFO Thread 1508 is executed
+2023-05-30 13:24:08,323 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:08,324 INFO Thread 1508 is executed
+2023-05-30 13:24:08,519 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:08,519 INFO Thread 1508 is executed
+2023-05-30 13:24:08,752 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:08,752 INFO Thread 1508 is executed
+2023-05-30 13:24:08,970 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:08,971 INFO Thread 1508 is executed
+2023-05-30 13:24:09,171 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:09,171 INFO Thread 1508 is executed
+2023-05-30 13:24:09,374 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:09,374 INFO Thread 1508 is executed
+2023-05-30 13:24:09,584 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:09,585 INFO Thread 1508 is executed
+2023-05-30 13:24:09,682 INFO Thread 6164 is executed
+2023-05-30 13:24:09,683 INFO Time to read sensor: 0.000997304916381836
+2023-05-30 13:24:09,801 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:09,801 INFO Thread 1508 is executed
+2023-05-30 13:24:09,996 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:09,996 INFO Thread 1508 is executed
+2023-05-30 13:24:10,214 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:10,214 INFO Thread 1508 is executed
+2023-05-30 13:24:10,446 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:10,446 INFO Thread 1508 is executed
+2023-05-30 13:24:10,669 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:10,669 INFO Thread 1508 is executed
+2023-05-30 13:24:10,891 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:10,891 INFO Thread 1508 is executed
+2023-05-30 13:24:11,153 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:11,153 INFO Thread 1508 is executed
+2023-05-30 13:24:11,382 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:11,382 INFO Thread 1508 is executed
+2023-05-30 13:24:11,606 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:11,606 INFO Thread 1508 is executed
+2023-05-30 13:24:11,826 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:11,827 INFO Thread 1508 is executed
+2023-05-30 13:24:12,058 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:12,059 INFO Thread 1508 is executed
+2023-05-30 13:24:12,316 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:12,316 INFO Thread 1508 is executed
+2023-05-30 13:24:12,561 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:12,561 INFO Thread 1508 is executed
+2023-05-30 13:24:12,811 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:12,811 INFO Thread 1508 is executed
+2023-05-30 13:24:13,094 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:13,095 INFO Thread 1508 is executed
+2023-05-30 13:24:13,325 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:13,326 INFO Thread 1508 is executed
+2023-05-30 13:24:13,577 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:13,577 INFO Thread 1508 is executed
+2023-05-30 13:24:13,806 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:13,806 INFO Thread 1508 is executed
+2023-05-30 13:24:14,048 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:14,048 INFO Thread 1508 is executed
+2023-05-30 13:24:14,283 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:14,283 INFO Thread 1508 is executed
+2023-05-30 13:24:14,517 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:14,518 INFO Thread 1508 is executed
+2023-05-30 13:24:14,850 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:14,850 INFO Thread 1508 is executed
+2023-05-30 13:24:15,118 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:15,118 INFO Thread 1508 is executed
+2023-05-30 13:24:15,348 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:15,348 INFO Thread 1508 is executed
+2023-05-30 13:24:15,569 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:15,569 INFO Thread 1508 is executed
+2023-05-30 13:24:15,797 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:15,798 INFO Thread 1508 is executed
+2023-05-30 13:24:16,013 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:16,013 INFO Thread 1508 is executed
+2023-05-30 13:24:16,215 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:16,215 INFO Thread 1508 is executed
+2023-05-30 13:24:16,421 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:16,422 INFO Thread 1508 is executed
+2023-05-30 13:24:16,614 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:16,614 INFO Thread 1508 is executed
+2023-05-30 13:24:16,832 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:16,832 INFO Thread 1508 is executed
+2023-05-30 13:24:17,040 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:17,040 INFO Thread 1508 is executed
+2023-05-30 13:24:17,242 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:17,243 INFO Thread 1508 is executed
+2023-05-30 13:24:17,450 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:17,450 INFO Thread 1508 is executed
+2023-05-30 13:24:17,642 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:17,642 INFO Thread 1508 is executed
+2023-05-30 13:24:17,842 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:17,842 INFO Thread 1508 is executed
+2023-05-30 13:24:18,040 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:18,040 INFO Thread 1508 is executed
+2023-05-30 13:24:18,236 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:18,237 INFO Thread 1508 is executed
+2023-05-30 13:24:18,442 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:18,442 INFO Thread 1508 is executed
+2023-05-30 13:24:18,665 ERROR Failed to read cam and detect fire: index 0 is out of bounds for dimension 0 with size 0
+2023-05-30 13:24:18,665 INFO Thread 1508 is executed
+2023-05-30 13:25:03,995 INFO Thread 6588 is executed
+2023-05-30 13:25:03,996 INFO Thread 13428 is executed
+2023-05-30 13:25:03,997 INFO Thread 5836 is executed
+2023-05-30 13:25:03,997 INFO Time to read sensor: 0.0009965896606445312
+2023-05-30 13:25:03,998 INFO Time to publish sensor data: 0.000997781753540039
+2023-05-30 13:25:04,758 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:04,758 INFO Thread 6588 is executed
+2023-05-30 13:25:04,786 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:04,786 INFO Thread 6588 is executed
+2023-05-30 13:25:04,834 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:04,834 INFO Thread 6588 is executed
+2023-05-30 13:25:04,867 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:04,867 INFO Thread 6588 is executed
+2023-05-30 13:25:04,899 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:04,899 INFO Thread 6588 is executed
+2023-05-30 13:25:04,931 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:04,931 INFO Thread 6588 is executed
+2023-05-30 13:25:04,963 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:04,963 INFO Thread 6588 is executed
+2023-05-30 13:25:04,996 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:04,996 INFO Thread 6588 is executed
+2023-05-30 13:25:05,027 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:05,027 INFO Thread 6588 is executed
+2023-05-30 13:25:05,060 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:05,060 INFO Thread 6588 is executed
+2023-05-30 13:25:05,092 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:05,092 INFO Thread 6588 is executed
+2023-05-30 13:25:05,123 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:05,123 INFO Thread 6588 is executed
+2023-05-30 13:25:05,155 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:05,155 INFO Thread 6588 is executed
+2023-05-30 13:25:05,187 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:05,187 INFO Thread 6588 is executed
+2023-05-30 13:25:05,235 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:05,235 INFO Thread 6588 is executed
+2023-05-30 13:25:05,266 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:05,266 INFO Thread 6588 is executed
+2023-05-30 13:25:05,299 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:05,299 INFO Thread 6588 is executed
+2023-05-30 13:25:05,330 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:05,330 INFO Thread 6588 is executed
+2023-05-30 13:25:05,363 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:05,363 INFO Thread 6588 is executed
+2023-05-30 13:25:05,395 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:05,395 INFO Thread 6588 is executed
+2023-05-30 13:25:05,428 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:05,428 INFO Thread 6588 is executed
+2023-05-30 13:25:05,460 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:05,460 INFO Thread 6588 is executed
+2023-05-30 13:25:05,491 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:05,491 INFO Thread 6588 is executed
+2023-05-30 13:25:05,523 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:05,523 INFO Thread 6588 is executed
+2023-05-30 13:25:05,555 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:05,555 INFO Thread 6588 is executed
+2023-05-30 13:25:05,587 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:05,587 INFO Thread 6588 is executed
+2023-05-30 13:25:05,634 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:05,634 INFO Thread 6588 is executed
+2023-05-30 13:25:05,667 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:05,667 INFO Thread 6588 is executed
+2023-05-30 13:25:05,699 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:05,699 INFO Thread 6588 is executed
+2023-05-30 13:25:05,730 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:05,730 INFO Thread 6588 is executed
+2023-05-30 13:25:05,763 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:05,763 INFO Thread 6588 is executed
+2023-05-30 13:25:05,795 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:05,795 INFO Thread 6588 is executed
+2023-05-30 13:25:05,828 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:05,828 INFO Thread 6588 is executed
+2023-05-30 13:25:05,860 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:05,860 INFO Thread 6588 is executed
+2023-05-30 13:25:05,892 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:05,892 INFO Thread 6588 is executed
+2023-05-30 13:25:05,923 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:05,923 INFO Thread 6588 is executed
+2023-05-30 13:25:05,955 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:05,955 INFO Thread 6588 is executed
+2023-05-30 13:25:05,986 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:05,986 INFO Thread 6588 is executed
+2023-05-30 13:25:06,035 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:06,035 INFO Thread 6588 is executed
+2023-05-30 13:25:06,066 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:06,066 INFO Thread 6588 is executed
+2023-05-30 13:25:06,099 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:06,099 INFO Thread 6588 is executed
+2023-05-30 13:25:06,131 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:06,131 INFO Thread 6588 is executed
+2023-05-30 13:25:06,162 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:06,162 INFO Thread 6588 is executed
+2023-05-30 13:25:06,196 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:06,196 INFO Thread 6588 is executed
+2023-05-30 13:25:06,228 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:06,228 INFO Thread 6588 is executed
+2023-05-30 13:25:06,260 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:06,260 INFO Thread 6588 is executed
+2023-05-30 13:25:06,291 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:06,291 INFO Thread 6588 is executed
+2023-05-30 13:25:06,323 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:06,323 INFO Thread 6588 is executed
+2023-05-30 13:25:06,355 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:06,355 INFO Thread 6588 is executed
+2023-05-30 13:25:06,387 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:06,388 INFO Thread 6588 is executed
+2023-05-30 13:25:06,434 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:06,434 INFO Thread 6588 is executed
+2023-05-30 13:25:06,467 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:06,467 INFO Thread 6588 is executed
+2023-05-30 13:25:06,499 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:06,499 INFO Thread 6588 is executed
+2023-05-30 13:25:06,530 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:06,530 INFO Thread 6588 is executed
+2023-05-30 13:25:06,562 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:06,562 INFO Thread 6588 is executed
+2023-05-30 13:25:06,594 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:06,594 INFO Thread 6588 is executed
+2023-05-30 13:25:06,629 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:06,629 INFO Thread 6588 is executed
+2023-05-30 13:25:06,660 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:06,660 INFO Thread 6588 is executed
+2023-05-30 13:25:06,691 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:06,691 INFO Thread 6588 is executed
+2023-05-30 13:25:06,723 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:06,723 INFO Thread 6588 is executed
+2023-05-30 13:25:06,755 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:06,755 INFO Thread 6588 is executed
+2023-05-30 13:25:06,787 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:06,788 INFO Thread 6588 is executed
+2023-05-30 13:25:06,835 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:06,835 INFO Thread 6588 is executed
+2023-05-30 13:25:06,867 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:06,867 INFO Thread 6588 is executed
+2023-05-30 13:25:06,899 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:06,899 INFO Thread 6588 is executed
+2023-05-30 13:25:06,931 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:06,931 INFO Thread 6588 is executed
+2023-05-30 13:25:06,963 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:06,963 INFO Thread 6588 is executed
+2023-05-30 13:25:06,995 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:06,995 INFO Thread 6588 is executed
+2023-05-30 13:25:07,028 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:07,028 INFO Thread 6588 is executed
+2023-05-30 13:25:07,060 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:07,060 INFO Thread 6588 is executed
+2023-05-30 13:25:07,091 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:07,091 INFO Thread 6588 is executed
+2023-05-30 13:25:07,124 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:07,124 INFO Thread 6588 is executed
+2023-05-30 13:25:07,155 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:07,155 INFO Thread 6588 is executed
+2023-05-30 13:25:07,187 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:07,187 INFO Thread 6588 is executed
+2023-05-30 13:25:07,235 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:07,235 INFO Thread 6588 is executed
+2023-05-30 13:25:07,267 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:07,267 INFO Thread 6588 is executed
+2023-05-30 13:25:07,299 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:07,299 INFO Thread 6588 is executed
+2023-05-30 13:25:07,331 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:07,331 INFO Thread 6588 is executed
+2023-05-30 13:25:07,366 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:07,366 INFO Thread 6588 is executed
+2023-05-30 13:25:07,395 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:07,395 INFO Thread 6588 is executed
+2023-05-30 13:25:07,429 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:07,429 INFO Thread 6588 is executed
+2023-05-30 13:25:07,460 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:07,460 INFO Thread 6588 is executed
+2023-05-30 13:25:07,491 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:07,491 INFO Thread 6588 is executed
+2023-05-30 13:25:07,523 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:07,523 INFO Thread 6588 is executed
+2023-05-30 13:25:07,555 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:07,555 INFO Thread 6588 is executed
+2023-05-30 13:25:07,587 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:07,587 INFO Thread 6588 is executed
+2023-05-30 13:25:07,635 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:07,635 INFO Thread 6588 is executed
+2023-05-30 13:25:07,666 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:07,666 INFO Thread 6588 is executed
+2023-05-30 13:25:07,699 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:07,699 INFO Thread 6588 is executed
+2023-05-30 13:25:07,731 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:07,731 INFO Thread 6588 is executed
+2023-05-30 13:25:07,763 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:07,763 INFO Thread 6588 is executed
+2023-05-30 13:25:07,796 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:07,796 INFO Thread 6588 is executed
+2023-05-30 13:25:07,827 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:07,827 INFO Thread 6588 is executed
+2023-05-30 13:25:07,860 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:07,860 INFO Thread 6588 is executed
+2023-05-30 13:25:07,892 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:07,892 INFO Thread 6588 is executed
+2023-05-30 13:25:07,924 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:07,924 INFO Thread 6588 is executed
+2023-05-30 13:25:07,955 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:07,955 INFO Thread 6588 is executed
+2023-05-30 13:25:07,987 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:07,987 INFO Thread 6588 is executed
+2023-05-30 13:25:08,034 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:08,034 INFO Thread 6588 is executed
+2023-05-30 13:25:08,067 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:08,067 INFO Thread 6588 is executed
+2023-05-30 13:25:08,098 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:08,098 INFO Thread 6588 is executed
+2023-05-30 13:25:08,130 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:08,130 INFO Thread 6588 is executed
+2023-05-30 13:25:08,163 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:08,163 INFO Thread 6588 is executed
+2023-05-30 13:25:08,194 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:08,194 INFO Thread 6588 is executed
+2023-05-30 13:25:08,228 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:08,228 INFO Thread 6588 is executed
+2023-05-30 13:25:08,260 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:08,260 INFO Thread 6588 is executed
+2023-05-30 13:25:08,292 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:08,292 INFO Thread 6588 is executed
+2023-05-30 13:25:08,325 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:08,325 INFO Thread 6588 is executed
+2023-05-30 13:25:08,355 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:08,355 INFO Thread 6588 is executed
+2023-05-30 13:25:08,387 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:08,387 INFO Thread 6588 is executed
+2023-05-30 13:25:08,435 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:08,435 INFO Thread 6588 is executed
+2023-05-30 13:25:08,467 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:08,467 INFO Thread 6588 is executed
+2023-05-30 13:25:08,499 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:08,499 INFO Thread 6588 is executed
+2023-05-30 13:25:08,530 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:08,530 INFO Thread 6588 is executed
+2023-05-30 13:25:08,562 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:08,562 INFO Thread 6588 is executed
+2023-05-30 13:25:08,595 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:08,595 INFO Thread 6588 is executed
+2023-05-30 13:25:08,628 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:08,628 INFO Thread 6588 is executed
+2023-05-30 13:25:08,661 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:08,661 INFO Thread 6588 is executed
+2023-05-30 13:25:08,692 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:08,692 INFO Thread 6588 is executed
+2023-05-30 13:25:08,726 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:08,726 INFO Thread 6588 is executed
+2023-05-30 13:25:08,755 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:08,755 INFO Thread 6588 is executed
+2023-05-30 13:25:08,787 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:08,787 INFO Thread 6588 is executed
+2023-05-30 13:25:08,835 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:08,835 INFO Thread 6588 is executed
+2023-05-30 13:25:08,867 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:08,867 INFO Thread 6588 is executed
+2023-05-30 13:25:08,899 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:08,899 INFO Thread 6588 is executed
+2023-05-30 13:25:08,930 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:08,930 INFO Thread 6588 is executed
+2023-05-30 13:25:08,963 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:08,963 INFO Thread 6588 is executed
+2023-05-30 13:25:08,998 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:08,998 INFO Thread 6588 is executed
+2023-05-30 13:25:09,026 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:09,026 INFO Thread 6588 is executed
+2023-05-30 13:25:09,060 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:09,060 INFO Thread 6588 is executed
+2023-05-30 13:25:09,092 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:09,092 INFO Thread 6588 is executed
+2023-05-30 13:25:09,127 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:09,127 INFO Thread 6588 is executed
+2023-05-30 13:25:09,155 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:09,155 INFO Thread 6588 is executed
+2023-05-30 13:25:09,187 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:09,187 INFO Thread 6588 is executed
+2023-05-30 13:25:09,234 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:09,234 INFO Thread 6588 is executed
+2023-05-30 13:25:09,267 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:09,267 INFO Thread 6588 is executed
+2023-05-30 13:25:09,298 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:09,298 INFO Thread 6588 is executed
+2023-05-30 13:25:09,331 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:09,331 INFO Thread 6588 is executed
+2023-05-30 13:25:09,363 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:09,363 INFO Thread 6588 is executed
+2023-05-30 13:25:09,396 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:09,396 INFO Thread 6588 is executed
+2023-05-30 13:25:09,428 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:09,428 INFO Thread 6588 is executed
+2023-05-30 13:25:09,463 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:09,463 INFO Thread 6588 is executed
+2023-05-30 13:25:09,495 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:09,495 INFO Thread 6588 is executed
+2023-05-30 13:25:09,528 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:09,528 INFO Thread 6588 is executed
+2023-05-30 13:25:09,557 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:09,557 INFO Thread 6588 is executed
+2023-05-30 13:25:09,588 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:09,588 INFO Thread 6588 is executed
+2023-05-30 13:25:09,634 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:09,634 INFO Thread 6588 is executed
+2023-05-30 13:25:09,666 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:09,666 INFO Thread 6588 is executed
+2023-05-30 13:25:09,698 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:09,698 INFO Thread 6588 is executed
+2023-05-30 13:25:09,731 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:09,731 INFO Thread 6588 is executed
+2023-05-30 13:25:09,763 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:09,763 INFO Thread 6588 is executed
+2023-05-30 13:25:09,794 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:09,794 INFO Thread 6588 is executed
+2023-05-30 13:25:09,827 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:09,827 INFO Thread 6588 is executed
+2023-05-30 13:25:09,860 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:09,860 INFO Thread 6588 is executed
+2023-05-30 13:25:09,893 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:09,893 INFO Thread 6588 is executed
+2023-05-30 13:25:09,926 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:09,926 INFO Thread 6588 is executed
+2023-05-30 13:25:09,955 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:09,955 INFO Thread 6588 is executed
+2023-05-30 13:25:09,988 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:09,988 INFO Thread 6588 is executed
+2023-05-30 13:25:10,034 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:10,034 INFO Thread 6588 is executed
+2023-05-30 13:25:10,067 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:10,067 INFO Thread 6588 is executed
+2023-05-30 13:25:10,099 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:10,099 INFO Thread 6588 is executed
+2023-05-30 13:25:10,130 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:10,130 INFO Thread 6588 is executed
+2023-05-30 13:25:10,163 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:10,163 INFO Thread 6588 is executed
+2023-05-30 13:25:10,194 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:10,194 INFO Thread 6588 is executed
+2023-05-30 13:25:10,227 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:10,227 INFO Thread 6588 is executed
+2023-05-30 13:25:10,261 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:10,261 INFO Thread 6588 is executed
+2023-05-30 13:25:10,293 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:10,293 INFO Thread 6588 is executed
+2023-05-30 13:25:10,326 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:10,326 INFO Thread 6588 is executed
+2023-05-30 13:25:10,355 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:10,355 INFO Thread 6588 is executed
+2023-05-30 13:25:10,387 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:10,387 INFO Thread 6588 is executed
+2023-05-30 13:25:10,435 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:10,435 INFO Thread 6588 is executed
+2023-05-30 13:25:10,467 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:10,467 INFO Thread 6588 is executed
+2023-05-30 13:25:10,499 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:10,499 INFO Thread 6588 is executed
+2023-05-30 13:25:10,532 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:10,532 INFO Thread 6588 is executed
+2023-05-30 13:25:10,562 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:10,562 INFO Thread 6588 is executed
+2023-05-30 13:25:10,596 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:10,596 INFO Thread 6588 is executed
+2023-05-30 13:25:10,627 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:10,627 INFO Thread 6588 is executed
+2023-05-30 13:25:10,662 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:10,662 INFO Thread 6588 is executed
+2023-05-30 13:25:10,694 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:10,694 INFO Thread 6588 is executed
+2023-05-30 13:25:10,726 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:10,726 INFO Thread 6588 is executed
+2023-05-30 13:25:10,756 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:10,756 INFO Thread 6588 is executed
+2023-05-30 13:25:10,788 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:10,788 INFO Thread 6588 is executed
+2023-05-30 13:25:10,835 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:10,835 INFO Thread 6588 is executed
+2023-05-30 13:25:10,867 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:10,867 INFO Thread 6588 is executed
+2023-05-30 13:25:10,899 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:10,899 INFO Thread 6588 is executed
+2023-05-30 13:25:10,930 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:10,930 INFO Thread 6588 is executed
+2023-05-30 13:25:10,963 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:10,963 INFO Thread 6588 is executed
+2023-05-30 13:25:10,995 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:10,995 INFO Thread 6588 is executed
+2023-05-30 13:25:11,028 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:11,028 INFO Thread 6588 is executed
+2023-05-30 13:25:11,061 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:11,061 INFO Thread 6588 is executed
+2023-05-30 13:25:11,095 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:11,095 INFO Thread 6588 is executed
+2023-05-30 13:25:11,127 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:11,127 INFO Thread 6588 is executed
+2023-05-30 13:25:11,157 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:11,158 INFO Thread 6588 is executed
+2023-05-30 13:25:11,187 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:11,188 INFO Thread 6588 is executed
+2023-05-30 13:25:11,235 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:11,235 INFO Thread 6588 is executed
+2023-05-30 13:25:11,266 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:11,266 INFO Thread 6588 is executed
+2023-05-30 13:25:11,298 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:11,298 INFO Thread 6588 is executed
+2023-05-30 13:25:11,331 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:11,331 INFO Thread 6588 is executed
+2023-05-30 13:25:11,362 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:11,362 INFO Thread 6588 is executed
+2023-05-30 13:25:11,394 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:11,394 INFO Thread 6588 is executed
+2023-05-30 13:25:11,427 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:11,427 INFO Thread 6588 is executed
+2023-05-30 13:25:11,461 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:11,461 INFO Thread 6588 is executed
+2023-05-30 13:25:11,494 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:11,494 INFO Thread 6588 is executed
+2023-05-30 13:25:11,525 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:11,525 INFO Thread 6588 is executed
+2023-05-30 13:25:11,555 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:11,555 INFO Thread 6588 is executed
+2023-05-30 13:25:11,587 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:11,587 INFO Thread 6588 is executed
+2023-05-30 13:25:11,634 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:11,634 INFO Thread 6588 is executed
+2023-05-30 13:25:11,667 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:11,667 INFO Thread 6588 is executed
+2023-05-30 13:25:11,698 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:11,698 INFO Thread 6588 is executed
+2023-05-30 13:25:11,731 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:11,731 INFO Thread 6588 is executed
+2023-05-30 13:25:11,763 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:11,763 INFO Thread 6588 is executed
+2023-05-30 13:25:11,795 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:11,795 INFO Thread 6588 is executed
+2023-05-30 13:25:11,827 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:11,827 INFO Thread 6588 is executed
+2023-05-30 13:25:11,859 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:11,859 INFO Thread 6588 is executed
+2023-05-30 13:25:11,894 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:11,894 INFO Thread 6588 is executed
+2023-05-30 13:25:11,925 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:11,925 INFO Thread 6588 is executed
+2023-05-30 13:25:11,958 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:11,958 INFO Thread 6588 is executed
+2023-05-30 13:25:11,986 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:11,987 INFO Thread 6588 is executed
+2023-05-30 13:25:12,034 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:12,034 INFO Thread 6588 is executed
+2023-05-30 13:25:12,066 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:12,066 INFO Thread 6588 is executed
+2023-05-30 13:25:12,098 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:12,098 INFO Thread 6588 is executed
+2023-05-30 13:25:12,130 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:12,130 INFO Thread 6588 is executed
+2023-05-30 13:25:12,163 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:12,163 INFO Thread 6588 is executed
+2023-05-30 13:25:12,194 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:12,194 INFO Thread 6588 is executed
+2023-05-30 13:25:12,227 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:12,227 INFO Thread 6588 is executed
+2023-05-30 13:25:12,260 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:12,260 INFO Thread 6588 is executed
+2023-05-30 13:25:12,294 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:12,294 INFO Thread 6588 is executed
+2023-05-30 13:25:12,326 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:12,326 INFO Thread 6588 is executed
+2023-05-30 13:25:12,358 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:12,358 INFO Thread 6588 is executed
+2023-05-30 13:25:12,387 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:12,387 INFO Thread 6588 is executed
+2023-05-30 13:25:12,435 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:12,436 INFO Thread 6588 is executed
+2023-05-30 13:25:12,466 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:12,466 INFO Thread 6588 is executed
+2023-05-30 13:25:12,499 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:12,499 INFO Thread 6588 is executed
+2023-05-30 13:25:12,531 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:12,531 INFO Thread 6588 is executed
+2023-05-30 13:25:12,562 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:12,562 INFO Thread 6588 is executed
+2023-05-30 13:25:12,594 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:12,594 INFO Thread 6588 is executed
+2023-05-30 13:25:12,626 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:12,626 INFO Thread 6588 is executed
+2023-05-30 13:25:12,660 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:12,660 INFO Thread 6588 is executed
+2023-05-30 13:25:12,693 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:12,693 INFO Thread 6588 is executed
+2023-05-30 13:25:12,725 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:12,725 INFO Thread 6588 is executed
+2023-05-30 13:25:12,759 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:12,759 INFO Thread 6588 is executed
+2023-05-30 13:25:12,790 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:12,790 INFO Thread 6588 is executed
+2023-05-30 13:25:12,836 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:12,836 INFO Thread 6588 is executed
+2023-05-30 13:25:12,867 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:12,867 INFO Thread 6588 is executed
+2023-05-30 13:25:12,899 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:12,899 INFO Thread 6588 is executed
+2023-05-30 13:25:12,931 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:12,931 INFO Thread 6588 is executed
+2023-05-30 13:25:12,962 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:12,962 INFO Thread 6588 is executed
+2023-05-30 13:25:12,994 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:12,994 INFO Thread 6588 is executed
+2023-05-30 13:25:13,027 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:13,027 INFO Thread 6588 is executed
+2023-05-30 13:25:13,059 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:13,059 INFO Thread 6588 is executed
+2023-05-30 13:25:13,094 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:13,094 INFO Thread 6588 is executed
+2023-05-30 13:25:13,125 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:13,125 INFO Thread 6588 is executed
+2023-05-30 13:25:13,159 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:13,159 INFO Thread 6588 is executed
+2023-05-30 13:25:13,187 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:13,187 INFO Thread 6588 is executed
+2023-05-30 13:25:13,235 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:13,235 INFO Thread 6588 is executed
+2023-05-30 13:25:13,266 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:13,266 INFO Thread 6588 is executed
+2023-05-30 13:25:13,298 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:13,298 INFO Thread 6588 is executed
+2023-05-30 13:25:13,331 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:13,331 INFO Thread 6588 is executed
+2023-05-30 13:25:13,362 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:13,362 INFO Thread 6588 is executed
+2023-05-30 13:25:13,394 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:13,394 INFO Thread 6588 is executed
+2023-05-30 13:25:13,427 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:13,427 INFO Thread 6588 is executed
+2023-05-30 13:25:13,459 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:13,459 INFO Thread 6588 is executed
+2023-05-30 13:25:13,493 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:13,493 INFO Thread 6588 is executed
+2023-05-30 13:25:13,525 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:13,525 INFO Thread 6588 is executed
+2023-05-30 13:25:13,558 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:13,558 INFO Thread 6588 is executed
+2023-05-30 13:25:13,587 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:13,587 INFO Thread 6588 is executed
+2023-05-30 13:25:13,635 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:13,635 INFO Thread 6588 is executed
+2023-05-30 13:25:13,667 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:13,667 INFO Thread 6588 is executed
+2023-05-30 13:25:13,698 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:13,698 INFO Thread 6588 is executed
+2023-05-30 13:25:13,731 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:13,731 INFO Thread 6588 is executed
+2023-05-30 13:25:13,762 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:13,762 INFO Thread 6588 is executed
+2023-05-30 13:25:13,795 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:13,795 INFO Thread 6588 is executed
+2023-05-30 13:25:13,827 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:13,827 INFO Thread 6588 is executed
+2023-05-30 13:25:13,858 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:13,858 INFO Thread 6588 is executed
+2023-05-30 13:25:13,893 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:13,893 INFO Thread 6588 is executed
+2023-05-30 13:25:13,926 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:13,926 INFO Thread 6588 is executed
+2023-05-30 13:25:13,957 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:13,957 INFO Thread 6588 is executed
+2023-05-30 13:25:13,987 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:13,987 INFO Thread 6588 is executed
+2023-05-30 13:25:13,998 INFO Thread 13428 is executed
+2023-05-30 13:25:13,998 INFO Time to read sensor: 0.0
+2023-05-30 13:25:14,034 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:14,034 INFO Thread 6588 is executed
+2023-05-30 13:25:14,066 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:14,066 INFO Thread 6588 is executed
+2023-05-30 13:25:14,098 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:14,098 INFO Thread 6588 is executed
+2023-05-30 13:25:14,131 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:14,131 INFO Thread 6588 is executed
+2023-05-30 13:25:14,162 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:14,162 INFO Thread 6588 is executed
+2023-05-30 13:25:14,194 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:14,194 INFO Thread 6588 is executed
+2023-05-30 13:25:14,227 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:14,227 INFO Thread 6588 is executed
+2023-05-30 13:25:14,259 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:14,259 INFO Thread 6588 is executed
+2023-05-30 13:25:14,292 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:14,292 INFO Thread 6588 is executed
+2023-05-30 13:25:14,326 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:14,326 INFO Thread 6588 is executed
+2023-05-30 13:25:14,357 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:14,357 INFO Thread 6588 is executed
+2023-05-30 13:25:14,387 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:14,387 INFO Thread 6588 is executed
+2023-05-30 13:25:14,435 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:14,435 INFO Thread 6588 is executed
+2023-05-30 13:25:14,466 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:14,466 INFO Thread 6588 is executed
+2023-05-30 13:25:14,499 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:14,499 INFO Thread 6588 is executed
+2023-05-30 13:25:14,531 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:14,531 INFO Thread 6588 is executed
+2023-05-30 13:25:14,563 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:14,563 INFO Thread 6588 is executed
+2023-05-30 13:25:14,594 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:14,594 INFO Thread 6588 is executed
+2023-05-30 13:25:14,627 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:14,627 INFO Thread 6588 is executed
+2023-05-30 13:25:14,658 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:14,658 INFO Thread 6588 is executed
+2023-05-30 13:25:14,692 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:14,692 INFO Thread 6588 is executed
+2023-05-30 13:25:14,726 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:14,726 INFO Thread 6588 is executed
+2023-05-30 13:25:14,758 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:14,758 INFO Thread 6588 is executed
+2023-05-30 13:25:14,787 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:14,787 INFO Thread 6588 is executed
+2023-05-30 13:25:14,835 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:14,835 INFO Thread 6588 is executed
+2023-05-30 13:25:14,866 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:14,866 INFO Thread 6588 is executed
+2023-05-30 13:25:14,899 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:14,899 INFO Thread 6588 is executed
+2023-05-30 13:25:14,931 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:14,931 INFO Thread 6588 is executed
+2023-05-30 13:25:14,963 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:14,963 INFO Thread 6588 is executed
+2023-05-30 13:25:14,994 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:14,994 INFO Thread 6588 is executed
+2023-05-30 13:25:15,027 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:15,027 INFO Thread 6588 is executed
+2023-05-30 13:25:15,059 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:15,059 INFO Thread 6588 is executed
+2023-05-30 13:25:15,093 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:15,093 INFO Thread 6588 is executed
+2023-05-30 13:25:15,125 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:15,125 INFO Thread 6588 is executed
+2023-05-30 13:25:15,157 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:15,157 INFO Thread 6588 is executed
+2023-05-30 13:25:15,190 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:15,190 INFO Thread 6588 is executed
+2023-05-30 13:25:15,235 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:15,235 INFO Thread 6588 is executed
+2023-05-30 13:25:15,267 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:15,267 INFO Thread 6588 is executed
+2023-05-30 13:25:15,298 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:15,298 INFO Thread 6588 is executed
+2023-05-30 13:25:15,331 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:15,331 INFO Thread 6588 is executed
+2023-05-30 13:25:15,363 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:15,363 INFO Thread 6588 is executed
+2023-05-30 13:25:15,395 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:15,395 INFO Thread 6588 is executed
+2023-05-30 13:25:15,427 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:15,427 INFO Thread 6588 is executed
+2023-05-30 13:25:15,459 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:15,459 INFO Thread 6588 is executed
+2023-05-30 13:25:15,491 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:15,491 INFO Thread 6588 is executed
+2023-05-30 13:25:15,524 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:15,524 INFO Thread 6588 is executed
+2023-05-30 13:25:15,558 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:15,558 INFO Thread 6588 is executed
+2023-05-30 13:25:15,590 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:15,590 INFO Thread 6588 is executed
+2023-05-30 13:25:15,635 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:15,635 INFO Thread 6588 is executed
+2023-05-30 13:25:15,668 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:15,668 INFO Thread 6588 is executed
+2023-05-30 13:25:15,699 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:15,699 INFO Thread 6588 is executed
+2023-05-30 13:25:15,730 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:15,730 INFO Thread 6588 is executed
+2023-05-30 13:25:15,763 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:15,763 INFO Thread 6588 is executed
+2023-05-30 13:25:15,794 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:15,794 INFO Thread 6588 is executed
+2023-05-30 13:25:15,827 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:15,827 INFO Thread 6588 is executed
+2023-05-30 13:25:15,858 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:15,858 INFO Thread 6588 is executed
+2023-05-30 13:25:15,891 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:15,891 INFO Thread 6588 is executed
+2023-05-30 13:25:15,926 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:15,926 INFO Thread 6588 is executed
+2023-05-30 13:25:15,958 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:15,958 INFO Thread 6588 is executed
+2023-05-30 13:25:15,991 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:15,991 INFO Thread 6588 is executed
+2023-05-30 13:25:16,035 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:16,035 INFO Thread 6588 is executed
+2023-05-30 13:25:16,066 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:16,066 INFO Thread 6588 is executed
+2023-05-30 13:25:16,099 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:16,099 INFO Thread 6588 is executed
+2023-05-30 13:25:16,131 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:16,131 INFO Thread 6588 is executed
+2023-05-30 13:25:16,163 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:16,163 INFO Thread 6588 is executed
+2023-05-30 13:25:16,195 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:16,195 INFO Thread 6588 is executed
+2023-05-30 13:25:16,226 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:16,226 INFO Thread 6588 is executed
+2023-05-30 13:25:16,259 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:16,259 INFO Thread 6588 is executed
+2023-05-30 13:25:16,292 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:16,292 INFO Thread 6588 is executed
+2023-05-30 13:25:16,326 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:16,326 INFO Thread 6588 is executed
+2023-05-30 13:25:16,358 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:16,358 INFO Thread 6588 is executed
+2023-05-30 13:25:16,390 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:16,390 INFO Thread 6588 is executed
+2023-05-30 13:25:16,435 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:16,435 INFO Thread 6588 is executed
+2023-05-30 13:25:16,467 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:16,468 INFO Thread 6588 is executed
+2023-05-30 13:25:16,498 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:16,498 INFO Thread 6588 is executed
+2023-05-30 13:25:16,531 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:16,531 INFO Thread 6588 is executed
+2023-05-30 13:25:16,562 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:16,562 INFO Thread 6588 is executed
+2023-05-30 13:25:16,595 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:16,595 INFO Thread 6588 is executed
+2023-05-30 13:25:16,627 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:16,627 INFO Thread 6588 is executed
+2023-05-30 13:25:16,659 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:16,659 INFO Thread 6588 is executed
+2023-05-30 13:25:16,692 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:16,692 INFO Thread 6588 is executed
+2023-05-30 13:25:16,725 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:16,725 INFO Thread 6588 is executed
+2023-05-30 13:25:16,758 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:16,758 INFO Thread 6588 is executed
+2023-05-30 13:25:16,790 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:16,790 INFO Thread 6588 is executed
+2023-05-30 13:25:16,835 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:16,835 INFO Thread 6588 is executed
+2023-05-30 13:25:16,867 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:16,868 INFO Thread 6588 is executed
+2023-05-30 13:25:16,899 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:16,899 INFO Thread 6588 is executed
+2023-05-30 13:25:16,930 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:16,930 INFO Thread 6588 is executed
+2023-05-30 13:25:16,963 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:16,963 INFO Thread 6588 is executed
+2023-05-30 13:25:16,994 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:16,994 INFO Thread 6588 is executed
+2023-05-30 13:25:17,027 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:17,027 INFO Thread 6588 is executed
+2023-05-30 13:25:17,058 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:17,058 INFO Thread 6588 is executed
+2023-05-30 13:25:17,092 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:17,092 INFO Thread 6588 is executed
+2023-05-30 13:25:17,124 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:17,124 INFO Thread 6588 is executed
+2023-05-30 13:25:17,157 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:17,157 INFO Thread 6588 is executed
+2023-05-30 13:25:17,190 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:17,190 INFO Thread 6588 is executed
+2023-05-30 13:25:17,235 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:17,235 INFO Thread 6588 is executed
+2023-05-30 13:25:17,267 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:17,268 INFO Thread 6588 is executed
+2023-05-30 13:25:17,299 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:17,299 INFO Thread 6588 is executed
+2023-05-30 13:25:17,330 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:17,330 INFO Thread 6588 is executed
+2023-05-30 13:25:17,363 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:17,363 INFO Thread 6588 is executed
+2023-05-30 13:25:17,395 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:17,395 INFO Thread 6588 is executed
+2023-05-30 13:25:17,428 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:17,428 INFO Thread 6588 is executed
+2023-05-30 13:25:17,461 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:17,461 INFO Thread 6588 is executed
+2023-05-30 13:25:17,493 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:17,493 INFO Thread 6588 is executed
+2023-05-30 13:25:17,525 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:17,525 INFO Thread 6588 is executed
+2023-05-30 13:25:17,559 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:17,559 INFO Thread 6588 is executed
+2023-05-30 13:25:17,591 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:17,591 INFO Thread 6588 is executed
+2023-05-30 13:25:17,634 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:17,634 INFO Thread 6588 is executed
+2023-05-30 13:25:17,667 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:17,667 INFO Thread 6588 is executed
+2023-05-30 13:25:17,699 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:17,699 INFO Thread 6588 is executed
+2023-05-30 13:25:17,731 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:17,731 INFO Thread 6588 is executed
+2023-05-30 13:25:17,763 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:17,763 INFO Thread 6588 is executed
+2023-05-30 13:25:17,794 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:17,794 INFO Thread 6588 is executed
+2023-05-30 13:25:17,826 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:17,826 INFO Thread 6588 is executed
+2023-05-30 13:25:17,859 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:17,859 INFO Thread 6588 is executed
+2023-05-30 13:25:17,891 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:17,891 INFO Thread 6588 is executed
+2023-05-30 13:25:17,925 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:17,925 INFO Thread 6588 is executed
+2023-05-30 13:25:17,958 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:17,958 INFO Thread 6588 is executed
+2023-05-30 13:25:17,990 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:17,990 INFO Thread 6588 is executed
+2023-05-30 13:25:18,034 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:18,034 INFO Thread 6588 is executed
+2023-05-30 13:25:18,067 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:18,067 INFO Thread 6588 is executed
+2023-05-30 13:25:18,099 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:18,099 INFO Thread 6588 is executed
+2023-05-30 13:25:18,131 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:18,131 INFO Thread 6588 is executed
+2023-05-30 13:25:18,163 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:18,163 INFO Thread 6588 is executed
+2023-05-30 13:25:18,195 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:18,195 INFO Thread 6588 is executed
+2023-05-30 13:25:18,226 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:18,226 INFO Thread 6588 is executed
+2023-05-30 13:25:18,258 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:18,258 INFO Thread 6588 is executed
+2023-05-30 13:25:18,291 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:18,291 INFO Thread 6588 is executed
+2023-05-30 13:25:18,324 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:18,324 INFO Thread 6588 is executed
+2023-05-30 13:25:18,358 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:18,358 INFO Thread 6588 is executed
+2023-05-30 13:25:18,390 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:18,390 INFO Thread 6588 is executed
+2023-05-30 13:25:18,435 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:18,435 INFO Thread 6588 is executed
+2023-05-30 13:25:18,467 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:18,467 INFO Thread 6588 is executed
+2023-05-30 13:25:18,499 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:18,499 INFO Thread 6588 is executed
+2023-05-30 13:25:18,531 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:18,531 INFO Thread 6588 is executed
+2023-05-30 13:25:18,562 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:18,562 INFO Thread 6588 is executed
+2023-05-30 13:25:18,595 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:18,595 INFO Thread 6588 is executed
+2023-05-30 13:25:18,626 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:18,626 INFO Thread 6588 is executed
+2023-05-30 13:25:18,659 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:18,659 INFO Thread 6588 is executed
+2023-05-30 13:25:18,690 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:18,690 INFO Thread 6588 is executed
+2023-05-30 13:25:18,725 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:18,725 INFO Thread 6588 is executed
+2023-05-30 13:25:18,758 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:18,758 INFO Thread 6588 is executed
+2023-05-30 13:25:18,790 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:18,790 INFO Thread 6588 is executed
+2023-05-30 13:25:18,835 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:18,835 INFO Thread 6588 is executed
+2023-05-30 13:25:18,867 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:18,867 INFO Thread 6588 is executed
+2023-05-30 13:25:18,899 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:18,900 INFO Thread 6588 is executed
+2023-05-30 13:25:18,931 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:18,931 INFO Thread 6588 is executed
+2023-05-30 13:25:18,963 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:18,963 INFO Thread 6588 is executed
+2023-05-30 13:25:18,994 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:18,994 INFO Thread 6588 is executed
+2023-05-30 13:25:19,026 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:19,026 INFO Thread 6588 is executed
+2023-05-30 13:25:19,059 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:19,059 INFO Thread 6588 is executed
+2023-05-30 13:25:19,093 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:19,093 INFO Thread 6588 is executed
+2023-05-30 13:25:19,127 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:19,127 INFO Thread 6588 is executed
+2023-05-30 13:25:19,158 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:19,158 INFO Thread 6588 is executed
+2023-05-30 13:25:19,193 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:19,193 INFO Thread 6588 is executed
+2023-05-30 13:25:19,237 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:19,237 INFO Thread 6588 is executed
+2023-05-30 13:25:19,268 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:19,268 INFO Thread 6588 is executed
+2023-05-30 13:25:19,299 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:19,299 INFO Thread 6588 is executed
+2023-05-30 13:25:19,330 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:19,330 INFO Thread 6588 is executed
+2023-05-30 13:25:19,363 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:19,363 INFO Thread 6588 is executed
+2023-05-30 13:25:19,395 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:19,395 INFO Thread 6588 is executed
+2023-05-30 13:25:19,426 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:19,426 INFO Thread 6588 is executed
+2023-05-30 13:25:19,458 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:19,458 INFO Thread 6588 is executed
+2023-05-30 13:25:19,491 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:19,491 INFO Thread 6588 is executed
+2023-05-30 13:25:19,526 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:19,526 INFO Thread 6588 is executed
+2023-05-30 13:25:19,559 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:19,559 INFO Thread 6588 is executed
+2023-05-30 13:25:19,591 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:19,591 INFO Thread 6588 is executed
+2023-05-30 13:25:19,637 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:19,637 INFO Thread 6588 is executed
+2023-05-30 13:25:19,667 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:19,668 INFO Thread 6588 is executed
+2023-05-30 13:25:19,698 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:19,698 INFO Thread 6588 is executed
+2023-05-30 13:25:19,730 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:19,730 INFO Thread 6588 is executed
+2023-05-30 13:25:19,763 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:19,763 INFO Thread 6588 is executed
+2023-05-30 13:25:19,795 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:19,795 INFO Thread 6588 is executed
+2023-05-30 13:25:19,826 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:19,826 INFO Thread 6588 is executed
+2023-05-30 13:25:19,859 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:19,859 INFO Thread 6588 is executed
+2023-05-30 13:25:19,891 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:19,891 INFO Thread 6588 is executed
+2023-05-30 13:25:19,925 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:19,925 INFO Thread 6588 is executed
+2023-05-30 13:25:19,956 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:19,956 INFO Thread 6588 is executed
+2023-05-30 13:25:19,990 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:19,990 INFO Thread 6588 is executed
+2023-05-30 13:25:20,039 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:20,039 INFO Thread 6588 is executed
+2023-05-30 13:25:20,068 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:20,069 INFO Thread 6588 is executed
+2023-05-30 13:25:20,100 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:20,101 INFO Thread 6588 is executed
+2023-05-30 13:25:20,131 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:20,131 INFO Thread 6588 is executed
+2023-05-30 13:25:20,163 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:20,163 INFO Thread 6588 is executed
+2023-05-30 13:25:20,194 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:20,194 INFO Thread 6588 is executed
+2023-05-30 13:25:20,227 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:20,227 INFO Thread 6588 is executed
+2023-05-30 13:25:20,260 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:20,260 INFO Thread 6588 is executed
+2023-05-30 13:25:20,293 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:20,293 INFO Thread 6588 is executed
+2023-05-30 13:25:20,328 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:20,328 INFO Thread 6588 is executed
+2023-05-30 13:25:20,361 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:20,361 INFO Thread 6588 is executed
+2023-05-30 13:25:20,391 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:20,391 INFO Thread 6588 is executed
+2023-05-30 13:25:20,436 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:20,436 INFO Thread 6588 is executed
+2023-05-30 13:25:20,467 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:20,467 INFO Thread 6588 is executed
+2023-05-30 13:25:20,498 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:20,498 INFO Thread 6588 is executed
+2023-05-30 13:25:20,531 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:20,531 INFO Thread 6588 is executed
+2023-05-30 13:25:20,562 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:20,562 INFO Thread 6588 is executed
+2023-05-30 13:25:20,595 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:20,595 INFO Thread 6588 is executed
+2023-05-30 13:25:20,627 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:20,627 INFO Thread 6588 is executed
+2023-05-30 13:25:20,658 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:20,658 INFO Thread 6588 is executed
+2023-05-30 13:25:20,691 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:20,691 INFO Thread 6588 is executed
+2023-05-30 13:25:20,723 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:20,723 INFO Thread 6588 is executed
+2023-05-30 13:25:20,756 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:20,756 INFO Thread 6588 is executed
+2023-05-30 13:25:20,789 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:20,789 INFO Thread 6588 is executed
+2023-05-30 13:25:20,835 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:20,835 INFO Thread 6588 is executed
+2023-05-30 13:25:20,867 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:20,867 INFO Thread 6588 is executed
+2023-05-30 13:25:20,900 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:20,900 INFO Thread 6588 is executed
+2023-05-30 13:25:20,931 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:20,931 INFO Thread 6588 is executed
+2023-05-30 13:25:20,963 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:20,963 INFO Thread 6588 is executed
+2023-05-30 13:25:20,994 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:20,994 INFO Thread 6588 is executed
+2023-05-30 13:25:21,026 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:21,026 INFO Thread 6588 is executed
+2023-05-30 13:25:21,059 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:21,059 INFO Thread 6588 is executed
+2023-05-30 13:25:21,091 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:21,091 INFO Thread 6588 is executed
+2023-05-30 13:25:21,125 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:21,125 INFO Thread 6588 is executed
+2023-05-30 13:25:21,157 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:21,157 INFO Thread 6588 is executed
+2023-05-30 13:25:21,189 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:21,189 INFO Thread 6588 is executed
+2023-05-30 13:25:21,235 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:21,235 INFO Thread 6588 is executed
+2023-05-30 13:25:21,267 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:21,267 INFO Thread 6588 is executed
+2023-05-30 13:25:21,299 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:21,300 INFO Thread 6588 is executed
+2023-05-30 13:25:21,331 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:21,331 INFO Thread 6588 is executed
+2023-05-30 13:25:21,363 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:21,363 INFO Thread 6588 is executed
+2023-05-30 13:25:21,394 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:21,394 INFO Thread 6588 is executed
+2023-05-30 13:25:21,426 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:21,426 INFO Thread 6588 is executed
+2023-05-30 13:25:21,458 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:21,458 INFO Thread 6588 is executed
+2023-05-30 13:25:21,491 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:21,491 INFO Thread 6588 is executed
+2023-05-30 13:25:21,523 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:21,523 INFO Thread 6588 is executed
+2023-05-30 13:25:21,556 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:21,556 INFO Thread 6588 is executed
+2023-05-30 13:25:21,590 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:21,590 INFO Thread 6588 is executed
+2023-05-30 13:25:21,635 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:21,635 INFO Thread 6588 is executed
+2023-05-30 13:25:21,667 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:21,667 INFO Thread 6588 is executed
+2023-05-30 13:25:21,699 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:21,699 INFO Thread 6588 is executed
+2023-05-30 13:25:21,731 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:21,731 INFO Thread 6588 is executed
+2023-05-30 13:25:21,763 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:21,763 INFO Thread 6588 is executed
+2023-05-30 13:25:21,795 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:21,795 INFO Thread 6588 is executed
+2023-05-30 13:25:21,827 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:21,827 INFO Thread 6588 is executed
+2023-05-30 13:25:21,859 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:21,859 INFO Thread 6588 is executed
+2023-05-30 13:25:21,890 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:21,890 INFO Thread 6588 is executed
+2023-05-30 13:25:21,922 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:21,922 INFO Thread 6588 is executed
+2023-05-30 13:25:21,955 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:21,955 INFO Thread 6588 is executed
+2023-05-30 13:25:21,991 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:21,991 INFO Thread 6588 is executed
+2023-05-30 13:25:22,038 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:22,038 INFO Thread 6588 is executed
+2023-05-30 13:25:22,067 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:22,067 INFO Thread 6588 is executed
+2023-05-30 13:25:22,099 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:22,099 INFO Thread 6588 is executed
+2023-05-30 13:25:22,131 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:22,131 INFO Thread 6588 is executed
+2023-05-30 13:25:22,163 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:22,163 INFO Thread 6588 is executed
+2023-05-30 13:25:22,196 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:22,196 INFO Thread 6588 is executed
+2023-05-30 13:25:22,226 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:22,226 INFO Thread 6588 is executed
+2023-05-30 13:25:22,258 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:22,258 INFO Thread 6588 is executed
+2023-05-30 13:25:22,291 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:22,291 INFO Thread 6588 is executed
+2023-05-30 13:25:22,323 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:22,323 INFO Thread 6588 is executed
+2023-05-30 13:25:22,357 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:22,357 INFO Thread 6588 is executed
+2023-05-30 13:25:22,390 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:22,390 INFO Thread 6588 is executed
+2023-05-30 13:25:22,437 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:22,437 INFO Thread 6588 is executed
+2023-05-30 13:25:22,467 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:22,467 INFO Thread 6588 is executed
+2023-05-30 13:25:22,499 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:22,499 INFO Thread 6588 is executed
+2023-05-30 13:25:22,531 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:22,531 INFO Thread 6588 is executed
+2023-05-30 13:25:22,563 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:22,563 INFO Thread 6588 is executed
+2023-05-30 13:25:22,595 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:22,595 INFO Thread 6588 is executed
+2023-05-30 13:25:22,626 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:22,626 INFO Thread 6588 is executed
+2023-05-30 13:25:22,658 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:22,658 INFO Thread 6588 is executed
+2023-05-30 13:25:22,691 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:22,691 INFO Thread 6588 is executed
+2023-05-30 13:25:22,723 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:22,723 INFO Thread 6588 is executed
+2023-05-30 13:25:22,756 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:22,756 INFO Thread 6588 is executed
+2023-05-30 13:25:22,790 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:22,790 INFO Thread 6588 is executed
+2023-05-30 13:25:22,838 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:22,838 INFO Thread 6588 is executed
+2023-05-30 13:25:22,867 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:22,867 INFO Thread 6588 is executed
+2023-05-30 13:25:22,899 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:22,899 INFO Thread 6588 is executed
+2023-05-30 13:25:22,931 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:22,931 INFO Thread 6588 is executed
+2023-05-30 13:25:22,963 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:22,963 INFO Thread 6588 is executed
+2023-05-30 13:25:22,995 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:22,995 INFO Thread 6588 is executed
+2023-05-30 13:25:23,027 ERROR Failed to read cam and detect fire: local variable 'res' referenced before assignment
+2023-05-30 13:25:23,027 INFO Thread 6588 is executed
