@@ -211,7 +211,8 @@ class Physical:
             read_port = self.ports[port_idx]
             ser = serial.Serial(port = read_port, baudrate=9600) 
 
-            self.log.info("--------Reading sensors of Port number {} ----------".format(read_port))
+            if self.isDebug:
+                self.log.info("--------Reading sensors of Port number {} ----------".format(read_port))
 
             # loop through all sensors of the detected port
             for sensor in sensors:
@@ -223,11 +224,19 @@ class Physical:
                     else: # don't exist in dict
                         self.sensorsData[sensor] = [data]
 
-                    self.log.info('reading {} from sensor type {}'.format(data, sensor))
+                    if self.isDebug:
+                        self.log.info('reading {} from sensor type {}'.format(data, sensor))
+
                 elif (data == -2):
-                    self.log.info('having no sensor type {}'.format(sensor))
+                    if self.isDebug:
+                        self.log.info('having no sensor type {}'.format(sensor))
+                    else:
+                        print('having no sensor type {}'.format(sensor))
                 else: 
-                    self.log.info('failed to read sensor type {}'.format(sensor))
+                    if self.isDebug:
+                        self.log.info('failed to read sensor type {}'.format(sensor))
+                    else:
+                        print('failed to read sensor type {}'.format(sensor))
 
             #print("Controling relays of Port number ", self.ports[port_idx])
             #self.setDevice1(ser, True)
@@ -321,11 +330,10 @@ class Physical:
         if self.isDebug:
             self.log.info(formated_jsonData)
 
-        # very careful with this dictionary variable, it's server multi purpose
-        # which is easilly to do wrong
+        # clear this dictionary
         self.sensorsData.clear()
 
-        return formated_jsonData
+        return jsonData
 
     def publishData(self):
         json = self.buildJson()

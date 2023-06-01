@@ -21,14 +21,14 @@ def GetDebugOption():
     
     return False
 
-PHYSICAL_READ_TIME_INTERVAL = 10
-NUMBER_OF_DATAPOINTS = 2
+PHYSICAL_READ_TIME_INTERVAL = 10 
+NUMBER_OF_DATAPOINTS = 1
 PHYSICAL_PUBLISH_TIME_INTERVAL = PHYSICAL_READ_TIME_INTERVAL * NUMBER_OF_DATAPOINTS
 
 SYSTEM_COMPONENT_COUNTER = {
     # CPU bounded - often takes around 2s
     # recieve number should be > 3
-    'AI_Camera' : 0,
+    'AI_Camera' : 5,
     # IO bounded - takes 1s for each of 16 total sensors
     # recieve number should be > 20
     'Physical' : PHYSICAL_READ_TIME_INTERVAL, 
@@ -87,8 +87,8 @@ class systemAMT:
                     print("******************* Trying to read sersors from all serial ports *******************")
                     self.physicalSensors.readSensors()
                     self.physicalSensors.analyzeData()
-                    self.physicalSensors.setGlobalDetectVal()
                     self.physicalSensors.storeInstanceData()
+
 
                     self.log.info('Time to read sensor: {}'.format(str(time() - start_time)))
                 except Exception as ex:
@@ -98,6 +98,7 @@ class systemAMT:
                 try:
                     print("******************* Trying to publish sensors data to server *******************")
                     self.physicalSensors.getAverageData()
+                    #self.physicalSensors.setGlobalDetectVal()
                     self.physicalSensors.publishData()
                     self.log.info('Time to publish sensor data: {}'.format(str(time() - start_time)))
                 except Exception as ex:
@@ -108,7 +109,7 @@ class systemAMT:
                     print("******************* Trying to detect fire from all cam ports *******************")
                     self.aiCamera.readCams()
                     self.aiCamera.readInferedCam()
-                    self.aiCamera.setGlobalDetectVal()
+                    #self.aiCamera.setGlobalDetectVal()
                     self.aiCamera.publishData(GetAlertLevel())
                     self.log.info('Time to read cam and detect fire: {}'.format(str(time() - start_time)))
                 except Exception as ex:
