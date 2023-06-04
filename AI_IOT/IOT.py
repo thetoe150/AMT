@@ -18,14 +18,14 @@ def subscribe(client, userdata, mid, granted_qos):
 
 def disconnected(client):
     print("Disconnected")
-    sys.exit (1)
+    sys.exit(1)
 
 def message(client, feed_id, payload):
     print("hello")
-    #if isMicrobitConnected:
-        #ser.write((str(payload) + "#").encode())
-        #if feed_id == "led":
-            #if payload == "1":
+    # if isMicrobitConnected:
+        # ser.write((str(payload) + "#").encode())
+        # if feed_id == "led":
+            # if payload == "1":
                 ##print("command relay on\n")
                 ##ser.write(str.encode('LED_ONN'))
                 #setDevice1(True)
@@ -45,11 +45,10 @@ class Client:
         self.client.connect()
         self.client.loop_background()
 
-
     def publishFeed(self, feedName, data):
         print('Publishing json: ')
         self.client.publish(feedName, data)
         print(data)
-    
+
     def receiveFeed(self, feedName):
         self.client.receive(feedName).value

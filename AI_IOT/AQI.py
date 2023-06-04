@@ -3,6 +3,8 @@ import requests
 
 airnow_api_key = "86CD0ECF-0480-4C13-9D73-2AC5AA4F8ACD"
 iqair_api_key = "fc858e95-4e82-4cab-9349-370009914fb4"
+
+waqi_api_token = "e32c0d793d41c5b11f96f1ae52c54f0e3c584a8b"
 # Set the coordinates for Ho Chi Minh City
 _HOST = "www.airnowapi.org"
 #_ENDPOINT_OBSERVATION_BY_LATLON = "/aq/observation/latLong/current"
@@ -101,7 +103,7 @@ class AQI:
                 "Distance must be a positive integer: " + str(distanceMiles))
 
         # Send Request and Receive Response
-        if(mode == 'observation'):
+        if mode == 'observation':
             requestUrl = "http://" + _HOST + _ENDPOINT_OBSERVATION_BY_LATLON
             payload = {}
             payload["parameters"] = type
@@ -116,12 +118,12 @@ class AQI:
             print(type)
             response = requests.get(requestUrl, params=payload, headers={'Cache-Control': 'no-cache'})
 
-            #if response.history:
-                #print("Request was redirected")
-                #for resp in response.history:
-                    #print(resp.status_code, resp.url)
-                #print("Final destination:")
-                #print(response.status_code, response.url)
+            # if response.history:
+                # print("Request was redirected")
+                # for resp in response.history:
+                    # print(resp.status_code, resp.url)
+                # print("Final destination:")
+                # print(response.status_code, response.url)
             #else:
                 #print("Request was not redirected")
             rawJsonData = json.loads(response.text)
@@ -142,7 +144,10 @@ class AQI:
 
             print(requestUrl)
             response = requests.get(requestUrl, params=payload, headers={'Cache-Control': 'no-cache'}, allow_redirects=False)
-            return response.text
+
+            data = json.loads(response.text)
+            pretty = json.dumps(data, indent=4)
+            return pretty
         else:
             raise ValueError(
                 "Mode is be observation or forecast.")
@@ -166,8 +171,32 @@ class AQI:
             else:
                 print("Request was not redirected")
 
-            return response.text
+            data = json.loads(response.text)
+            pretty = json.dumps(data, indent=4)
+            return pretty
 
+    @staticmethod
+    def getJsonFromWAQI():
+
+            requestUrl = "https://api.waqi.info/feed/here"
+            payload = {}
+            payload["token"] = waqi_api_token
+
+            print(type)
+            response = requests.get(requestUrl, params=payload, headers={'Cache-Control': 'no-cache'})
+
+            if response.history:
+                print("Request was redirected")
+                for resp in response.history:
+                    print(resp.status_code, resp.url)
+                print("Final destination:")
+                print(response.status_code, response.url)
+            else:
+                print("Request was not redirected")
+
+            data = json.loads(response.text)
+            pretty = json.dumps(data, indent=4)
+            return pretty
     
 if __name__ == '__main__':
     # print(AQI.calculateAQI("no2", 5800))
@@ -176,4 +205,6 @@ if __name__ == '__main__':
     #print(AQI.getJsonFromAirNow('forecast','OZONE,PM25,PM10,CO,NO2,SO2'))
 
     #print(AQI.getJsonFromAirNow('observation','OZONE,PM25,PM10,CO,NO2,SO2'))
+    #print(AQI.getJsonFromAirNow())
     print(AQI.getJsonFromIQAir())
+    print(AQI.getJsonFromWAQI())

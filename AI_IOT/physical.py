@@ -340,16 +340,33 @@ class Physical:
         if json != '':
             self.physicalClient.publishFeed("nj1.jdata", json)
 
-def testingARMA():
-    np.random.seed(42)
-    y = np.random.randn(100)
+    ########## Calibrate sensors functionality #########
+    def buildCalibJson(self):
+        pass
 
-    # Fit an ARMA(1,1) model
-    model = sm.tsa.ARIMA(y, order=(1, 0, 1))
-    results = model.fit()
+    def publishCalibData(self):
+        pass
 
-    # Print the model summary
-    print(results.summary())
+    def calibrateSensor(self, x1, x2, y1, y2):
+        dx = x2 - x1
+        dy = y2 - y1
+
+        a = dy / dx
+        b = y1 - a * x1
+
+        return a, b
+
+    ########## Predict sensors data functionality #########
+    def predictAQI(self):
+        pass
+
+    def predictDataPoint(self):
+        pass
+
+    ########## Predict sensors data functionality #########
+    def getExternAQI(self):
+        pass
+
 
 if __name__ == '__main__':
     physical = Physical()
@@ -357,12 +374,15 @@ if __name__ == '__main__':
         # these 4 physical method have to be called in the following order
         # because they operate on the same data member self.sensorsData
 
-        physical.readSensors()
+        #physical.readSensors()
         # analyze data of 1 instace of data point
-        physical.analyzeData()
+        #physical.analyzeData()
         # store 1 instace of data point
-        physical.storeInstanceData()
+        #physical.storeInstanceData()
 
-        physical.getAverageData()
-        physical.publishData()
-        #sm.tsa.ARMA()
+        #physical.getAverageData()
+        #physical.publishData()
+
+        #print(physical.calibrateSensor(27, 34, 29, 33))
+        print(physical.calibrateSensor(29, 32, 27, 33))
+

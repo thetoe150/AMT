@@ -54,11 +54,28 @@ def MAPE_detect(y_true, y_pred):
     #print((y_true - y_pred))
     return np.mean(np.abs((y_true - y_pred) / y_true)) * 100
 
+def testingARMA():
+    np.random.seed(42)
+    y = np.random.randn(100)
+
+    # Fit an ARMA(1,1) model
+    model = sm.tsa.ARIMA(y, order=(1, 0, 1))
+    results = model.fit()
+
+    # Print the model summary
+    print(results.summary())
+
 if __name__ == '__main__':
     np.random.seed(42)
     y = np.random.randn(100)
 
+    arr = np.random.randint(27,37, size=40)
+    print(arr)
+    pred_model = ARMA_forecast(arr, 5)
+
+    testingARMA()
+
     # print(sm.robust.scale.mad(y))
-    print(y)
-    print(MAPE_detect(y, 1))
+    #print(y)
+    #print(MAPE_detect(y, 1))
     #testingARMA()
