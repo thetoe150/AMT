@@ -1,6 +1,12 @@
 import sqlite3
 from datetime import datetime
 
+import global_constant as gc
+
+PHYSICAL_READ_TIME_INTERVAL = gc.PHYSICAL_READ_TIME_INTERVAL
+NUMBER_OF_DATAPOINTS = gc.NUMBER_OF_DATAPOINTS
+PHYSICAL_PUBLISH_TIME_INTERVAL = PHYSICAL_READ_TIME_INTERVAL * NUMBER_OF_DATAPOINTS
+
 class SensorDataStorage:
 	def __init__(self):
 		self.sensorType = []
@@ -120,10 +126,11 @@ if __name__ == '__main__':
 	}
 
 	dataStorage = SensorDataStorage()
-	#dataStorage.addDataPoints(data1)
-	#dataStorage.addDataPoints(data2)
-	#dataStorage.addDataPoints(data3)
-	#dataStorage.dumpDataPoints()
 	dataStorage.printDatabase()
+    # dataStorage.resetDatabase()
+	dataStorage = SensorDataStorage()
 
-	# dataStorage.resetDatabase()
+	print(PHYSICAL_READ_TIME_INTERVAL)
+	print(PHYSICAL_PUBLISH_TIME_INTERVAL)
+
+    

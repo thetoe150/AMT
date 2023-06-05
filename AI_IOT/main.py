@@ -5,6 +5,7 @@ from time import time, sleep
 from datetime import datetime
 import sys
 
+import global_constant as gc
 import physical
 import ai
 import log
@@ -21,8 +22,8 @@ def GetDebugOption():
     
     return False
 
-PHYSICAL_READ_TIME_INTERVAL = 30 
-NUMBER_OF_DATAPOINTS = 10
+PHYSICAL_READ_TIME_INTERVAL = gc.PHYSICAL_READ_TIME_INTERVAL
+NUMBER_OF_DATAPOINTS = gc.NUMBER_OF_DATAPOINTS
 PHYSICAL_PUBLISH_TIME_INTERVAL = PHYSICAL_READ_TIME_INTERVAL * NUMBER_OF_DATAPOINTS
 
 SYSTEM_COMPONENT_COUNTER = {

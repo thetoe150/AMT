@@ -5,6 +5,7 @@ import serial.tools.list_ports
 import AQI
 import json
 
+import global_constant as gc
 import IOT
 import database
 import log
@@ -77,15 +78,14 @@ def RelayMessage(client, feed_id, payload):
 
 
 
-CO_THRESHOLD = 60
-TEM_THRESHOLD = 60
+CO_THRESHOLD = gc.CO_THRESHOLD
+TEM_THRESHOLD = gc.TEM_THRESHOLD
 # The name of OS on window isn't Windows
 #OS = platform.system
 #if OS == "Windows":
     #deviceName = "USB Serial Port"
 #else:
     #deviceName = "FT232R USB UART"
-PUBLISH_INTERVAL = 60
 
 class Physical:
     def __init__(self, debug = False):
