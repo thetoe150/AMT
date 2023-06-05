@@ -73,7 +73,7 @@ if __name__ == '__main__':
     print(arr)
     pred_model = ARMA_forecast(arr, 5)
 
-    testingARMA()
+    #testingARMA()
 
     # print(sm.robust.scale.mad(y))
     #print(y)

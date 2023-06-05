@@ -340,12 +340,33 @@ class Physical:
         if json != '':
             self.physicalClient.publishFeed("nj1.jdata", json)
 
+    ########## get external data source functionality #########
+    def getExternData(self):
+        aqi_json = AQI.AQI.getJsonFromWAQI()
+        aqi_dict = json.loads(aqi_json)
+
+        dominent_parp = aqi_dict["data"]["dominentpol"]
+        val = aqi_dict["data"]["iaqi"][dominent_parp]["v"]
+
+        return dominent_parp, val
+
+
     ########## Calibrate sensors functionality #########
+    def buildCalibStr(self, type, a, b):
+        Str = ''
+        Str += '"' + str(type) + '": ' + str(a) + "x1 + " + str(b) + ','
+        return Str
+
     def buildCalibJson(self):
-        pass
+        Json = '{'
+        Json += "ehehe"
+        Json += '}'
+        return Json
 
     def publishCalibData(self):
-        pass
+        json = self.buildCalibJson()
+        if json != '':
+            self.physicalClient.publishFeed("calib", json)
 
     def calibrateSensor(self, x1, x2, y1, y2):
         dx = x2 - x1
@@ -363,11 +384,6 @@ class Physical:
     def predictDataPoint(self):
         pass
 
-    ########## Predict sensors data functionality #########
-    def getExternAQI(self):
-        pass
-
-
 if __name__ == '__main__':
     physical = Physical()
     while True:
@@ -384,5 +400,10 @@ if __name__ == '__main__':
         #physical.publishData()
 
         #print(physical.calibrateSensor(27, 34, 29, 33))
-        print(physical.calibrateSensor(29, 32, 27, 33))
+        #print(physical.calibrateSensor(29, 32, 27, 33))
+        #print(physical.getExternData())
+
+        #print(physical.publishCalibData())
+        time.sleep(1)
+
 

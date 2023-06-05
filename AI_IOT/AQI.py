@@ -179,6 +179,7 @@ class AQI:
     def getJsonFromWAQI():
 
             requestUrl = "https://api.waqi.info/feed/here"
+            requestUrlD10 = "https://aqicn.org/station/vietnam/ward-10/h%E1%BA%BBm-108-tr%E1%BA%A7n-v%C4%83n-quang"
             payload = {}
             payload["token"] = waqi_api_token
 
@@ -196,6 +197,7 @@ class AQI:
 
             data = json.loads(response.text)
             pretty = json.dumps(data, indent=4)
+
             return pretty
     
 if __name__ == '__main__':

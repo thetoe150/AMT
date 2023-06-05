@@ -118,11 +118,12 @@ if __name__ == '__main__':
 		'NO2' : [15],
 		'O3' : [12],
 	}
+
 	dataStorage = SensorDataStorage()
-	dataStorage.addDataPoints(data1)
-	dataStorage.addDataPoints(data2)
-	dataStorage.addDataPoints(data3)
-	dataStorage.dumpDataPoints()
+	#dataStorage.addDataPoints(data1)
+	#dataStorage.addDataPoints(data2)
+	#dataStorage.addDataPoints(data3)
+	#dataStorage.dumpDataPoints()
 	dataStorage.printDatabase()
 
 	# dataStorage.resetDatabase()

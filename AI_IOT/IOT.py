@@ -1,9 +1,9 @@
-from dotenv import load_dotenv
+from dotenv import load_dotenv, find_dotenv
 from Adafruit_IO import MQTTClient
 import os
 import sys
 
-AIO_FEED_IDS = ['nj1.jdata', 'nj1.isfire', 'nj1.mpollutant', 'nj1.maqi', 'nj1.temp', 'nj1.humid', 'led']
+AIO_FEED_IDS = ['nj1.jdata', 'nj1.isfire', 'nj1.mpollutant', 'nj1.maqi', 'nj1.temp', 'nj1.humid', 'led', 'calib']
 load_dotenv()
 AIO_USERNAME = os.environ.get('ADAFRUIT_IO_USERNAME')
 AIO_KEY = os.environ.get('ADAFRUIT_IO_KEY')
