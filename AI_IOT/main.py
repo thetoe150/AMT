@@ -21,14 +21,14 @@ def GetDebugOption():
     
     return False
 
-PHYSICAL_READ_TIME_INTERVAL = 10 
-NUMBER_OF_DATAPOINTS = 1
+PHYSICAL_READ_TIME_INTERVAL = 30 
+NUMBER_OF_DATAPOINTS = 10
 PHYSICAL_PUBLISH_TIME_INTERVAL = PHYSICAL_READ_TIME_INTERVAL * NUMBER_OF_DATAPOINTS
 
 SYSTEM_COMPONENT_COUNTER = {
     # CPU bounded - often takes around 2s
     # recieve number should be > 3
-    'AI_Camera' : 5,
+    'AI_Camera' : 600,
     # IO bounded - takes 1s for each of 16 total sensors
     # recieve number should be > 20
     'Physical' : PHYSICAL_READ_TIME_INTERVAL, 
