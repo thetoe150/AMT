@@ -209,4 +209,4 @@ if __name__ == '__main__':
     #print(AQI.getJsonFromAirNow('observation','OZONE,PM25,PM10,CO,NO2,SO2'))
     #print(AQI.getJsonFromAirNow())
     print(AQI.getJsonFromIQAir())
-    print(AQI.getJsonFromWAQI())
+    prin(AQI.getJsonFromWAQI())
