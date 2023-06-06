@@ -87,7 +87,7 @@ class systemAMT:
                 try:
                     print("******************* Trying to read sersors from all serial ports *******************")
                     self.physicalSensors.readSensors()
-                    self.physicalSensors.analyzeData()
+                    self.physicalSensors.validateData()
                     self.physicalSensors.storeInstanceData()
 
 

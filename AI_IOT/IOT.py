@@ -3,7 +3,7 @@ from Adafruit_IO import MQTTClient
 import os
 import sys
 
-AIO_FEED_IDS = ['nj1.jdata', 'nj1.isfire', 'nj1.mpollutant', 'nj1.maqi', 'nj1.temp', 'nj1.humid', 'led', 'calib']
+AIO_FEED_IDS = ['nj1.jdata', 'nj1.isfire', 'led', 'calib', 'calib-info', 'invalid-sensor']
 load_dotenv()
 AIO_USERNAME = os.environ.get('ADAFRUIT_IO_USERNAME')
 AIO_KEY = os.environ.get('ADAFRUIT_IO_KEY')
@@ -21,7 +21,7 @@ def disconnected(client):
     sys.exit(1)
 
 def message(client, feed_id, payload):
-    print("hello")
+    print("hello from subcribe message")
     # if isMicrobitConnected:
         # ser.write((str(payload) + "#").encode())
         # if feed_id == "led":
@@ -48,6 +48,7 @@ class Client:
     def publishFeed(self, feedName, data):
         print('Publishing json: ')
         self.client.publish(feedName, data)
+        print(feedName)
         print(data)
 
     def receiveFeed(self, feedName):

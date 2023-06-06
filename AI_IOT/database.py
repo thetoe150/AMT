@@ -7,6 +7,17 @@ PHYSICAL_READ_TIME_INTERVAL = gc.PHYSICAL_READ_TIME_INTERVAL
 NUMBER_OF_DATAPOINTS = gc.NUMBER_OF_DATAPOINTS
 NUMBER_OF_PREDICTION_DATA = gc.NUMBER_OF_PREDICTION_DATA
 
+accuracy_truncate = {
+    "temperature" : 0,
+    "humidity" : 2,
+    "co" : 1,
+    "co2": 2,
+    "so2": 0,
+    "no2": 0,
+    "pm2_5": 1,
+    "pm10":  0
+}
+
 class SensorDataStorage:
     def __init__(self):
         self.sensorType = []
@@ -19,8 +30,7 @@ class SensorDataStorage:
         c.execute(""" CREATE TABLE IF NOT EXISTS sensorDatabase (
             category TEXT,
             concentration FLOAT,
-            date DATE
-            )""")
+            date DATE)""")
 
         c = self.sensorDataPoints.cursor()
         c.execute(""" CREATE TABLE IF NOT EXISTS sensorDataPoints (
@@ -49,20 +59,27 @@ class SensorDataStorage:
         try:
             # sensorData is a dict of various type of sensor
             for sensor in sensorsData:
+
+                value = sensorsData[sensor][0]
+                if value == -1:
+                    # the case when data is invalid
+                    continue
+
                 if sensor not in self.sensorType:
                     self.sensorType.append(sensor)
 
+                print('inside addd Data POint', value)
+
                 c.execute("INSERT INTO sensorDataPoints \
                         VALUES (:category, :concentration, :date)", 
-                        {'category': sensor, 'concentration': sensorsData[sensor][0],\
-                                'date': date})
+                          {'category': sensor, 'concentration': float(value), 'date': date})
 
         except Exception as e:
             print(e)
             self.sensorDataPoints.rollback()
 
-        self.sensorDataPoints.commit()
         self.printDataPoint()
+        self.sensorDataPoints.commit()
 
     def dumpDataPoints(self):
 
@@ -82,16 +99,22 @@ class SensorDataStorage:
             
             if dataPoint:
                 store_data = 0
+                data_length = len(dataPoint)
+                if data_length == 0:
+                    continue
                 # loop through data in form of python tuple of each sensors
                 for data in dataPoint:
+                    print(data[1])
                     store_data += data[1]  # concentration is at the 2th posion of the tuple
 
-                print("length of data point = ", len(dataPoint))
+                print("length of data point = ", data_length)
                 print("data Point of {}: {}".format(sensor, dataPoint))
                 # average value
-                store_data /= len(dataPoint)
+                store_data /= data_length
                 # return res containing hourly average for calculating AQI
-                res[sensor] = store_data
+                
+                res[sensor] = round(store_data, accuracy_truncate[sensor])
+
 
                 # insert this hourly average into database
                 c = self.sensorDatabase.cursor()
@@ -106,9 +129,19 @@ class SensorDataStorage:
 
         return res
 
+    def tableInfo(self):
+        c = self.sensorDataPoints.cursor()
+        c.execute('PRAGMA table_info(sensorDataPoints)')
+        print(c.fetchall())
+
     def resetDataPoints(self):
         c = self.sensorDataPoints.cursor()
         c.execute("DELETE  FROM sensorDataPoints")
+        self.sensorDataPoints.commit()
+
+    def deleteDataPoints(self):
+        c = self.sensorDataPoints.cursor()
+        c.execute("DROP TABLE sensorDataPoints")
         self.sensorDataPoints.commit()
 
     def resetDatabase(self):
@@ -117,22 +150,40 @@ class SensorDataStorage:
         self.sensorDatabase.commit()
 
     def trimDataPoints(self):
-        c = self.sensorDatabase.cursor()
+        c = self.sensorDataPoints.cursor()
         c.execute("SELECT COUNT(*) FROM sensorDataPoints")
         # fetchall seem to always return an array of tuple
         recordNum = c.fetchall()[0][0]
         print('in trimDatabase(): numbers of datapoints records: ', recordNum)
-        remainRec = NUMBER_OF_PREDICTION_DATA
+
+        # this hard code number 8 thing is bad
+        remainRec = NUMBER_OF_PREDICTION_DATA * 8
         if remainRec > recordNum:
             return 0
         
         deletedRec = recordNum - remainRec
         c.execute("DELETE FROM sensorDataPoints\
-                ORDER BY date ASC LIMIT :deletedRec",\
+                WHERE date IN  \
+                    (SELECT date \
+                    FROM sensorDataPoints \
+                    WHERE TRUE \
+                    ORDER BY date ASC LIMIT :deletedRec)",\
                 {'deletedRec' : deletedRec})
         self.sensorDatabase.commit()
 
         return deletedRec
+    
+    def getDataPoints(self, sensor_type):
+        c = self.sensorDataPoints.cursor()
+        c.execute("SELECT * FROM sensorDataPoints \
+         WHERE category = :category",\
+         {'category' : sensor_type})
+        res = []
+        data = c.fetchall()
+        for item in data:
+            res.append(item[1])
+
+        return res
 
     def selectByDate(self):
         c = self.sensorDatabase.cursor()
@@ -169,7 +220,7 @@ if __name__ == '__main__':
     #dataStorage.printDatabase()
     # dataStorage.resetDatabase()
     #dataStorage = SensorDataStorage()
-    dataStorage = SensorDataStorage()
-    print(dataStorage.selectByDate())
+    dataStorage.tableInfo()
 
-    print(PHYSICAL_READ_TIME_INTERVAL)
+    print(dataStorage.selectByDate())
+    #print(PHYSICAL_READ_TIME_INTERVAL)

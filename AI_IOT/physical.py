@@ -4,8 +4,10 @@ import statsmodels.api as sm
 import serial.tools.list_ports
 import AQI
 import json
+import sys
 
 import global_constant as gc
+import data_processing as dp
 import IOT
 import database
 import log
@@ -72,14 +74,23 @@ accuracy_truncate = {
     "pm10":  0
 }
 
+def GetSimulateOption():
+    n = len(sys.argv)
+    for str in range(1, n):
+        if(sys.argv[str] == '-s'):
+            return True
+    return False
+
+
 def RelayMessage(client, feed_id, payload):
     if feed_id == "led":
         return payload
 
 
-
 CO_THRESHOLD = gc.CO_THRESHOLD
 TEM_THRESHOLD = gc.TEM_THRESHOLD
+NUMBER_OF_PREDICTION_DATA = gc.NUMBER_OF_PREDICTION_DATA
+VALIDATING_THRESHOLD = gc.VALIDATING_THRESHOLD
 # The name of OS on window isn't Windows
 #OS = platform.system
 #if OS == "Windows":
@@ -248,33 +259,57 @@ class Physical:
             #self.setDevice2(ser, False)
             #time.sleep(2)
         self.printData()
+
+    def publishInvalidSensor(self, sensor, failure):
+        json = '{'
+        json += 'sensor: ' + str(sensor) + ', MAPE: ' + str(failure) + '}'
+
+        self.physicalClient.publishFeed("invalid-sensor", json)
         
-    def analyzeData(self):
+    def validateData(self):
         for sensor in self.sensorsData:
             sensorCount = len(self.sensorsData[sensor])
-            if  sensorCount > 1:
+            if  sensorCount >= 1:
                 sum = 0
-                # max min for checking sensor failure
-                max = 0
-                min = 9999
+                #predict value using arma, we only predict 1 value
+                # it's the first ele of the array
+                predictVal = self.predictDataPoint(sensor)
+
+                # ARMA may fail and return NoneObject
+                if predictVal is not None and predictVal != -1:
+                    failure_per = dp.MAPE_detect(self.sensorsData[sensor], predictVal)
+                    failure_per = round(failure_per, 4)
+
+                    if self.isDebug:
+                        self.log.debug('Sensor: {}, data read from sensors: {}, MAPE rate of inaccuracy: {}, predict value: {}' \
+                                       .format(sensor, self.sensorsData[sensor],
+                                               failure_per, predictVal))
+
+                    if failure_per > VALIDATING_THRESHOLD:
+                            # -1 mean unvalid data
+                            self.sensorsData[sensor][0] = -1
+
+                            self.publishInvalidSensor(sensor, failure_per)
+                            if self.isDebug:
+                                self.log.warning('Sensor {} give unsual data'.format(sensor))
+
+                            continue
+
+                if predictVal is None and self.isDebug:
+                    self.log.info('ARMA complaint data dont regress with sensor: {}'.format(sensor))
+
+                if predictVal == -1 and self.isDebug:
+                    self.log.info('Not enough data read recently for using ARMA with sensor: {}'.format(sensor))
+
                 for value in self.sensorsData[sensor]:
                     sum += value
-                    if value > max:
-                        max = value
-                    if value < min:
-                        min = value
-                
-                if max - min > 40:
-                    self.sensorFaulty = True
+
                 # will publish this average value to server
                 average = sum / sensorCount
-                if accuracy_truncate[sensor] == 0:
-                    self.sensorsData[sensor][0] = int(average)
-                else:
-                    self.sensorsData[sensor][0] = round(average, accuracy_truncate[sensor])
+                self.sensorsData[sensor][0] = round(average, accuracy_truncate[sensor])
 
                 # only the average value remain in dict
-                del self.sensorsData[sensor][1:]
+                # del self.sensorsData[sensor][1:]
         
         if self.isDebug:
             self.printData()
@@ -374,36 +409,52 @@ class Physical:
 
         a = dy / dx
         b = y1 - a * x1
-
         return a, b
 
     ########## Predict sensors data functionality #########
     def predictAQI(self):
         pass
 
-    def predictDataPoint(self):
-        pass
+    def predictDataPoint(self, category):
+        arr = self.dataStorage.getDataPoints(category)
+        if len(arr) < NUMBER_OF_PREDICTION_DATA:
+            return -1
+        res = dp.ARMA_forecast(arr, 1)
+        return res[0]
+
+    def simulateReadSensors(self):
+        for sensor in sensors:
+            self.sensorsData[sensor] = np.random.randint(27, 38, size= 2)
+        print('self.sensorsData[sensor]: ', self.sensorsData[sensor])
 
 if __name__ == '__main__':
-    physical = Physical()
+    physical = Physical(debug = True)
     while True:
+        isSimulate = GetSimulateOption()
         # these 4 physical method have to be called in the following order
         # because they operate on the same data member self.sensorsData
 
-        #physical.readSensors()
-        # analyze data of 1 instace of data point
-        #physical.analyzeData()
-        # store 1 instace of data point
-        #physical.storeInstanceData()
+        if isSimulate:
+            physical.simulateReadSensors()
+        else:
+            physical.readSensors()
 
-        #physical.getAverageData()
-        #physical.publishData()
+        print('sensorsData after reading: ',physical.sensorsData)
+
+        # analyze data of 1 instace of data point
+        physical.validateData()
+        print('sensorsData after validating: ',physical.sensorsData)
+        # store 1 instace of data point
+        physical.storeInstanceData()
+        print('sensorsData after storing: ',physical.sensorsData)
+        physical.getAverageData()
+        physical.publishData()
 
         #print(physical.calibrateSensor(27, 34, 29, 33))
         #print(physical.calibrateSensor(29, 32, 27, 33))
         #print(physical.getExternData())
 
         #print(physical.publishCalibData())
-        time.sleep(1)
+        time.sleep(3)
 
 

@@ -34,7 +34,7 @@ def ARMA_forecast(arr, predictNum=1):
     #print(results.arparams)
     #print(results.maparams)
     forecast = results.predict(start=len(arr), end=len(arr) + predictNum)
-    print(forecast)
+    return forecast
 
 def MAPE_detect(y_true, y_pred):
     """
@@ -69,10 +69,13 @@ if __name__ == '__main__':
     np.random.seed(42)
     y = np.random.randn(100)
 
-    arr = np.random.randint(27,37, size=40)
+    arr = np.random.randint(27,37, size=10)
     print(arr)
-    pred_model = ARMA_forecast(arr, 5)
 
+    print(ARMA_forecast(arr, 5))
+
+    #arr = [27]
+    #print(MAPE_detect(arr, 30))
     #testingARMA()
 
     # print(sm.robust.scale.mad(y))
