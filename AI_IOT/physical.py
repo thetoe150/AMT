@@ -305,7 +305,7 @@ class Physical:
                 self.sensorsData[sensor][0] = round(average, accuracy_truncate[sensor])
 
                 # only the average value remain in dict
-                # del self.sensorsData[sensor][1:]
+                #del self.sensorsData[sensor][1:]
         
         if self.isDebug:
             self.printData()
@@ -325,6 +325,7 @@ class Physical:
 
     def storeInstanceData(self):
         self.dataStorage.addDataPoints(self.sensorsData)
+        self.resetsensorsData()
 
     def getAverageData(self):
         self.sensorsData = self.dataStorage.dumpDataPoints()
@@ -361,15 +362,17 @@ class Physical:
         if self.isDebug:
             self.log.info(formated_jsonData)
 
-        # clear this dictionary
-        self.sensorsData.clear()
-
         return jsonData
+
+    def resetsensorsData(self):
+            self.sensorsData.clear()
 
     def publishData(self):
         json = self.buildJson()
         if json != '':
             self.physicalClient.publishFeed("nj1.jdata", json)
+
+        self.resetsensorsData()
 
     ########## get external data source functionality #########
     def getExternData(self):
