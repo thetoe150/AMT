@@ -82,11 +82,6 @@ def GetSimulateOption():
     return False
 
 
-def RelayMessage(client, feed_id, payload):
-    if feed_id == "led":
-        return payload
-
-
 CO_THRESHOLD = gc.CO_THRESHOLD
 TEM_THRESHOLD = gc.TEM_THRESHOLD
 NUMBER_OF_PREDICTION_DATA = gc.NUMBER_OF_PREDICTION_DATA
@@ -276,7 +271,7 @@ class Physical:
                 predictVal = self.predictDataPoint(sensor)
 
                 # ARMA may fail and return NoneObject
-                if predictVal is not None and predictVal != -1:
+                if predictVal is not None and predictVal != -1 and predictVal != 0:
                     failure_per = dp.MAPE_detect(self.sensorsData[sensor], predictVal)
                     failure_per = round(failure_per, 4)
 
@@ -386,15 +381,15 @@ class Physical:
         return dominent_parp, val
 
 
-    ########## Calibrate sensors functionality #########
+    ########## Calibrate sensors functionality #############
     def buildCalibStr(self, type, a, b):
         Str = ''
-        Str += '"' + str(type) + '": ' + str(a) + "x1 + " + str(b) + ','
+        Str += '"' + str(type) + '": ' + str(a) + '"x1 + ' + str(b) + ',"'
         return Str
 
     def buildCalibJson(self):
         Json = '{'
-        Json += "ehehe"
+        Json += self.buildCalibStr(0.8, 1)
         Json += '}'
         return Json
 
@@ -403,13 +398,29 @@ class Physical:
         if json != '':
             self.physicalClient.publishFeed("calib", json)
 
-    def calibrateSensor(self, x1, x2, y1, y2):
+    def handleCalib(self, client, feed_id, payload):
+        if feed_id == "calib":
+            if payload == "1":
+                self.calibrateSensor()
+
+
+    def calibrateLinearitySensor(self, x1, x2, y1, y2):
+        if x1 == y1 and x2 == y2:
+            return 1, 0
         dx = x2 - x1
         dy = y2 - y1
 
         a = dy / dx
         b = y1 - a * x1
         return a, b
+
+    def calibrateSensor(self):
+        exType, exVal = self.getExternData()
+        baseVal = getDataBase(exType, 1)
+        # use only 1 value point to evaluate
+        calibrateLinearitySensor(baseVal, baseVal, exVal, exVal)
+        #calibrateLinearitySensor
+
 
     ########## Predict sensors data functionality #########
     def predictAQI(self):
@@ -424,7 +435,7 @@ class Physical:
 
     def simulateReadSensors(self):
         for sensor in sensors:
-            self.sensorsData[sensor] = np.random.randint(27, 38, size= 2)
+            self.sensorsData[sensor] = np.random.randint(27, 38, size= 1)
         print('self.sensorsData[sensor]: ', self.sensorsData[sensor])
 
 if __name__ == '__main__':
@@ -439,20 +450,19 @@ if __name__ == '__main__':
         else:
             physical.readSensors()
 
-        print('sensorsData after reading: ',physical.sensorsData)
+        #print('sensorsData after reading: ',physical.sensorsData)
 
-        # analyze data of 1 instace of data point
-        physical.validateData()
-        print('sensorsData after validating: ',physical.sensorsData)
-        # store 1 instace of data point
-        physical.storeInstanceData()
-        print('sensorsData after storing: ',physical.sensorsData)
-        physical.getAverageData()
-        physical.publishData()
+        # physical.validateData()
+        # print('sensorsData after validating: ',physical.sensorsData)
+        # # store 1 instace of data point
+        # physical.storeInstanceData()
+        # print('sensorsData after storing: ',physical.sensorsData)
+        # physical.getAverageData()
+        # physical.publishData()
 
         #print(physical.calibrateSensor(27, 34, 29, 33))
         #print(physical.calibrateSensor(29, 32, 27, 33))
-        #print(physical.getExternData())
+        print(physical.getExternData())
 
         #print(physical.publishCalibData())
         time.sleep(3)
