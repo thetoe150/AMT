@@ -166,7 +166,7 @@ class SensorDataStorage:
                 WHERE date IN  \
                     (SELECT date \
                     FROM sensorDataPoints \
-                    WHERE TRUE \
+                    WHERE 1 = 1 \
                     ORDER BY date ASC LIMIT :deletedRec)",\
                 {'deletedRec' : deletedRec})
         self.sensorDatabase.commit()
