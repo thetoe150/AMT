@@ -271,7 +271,8 @@ class Physical:
                 predictVal = self.predictDataPoint(sensor)
 
                 # ARMA may fail and return NoneObject
-                if predictVal is not None and predictVal != -1 and predictVal != 0:
+                if predictVal is not None and predictVal != -1 \
+                        and round(predictVal, 0) != 0:
                     failure_per = dp.MAPE_detect(self.sensorsData[sensor], predictVal)
                     failure_per = round(failure_per, 4)
 
@@ -435,7 +436,7 @@ class Physical:
 
     def simulateReadSensors(self):
         for sensor in sensors:
-            self.sensorsData[sensor] = np.random.randint(27, 38, size= 1)
+            self.sensorsData[sensor] = np.random.randint(0, 3, size= 1)
         print('self.sensorsData[sensor]: ', self.sensorsData[sensor])
 
 if __name__ == '__main__':
@@ -452,13 +453,13 @@ if __name__ == '__main__':
 
         #print('sensorsData after reading: ',physical.sensorsData)
 
-        # physical.validateData()
+        physical.validateData()
         # print('sensorsData after validating: ',physical.sensorsData)
         # # store 1 instace of data point
-        # physical.storeInstanceData()
+        physical.storeInstanceData()
         # print('sensorsData after storing: ',physical.sensorsData)
-        # physical.getAverageData()
-        # physical.publishData()
+        physical.getAverageData()
+        physical.publishData()
 
         #print(physical.calibrateSensor(27, 34, 29, 33))
         #print(physical.calibrateSensor(29, 32, 27, 33))
