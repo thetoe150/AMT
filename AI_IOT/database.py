@@ -5,7 +5,7 @@ import global_constant as gc
 
 PHYSICAL_READ_TIME_INTERVAL = gc.PHYSICAL_READ_TIME_INTERVAL
 NUMBER_OF_DATAPOINTS = gc.NUMBER_OF_DATAPOINTS
-NUMBER_OF_PREDICTION_DATA = gc.NUMBER_OF_PREDICTION_DATA
+NUMBER_FOR_PREDICTION_DATA = gc.NUMBER_FOR_PREDICTION_DATA
 
 accuracy_truncate = {
     "temperature" : 0,
@@ -177,7 +177,7 @@ class SensorDataStorage:
         print('in trimDatabase(): numbers of datapoints records: ', recordNum)
 
         # this hard code number 8 thing is bad
-        remainRec = NUMBER_OF_PREDICTION_DATA * 8
+        remainRec = NUMBER_FOR_PREDICTION_DATA * 8
         if remainRec > recordNum:
             return 0
         

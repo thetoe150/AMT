@@ -3,7 +3,8 @@ from Adafruit_IO import MQTTClient
 import os
 import sys
 
-AIO_FEED_IDS = ['nj1.jdata', 'nj1.isfire', 'led', 'calib', 'calib-info', 'invalid-sensor']
+AIO_FEED_IDS = ['nj1.jdata', 'nj1.isfire', 'led', 'calib', 'calib-info', \
+                'invalid-sensor', 'future', 'future-info']
 load_dotenv()
 AIO_USERNAME = os.environ.get('ADAFRUIT_IO_USERNAME')
 AIO_KEY = os.environ.get('ADAFRUIT_IO_KEY')

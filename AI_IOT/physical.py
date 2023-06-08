@@ -84,7 +84,8 @@ def GetSimulateOption():
 
 CO_THRESHOLD = gc.CO_THRESHOLD
 TEM_THRESHOLD = gc.TEM_THRESHOLD
-NUMBER_OF_PREDICTION_DATA = gc.NUMBER_OF_PREDICTION_DATA
+NUMBER_FOR_PREDICTION_DATA = gc.NUMBER_FOR_PREDICTION_DATA
+NUMBER_FOR_PREDICTION_AQI = gc.NUMBER_FOR_PREDICTION_AQI
 VALIDATING_THRESHOLD = gc.VALIDATING_THRESHOLD
 # The name of OS on window isn't Windows
 #OS = platform.system
@@ -190,6 +191,9 @@ class Physical:
 
                 json = '{' + CalibStr + '}'
                 self.publishCalibData(json)
+
+        if feed_id == "future":
+            self.predictAQI(payload)
 
 
     def serial_read_data(self, ser):
@@ -464,12 +468,30 @@ class Physical:
 
 
     ########## Predict sensors data functionality #########
-    def predictAQI(self):
-        pass
+    def predictAQI(self, num_predict):
+        n = int(num_predict)
+        json = '{'
+        for sensor in sensors:
+            json += '"' + sensor + '": ['
+            arr = self.dataStorage.getDataBase(sensor, NUMBER_FOR_PREDICTION_AQI)
+            res = dp.ARMA_forecast(arr, int(n))
+
+            for i in range(n):
+                aqi, cate = AQI.AQI.calculateAQI(sensor, res[i])
+                json += str(aqi) + ', '
+
+            json = json[:-2] + '], '
+
+        json = json[:-2] + '}'
+
+        print('predict AQQQQQQQQQQQQI', json)
+
+        self.physicalClient.publishFeed("future-info", json)
+
 
     def predictDataPoint(self, category):
         arr = self.dataStorage.getDataPoints(category)
-        if len(arr) < NUMBER_OF_PREDICTION_DATA:
+        if len(arr) < NUMBER_FOR_PREDICTION_DATA:
             return -1
         res = dp.ARMA_forecast(arr, 1)
         return res[0]
