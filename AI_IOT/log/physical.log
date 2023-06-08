@@ -1,161 +1,35 @@
-2023-06-08 23:52:04,322 WARNING Detect no port
-2023-06-08 23:52:05,454 INFO Not enough data read recently for using ARMA with sensor: temperature
-2023-06-08 23:52:05,454 INFO Not enough data read recently for using ARMA with sensor: humidity
-2023-06-08 23:52:05,454 INFO Not enough data read recently for using ARMA with sensor: co2
-2023-06-08 23:52:05,454 INFO Not enough data read recently for using ARMA with sensor: pm10
-2023-06-08 23:52:05,454 INFO Not enough data read recently for using ARMA with sensor: pm2_5
-2023-06-08 23:52:05,454 INFO Not enough data read recently for using ARMA with sensor: no2
-2023-06-08 23:52:05,454 INFO Not enough data read recently for using ARMA with sensor: co
-2023-06-08 23:52:05,454 INFO Not enough data read recently for using ARMA with sensor: so2
-2023-06-08 23:52:05,454 INFO temperature values is: [31]humidity values is: [32]co2 values is: [32]pm10 values is: [33]pm2_5 values is: [27]no2 values is: [30]co values is: [32]so2 values is: [33]
-2023-06-08 23:52:05,639 INFO {
-    "temperature": {
-        "value": 31.0
+2023-06-09 00:00:07,076 WARNING Detect no port
+2023-06-09 00:00:08,125 INFO Not enough data read recently for using ARMA with sensor: so2
+2023-06-09 00:00:08,125 INFO Not enough data read recently for using ARMA with sensor: humidity
+2023-06-09 00:00:08,125 INFO Not enough data read recently for using ARMA with sensor: co
+2023-06-09 00:00:08,125 INFO Not enough data read recently for using ARMA with sensor: no2
+2023-06-09 00:00:08,125 INFO Not enough data read recently for using ARMA with sensor: pm10
+2023-06-09 00:00:08,125 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-09 00:00:08,125 INFO Not enough data read recently for using ARMA with sensor: temperature
+2023-06-09 00:00:08,125 INFO Not enough data read recently for using ARMA with sensor: co2
+2023-06-09 00:00:08,125 INFO so2 values is: [28]humidity values is: [27]co values is: [32]no2 values is: [30]pm10 values is: [28]pm2_5 values is: [28]temperature values is: [32]co2 values is: [30]
+2023-06-09 00:00:08,309 INFO {
+    "so2": {
+        "value": 28.0,
+        "AQI": 40,
+        "quality": "Good"
     },
     "humidity": {
-        "value": 32.0
-    },
-    "co2": {
-        "value": 32.0
-    },
-    "pm10": {
-        "value": 33.0,
-        "AQI": 31,
-        "quality": "Good"
-    },
-    "pm2_5": {
-        "value": 27.0,
-        "AQI": 83,
-        "quality": "Moderate"
-    },
-    "no2": {
-        "value": 30.0,
-        "AQI": 28,
-        "quality": "Good"
+        "value": 27.0
     },
     "co": {
         "value": 32.0,
         "AQI": 316,
         "quality": "Hazadous"
     },
-    "so2": {
-        "value": 33.0,
-        "AQI": 47,
-        "quality": "Good"
-    }
-}
-2023-06-08 23:52:08,642 INFO Not enough data read recently for using ARMA with sensor: temperature
-2023-06-08 23:52:08,642 INFO Not enough data read recently for using ARMA with sensor: humidity
-2023-06-08 23:52:08,642 INFO Not enough data read recently for using ARMA with sensor: co2
-2023-06-08 23:52:08,642 INFO Not enough data read recently for using ARMA with sensor: pm10
-2023-06-08 23:52:08,642 INFO Not enough data read recently for using ARMA with sensor: pm2_5
-2023-06-08 23:52:08,642 INFO Not enough data read recently for using ARMA with sensor: no2
-2023-06-08 23:52:08,642 INFO Not enough data read recently for using ARMA with sensor: co
-2023-06-08 23:52:08,642 INFO Not enough data read recently for using ARMA with sensor: so2
-2023-06-08 23:52:08,642 INFO temperature values is: [27]humidity values is: [34]co2 values is: [30]pm10 values is: [34]pm2_5 values is: [31]no2 values is: [32]co values is: [29]so2 values is: [30]
-2023-06-08 23:52:08,827 INFO {
-    "temperature": {
-        "value": 29.0
-    },
-    "humidity": {
-        "value": 33.0
-    },
-    "co2": {
-        "value": 31.0
-    },
-    "pm10": {
-        "value": 34.0,
-        "AQI": 32,
-        "quality": "Good"
-    },
-    "pm2_5": {
-        "value": 29.0,
-        "AQI": 87,
-        "quality": "Moderate"
-    },
-    "no2": {
-        "value": 31.0,
-        "AQI": 29,
-        "quality": "Good"
-    },
-    "co": {
-        "value": 30.5,
-        "AQI": 301,
-        "quality": "Hazadous"
-    },
-    "so2": {
-        "value": 32.0,
-        "AQI": 45,
-        "quality": "Good"
-    }
-}
-2023-06-08 23:52:11,830 INFO Not enough data read recently for using ARMA with sensor: temperature
-2023-06-08 23:52:11,830 INFO Not enough data read recently for using ARMA with sensor: humidity
-2023-06-08 23:52:11,830 INFO Not enough data read recently for using ARMA with sensor: co2
-2023-06-08 23:52:11,830 INFO Not enough data read recently for using ARMA with sensor: pm10
-2023-06-08 23:52:11,830 INFO Not enough data read recently for using ARMA with sensor: pm2_5
-2023-06-08 23:52:11,830 INFO Not enough data read recently for using ARMA with sensor: no2
-2023-06-08 23:52:11,830 INFO Not enough data read recently for using ARMA with sensor: co
-2023-06-08 23:52:11,830 INFO Not enough data read recently for using ARMA with sensor: so2
-2023-06-08 23:52:11,830 INFO temperature values is: [27]humidity values is: [32]co2 values is: [26]pm10 values is: [31]pm2_5 values is: [27]no2 values is: [27]co values is: [32]so2 values is: [30]
-2023-06-08 23:52:11,945 INFO {
-    "temperature": {
-        "value": 28.0
-    },
-    "humidity": {
-        "value": 32.67
-    },
-    "co2": {
-        "value": 29.33
-    },
-    "pm10": {
-        "value": 33.0,
-        "AQI": 31,
-        "quality": "Good"
-    },
-    "pm2_5": {
-        "value": 28.3,
-        "AQI": 86,
-        "quality": "Moderate"
-    },
     "no2": {
         "value": 30.0,
         "AQI": 28,
         "quality": "Good"
     },
-    "co": {
-        "value": 31.0,
-        "AQI": 306,
-        "quality": "Hazadous"
-    },
-    "so2": {
-        "value": 31.0,
-        "AQI": 44,
-        "quality": "Good"
-    }
-}
-2023-06-08 23:52:14,946 INFO Not enough data read recently for using ARMA with sensor: temperature
-2023-06-08 23:52:14,946 INFO Not enough data read recently for using ARMA with sensor: humidity
-2023-06-08 23:52:14,946 INFO Not enough data read recently for using ARMA with sensor: co2
-2023-06-08 23:52:14,946 INFO Not enough data read recently for using ARMA with sensor: pm10
-2023-06-08 23:52:14,946 INFO Not enough data read recently for using ARMA with sensor: pm2_5
-2023-06-08 23:52:14,946 INFO Not enough data read recently for using ARMA with sensor: no2
-2023-06-08 23:52:14,946 INFO Not enough data read recently for using ARMA with sensor: co
-2023-06-08 23:52:14,946 INFO Not enough data read recently for using ARMA with sensor: so2
-2023-06-08 23:52:14,946 INFO temperature values is: [32]humidity values is: [33]co2 values is: [29]pm10 values is: [28]pm2_5 values is: [27]no2 values is: [32]co values is: [27]so2 values is: [28]
-2023-06-08 23:52:15,062 INFO {
-    "temperature": {
-        "value": 29.0
-    },
-    "humidity": {
-        "value": 32.75
-    },
-    "co2": {
-        "value": 29.25
-    },
     "pm10": {
-        "value": 32.0,
-        "AQI": 30,
+        "value": 28.0,
+        "AQI": 26,
         "quality": "Good"
     },
     "pm2_5": {
@@ -163,130 +37,265 @@
         "AQI": 85,
         "quality": "Moderate"
     },
-    "no2": {
-        "value": 30.0,
-        "AQI": 28,
-        "quality": "Good"
-    },
-    "co": {
-        "value": 30.0,
-        "AQI": 298,
-        "quality": "Very Unhealthy"
-    },
-    "so2": {
-        "value": 30.0,
-        "AQI": 42,
-        "quality": "Good"
-    }
-}
-2023-06-08 23:52:18,065 INFO Not enough data read recently for using ARMA with sensor: temperature
-2023-06-08 23:52:18,065 INFO Not enough data read recently for using ARMA with sensor: humidity
-2023-06-08 23:52:18,065 INFO Not enough data read recently for using ARMA with sensor: co2
-2023-06-08 23:52:18,065 INFO Not enough data read recently for using ARMA with sensor: pm10
-2023-06-08 23:52:18,065 INFO Not enough data read recently for using ARMA with sensor: pm2_5
-2023-06-08 23:52:18,065 INFO Not enough data read recently for using ARMA with sensor: no2
-2023-06-08 23:52:18,065 INFO Not enough data read recently for using ARMA with sensor: co
-2023-06-08 23:52:18,065 INFO Not enough data read recently for using ARMA with sensor: so2
-2023-06-08 23:52:18,065 INFO temperature values is: [28]humidity values is: [33]co2 values is: [32]pm10 values is: [33]pm2_5 values is: [26]no2 values is: [33]co values is: [32]so2 values is: [33]
-2023-06-08 23:52:18,265 INFO {
     "temperature": {
-        "value": 29.0
-    },
-    "humidity": {
-        "value": 32.8
+        "value": 32.0
     },
     "co2": {
-        "value": 29.8
+        "value": 30.0
+    }
+}
+2023-06-09 00:00:11,313 INFO Not enough data read recently for using ARMA with sensor: so2
+2023-06-09 00:00:11,313 INFO Not enough data read recently for using ARMA with sensor: humidity
+2023-06-09 00:00:11,313 INFO Not enough data read recently for using ARMA with sensor: co
+2023-06-09 00:00:11,313 INFO Not enough data read recently for using ARMA with sensor: no2
+2023-06-09 00:00:11,313 INFO Not enough data read recently for using ARMA with sensor: pm10
+2023-06-09 00:00:11,313 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-09 00:00:11,313 INFO Not enough data read recently for using ARMA with sensor: temperature
+2023-06-09 00:00:11,313 INFO Not enough data read recently for using ARMA with sensor: co2
+2023-06-09 00:00:11,313 INFO so2 values is: [29]humidity values is: [30]co values is: [33]no2 values is: [34]pm10 values is: [31]pm2_5 values is: [27]temperature values is: [32]co2 values is: [29]
+2023-06-09 00:00:11,482 INFO {
+    "so2": {
+        "value": 28.0,
+        "AQI": 40,
+        "quality": "Good"
     },
-    "pm10": {
+    "humidity": {
+        "value": 28.5
+    },
+    "co": {
+        "value": 32.5,
+        "AQI": 321,
+        "quality": "Hazadous"
+    },
+    "no2": {
         "value": 32.0,
         "AQI": 30,
         "quality": "Good"
     },
+    "pm10": {
+        "value": 30.0,
+        "AQI": 28,
+        "quality": "Good"
+    },
     "pm2_5": {
-        "value": 27.6,
+        "value": 27.5,
         "AQI": 84,
         "quality": "Moderate"
     },
-    "no2": {
-        "value": 31.0,
-        "AQI": 29,
+    "temperature": {
+        "value": 32.0
+    },
+    "co2": {
+        "value": 29.5
+    }
+}
+2023-06-09 00:00:14,484 INFO Not enough data read recently for using ARMA with sensor: so2
+2023-06-09 00:00:14,484 INFO Not enough data read recently for using ARMA with sensor: humidity
+2023-06-09 00:00:14,484 INFO Not enough data read recently for using ARMA with sensor: co
+2023-06-09 00:00:14,484 INFO Not enough data read recently for using ARMA with sensor: no2
+2023-06-09 00:00:14,484 INFO Not enough data read recently for using ARMA with sensor: pm10
+2023-06-09 00:00:14,484 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-09 00:00:14,484 INFO Not enough data read recently for using ARMA with sensor: temperature
+2023-06-09 00:00:14,484 INFO Not enough data read recently for using ARMA with sensor: co2
+2023-06-09 00:00:14,484 INFO so2 values is: [28]humidity values is: [31]co values is: [26]no2 values is: [34]pm10 values is: [32]pm2_5 values is: [29]temperature values is: [32]co2 values is: [31]
+2023-06-09 00:00:14,685 INFO {
+    "so2": {
+        "value": 28.0,
+        "AQI": 40,
         "quality": "Good"
     },
+    "humidity": {
+        "value": 29.33
+    },
     "co": {
-        "value": 30.4,
+        "value": 30.3,
         "AQI": 300,
         "quality": "Very Unhealthy"
     },
+    "no2": {
+        "value": 33.0,
+        "AQI": 31,
+        "quality": "Good"
+    },
+    "pm10": {
+        "value": 30.0,
+        "AQI": 28,
+        "quality": "Good"
+    },
+    "pm2_5": {
+        "value": 28.0,
+        "AQI": 85,
+        "quality": "Moderate"
+    },
+    "temperature": {
+        "value": 32.0
+    },
+    "co2": {
+        "value": 30.0
+    }
+}
+2023-06-09 00:00:17,687 INFO Not enough data read recently for using ARMA with sensor: so2
+2023-06-09 00:00:17,687 INFO Not enough data read recently for using ARMA with sensor: humidity
+2023-06-09 00:00:17,687 INFO Not enough data read recently for using ARMA with sensor: co
+2023-06-09 00:00:17,687 INFO Not enough data read recently for using ARMA with sensor: no2
+2023-06-09 00:00:17,687 INFO Not enough data read recently for using ARMA with sensor: pm10
+2023-06-09 00:00:17,687 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-09 00:00:17,687 INFO Not enough data read recently for using ARMA with sensor: temperature
+2023-06-09 00:00:17,687 INFO Not enough data read recently for using ARMA with sensor: co2
+2023-06-09 00:00:17,687 INFO so2 values is: [34]humidity values is: [28]co values is: [31]no2 values is: [30]pm10 values is: [28]pm2_5 values is: [31]temperature values is: [31]co2 values is: [30]
+2023-06-09 00:00:17,887 INFO {
+    "so2": {
+        "value": 30.0,
+        "AQI": 42,
+        "quality": "Good"
+    },
+    "humidity": {
+        "value": 29.0
+    },
+    "co": {
+        "value": 30.5,
+        "AQI": 301,
+        "quality": "Hazadous"
+    },
+    "no2": {
+        "value": 32.0,
+        "AQI": 30,
+        "quality": "Good"
+    },
+    "pm10": {
+        "value": 30.0,
+        "AQI": 28,
+        "quality": "Good"
+    },
+    "pm2_5": {
+        "value": 28.8,
+        "AQI": 87,
+        "quality": "Moderate"
+    },
+    "temperature": {
+        "value": 32.0
+    },
+    "co2": {
+        "value": 30.0
+    }
+}
+2023-06-09 00:00:20,891 INFO Not enough data read recently for using ARMA with sensor: so2
+2023-06-09 00:00:20,891 INFO Not enough data read recently for using ARMA with sensor: humidity
+2023-06-09 00:00:20,891 INFO Not enough data read recently for using ARMA with sensor: co
+2023-06-09 00:00:20,891 INFO Not enough data read recently for using ARMA with sensor: no2
+2023-06-09 00:00:20,891 INFO Not enough data read recently for using ARMA with sensor: pm10
+2023-06-09 00:00:20,891 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-09 00:00:20,891 INFO Not enough data read recently for using ARMA with sensor: temperature
+2023-06-09 00:00:20,891 INFO Not enough data read recently for using ARMA with sensor: co2
+2023-06-09 00:00:20,891 INFO so2 values is: [32]humidity values is: [34]co values is: [32]no2 values is: [32]pm10 values is: [33]pm2_5 values is: [32]temperature values is: [31]co2 values is: [27]
+2023-06-09 00:00:21,038 INFO {
+    "so2": {
+        "value": 30.0,
+        "AQI": 42,
+        "quality": "Good"
+    },
+    "humidity": {
+        "value": 30.0
+    },
+    "co": {
+        "value": 30.8,
+        "AQI": 304,
+        "quality": "Hazadous"
+    },
+    "no2": {
+        "value": 32.0,
+        "AQI": 30,
+        "quality": "Good"
+    },
+    "pm10": {
+        "value": 30.0,
+        "AQI": 28,
+        "quality": "Good"
+    },
+    "pm2_5": {
+        "value": 29.4,
+        "AQI": 88,
+        "quality": "Moderate"
+    },
+    "temperature": {
+        "value": 32.0
+    },
+    "co2": {
+        "value": 29.4
+    }
+}
+2023-06-09 00:00:24,041 INFO Not enough data read recently for using ARMA with sensor: so2
+2023-06-09 00:00:24,041 INFO Not enough data read recently for using ARMA with sensor: humidity
+2023-06-09 00:00:24,041 INFO Not enough data read recently for using ARMA with sensor: co
+2023-06-09 00:00:24,041 INFO Not enough data read recently for using ARMA with sensor: no2
+2023-06-09 00:00:24,041 INFO Not enough data read recently for using ARMA with sensor: pm10
+2023-06-09 00:00:24,041 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-09 00:00:24,041 INFO Not enough data read recently for using ARMA with sensor: temperature
+2023-06-09 00:00:24,041 INFO Not enough data read recently for using ARMA with sensor: co2
+2023-06-09 00:00:24,041 INFO so2 values is: [34]humidity values is: [27]co values is: [31]no2 values is: [30]pm10 values is: [31]pm2_5 values is: [27]temperature values is: [34]co2 values is: [29]
+2023-06-09 00:00:24,225 INFO {
     "so2": {
         "value": 31.0,
         "AQI": 44,
         "quality": "Good"
-    }
-}
-2023-06-08 23:52:21,266 INFO Not enough data read recently for using ARMA with sensor: temperature
-2023-06-08 23:52:21,266 INFO Not enough data read recently for using ARMA with sensor: humidity
-2023-06-08 23:52:21,266 INFO Not enough data read recently for using ARMA with sensor: co2
-2023-06-08 23:52:21,266 INFO Not enough data read recently for using ARMA with sensor: pm10
-2023-06-08 23:52:21,266 INFO Not enough data read recently for using ARMA with sensor: pm2_5
-2023-06-08 23:52:21,266 INFO Not enough data read recently for using ARMA with sensor: no2
-2023-06-08 23:52:21,266 INFO Not enough data read recently for using ARMA with sensor: co
-2023-06-08 23:52:21,266 INFO Not enough data read recently for using ARMA with sensor: so2
-2023-06-08 23:52:21,266 INFO temperature values is: [32]humidity values is: [29]co2 values is: [26]pm10 values is: [33]pm2_5 values is: [33]no2 values is: [27]co values is: [27]so2 values is: [28]
-2023-06-08 23:52:21,467 INFO {
-    "temperature": {
-        "value": 30.0
     },
     "humidity": {
-        "value": 32.17
+        "value": 29.5
     },
-    "co2": {
-        "value": 29.17
+    "co": {
+        "value": 30.8,
+        "AQI": 304,
+        "quality": "Hazadous"
     },
-    "pm10": {
+    "no2": {
         "value": 32.0,
         "AQI": 30,
         "quality": "Good"
     },
-    "pm2_5": {
-        "value": 28.5,
-        "AQI": 86,
-        "quality": "Moderate"
-    },
-    "no2": {
+    "pm10": {
         "value": 30.0,
         "AQI": 28,
         "quality": "Good"
     },
-    "co": {
-        "value": 29.8,
-        "AQI": 296,
-        "quality": "Very Unhealthy"
+    "pm2_5": {
+        "value": 29.0,
+        "AQI": 87,
+        "quality": "Moderate"
     },
-    "so2": {
-        "value": 30.0,
-        "AQI": 42,
-        "quality": "Good"
-    }
-}
-2023-06-08 23:52:24,471 INFO Not enough data read recently for using ARMA with sensor: temperature
-2023-06-08 23:52:24,471 INFO Not enough data read recently for using ARMA with sensor: humidity
-2023-06-08 23:52:24,471 INFO Not enough data read recently for using ARMA with sensor: co2
-2023-06-08 23:52:24,471 INFO Not enough data read recently for using ARMA with sensor: pm10
-2023-06-08 23:52:24,471 INFO Not enough data read recently for using ARMA with sensor: pm2_5
-2023-06-08 23:52:24,471 INFO Not enough data read recently for using ARMA with sensor: no2
-2023-06-08 23:52:24,471 INFO Not enough data read recently for using ARMA with sensor: co
-2023-06-08 23:52:24,471 INFO Not enough data read recently for using ARMA with sensor: so2
-2023-06-08 23:52:24,471 INFO temperature values is: [29]humidity values is: [27]co2 values is: [32]pm10 values is: [29]pm2_5 values is: [30]no2 values is: [32]co values is: [26]so2 values is: [26]
-2023-06-08 23:52:24,602 INFO {
     "temperature": {
-        "value": 29.0
-    },
-    "humidity": {
-        "value": 31.33
+        "value": 32.0
     },
     "co2": {
-        "value": 29.17
+        "value": 29.33
+    }
+}
+2023-06-09 00:00:27,247 INFO Not enough data read recently for using ARMA with sensor: so2
+2023-06-09 00:00:27,247 INFO Not enough data read recently for using ARMA with sensor: humidity
+2023-06-09 00:00:27,247 INFO Not enough data read recently for using ARMA with sensor: co
+2023-06-09 00:00:27,247 INFO Not enough data read recently for using ARMA with sensor: no2
+2023-06-09 00:00:27,247 INFO Not enough data read recently for using ARMA with sensor: pm10
+2023-06-09 00:00:27,247 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-09 00:00:27,247 INFO Not enough data read recently for using ARMA with sensor: temperature
+2023-06-09 00:00:27,247 INFO Not enough data read recently for using ARMA with sensor: co2
+2023-06-09 00:00:27,247 INFO so2 values is: [32]humidity values is: [30]co values is: [28]no2 values is: [31]pm10 values is: [32]pm2_5 values is: [28]temperature values is: [30]co2 values is: [32]
+2023-06-09 00:00:27,431 INFO {
+    "so2": {
+        "value": 32.0,
+        "AQI": 45,
+        "quality": "Good"
+    },
+    "humidity": {
+        "value": 30.0
+    },
+    "co": {
+        "value": 30.2,
+        "AQI": 299,
+        "quality": "Very Unhealthy"
+    },
+    "no2": {
+        "value": 32.0,
+        "AQI": 30,
+        "quality": "Good"
     },
     "pm10": {
         "value": 31.0,
@@ -298,40 +307,355 @@
         "AQI": 87,
         "quality": "Moderate"
     },
+    "temperature": {
+        "value": 32.0
+    },
+    "co2": {
+        "value": 29.67
+    }
+}
+2023-06-09 00:00:30,449 INFO Not enough data read recently for using ARMA with sensor: so2
+2023-06-09 00:00:30,449 INFO Not enough data read recently for using ARMA with sensor: humidity
+2023-06-09 00:00:30,449 INFO Not enough data read recently for using ARMA with sensor: co
+2023-06-09 00:00:30,449 INFO Not enough data read recently for using ARMA with sensor: no2
+2023-06-09 00:00:30,449 INFO Not enough data read recently for using ARMA with sensor: pm10
+2023-06-09 00:00:30,449 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-09 00:00:30,449 INFO Not enough data read recently for using ARMA with sensor: temperature
+2023-06-09 00:00:30,449 INFO Not enough data read recently for using ARMA with sensor: co2
+2023-06-09 00:00:30,449 INFO so2 values is: [26]humidity values is: [32]co values is: [29]no2 values is: [32]pm10 values is: [34]pm2_5 values is: [26]temperature values is: [31]co2 values is: [27]
+2023-06-09 00:00:30,665 INFO {
+    "so2": {
+        "value": 31.0,
+        "AQI": 44,
+        "quality": "Good"
+    },
+    "humidity": {
+        "value": 30.33
+    },
+    "co": {
+        "value": 29.5,
+        "AQI": 294,
+        "quality": "Very Unhealthy"
+    },
+    "no2": {
+        "value": 32.0,
+        "AQI": 30,
+        "quality": "Good"
+    },
+    "pm10": {
+        "value": 32.0,
+        "AQI": 30,
+        "quality": "Good"
+    },
+    "pm2_5": {
+        "value": 28.8,
+        "AQI": 87,
+        "quality": "Moderate"
+    },
+    "temperature": {
+        "value": 32.0
+    },
+    "co2": {
+        "value": 29.33
+    }
+}
+2023-06-09 00:00:33,672 INFO Not enough data read recently for using ARMA with sensor: so2
+2023-06-09 00:00:33,672 INFO Not enough data read recently for using ARMA with sensor: humidity
+2023-06-09 00:00:33,672 INFO Not enough data read recently for using ARMA with sensor: co
+2023-06-09 00:00:33,672 INFO Not enough data read recently for using ARMA with sensor: no2
+2023-06-09 00:00:33,672 INFO Not enough data read recently for using ARMA with sensor: pm10
+2023-06-09 00:00:33,672 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-09 00:00:33,672 INFO Not enough data read recently for using ARMA with sensor: temperature
+2023-06-09 00:00:33,672 INFO Not enough data read recently for using ARMA with sensor: co2
+2023-06-09 00:00:33,672 INFO so2 values is: [34]humidity values is: [34]co values is: [26]no2 values is: [30]pm10 values is: [33]pm2_5 values is: [28]temperature values is: [26]co2 values is: [32]
+2023-06-09 00:00:33,872 INFO {
+    "so2": {
+        "value": 32.0,
+        "AQI": 45,
+        "quality": "Good"
+    },
+    "humidity": {
+        "value": 30.83
+    },
+    "co": {
+        "value": 29.5,
+        "AQI": 294,
+        "quality": "Very Unhealthy"
+    },
+    "no2": {
+        "value": 31.0,
+        "AQI": 29,
+        "quality": "Good"
+    },
+    "pm10": {
+        "value": 32.0,
+        "AQI": 30,
+        "quality": "Good"
+    },
+    "pm2_5": {
+        "value": 28.7,
+        "AQI": 86,
+        "quality": "Moderate"
+    },
+    "temperature": {
+        "value": 30.0
+    },
+    "co2": {
+        "value": 29.5
+    }
+}
+2023-06-09 00:00:36,875 INFO Not enough data read recently for using ARMA with sensor: so2
+2023-06-09 00:00:36,875 INFO Not enough data read recently for using ARMA with sensor: humidity
+2023-06-09 00:00:36,875 INFO Not enough data read recently for using ARMA with sensor: co
+2023-06-09 00:00:36,875 INFO Not enough data read recently for using ARMA with sensor: no2
+2023-06-09 00:00:36,875 INFO Not enough data read recently for using ARMA with sensor: pm10
+2023-06-09 00:00:36,875 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-09 00:00:36,875 INFO Not enough data read recently for using ARMA with sensor: temperature
+2023-06-09 00:00:36,875 INFO Not enough data read recently for using ARMA with sensor: co2
+2023-06-09 00:00:36,875 INFO so2 values is: [28]humidity values is: [33]co values is: [31]no2 values is: [26]pm10 values is: [28]pm2_5 values is: [26]temperature values is: [30]co2 values is: [30]
+2023-06-09 00:00:36,975 INFO {
+    "so2": {
+        "value": 31.0,
+        "AQI": 44,
+        "quality": "Good"
+    },
+    "humidity": {
+        "value": 31.67
+    },
+    "co": {
+        "value": 29.5,
+        "AQI": 294,
+        "quality": "Very Unhealthy"
+    },
     "no2": {
         "value": 30.0,
         "AQI": 28,
         "quality": "Good"
     },
+    "pm10": {
+        "value": 32.0,
+        "AQI": 30,
+        "quality": "Good"
+    },
+    "pm2_5": {
+        "value": 27.8,
+        "AQI": 85,
+        "quality": "Moderate"
+    },
+    "temperature": {
+        "value": 30.0
+    },
+    "co2": {
+        "value": 29.5
+    }
+}
+2023-06-09 00:00:39,978 INFO Not enough data read recently for using ARMA with sensor: so2
+2023-06-09 00:00:39,978 INFO Not enough data read recently for using ARMA with sensor: humidity
+2023-06-09 00:00:39,978 INFO Not enough data read recently for using ARMA with sensor: co
+2023-06-09 00:00:39,978 INFO Not enough data read recently for using ARMA with sensor: no2
+2023-06-09 00:00:39,978 INFO Not enough data read recently for using ARMA with sensor: pm10
+2023-06-09 00:00:39,978 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-09 00:00:39,978 INFO Not enough data read recently for using ARMA with sensor: temperature
+2023-06-09 00:00:39,978 INFO Not enough data read recently for using ARMA with sensor: co2
+2023-06-09 00:00:39,978 INFO so2 values is: [26]humidity values is: [29]co values is: [30]no2 values is: [33]pm10 values is: [32]pm2_5 values is: [26]temperature values is: [28]co2 values is: [30]
+2023-06-09 00:00:40,178 INFO {
+    "so2": {
+        "value": 30.0,
+        "AQI": 42,
+        "quality": "Good"
+    },
+    "humidity": {
+        "value": 30.83
+    },
     "co": {
-        "value": 28.8,
-        "AQI": 290,
+        "value": 29.2,
+        "AQI": 292,
         "quality": "Very Unhealthy"
     },
+    "no2": {
+        "value": 30.0,
+        "AQI": 28,
+        "quality": "Good"
+    },
+    "pm10": {
+        "value": 32.0,
+        "AQI": 30,
+        "quality": "Good"
+    },
+    "pm2_5": {
+        "value": 26.8,
+        "AQI": 82,
+        "quality": "Moderate"
+    },
+    "temperature": {
+        "value": 30.0
+    },
+    "co2": {
+        "value": 30.0
+    }
+}
+2023-06-09 00:00:43,185 INFO Not enough data read recently for using ARMA with sensor: so2
+2023-06-09 00:00:43,185 INFO Not enough data read recently for using ARMA with sensor: humidity
+2023-06-09 00:00:43,185 INFO Not enough data read recently for using ARMA with sensor: co
+2023-06-09 00:00:43,185 INFO Not enough data read recently for using ARMA with sensor: no2
+2023-06-09 00:00:43,185 INFO Not enough data read recently for using ARMA with sensor: pm10
+2023-06-09 00:00:43,185 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-09 00:00:43,185 INFO Not enough data read recently for using ARMA with sensor: temperature
+2023-06-09 00:00:43,185 INFO Not enough data read recently for using ARMA with sensor: co2
+2023-06-09 00:00:43,185 INFO so2 values is: [30]humidity values is: [33]co values is: [31]no2 values is: [30]pm10 values is: [28]pm2_5 values is: [27]temperature values is: [27]co2 values is: [34]
+2023-06-09 00:00:43,385 INFO {
     "so2": {
         "value": 29.0,
         "AQI": 41,
         "quality": "Good"
-    }
-}
-2023-06-08 23:52:27,606 INFO Not enough data read recently for using ARMA with sensor: temperature
-2023-06-08 23:52:27,606 INFO Not enough data read recently for using ARMA with sensor: humidity
-2023-06-08 23:52:27,606 INFO Not enough data read recently for using ARMA with sensor: co2
-2023-06-08 23:52:27,606 INFO Not enough data read recently for using ARMA with sensor: pm10
-2023-06-08 23:52:27,606 INFO Not enough data read recently for using ARMA with sensor: pm2_5
-2023-06-08 23:52:27,606 INFO Not enough data read recently for using ARMA with sensor: no2
-2023-06-08 23:52:27,606 INFO Not enough data read recently for using ARMA with sensor: co
-2023-06-08 23:52:27,606 INFO Not enough data read recently for using ARMA with sensor: so2
-2023-06-08 23:52:27,606 INFO temperature values is: [26]humidity values is: [32]co2 values is: [32]pm10 values is: [27]pm2_5 values is: [32]no2 values is: [33]co values is: [30]so2 values is: [30]
-2023-06-08 23:52:27,722 INFO {
+    },
+    "humidity": {
+        "value": 31.83
+    },
+    "co": {
+        "value": 29.2,
+        "AQI": 292,
+        "quality": "Very Unhealthy"
+    },
+    "no2": {
+        "value": 30.0,
+        "AQI": 28,
+        "quality": "Good"
+    },
+    "pm10": {
+        "value": 31.0,
+        "AQI": 29,
+        "quality": "Good"
+    },
+    "pm2_5": {
+        "value": 26.8,
+        "AQI": 82,
+        "quality": "Moderate"
+    },
     "temperature": {
         "value": 29.0
     },
+    "co2": {
+        "value": 30.83
+    }
+}
+2023-06-09 00:00:46,388 INFO Not enough data read recently for using ARMA with sensor: so2
+2023-06-09 00:00:46,388 INFO Not enough data read recently for using ARMA with sensor: humidity
+2023-06-09 00:00:46,388 INFO Not enough data read recently for using ARMA with sensor: co
+2023-06-09 00:00:46,388 INFO Not enough data read recently for using ARMA with sensor: no2
+2023-06-09 00:00:46,388 INFO Not enough data read recently for using ARMA with sensor: pm10
+2023-06-09 00:00:46,388 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-09 00:00:46,388 INFO Not enough data read recently for using ARMA with sensor: temperature
+2023-06-09 00:00:46,388 INFO Not enough data read recently for using ARMA with sensor: co2
+2023-06-09 00:00:46,388 INFO so2 values is: [32]humidity values is: [32]co values is: [33]no2 values is: [29]pm10 values is: [33]pm2_5 values is: [28]temperature values is: [28]co2 values is: [31]
+2023-06-09 00:00:46,572 INFO {
+    "so2": {
+        "value": 29.0,
+        "AQI": 41,
+        "quality": "Good"
+    },
     "humidity": {
-        "value": 31.0
+        "value": 32.17
+    },
+    "co": {
+        "value": 30.0,
+        "AQI": 298,
+        "quality": "Very Unhealthy"
+    },
+    "no2": {
+        "value": 30.0,
+        "AQI": 28,
+        "quality": "Good"
+    },
+    "pm10": {
+        "value": 31.0,
+        "AQI": 29,
+        "quality": "Good"
+    },
+    "pm2_5": {
+        "value": 26.8,
+        "AQI": 82,
+        "quality": "Moderate"
+    },
+    "temperature": {
+        "value": 28.0
     },
     "co2": {
-        "value": 29.5
+        "value": 30.67
+    }
+}
+2023-06-09 00:00:49,575 INFO Not enough data read recently for using ARMA with sensor: so2
+2023-06-09 00:00:49,575 INFO Not enough data read recently for using ARMA with sensor: humidity
+2023-06-09 00:00:49,575 INFO Not enough data read recently for using ARMA with sensor: co
+2023-06-09 00:00:49,575 INFO Not enough data read recently for using ARMA with sensor: no2
+2023-06-09 00:00:49,575 INFO Not enough data read recently for using ARMA with sensor: pm10
+2023-06-09 00:00:49,575 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-09 00:00:49,575 INFO Not enough data read recently for using ARMA with sensor: temperature
+2023-06-09 00:00:49,575 INFO Not enough data read recently for using ARMA with sensor: co2
+2023-06-09 00:00:49,575 INFO so2 values is: [29]humidity values is: [32]co values is: [31]no2 values is: [26]pm10 values is: [30]pm2_5 values is: [32]temperature values is: [32]co2 values is: [32]
+2023-06-09 00:00:49,775 INFO {
+    "so2": {
+        "value": 30.0,
+        "AQI": 42,
+        "quality": "Good"
+    },
+    "humidity": {
+        "value": 32.17
+    },
+    "co": {
+        "value": 30.3,
+        "AQI": 300,
+        "quality": "Very Unhealthy"
+    },
+    "no2": {
+        "value": 29.0,
+        "AQI": 27,
+        "quality": "Good"
+    },
+    "pm10": {
+        "value": 31.0,
+        "AQI": 29,
+        "quality": "Good"
+    },
+    "pm2_5": {
+        "value": 27.8,
+        "AQI": 85,
+        "quality": "Moderate"
+    },
+    "temperature": {
+        "value": 28.0
+    },
+    "co2": {
+        "value": 31.5
+    }
+}
+2023-06-09 00:00:52,779 INFO Not enough data read recently for using ARMA with sensor: so2
+2023-06-09 00:00:52,779 INFO Not enough data read recently for using ARMA with sensor: humidity
+2023-06-09 00:00:52,779 INFO Not enough data read recently for using ARMA with sensor: co
+2023-06-09 00:00:52,779 INFO Not enough data read recently for using ARMA with sensor: no2
+2023-06-09 00:00:52,779 INFO Not enough data read recently for using ARMA with sensor: pm10
+2023-06-09 00:00:52,779 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-09 00:00:52,779 INFO Not enough data read recently for using ARMA with sensor: temperature
+2023-06-09 00:00:52,779 INFO Not enough data read recently for using ARMA with sensor: co2
+2023-06-09 00:00:52,779 INFO so2 values is: [29]humidity values is: [29]co values is: [26]no2 values is: [26]pm10 values is: [30]pm2_5 values is: [29]temperature values is: [28]co2 values is: [27]
+2023-06-09 00:00:52,895 INFO {
+    "so2": {
+        "value": 29.0,
+        "AQI": 41,
+        "quality": "Good"
+    },
+    "humidity": {
+        "value": 31.33
+    },
+    "co": {
+        "value": 30.3,
+        "AQI": 300,
+        "quality": "Very Unhealthy"
+    },
+    "no2": {
+        "value": 28.0,
+        "AQI": 26,
+        "quality": "Good"
     },
     "pm10": {
         "value": 30.0,
@@ -339,44 +663,726 @@
         "quality": "Good"
     },
     "pm2_5": {
-        "value": 29.2,
-        "AQI": 88,
+        "value": 28.0,
+        "AQI": 85,
         "quality": "Moderate"
     },
-    "no2": {
-        "value": 31.0,
-        "AQI": 29,
+    "temperature": {
+        "value": 29.0
+    },
+    "co2": {
+        "value": 30.67
+    }
+}
+2023-06-09 00:00:55,898 INFO Not enough data read recently for using ARMA with sensor: so2
+2023-06-09 00:00:55,898 INFO Not enough data read recently for using ARMA with sensor: humidity
+2023-06-09 00:00:55,898 INFO Not enough data read recently for using ARMA with sensor: co
+2023-06-09 00:00:55,898 INFO Not enough data read recently for using ARMA with sensor: no2
+2023-06-09 00:00:55,898 INFO Not enough data read recently for using ARMA with sensor: pm10
+2023-06-09 00:00:55,898 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-09 00:00:55,898 INFO Not enough data read recently for using ARMA with sensor: temperature
+2023-06-09 00:00:55,898 INFO Not enough data read recently for using ARMA with sensor: co2
+2023-06-09 00:00:55,898 INFO so2 values is: [29]humidity values is: [26]co values is: [27]no2 values is: [32]pm10 values is: [29]pm2_5 values is: [26]temperature values is: [34]co2 values is: [33]
+2023-06-09 00:00:56,114 INFO {
+    "so2": {
+        "value": 29.0,
+        "AQI": 41,
         "quality": "Good"
+    },
+    "humidity": {
+        "value": 30.17
+    },
+    "co": {
+        "value": 29.7,
+        "AQI": 296,
+        "quality": "Very Unhealthy"
+    },
+    "no2": {
+        "value": 29.0,
+        "AQI": 27,
+        "quality": "Good"
+    },
+    "pm10": {
+        "value": 30.0,
+        "AQI": 28,
+        "quality": "Good"
+    },
+    "pm2_5": {
+        "value": 28.0,
+        "AQI": 85,
+        "quality": "Moderate"
+    },
+    "temperature": {
+        "value": 30.0
+    },
+    "co2": {
+        "value": 31.17
+    }
+}
+2023-06-09 00:00:59,119 INFO Not enough data read recently for using ARMA with sensor: so2
+2023-06-09 00:00:59,119 INFO Not enough data read recently for using ARMA with sensor: humidity
+2023-06-09 00:00:59,119 INFO Not enough data read recently for using ARMA with sensor: co
+2023-06-09 00:00:59,119 INFO Not enough data read recently for using ARMA with sensor: no2
+2023-06-09 00:00:59,119 INFO Not enough data read recently for using ARMA with sensor: pm10
+2023-06-09 00:00:59,119 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-09 00:00:59,119 INFO Not enough data read recently for using ARMA with sensor: temperature
+2023-06-09 00:00:59,119 INFO Not enough data read recently for using ARMA with sensor: co2
+2023-06-09 00:00:59,119 INFO so2 values is: [34]humidity values is: [30]co values is: [26]no2 values is: [28]pm10 values is: [34]pm2_5 values is: [33]temperature values is: [31]co2 values is: [31]
+2023-06-09 00:00:59,319 INFO {
+    "so2": {
+        "value": 30.0,
+        "AQI": 42,
+        "quality": "Good"
+    },
+    "humidity": {
+        "value": 30.33
     },
     "co": {
         "value": 29.0,
         "AQI": 291,
         "quality": "Very Unhealthy"
     },
-    "so2": {
-        "value": 29.0,
-        "AQI": 41,
+    "no2": {
+        "value": 28.0,
+        "AQI": 26,
         "quality": "Good"
+    },
+    "pm10": {
+        "value": 31.0,
+        "AQI": 29,
+        "quality": "Good"
+    },
+    "pm2_5": {
+        "value": 29.2,
+        "AQI": 88,
+        "quality": "Moderate"
+    },
+    "temperature": {
+        "value": 30.0
+    },
+    "co2": {
+        "value": 31.33
     }
 }
-2023-06-08 23:52:30,727 INFO Not enough data read recently for using ARMA with sensor: temperature
-2023-06-08 23:52:30,727 INFO Not enough data read recently for using ARMA with sensor: humidity
-2023-06-08 23:52:30,727 INFO Not enough data read recently for using ARMA with sensor: co2
-2023-06-08 23:52:30,727 INFO Not enough data read recently for using ARMA with sensor: pm10
-2023-06-08 23:52:30,727 INFO Not enough data read recently for using ARMA with sensor: pm2_5
-2023-06-08 23:52:30,727 INFO Not enough data read recently for using ARMA with sensor: no2
-2023-06-08 23:52:30,727 INFO Not enough data read recently for using ARMA with sensor: co
-2023-06-08 23:52:30,727 INFO Not enough data read recently for using ARMA with sensor: so2
-2023-06-08 23:52:30,727 INFO temperature values is: [27]humidity values is: [32]co2 values is: [27]pm10 values is: [31]pm2_5 values is: [33]no2 values is: [31]co values is: [29]so2 values is: [34]
-2023-06-08 23:52:30,925 INFO {
+2023-06-09 00:01:02,322 INFO Not enough data read recently for using ARMA with sensor: so2
+2023-06-09 00:01:02,322 INFO Not enough data read recently for using ARMA with sensor: humidity
+2023-06-09 00:01:02,322 INFO Not enough data read recently for using ARMA with sensor: co
+2023-06-09 00:01:02,322 INFO Not enough data read recently for using ARMA with sensor: no2
+2023-06-09 00:01:02,322 INFO Not enough data read recently for using ARMA with sensor: pm10
+2023-06-09 00:01:02,322 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-09 00:01:02,322 INFO Not enough data read recently for using ARMA with sensor: temperature
+2023-06-09 00:01:02,322 INFO Not enough data read recently for using ARMA with sensor: co2
+2023-06-09 00:01:02,322 INFO so2 values is: [29]humidity values is: [33]co values is: [30]no2 values is: [34]pm10 values is: [31]pm2_5 values is: [33]temperature values is: [31]co2 values is: [28]
+2023-06-09 00:01:02,438 INFO {
+    "so2": {
+        "value": 30.0,
+        "AQI": 42,
+        "quality": "Good"
+    },
+    "humidity": {
+        "value": 30.33
+    },
+    "co": {
+        "value": 28.8,
+        "AQI": 290,
+        "quality": "Very Unhealthy"
+    },
+    "no2": {
+        "value": 29.0,
+        "AQI": 27,
+        "quality": "Good"
+    },
+    "pm10": {
+        "value": 31.0,
+        "AQI": 29,
+        "quality": "Good"
+    },
+    "pm2_5": {
+        "value": 30.2,
+        "AQI": 90,
+        "quality": "Moderate"
+    },
+    "temperature": {
+        "value": 31.0
+    },
+    "co2": {
+        "value": 30.33
+    }
+}
+2023-06-09 00:01:05,442 INFO Not enough data read recently for using ARMA with sensor: so2
+2023-06-09 00:01:05,442 INFO Not enough data read recently for using ARMA with sensor: humidity
+2023-06-09 00:01:05,442 INFO Not enough data read recently for using ARMA with sensor: co
+2023-06-09 00:01:05,442 INFO Not enough data read recently for using ARMA with sensor: no2
+2023-06-09 00:01:05,442 INFO Not enough data read recently for using ARMA with sensor: pm10
+2023-06-09 00:01:05,442 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-09 00:01:05,442 INFO Not enough data read recently for using ARMA with sensor: temperature
+2023-06-09 00:01:05,442 INFO Not enough data read recently for using ARMA with sensor: co2
+2023-06-09 00:01:05,442 INFO so2 values is: [28]humidity values is: [29]co values is: [31]no2 values is: [26]pm10 values is: [32]pm2_5 values is: [26]temperature values is: [29]co2 values is: [34]
+2023-06-09 00:01:05,642 INFO {
+    "so2": {
+        "value": 30.0,
+        "AQI": 42,
+        "quality": "Good"
+    },
+    "humidity": {
+        "value": 29.83
+    },
+    "co": {
+        "value": 28.5,
+        "AQI": 288,
+        "quality": "Very Unhealthy"
+    },
+    "no2": {
+        "value": 29.0,
+        "AQI": 27,
+        "quality": "Good"
+    },
+    "pm10": {
+        "value": 31.0,
+        "AQI": 29,
+        "quality": "Good"
+    },
+    "pm2_5": {
+        "value": 29.8,
+        "AQI": 89,
+        "quality": "Moderate"
+    },
+    "temperature": {
+        "value": 31.0
+    },
+    "co2": {
+        "value": 30.83
+    }
+}
+2023-06-09 00:01:08,645 INFO Not enough data read recently for using ARMA with sensor: so2
+2023-06-09 00:01:08,645 INFO Not enough data read recently for using ARMA with sensor: humidity
+2023-06-09 00:01:08,645 INFO Not enough data read recently for using ARMA with sensor: co
+2023-06-09 00:01:08,645 INFO Not enough data read recently for using ARMA with sensor: no2
+2023-06-09 00:01:08,645 INFO Not enough data read recently for using ARMA with sensor: pm10
+2023-06-09 00:01:08,645 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-09 00:01:08,645 INFO Not enough data read recently for using ARMA with sensor: temperature
+2023-06-09 00:01:08,645 INFO Not enough data read recently for using ARMA with sensor: co2
+2023-06-09 00:01:08,645 INFO so2 values is: [30]humidity values is: [33]co values is: [27]no2 values is: [29]pm10 values is: [30]pm2_5 values is: [30]temperature values is: [31]co2 values is: [34]
+2023-06-09 00:01:08,745 INFO {
+    "so2": {
+        "value": 30.0,
+        "AQI": 42,
+        "quality": "Good"
+    },
+    "humidity": {
+        "value": 30.0
+    },
+    "co": {
+        "value": 27.8,
+        "AQI": 283,
+        "quality": "Very Unhealthy"
+    },
+    "no2": {
+        "value": 29.0,
+        "AQI": 27,
+        "quality": "Good"
+    },
+    "pm10": {
+        "value": 31.0,
+        "AQI": 29,
+        "quality": "Good"
+    },
+    "pm2_5": {
+        "value": 29.5,
+        "AQI": 88,
+        "quality": "Moderate"
+    },
+    "temperature": {
+        "value": 31.0
+    },
+    "co2": {
+        "value": 31.17
+    }
+}
+2023-06-09 00:01:12,017 DEBUG Sensor: so2, data read from sensors: [27], MAPE rate of inaccuracy: 12.5473, predict value: 30.387758227602596
+2023-06-09 00:01:12,017 WARNING Sensor so2 give unsual data
+2023-06-09 00:01:12,302 DEBUG Sensor: humidity, data read from sensors: [27], MAPE rate of inaccuracy: 15.6563, predict value: 31.22720314763048
+2023-06-09 00:01:12,302 WARNING Sensor humidity give unsual data
+2023-06-09 00:01:12,587 DEBUG Sensor: co, data read from sensors: [30], MAPE rate of inaccuracy: 3.6685, predict value: 28.899463533145248
+2023-06-09 00:01:12,881 DEBUG Sensor: no2, data read from sensors: [30], MAPE rate of inaccuracy: 3.0511, predict value: 29.084661958073895
+2023-06-09 00:01:12,966 DEBUG Sensor: pm10, data read from sensors: [26], MAPE rate of inaccuracy: 21.284, predict value: 31.533837349504523
+2023-06-09 00:01:12,966 WARNING Sensor pm10 give unsual data
+2023-06-09 00:01:13,267 DEBUG Sensor: pm2_5, data read from sensors: [31], MAPE rate of inaccuracy: 4.6987, predict value: 29.54339342625909
+2023-06-09 00:01:13,389 DEBUG Sensor: temperature, data read from sensors: [30], MAPE rate of inaccuracy: 2.2725, predict value: 30.681743361542594
+2023-06-09 00:01:13,489 DEBUG Sensor: co2, data read from sensors: [26], MAPE rate of inaccuracy: 12.0865, predict value: 29.142479452631328
+2023-06-09 00:01:13,489 INFO so2 values is: [-1]humidity values is: [-1]co values is: [30]no2 values is: [30]pm10 values is: [-1]pm2_5 values is: [31]temperature values is: [30]co2 values is: [26]
+2023-06-09 00:01:13,605 INFO {
+    "so2": {
+        "value": 30.0,
+        "AQI": 42,
+        "quality": "Good"
+    },
+    "humidity": {
+        "value": 30.0
+    },
+    "co": {
+        "value": 28.5,
+        "AQI": 288,
+        "quality": "Very Unhealthy"
+    },
+    "no2": {
+        "value": 30.0,
+        "AQI": 28,
+        "quality": "Good"
+    },
+    "pm10": {
+        "value": 31.0,
+        "AQI": 29,
+        "quality": "Good"
+    },
+    "pm2_5": {
+        "value": 29.8,
+        "AQI": 89,
+        "quality": "Moderate"
+    },
+    "temperature": {
+        "value": 31.0
+    },
+    "co2": {
+        "value": 31.0
+    }
+}
+2023-06-09 00:01:16,608 INFO Not enough data read recently for using ARMA with sensor: so2
+2023-06-09 00:01:16,608 INFO Not enough data read recently for using ARMA with sensor: humidity
+2023-06-09 00:01:16,692 DEBUG Sensor: co, data read from sensors: [30], MAPE rate of inaccuracy: 1.0558, predict value: 29.68326259245152
+2023-06-09 00:01:16,986 DEBUG Sensor: no2, data read from sensors: [33], MAPE rate of inaccuracy: 3.4182, predict value: 34.12800522365966
+2023-06-09 00:01:16,986 INFO Not enough data read recently for using ARMA with sensor: pm10
+2023-06-09 00:01:17,087 DEBUG Sensor: pm2_5, data read from sensors: [29], MAPE rate of inaccuracy: 1.6958, predict value: 29.49176997188839
+2023-06-09 00:01:17,409 DEBUG Sensor: temperature, data read from sensors: [29], MAPE rate of inaccuracy: 8.7804, predict value: 31.546320378592952
+2023-06-09 00:01:17,409 WARNING Sensor temperature give unsual data
+2023-06-09 00:01:17,487 DEBUG Sensor: co2, data read from sensors: [31], MAPE rate of inaccuracy: 1.097, predict value: 31.340081083561717
+2023-06-09 00:01:17,487 INFO so2 values is: [27]humidity values is: [26]co values is: [30]no2 values is: [33]pm10 values is: [29]pm2_5 values is: [29]temperature values is: [-1]co2 values is: [31]
+2023-06-09 00:01:17,694 INFO {
+    "so2": {
+        "value": 30.0,
+        "AQI": 42,
+        "quality": "Good"
+    },
+    "humidity": {
+        "value": 29.5
+    },
+    "co": {
+        "value": 29.0,
+        "AQI": 291,
+        "quality": "Very Unhealthy"
+    },
+    "no2": {
+        "value": 30.0,
+        "AQI": 28,
+        "quality": "Good"
+    },
+    "pm10": {
+        "value": 31.0,
+        "AQI": 29,
+        "quality": "Good"
+    },
+    "pm2_5": {
+        "value": 30.3,
+        "AQI": 90,
+        "quality": "Moderate"
+    },
+    "temperature": {
+        "value": 31.0
+    },
+    "co2": {
+        "value": 30.67
+    }
+}
+2023-06-09 00:01:20,697 INFO Not enough data read recently for using ARMA with sensor: so2
+2023-06-09 00:01:20,697 INFO Not enough data read recently for using ARMA with sensor: humidity
+2023-06-09 00:01:20,976 DEBUG Sensor: co, data read from sensors: [31], MAPE rate of inaccuracy: 4.8472, predict value: 29.49737668449784
+2023-06-09 00:01:21,091 DEBUG Sensor: no2, data read from sensors: [27], MAPE rate of inaccuracy: 3.5459, predict value: 27.957386059843422
+2023-06-09 00:01:21,091 INFO Not enough data read recently for using ARMA with sensor: pm10
+2023-06-09 00:01:21,361 DEBUG Sensor: pm2_5, data read from sensors: [31], MAPE rate of inaccuracy: 6.4804, predict value: 28.991066273375164
+2023-06-09 00:01:21,361 INFO Not enough data read recently for using ARMA with sensor: temperature
+2023-06-09 00:01:21,446 DEBUG Sensor: co2, data read from sensors: [32], MAPE rate of inaccuracy: 4.0257, predict value: 30.711785507104675
+2023-06-09 00:01:21,446 INFO so2 values is: [33]humidity values is: [31]co values is: [31]no2 values is: [27]pm10 values is: [26]pm2_5 values is: [31]temperature values is: [34]co2 values is: [32]
+2023-06-09 00:01:21,647 INFO {
+    "so2": {
+        "value": 30.0,
+        "AQI": 42,
+        "quality": "Good"
+    },
+    "humidity": {
+        "value": 30.33
+    },
+    "co": {
+        "value": 29.8,
+        "AQI": 296,
+        "quality": "Very Unhealthy"
+    },
+    "no2": {
+        "value": 30.0,
+        "AQI": 28,
+        "quality": "Good"
+    },
+    "pm10": {
+        "value": 30.0,
+        "AQI": 28,
+        "quality": "Good"
+    },
+    "pm2_5": {
+        "value": 30.0,
+        "AQI": 89,
+        "quality": "Moderate"
+    },
+    "temperature": {
+        "value": 31.0
+    },
+    "co2": {
+        "value": 30.83
+    }
+}
+2023-06-09 00:01:24,653 INFO Not enough data read recently for using ARMA with sensor: so2
+2023-06-09 00:01:24,653 INFO Not enough data read recently for using ARMA with sensor: humidity
+2023-06-09 00:01:24,722 DEBUG Sensor: co, data read from sensors: [31], MAPE rate of inaccuracy: 6.5153, predict value: 28.980248609457497
+2023-06-09 00:01:24,722 WARNING Sensor co give unsual data
+2023-06-09 00:01:25,070 DEBUG Sensor: no2, data read from sensors: [28], MAPE rate of inaccuracy: 8.4108, predict value: 30.355023687559324
+2023-06-09 00:01:25,070 WARNING Sensor no2 give unsual data
+2023-06-09 00:01:25,070 INFO Not enough data read recently for using ARMA with sensor: pm10
+2023-06-09 00:01:25,339 DEBUG Sensor: pm2_5, data read from sensors: [33], MAPE rate of inaccuracy: 9.4445, predict value: 29.883310127102828
+2023-06-09 00:01:25,339 INFO Not enough data read recently for using ARMA with sensor: temperature
+2023-06-09 00:01:25,656 DEBUG Sensor: co2, data read from sensors: [27], MAPE rate of inaccuracy: 6.5808, predict value: 28.77681374635445
+2023-06-09 00:01:25,656 INFO so2 values is: [31]humidity values is: [30]co values is: [-1]no2 values is: [-1]pm10 values is: [31]pm2_5 values is: [33]temperature values is: [29]co2 values is: [27]
+2023-06-09 00:01:25,756 INFO {
+    "so2": {
+        "value": 30.0,
+        "AQI": 42,
+        "quality": "Good"
+    },
+    "humidity": {
+        "value": 30.33
+    },
+    "co": {
+        "value": 29.8,
+        "AQI": 296,
+        "quality": "Very Unhealthy"
+    },
+    "no2": {
+        "value": 30.0,
+        "AQI": 28,
+        "quality": "Good"
+    },
+    "pm10": {
+        "value": 30.0,
+        "AQI": 28,
+        "quality": "Good"
+    },
+    "pm2_5": {
+        "value": 30.0,
+        "AQI": 89,
+        "quality": "Moderate"
+    },
+    "temperature": {
+        "value": 31.0
+    },
+    "co2": {
+        "value": 30.67
+    }
+}
+2023-06-09 00:01:28,757 INFO Not enough data read recently for using ARMA with sensor: so2
+2023-06-09 00:01:28,757 INFO Not enough data read recently for using ARMA with sensor: humidity
+2023-06-09 00:01:28,757 INFO Not enough data read recently for using ARMA with sensor: co
+2023-06-09 00:01:28,757 INFO Not enough data read recently for using ARMA with sensor: no2
+2023-06-09 00:01:28,757 INFO Not enough data read recently for using ARMA with sensor: pm10
+2023-06-09 00:01:29,027 DEBUG Sensor: pm2_5, data read from sensors: [33], MAPE rate of inaccuracy: 8.1666, predict value: 30.305013546831173
+2023-06-09 00:01:29,027 INFO Not enough data read recently for using ARMA with sensor: temperature
+2023-06-09 00:01:29,327 DEBUG Sensor: co2, data read from sensors: [33], MAPE rate of inaccuracy: 5.6494, predict value: 31.13570878095153
+2023-06-09 00:01:29,327 INFO so2 values is: [34]humidity values is: [34]co values is: [33]no2 values is: [31]pm10 values is: [26]pm2_5 values is: [33]temperature values is: [26]co2 values is: [33]
+2023-06-09 00:01:29,475 INFO {
+    "so2": {
+        "value": 30.0,
+        "AQI": 42,
+        "quality": "Good"
+    },
+    "humidity": {
+        "value": 30.5
+    },
+    "co": {
+        "value": 30.3,
+        "AQI": 300,
+        "quality": "Very Unhealthy"
+    },
+    "no2": {
+        "value": 29.0,
+        "AQI": 27,
+        "quality": "Good"
+    },
+    "pm10": {
+        "value": 29.0,
+        "AQI": 27,
+        "quality": "Good"
+    },
+    "pm2_5": {
+        "value": 31.2,
+        "AQI": 92,
+        "quality": "Moderate"
+    },
+    "temperature": {
+        "value": 30.0
+    },
+    "co2": {
+        "value": 30.5
+    }
+}
+2023-06-09 00:01:32,477 INFO Not enough data read recently for using ARMA with sensor: so2
+2023-06-09 00:01:32,477 INFO Not enough data read recently for using ARMA with sensor: humidity
+2023-06-09 00:01:32,477 INFO Not enough data read recently for using ARMA with sensor: co
+2023-06-09 00:01:32,477 INFO Not enough data read recently for using ARMA with sensor: no2
+2023-06-09 00:01:32,477 INFO Not enough data read recently for using ARMA with sensor: pm10
+2023-06-09 00:01:32,731 DEBUG Sensor: pm2_5, data read from sensors: [32], MAPE rate of inaccuracy: 10.1317, predict value: 28.757856979072194
+2023-06-09 00:01:32,731 WARNING Sensor pm2_5 give unsual data
+2023-06-09 00:01:32,731 INFO Not enough data read recently for using ARMA with sensor: temperature
+2023-06-09 00:01:33,079 DEBUG Sensor: co2, data read from sensors: [29], MAPE rate of inaccuracy: 3.6665, predict value: 30.063271060303077
+2023-06-09 00:01:33,079 INFO so2 values is: [26]humidity values is: [33]co values is: [33]no2 values is: [29]pm10 values is: [34]pm2_5 values is: [-1]temperature values is: [27]co2 values is: [29]
+2023-06-09 00:01:33,279 INFO {
+    "so2": {
+        "value": 30.0,
+        "AQI": 42,
+        "quality": "Good"
+    },
+    "humidity": {
+        "value": 31.17
+    },
+    "co": {
+        "value": 30.7,
+        "AQI": 303,
+        "quality": "Hazadous"
+    },
+    "no2": {
+        "value": 30.0,
+        "AQI": 28,
+        "quality": "Good"
+    },
+    "pm10": {
+        "value": 29.0,
+        "AQI": 27,
+        "quality": "Good"
+    },
+    "pm2_5": {
+        "value": 31.2,
+        "AQI": 92,
+        "quality": "Moderate"
+    },
+    "temperature": {
+        "value": 30.0
+    },
+    "co2": {
+        "value": 29.67
+    }
+}
+2023-06-09 00:01:36,282 INFO Not enough data read recently for using ARMA with sensor: so2
+2023-06-09 00:01:36,282 INFO Not enough data read recently for using ARMA with sensor: humidity
+2023-06-09 00:01:36,282 INFO Not enough data read recently for using ARMA with sensor: co
+2023-06-09 00:01:36,282 INFO Not enough data read recently for using ARMA with sensor: no2
+2023-06-09 00:01:36,282 INFO Not enough data read recently for using ARMA with sensor: pm10
+2023-06-09 00:01:36,282 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-09 00:01:36,282 INFO Not enough data read recently for using ARMA with sensor: temperature
+2023-06-09 00:01:36,583 DEBUG Sensor: co2, data read from sensors: [34], MAPE rate of inaccuracy: 1.8769, predict value: 33.36183749938754
+2023-06-09 00:01:36,583 INFO so2 values is: [26]humidity values is: [33]co values is: [33]no2 values is: [31]pm10 values is: [27]pm2_5 values is: [26]temperature values is: [26]co2 values is: [34]
+2023-06-09 00:01:36,784 INFO {
+    "so2": {
+        "value": 30.0,
+        "AQI": 42,
+        "quality": "Good"
+    },
+    "humidity": {
+        "value": 31.17
+    },
+    "co": {
+        "value": 31.7,
+        "AQI": 313,
+        "quality": "Hazadous"
+    },
+    "no2": {
+        "value": 30.0,
+        "AQI": 28,
+        "quality": "Good"
+    },
+    "pm10": {
+        "value": 29.0,
+        "AQI": 27,
+        "quality": "Good"
+    },
+    "pm2_5": {
+        "value": 30.5,
+        "AQI": 90,
+        "quality": "Moderate"
+    },
     "temperature": {
         "value": 29.0
+    },
+    "co2": {
+        "value": 31.0
+    }
+}
+2023-06-09 00:01:39,787 INFO Not enough data read recently for using ARMA with sensor: so2
+2023-06-09 00:01:39,787 INFO Not enough data read recently for using ARMA with sensor: humidity
+2023-06-09 00:01:39,787 INFO Not enough data read recently for using ARMA with sensor: co
+2023-06-09 00:01:39,787 INFO Not enough data read recently for using ARMA with sensor: no2
+2023-06-09 00:01:39,787 INFO Not enough data read recently for using ARMA with sensor: pm10
+2023-06-09 00:01:39,787 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-09 00:01:39,787 INFO Not enough data read recently for using ARMA with sensor: temperature
+2023-06-09 00:01:40,088 DEBUG Sensor: co2, data read from sensors: [30], MAPE rate of inaccuracy: 4.0533, predict value: 28.78401323015454
+2023-06-09 00:01:40,088 INFO so2 values is: [34]humidity values is: [28]co values is: [30]no2 values is: [27]pm10 values is: [29]pm2_5 values is: [26]temperature values is: [26]co2 values is: [30]
+2023-06-09 00:01:40,289 INFO {
+    "so2": {
+        "value": 31.0,
+        "AQI": 44,
+        "quality": "Good"
+    },
+    "humidity": {
+        "value": 31.5
+    },
+    "co": {
+        "value": 31.7,
+        "AQI": 313,
+        "quality": "Hazadous"
+    },
+    "no2": {
+        "value": 30.0,
+        "AQI": 28,
+        "quality": "Good"
+    },
+    "pm10": {
+        "value": 29.0,
+        "AQI": 27,
+        "quality": "Good"
+    },
+    "pm2_5": {
+        "value": 29.7,
+        "AQI": 89,
+        "quality": "Moderate"
+    },
+    "temperature": {
+        "value": 28.0
+    },
+    "co2": {
+        "value": 30.83
+    }
+}
+2023-06-09 00:01:43,291 INFO Not enough data read recently for using ARMA with sensor: so2
+2023-06-09 00:01:43,291 INFO Not enough data read recently for using ARMA with sensor: humidity
+2023-06-09 00:01:43,291 INFO Not enough data read recently for using ARMA with sensor: co
+2023-06-09 00:01:43,291 INFO Not enough data read recently for using ARMA with sensor: no2
+2023-06-09 00:01:43,291 INFO Not enough data read recently for using ARMA with sensor: pm10
+2023-06-09 00:01:43,291 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-09 00:01:43,291 INFO Not enough data read recently for using ARMA with sensor: temperature
+2023-06-09 00:01:43,592 DEBUG Sensor: co2, data read from sensors: [28], MAPE rate of inaccuracy: 7.5001, predict value: 30.100021104050917
+2023-06-09 00:01:43,661 INFO so2 values is: [26]humidity values is: [28]co values is: [30]no2 values is: [34]pm10 values is: [27]pm2_5 values is: [31]temperature values is: [34]co2 values is: [28]
+2023-06-09 00:01:43,761 INFO {
+    "so2": {
+        "value": 30.0,
+        "AQI": 42,
+        "quality": "Good"
     },
     "humidity": {
         "value": 31.0
     },
+    "co": {
+        "value": 31.7,
+        "AQI": 313,
+        "quality": "Hazadous"
+    },
+    "no2": {
+        "value": 30.0,
+        "AQI": 28,
+        "quality": "Good"
+    },
+    "pm10": {
+        "value": 29.0,
+        "AQI": 27,
+        "quality": "Good"
+    },
+    "pm2_5": {
+        "value": 30.0,
+        "AQI": 89,
+        "quality": "Moderate"
+    },
+    "temperature": {
+        "value": 28.0
+    },
     "co2": {
-        "value": 29.67
+        "value": 30.17
+    }
+}
+2023-06-09 00:01:46,762 INFO Not enough data read recently for using ARMA with sensor: so2
+2023-06-09 00:01:46,762 INFO Not enough data read recently for using ARMA with sensor: humidity
+2023-06-09 00:01:46,762 INFO Not enough data read recently for using ARMA with sensor: co
+2023-06-09 00:01:46,762 INFO Not enough data read recently for using ARMA with sensor: no2
+2023-06-09 00:01:46,762 INFO Not enough data read recently for using ARMA with sensor: pm10
+2023-06-09 00:01:46,762 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-09 00:01:46,762 INFO Not enough data read recently for using ARMA with sensor: temperature
+2023-06-09 00:01:46,947 DEBUG Sensor: co2, data read from sensors: [31], MAPE rate of inaccuracy: 12.6274, predict value: 34.914478768874105
+2023-06-09 00:01:46,947 INFO so2 values is: [32]humidity values is: [28]co values is: [32]no2 values is: [27]pm10 values is: [33]pm2_5 values is: [33]temperature values is: [29]co2 values is: [31]
+2023-06-09 00:01:47,147 INFO {
+    "so2": {
+        "value": 30.0,
+        "AQI": 42,
+        "quality": "Good"
+    },
+    "humidity": {
+        "value": 30.67
+    },
+    "co": {
+        "value": 31.8,
+        "AQI": 314,
+        "quality": "Hazadous"
+    },
+    "no2": {
+        "value": 30.0,
+        "AQI": 28,
+        "quality": "Good"
+    },
+    "pm10": {
+        "value": 29.0,
+        "AQI": 27,
+        "quality": "Good"
+    },
+    "pm2_5": {
+        "value": 30.3,
+        "AQI": 90,
+        "quality": "Moderate"
+    },
+    "temperature": {
+        "value": 28.0
+    },
+    "co2": {
+        "value": 30.83
+    }
+}
+2023-06-09 00:01:50,151 INFO Not enough data read recently for using ARMA with sensor: so2
+2023-06-09 00:01:50,151 INFO Not enough data read recently for using ARMA with sensor: humidity
+2023-06-09 00:01:50,151 INFO Not enough data read recently for using ARMA with sensor: co
+2023-06-09 00:01:50,151 INFO Not enough data read recently for using ARMA with sensor: no2
+2023-06-09 00:01:50,151 INFO Not enough data read recently for using ARMA with sensor: pm10
+2023-06-09 00:01:50,151 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-09 00:01:50,151 INFO Not enough data read recently for using ARMA with sensor: temperature
+2023-06-09 00:01:50,336 DEBUG Sensor: co2, data read from sensors: [30], MAPE rate of inaccuracy: 1.1424, predict value: 30.342717725297703
+2023-06-09 00:01:50,336 INFO so2 values is: [31]humidity values is: [27]co values is: [27]no2 values is: [31]pm10 values is: [30]pm2_5 values is: [32]temperature values is: [33]co2 values is: [30]
+2023-06-09 00:01:50,536 INFO {
+    "so2": {
+        "value": 29.0,
+        "AQI": 41,
+        "quality": "Good"
+    },
+    "humidity": {
+        "value": 29.5
+    },
+    "co": {
+        "value": 30.8,
+        "AQI": 304,
+        "quality": "Hazadous"
+    },
+    "no2": {
+        "value": 30.0,
+        "AQI": 28,
+        "quality": "Good"
     },
     "pm10": {
         "value": 30.0,
@@ -388,40 +1394,40 @@
         "AQI": 90,
         "quality": "Moderate"
     },
-    "no2": {
-        "value": 31.0,
-        "AQI": 29,
-        "quality": "Good"
+    "temperature": {
+        "value": 29.0
     },
-    "co": {
-        "value": 28.5,
-        "AQI": 288,
-        "quality": "Very Unhealthy"
-    },
+    "co2": {
+        "value": 30.33
+    }
+}
+2023-06-09 00:01:53,539 INFO Not enough data read recently for using ARMA with sensor: so2
+2023-06-09 00:01:53,539 INFO Not enough data read recently for using ARMA with sensor: humidity
+2023-06-09 00:01:53,539 INFO Not enough data read recently for using ARMA with sensor: co
+2023-06-09 00:01:53,539 INFO Not enough data read recently for using ARMA with sensor: no2
+2023-06-09 00:01:53,539 INFO Not enough data read recently for using ARMA with sensor: pm10
+2023-06-09 00:01:53,539 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-09 00:01:53,539 INFO Not enough data read recently for using ARMA with sensor: temperature
+2023-06-09 00:01:53,786 DEBUG Sensor: co2, data read from sensors: [32], MAPE rate of inaccuracy: 10.0225, predict value: 28.79280184289204
+2023-06-09 00:01:53,786 INFO so2 values is: [29]humidity values is: [26]co values is: [28]no2 values is: [27]pm10 values is: [33]pm2_5 values is: [28]temperature values is: [32]co2 values is: [32]
+2023-06-09 00:01:53,924 INFO {
     "so2": {
         "value": 30.0,
         "AQI": 42,
         "quality": "Good"
-    }
-}
-2023-06-08 23:52:33,931 INFO Not enough data read recently for using ARMA with sensor: temperature
-2023-06-08 23:52:33,931 INFO Not enough data read recently for using ARMA with sensor: humidity
-2023-06-08 23:52:33,931 INFO Not enough data read recently for using ARMA with sensor: co2
-2023-06-08 23:52:33,931 INFO Not enough data read recently for using ARMA with sensor: pm10
-2023-06-08 23:52:33,931 INFO Not enough data read recently for using ARMA with sensor: pm2_5
-2023-06-08 23:52:33,931 INFO Not enough data read recently for using ARMA with sensor: no2
-2023-06-08 23:52:33,931 INFO Not enough data read recently for using ARMA with sensor: co
-2023-06-08 23:52:33,931 INFO Not enough data read recently for using ARMA with sensor: so2
-2023-06-08 23:52:33,931 INFO temperature values is: [26]humidity values is: [34]co2 values is: [33]pm10 values is: [26]pm2_5 values is: [33]no2 values is: [29]co values is: [28]so2 values is: [33]
-2023-06-08 23:52:34,132 INFO {
-    "temperature": {
-        "value": 28.0
     },
     "humidity": {
-        "value": 31.17
+        "value": 28.33
     },
-    "co2": {
-        "value": 30.33
+    "co": {
+        "value": 30.0,
+        "AQI": 298,
+        "quality": "Very Unhealthy"
+    },
+    "no2": {
+        "value": 30.0,
+        "AQI": 28,
+        "quality": "Good"
     },
     "pm10": {
         "value": 30.0,
@@ -429,44 +1435,232 @@
         "quality": "Good"
     },
     "pm2_5": {
-        "value": 31.2,
-        "AQI": 92,
+        "value": 29.3,
+        "AQI": 88,
         "quality": "Moderate"
     },
-    "no2": {
-        "value": 31.0,
-        "AQI": 29,
-        "quality": "Good"
-    },
-    "co": {
-        "value": 28.7,
-        "AQI": 289,
-        "quality": "Very Unhealthy"
-    },
-    "so2": {
-        "value": 31.0,
-        "AQI": 44,
-        "quality": "Good"
-    }
-}
-2023-06-08 23:52:37,135 INFO Not enough data read recently for using ARMA with sensor: temperature
-2023-06-08 23:52:37,135 INFO Not enough data read recently for using ARMA with sensor: humidity
-2023-06-08 23:52:37,135 INFO Not enough data read recently for using ARMA with sensor: co2
-2023-06-08 23:52:37,135 INFO Not enough data read recently for using ARMA with sensor: pm10
-2023-06-08 23:52:37,135 INFO Not enough data read recently for using ARMA with sensor: pm2_5
-2023-06-08 23:52:37,135 INFO Not enough data read recently for using ARMA with sensor: no2
-2023-06-08 23:52:37,135 INFO Not enough data read recently for using ARMA with sensor: co
-2023-06-08 23:52:37,135 INFO Not enough data read recently for using ARMA with sensor: so2
-2023-06-08 23:52:37,135 INFO temperature values is: [26]humidity values is: [30]co2 values is: [26]pm10 values is: [30]pm2_5 values is: [32]no2 values is: [32]co values is: [32]so2 values is: [33]
-2023-06-08 23:52:37,342 INFO {
     "temperature": {
-        "value": 28.0
-    },
-    "humidity": {
-        "value": 30.67
+        "value": 30.0
     },
     "co2": {
-        "value": 29.33
+        "value": 30.83
+    }
+}
+2023-06-09 00:01:56,926 INFO Not enough data read recently for using ARMA with sensor: so2
+2023-06-09 00:01:56,926 INFO Not enough data read recently for using ARMA with sensor: humidity
+2023-06-09 00:01:56,926 INFO Not enough data read recently for using ARMA with sensor: co
+2023-06-09 00:01:56,926 INFO Not enough data read recently for using ARMA with sensor: no2
+2023-06-09 00:01:56,926 INFO Not enough data read recently for using ARMA with sensor: pm10
+2023-06-09 00:01:56,926 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-09 00:01:56,926 INFO Not enough data read recently for using ARMA with sensor: temperature
+2023-06-09 00:01:57,163 DEBUG Sensor: co2, data read from sensors: [31], MAPE rate of inaccuracy: 0.9696, predict value: 30.699410248374292
+2023-06-09 00:01:57,163 INFO so2 values is: [26]humidity values is: [30]co values is: [33]no2 values is: [30]pm10 values is: [27]pm2_5 values is: [28]temperature values is: [33]co2 values is: [31]
+2023-06-09 00:01:57,396 INFO {
+    "so2": {
+        "value": 30.0,
+        "AQI": 42,
+        "quality": "Good"
+    },
+    "humidity": {
+        "value": 27.83
+    },
+    "co": {
+        "value": 30.0,
+        "AQI": 298,
+        "quality": "Very Unhealthy"
+    },
+    "no2": {
+        "value": 29.0,
+        "AQI": 27,
+        "quality": "Good"
+    },
+    "pm10": {
+        "value": 30.0,
+        "AQI": 28,
+        "quality": "Good"
+    },
+    "pm2_5": {
+        "value": 29.7,
+        "AQI": 89,
+        "quality": "Moderate"
+    },
+    "temperature": {
+        "value": 31.0
+    },
+    "co2": {
+        "value": 30.33
+    }
+}
+2023-06-09 00:02:00,398 INFO Not enough data read recently for using ARMA with sensor: so2
+2023-06-09 00:02:00,398 INFO Not enough data read recently for using ARMA with sensor: humidity
+2023-06-09 00:02:00,398 INFO Not enough data read recently for using ARMA with sensor: co
+2023-06-09 00:02:00,398 INFO Not enough data read recently for using ARMA with sensor: no2
+2023-06-09 00:02:00,398 INFO Not enough data read recently for using ARMA with sensor: pm10
+2023-06-09 00:02:00,398 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-09 00:02:00,398 INFO Not enough data read recently for using ARMA with sensor: temperature
+2023-06-09 00:02:00,683 DEBUG Sensor: co2, data read from sensors: [26], MAPE rate of inaccuracy: 16.4188, predict value: 30.268885996336266
+2023-06-09 00:02:00,683 WARNING Sensor co2 give unsual data
+2023-06-09 00:02:00,683 INFO so2 values is: [27]humidity values is: [32]co values is: [27]no2 values is: [30]pm10 values is: [28]pm2_5 values is: [27]temperature values is: [31]co2 values is: [-1]
+2023-06-09 00:02:00,799 INFO {
+    "so2": {
+        "value": 28.0,
+        "AQI": 40,
+        "quality": "Good"
+    },
+    "humidity": {
+        "value": 28.5
+    },
+    "co": {
+        "value": 29.5,
+        "AQI": 294,
+        "quality": "Very Unhealthy"
+    },
+    "no2": {
+        "value": 30.0,
+        "AQI": 28,
+        "quality": "Good"
+    },
+    "pm10": {
+        "value": 30.0,
+        "AQI": 28,
+        "quality": "Good"
+    },
+    "pm2_5": {
+        "value": 29.8,
+        "AQI": 89,
+        "quality": "Moderate"
+    },
+    "temperature": {
+        "value": 32.0
+    },
+    "co2": {
+        "value": 30.33
+    }
+}
+2023-06-09 00:02:04,082 DEBUG Sensor: so2, data read from sensors: [30], MAPE rate of inaccuracy: 14.6233, predict value: 34.38698020144372
+2023-06-09 00:02:04,082 WARNING Sensor so2 give unsual data
+2023-06-09 00:02:04,166 DEBUG Sensor: humidity, data read from sensors: [28], MAPE rate of inaccuracy: 8.7554, predict value: 30.451498497287584
+2023-06-09 00:02:04,467 DEBUG Sensor: co, data read from sensors: [31], MAPE rate of inaccuracy: 6.3027, predict value: 29.04617295838965
+2023-06-09 00:02:04,467 WARNING Sensor co give unsual data
+2023-06-09 00:02:04,814 DEBUG Sensor: no2, data read from sensors: [29], MAPE rate of inaccuracy: 6.0496, predict value: 30.754392923863808
+2023-06-09 00:02:04,814 WARNING Sensor no2 give unsual data
+2023-06-09 00:02:05,084 DEBUG Sensor: pm10, data read from sensors: [34], MAPE rate of inaccuracy: 21.7081, predict value: 26.61924866376225
+2023-06-09 00:02:05,084 WARNING Sensor pm10 give unsual data
+2023-06-09 00:02:05,385 DEBUG Sensor: pm2_5, data read from sensors: [32], MAPE rate of inaccuracy: 11.9009, predict value: 28.19170860040757
+2023-06-09 00:02:05,385 WARNING Sensor pm2_5 give unsual data
+2023-06-09 00:02:05,685 DEBUG Sensor: temperature, data read from sensors: [30], MAPE rate of inaccuracy: 9.1383, predict value: 32.74149018719097
+2023-06-09 00:02:05,685 WARNING Sensor temperature give unsual data
+2023-06-09 00:02:05,955 DEBUG Sensor: co2, data read from sensors: [32], MAPE rate of inaccuracy: 5.4097, predict value: 30.268885996336266
+2023-06-09 00:02:05,955 INFO so2 values is: [-1]humidity values is: [28]co values is: [-1]no2 values is: [-1]pm10 values is: [-1]pm2_5 values is: [-1]temperature values is: [-1]co2 values is: [32]
+2023-06-09 00:02:06,055 INFO {
+    "so2": {
+        "value": 28.0,
+        "AQI": 40,
+        "quality": "Good"
+    },
+    "humidity": {
+        "value": 28.5
+    },
+    "co": {
+        "value": 29.5,
+        "AQI": 294,
+        "quality": "Very Unhealthy"
+    },
+    "no2": {
+        "value": 30.0,
+        "AQI": 28,
+        "quality": "Good"
+    },
+    "pm10": {
+        "value": 30.0,
+        "AQI": 28,
+        "quality": "Good"
+    },
+    "pm2_5": {
+        "value": 29.8,
+        "AQI": 89,
+        "quality": "Moderate"
+    },
+    "temperature": {
+        "value": 32.0
+    },
+    "co2": {
+        "value": 30.67
+    }
+}
+2023-06-09 00:02:09,074 INFO Not enough data read recently for using ARMA with sensor: so2
+2023-06-09 00:02:09,358 DEBUG Sensor: humidity, data read from sensors: [29], MAPE rate of inaccuracy: 0.8454, predict value: 29.245158499814984
+2023-06-09 00:02:09,358 INFO Not enough data read recently for using ARMA with sensor: co
+2023-06-09 00:02:09,358 INFO Not enough data read recently for using ARMA with sensor: no2
+2023-06-09 00:02:09,358 INFO Not enough data read recently for using ARMA with sensor: pm10
+2023-06-09 00:02:09,358 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-09 00:02:09,358 INFO Not enough data read recently for using ARMA with sensor: temperature
+2023-06-09 00:02:09,659 DEBUG Sensor: co2, data read from sensors: [31], MAPE rate of inaccuracy: 6.9171, predict value: 28.855713495147103
+2023-06-09 00:02:09,659 INFO so2 values is: [33]humidity values is: [29]co values is: [30]no2 values is: [30]pm10 values is: [29]pm2_5 values is: [27]temperature values is: [32]co2 values is: [31]
+2023-06-09 00:02:09,791 INFO {
+    "so2": {
+        "value": 30.0,
+        "AQI": 42,
+        "quality": "Good"
+    },
+    "humidity": {
+        "value": 28.67
+    },
+    "co": {
+        "value": 29.5,
+        "AQI": 294,
+        "quality": "Very Unhealthy"
+    },
+    "no2": {
+        "value": 29.0,
+        "AQI": 27,
+        "quality": "Good"
+    },
+    "pm10": {
+        "value": 30.0,
+        "AQI": 28,
+        "quality": "Good"
+    },
+    "pm2_5": {
+        "value": 29.2,
+        "AQI": 88,
+        "quality": "Moderate"
+    },
+    "temperature": {
+        "value": 32.0
+    },
+    "co2": {
+        "value": 31.17
+    }
+}
+2023-06-09 00:02:12,794 INFO Not enough data read recently for using ARMA with sensor: so2
+2023-06-09 00:02:12,863 DEBUG Sensor: humidity, data read from sensors: [33], MAPE rate of inaccuracy: 14.8773, predict value: 28.090481851836767
+2023-06-09 00:02:12,863 WARNING Sensor humidity give unsual data
+2023-06-09 00:02:12,863 INFO Not enough data read recently for using ARMA with sensor: co
+2023-06-09 00:02:12,863 INFO Not enough data read recently for using ARMA with sensor: no2
+2023-06-09 00:02:12,863 INFO Not enough data read recently for using ARMA with sensor: pm10
+2023-06-09 00:02:12,863 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-09 00:02:12,863 INFO Not enough data read recently for using ARMA with sensor: temperature
+2023-06-09 00:02:13,164 DEBUG Sensor: co2, data read from sensors: [30], MAPE rate of inaccuracy: 0.5824, predict value: 29.825265975261786
+2023-06-09 00:02:13,164 INFO so2 values is: [27]humidity values is: [-1]co values is: [33]no2 values is: [33]pm10 values is: [27]pm2_5 values is: [34]temperature values is: [29]co2 values is: [30]
+2023-06-09 00:02:13,364 INFO {
+    "so2": {
+        "value": 29.0,
+        "AQI": 41,
+        "quality": "Good"
+    },
+    "humidity": {
+        "value": 28.67
+    },
+    "co": {
+        "value": 29.7,
+        "AQI": 296,
+        "quality": "Very Unhealthy"
+    },
+    "no2": {
+        "value": 30.0,
+        "AQI": 28,
+        "quality": "Good"
     },
     "pm10": {
         "value": 29.0,
@@ -474,44 +1668,643 @@
         "quality": "Good"
     },
     "pm2_5": {
-        "value": 32.2,
-        "AQI": 94,
+        "value": 29.3,
+        "AQI": 88,
         "quality": "Moderate"
+    },
+    "temperature": {
+        "value": 32.0
+    },
+    "co2": {
+        "value": 31.0
+    }
+}
+2023-06-09 00:02:16,383 INFO Not enough data read recently for using ARMA with sensor: so2
+2023-06-09 00:02:16,383 INFO Not enough data read recently for using ARMA with sensor: humidity
+2023-06-09 00:02:16,383 INFO Not enough data read recently for using ARMA with sensor: co
+2023-06-09 00:02:16,383 INFO Not enough data read recently for using ARMA with sensor: no2
+2023-06-09 00:02:16,383 INFO Not enough data read recently for using ARMA with sensor: pm10
+2023-06-09 00:02:16,383 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-09 00:02:16,383 INFO Not enough data read recently for using ARMA with sensor: temperature
+2023-06-09 00:02:16,567 DEBUG Sensor: co2, data read from sensors: [31], MAPE rate of inaccuracy: 3.4701, predict value: 29.92425363211814
+2023-06-09 00:02:16,567 INFO so2 values is: [30]humidity values is: [34]co values is: [34]no2 values is: [31]pm10 values is: [30]pm2_5 values is: [32]temperature values is: [33]co2 values is: [31]
+2023-06-09 00:02:16,830 INFO {
+    "so2": {
+        "value": 29.0,
+        "AQI": 41,
+        "quality": "Good"
+    },
+    "humidity": {
+        "value": 29.83
+    },
+    "co": {
+        "value": 30.8,
+        "AQI": 304,
+        "quality": "Hazadous"
+    },
+    "no2": {
+        "value": 30.0,
+        "AQI": 28,
+        "quality": "Good"
+    },
+    "pm10": {
+        "value": 29.0,
+        "AQI": 27,
+        "quality": "Good"
+    },
+    "pm2_5": {
+        "value": 29.3,
+        "AQI": 88,
+        "quality": "Moderate"
+    },
+    "temperature": {
+        "value": 32.0
+    },
+    "co2": {
+        "value": 31.17
+    }
+}
+2023-06-09 00:02:19,833 INFO Not enough data read recently for using ARMA with sensor: so2
+2023-06-09 00:02:19,833 INFO Not enough data read recently for using ARMA with sensor: humidity
+2023-06-09 00:02:19,833 INFO Not enough data read recently for using ARMA with sensor: co
+2023-06-09 00:02:19,833 INFO Not enough data read recently for using ARMA with sensor: no2
+2023-06-09 00:02:19,833 INFO Not enough data read recently for using ARMA with sensor: pm10
+2023-06-09 00:02:19,833 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-09 00:02:19,833 INFO Not enough data read recently for using ARMA with sensor: temperature
+2023-06-09 00:02:20,064 DEBUG Sensor: co2, data read from sensors: [28], MAPE rate of inaccuracy: 6.5035, predict value: 29.820975733853576
+2023-06-09 00:02:20,064 INFO so2 values is: [29]humidity values is: [26]co values is: [29]no2 values is: [31]pm10 values is: [26]pm2_5 values is: [28]temperature values is: [29]co2 values is: [28]
+2023-06-09 00:02:20,288 INFO {
+    "so2": {
+        "value": 29.0,
+        "AQI": 41,
+        "quality": "Good"
+    },
+    "humidity": {
+        "value": 29.83
+    },
+    "co": {
+        "value": 31.0,
+        "AQI": 306,
+        "quality": "Hazadous"
     },
     "no2": {
         "value": 31.0,
         "AQI": 29,
         "quality": "Good"
     },
-    "co": {
-        "value": 28.7,
-        "AQI": 289,
-        "quality": "Very Unhealthy"
-    },
-    "so2": {
-        "value": 31.0,
-        "AQI": 44,
+    "pm10": {
+        "value": 28.0,
+        "AQI": 26,
         "quality": "Good"
+    },
+    "pm2_5": {
+        "value": 29.3,
+        "AQI": 88,
+        "quality": "Moderate"
+    },
+    "temperature": {
+        "value": 31.0
+    },
+    "co2": {
+        "value": 30.5
     }
 }
-2023-06-08 23:52:40,361 INFO Not enough data read recently for using ARMA with sensor: temperature
-2023-06-08 23:52:40,361 INFO Not enough data read recently for using ARMA with sensor: humidity
-2023-06-08 23:52:40,361 INFO Not enough data read recently for using ARMA with sensor: co2
-2023-06-08 23:52:40,361 INFO Not enough data read recently for using ARMA with sensor: pm10
-2023-06-08 23:52:40,361 INFO Not enough data read recently for using ARMA with sensor: pm2_5
-2023-06-08 23:52:40,361 INFO Not enough data read recently for using ARMA with sensor: no2
-2023-06-08 23:52:40,361 INFO Not enough data read recently for using ARMA with sensor: co
-2023-06-08 23:52:40,361 INFO Not enough data read recently for using ARMA with sensor: so2
-2023-06-08 23:52:40,361 INFO temperature values is: [27]humidity values is: [30]co2 values is: [29]pm10 values is: [27]pm2_5 values is: [26]no2 values is: [32]co values is: [27]so2 values is: [34]
-2023-06-08 23:52:40,592 INFO {
+2023-06-09 00:02:23,291 INFO Not enough data read recently for using ARMA with sensor: so2
+2023-06-09 00:02:23,291 INFO Not enough data read recently for using ARMA with sensor: humidity
+2023-06-09 00:02:23,291 INFO Not enough data read recently for using ARMA with sensor: co
+2023-06-09 00:02:23,291 INFO Not enough data read recently for using ARMA with sensor: no2
+2023-06-09 00:02:23,291 INFO Not enough data read recently for using ARMA with sensor: pm10
+2023-06-09 00:02:23,291 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-09 00:02:23,291 INFO Not enough data read recently for using ARMA with sensor: temperature
+2023-06-09 00:02:23,475 DEBUG Sensor: co2, data read from sensors: [34], MAPE rate of inaccuracy: 5.2918, predict value: 32.2007940273113
+2023-06-09 00:02:23,475 INFO so2 values is: [28]humidity values is: [31]co values is: [26]no2 values is: [27]pm10 values is: [29]pm2_5 values is: [34]temperature values is: [33]co2 values is: [34]
+2023-06-09 00:02:23,653 INFO {
+    "so2": {
+        "value": 29.0,
+        "AQI": 41,
+        "quality": "Good"
+    },
+    "humidity": {
+        "value": 30.0
+    },
+    "co": {
+        "value": 29.8,
+        "AQI": 296,
+        "quality": "Very Unhealthy"
+    },
+    "no2": {
+        "value": 30.0,
+        "AQI": 28,
+        "quality": "Good"
+    },
+    "pm10": {
+        "value": 28.0,
+        "AQI": 26,
+        "quality": "Good"
+    },
+    "pm2_5": {
+        "value": 30.3,
+        "AQI": 90,
+        "quality": "Moderate"
+    },
     "temperature": {
-        "value": 27.0
+        "value": 31.0
+    },
+    "co2": {
+        "value": 31.0
+    }
+}
+2023-06-09 00:02:26,656 INFO Not enough data read recently for using ARMA with sensor: so2
+2023-06-09 00:02:26,656 INFO Not enough data read recently for using ARMA with sensor: humidity
+2023-06-09 00:02:26,656 INFO Not enough data read recently for using ARMA with sensor: co
+2023-06-09 00:02:26,656 INFO Not enough data read recently for using ARMA with sensor: no2
+2023-06-09 00:02:26,656 INFO Not enough data read recently for using ARMA with sensor: pm10
+2023-06-09 00:02:26,656 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-09 00:02:26,656 INFO Not enough data read recently for using ARMA with sensor: temperature
+2023-06-09 00:02:26,857 DEBUG Sensor: co2, data read from sensors: [27], MAPE rate of inaccuracy: 8.2862, predict value: 29.23728300779149
+2023-06-09 00:02:26,857 INFO so2 values is: [30]humidity values is: [34]co values is: [29]no2 values is: [29]pm10 values is: [29]pm2_5 values is: [29]temperature values is: [29]co2 values is: [27]
+2023-06-09 00:02:27,079 INFO {
+    "so2": {
+        "value": 30.0,
+        "AQI": 42,
+        "quality": "Good"
+    },
+    "humidity": {
+        "value": 30.33
+    },
+    "co": {
+        "value": 30.2,
+        "AQI": 299,
+        "quality": "Very Unhealthy"
+    },
+    "no2": {
+        "value": 30.0,
+        "AQI": 28,
+        "quality": "Good"
+    },
+    "pm10": {
+        "value": 28.0,
+        "AQI": 26,
+        "quality": "Good"
+    },
+    "pm2_5": {
+        "value": 30.7,
+        "AQI": 91,
+        "quality": "Moderate"
+    },
+    "temperature": {
+        "value": 31.0
+    },
+    "co2": {
+        "value": 30.17
+    }
+}
+2023-06-09 00:02:30,100 INFO Not enough data read recently for using ARMA with sensor: so2
+2023-06-09 00:02:30,100 INFO Not enough data read recently for using ARMA with sensor: humidity
+2023-06-09 00:02:30,100 INFO Not enough data read recently for using ARMA with sensor: co
+2023-06-09 00:02:30,100 INFO Not enough data read recently for using ARMA with sensor: no2
+2023-06-09 00:02:30,100 INFO Not enough data read recently for using ARMA with sensor: pm10
+2023-06-09 00:02:30,100 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-09 00:02:30,100 INFO Not enough data read recently for using ARMA with sensor: temperature
+2023-06-09 00:02:30,363 DEBUG Sensor: co2, data read from sensors: [29], MAPE rate of inaccuracy: 11.0354, predict value: 32.200264482131594
+2023-06-09 00:02:30,363 INFO so2 values is: [33]humidity values is: [31]co values is: [27]no2 values is: [33]pm10 values is: [30]pm2_5 values is: [30]temperature values is: [33]co2 values is: [29]
+2023-06-09 00:02:30,701 INFO {
+    "so2": {
+        "value": 30.0,
+        "AQI": 42,
+        "quality": "Good"
     },
     "humidity": {
         "value": 30.83
     },
+    "co": {
+        "value": 29.7,
+        "AQI": 296,
+        "quality": "Very Unhealthy"
+    },
+    "no2": {
+        "value": 31.0,
+        "AQI": 29,
+        "quality": "Good"
+    },
+    "pm10": {
+        "value": 28.0,
+        "AQI": 26,
+        "quality": "Good"
+    },
+    "pm2_5": {
+        "value": 31.2,
+        "AQI": 92,
+        "quality": "Moderate"
+    },
+    "temperature": {
+        "value": 31.0
+    },
     "co2": {
         "value": 29.83
+    }
+}
+2023-06-09 00:02:33,972 DEBUG Sensor: so2, data read from sensors: [33], MAPE rate of inaccuracy: 12.1437, predict value: 28.992564819502466
+2023-06-09 00:02:33,972 WARNING Sensor so2 give unsual data
+2023-06-09 00:02:34,072 DEBUG Sensor: humidity, data read from sensors: [26], MAPE rate of inaccuracy: 16.5399, predict value: 30.300372797788672
+2023-06-09 00:02:34,072 WARNING Sensor humidity give unsual data
+2023-06-09 00:02:34,072 INFO Not enough data read recently for using ARMA with sensor: co
+2023-06-09 00:02:34,072 INFO Not enough data read recently for using ARMA with sensor: no2
+2023-06-09 00:02:34,357 DEBUG Sensor: pm10, data read from sensors: [31], MAPE rate of inaccuracy: 18.4959, predict value: 25.26627167225599
+2023-06-09 00:02:34,357 WARNING Sensor pm10 give unsual data
+2023-06-09 00:02:34,357 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-09 00:02:34,357 INFO Not enough data read recently for using ARMA with sensor: temperature
+2023-06-09 00:02:34,442 DEBUG Sensor: co2, data read from sensors: [31], MAPE rate of inaccuracy: 0.5722, predict value: 30.822622800475244
+2023-06-09 00:02:34,442 INFO so2 values is: [-1]humidity values is: [-1]co values is: [31]no2 values is: [32]pm10 values is: [-1]pm2_5 values is: [34]temperature values is: [29]co2 values is: [31]
+2023-06-09 00:02:34,643 INFO {
+    "so2": {
+        "value": 30.0,
+        "AQI": 42,
+        "quality": "Good"
+    },
+    "humidity": {
+        "value": 30.83
+    },
+    "co": {
+        "value": 29.3,
+        "AQI": 293,
+        "quality": "Very Unhealthy"
+    },
+    "no2": {
+        "value": 30.0,
+        "AQI": 28,
+        "quality": "Good"
+    },
+    "pm10": {
+        "value": 28.0,
+        "AQI": 26,
+        "quality": "Good"
+    },
+    "pm2_5": {
+        "value": 31.2,
+        "AQI": 92,
+        "quality": "Moderate"
+    },
+    "temperature": {
+        "value": 31.0
+    },
+    "co2": {
+        "value": 30.0
+    }
+}
+2023-06-09 00:02:37,646 INFO Not enough data read recently for using ARMA with sensor: so2
+2023-06-09 00:02:37,646 INFO Not enough data read recently for using ARMA with sensor: humidity
+2023-06-09 00:02:37,646 INFO Not enough data read recently for using ARMA with sensor: co
+2023-06-09 00:02:37,646 INFO Not enough data read recently for using ARMA with sensor: no2
+2023-06-09 00:02:37,646 INFO Not enough data read recently for using ARMA with sensor: pm10
+2023-06-09 00:02:37,646 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-09 00:02:37,746 DEBUG Sensor: temperature, data read from sensors: [30], MAPE rate of inaccuracy: 2.9745, predict value: 30.892345504355454
+2023-06-09 00:02:38,062 DEBUG Sensor: co2, data read from sensors: [28], MAPE rate of inaccuracy: 7.634, predict value: 30.13751831829979
+2023-06-09 00:02:38,062 INFO so2 values is: [26]humidity values is: [32]co values is: [28]no2 values is: [27]pm10 values is: [29]pm2_5 values is: [29]temperature values is: [30]co2 values is: [28]
+2023-06-09 00:02:38,247 INFO {
+    "so2": {
+        "value": 29.0,
+        "AQI": 41,
+        "quality": "Good"
+    },
+    "humidity": {
+        "value": 31.33
+    },
+    "co": {
+        "value": 28.3,
+        "AQI": 286,
+        "quality": "Very Unhealthy"
+    },
+    "no2": {
+        "value": 30.0,
+        "AQI": 28,
+        "quality": "Good"
+    },
+    "pm10": {
+        "value": 29.0,
+        "AQI": 27,
+        "quality": "Good"
+    },
+    "pm2_5": {
+        "value": 30.7,
+        "AQI": 91,
+        "quality": "Moderate"
+    },
+    "temperature": {
+        "value": 30.0
+    },
+    "co2": {
+        "value": 29.5
+    }
+}
+2023-06-09 00:02:41,251 INFO Not enough data read recently for using ARMA with sensor: so2
+2023-06-09 00:02:41,251 INFO Not enough data read recently for using ARMA with sensor: humidity
+2023-06-09 00:02:41,251 INFO Not enough data read recently for using ARMA with sensor: co
+2023-06-09 00:02:41,251 INFO Not enough data read recently for using ARMA with sensor: no2
+2023-06-09 00:02:41,251 INFO Not enough data read recently for using ARMA with sensor: pm10
+2023-06-09 00:02:41,251 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-09 00:02:41,335 DEBUG Sensor: temperature, data read from sensors: [33], MAPE rate of inaccuracy: 8.4656, predict value: 30.206368088768876
+2023-06-09 00:02:41,335 WARNING Sensor temperature give unsual data
+2023-06-09 00:02:41,629 DEBUG Sensor: co2, data read from sensors: [26], MAPE rate of inaccuracy: 24.8096, predict value: 32.45049148396072
+2023-06-09 00:02:41,636 WARNING Sensor co2 give unsual data
+2023-06-09 00:02:41,636 INFO so2 values is: [31]humidity values is: [34]co values is: [32]no2 values is: [26]pm10 values is: [27]pm2_5 values is: [34]temperature values is: [-1]co2 values is: [-1]
+2023-06-09 00:02:41,752 INFO {
+    "so2": {
+        "value": 30.0,
+        "AQI": 42,
+        "quality": "Good"
+    },
+    "humidity": {
+        "value": 31.33
+    },
+    "co": {
+        "value": 28.8,
+        "AQI": 290,
+        "quality": "Very Unhealthy"
+    },
+    "no2": {
+        "value": 29.0,
+        "AQI": 27,
+        "quality": "Good"
+    },
+    "pm10": {
+        "value": 28.0,
+        "AQI": 26,
+        "quality": "Good"
+    },
+    "pm2_5": {
+        "value": 31.7,
+        "AQI": 93,
+        "quality": "Moderate"
+    },
+    "temperature": {
+        "value": 30.0
+    },
+    "co2": {
+        "value": 29.5
+    }
+}
+2023-06-09 00:02:44,970 DEBUG Sensor: so2, data read from sensors: [30], MAPE rate of inaccuracy: 5.7118, predict value: 28.286469008338656
+2023-06-09 00:02:44,970 WARNING Sensor so2 give unsual data
+2023-06-09 00:02:45,270 DEBUG Sensor: humidity, data read from sensors: [31], MAPE rate of inaccuracy: 4.3497, predict value: 32.34842006435546
+2023-06-09 00:02:45,571 DEBUG Sensor: co, data read from sensors: [27], MAPE rate of inaccuracy: 18.0669, predict value: 31.87806547264409
+2023-06-09 00:02:45,571 WARNING Sensor co give unsual data
+2023-06-09 00:02:45,903 DEBUG Sensor: no2, data read from sensors: [31], MAPE rate of inaccuracy: 1.8365, predict value: 31.56930706082985
+2023-06-09 00:02:46,188 DEBUG Sensor: pm10, data read from sensors: [34], MAPE rate of inaccuracy: 19.7828, predict value: 27.273854087733014
+2023-06-09 00:02:46,188 WARNING Sensor pm10 give unsual data
+2023-06-09 00:02:46,473 DEBUG Sensor: pm2_5, data read from sensors: [33], MAPE rate of inaccuracy: 9.5635, predict value: 29.844045216142874
+2023-06-09 00:02:46,573 DEBUG Sensor: temperature, data read from sensors: [31], MAPE rate of inaccuracy: 2.5601, predict value: 30.206368088768876
+2023-06-09 00:02:46,859 DEBUG Sensor: co2, data read from sensors: [28], MAPE rate of inaccuracy: 15.8946, predict value: 32.45049148396072
+2023-06-09 00:02:46,859 WARNING Sensor co2 give unsual data
+2023-06-09 00:02:46,859 INFO so2 values is: [-1]humidity values is: [31]co values is: [-1]no2 values is: [31]pm10 values is: [-1]pm2_5 values is: [33]temperature values is: [31]co2 values is: [-1]
+2023-06-09 00:02:46,975 INFO {
+    "so2": {
+        "value": 30.0,
+        "AQI": 42,
+        "quality": "Good"
+    },
+    "humidity": {
+        "value": 32.17
+    },
+    "co": {
+        "value": 28.8,
+        "AQI": 290,
+        "quality": "Very Unhealthy"
+    },
+    "no2": {
+        "value": 30.0,
+        "AQI": 28,
+        "quality": "Good"
+    },
+    "pm10": {
+        "value": 28.0,
+        "AQI": 26,
+        "quality": "Good"
+    },
+    "pm2_5": {
+        "value": 31.5,
+        "AQI": 92,
+        "quality": "Moderate"
+    },
+    "temperature": {
+        "value": 31.0
+    },
+    "co2": {
+        "value": 29.5
+    }
+}
+2023-06-09 00:02:49,977 INFO Not enough data read recently for using ARMA with sensor: so2
+2023-06-09 00:02:50,278 DEBUG Sensor: humidity, data read from sensors: [29], MAPE rate of inaccuracy: 4.0361, predict value: 30.17047843872355
+2023-06-09 00:02:50,547 DEBUG Sensor: co, data read from sensors: [27], MAPE rate of inaccuracy: 18.0669, predict value: 31.87806547264409
+2023-06-09 00:02:50,547 WARNING Sensor co give unsual data
+2023-06-09 00:02:50,864 DEBUG Sensor: no2, data read from sensors: [27], MAPE rate of inaccuracy: 13.5865, predict value: 30.668353363447615
+2023-06-09 00:02:50,864 WARNING Sensor no2 give unsual data
+2023-06-09 00:02:50,864 INFO Not enough data read recently for using ARMA with sensor: pm10
+2023-06-09 00:02:51,184 DEBUG Sensor: pm2_5, data read from sensors: [30], MAPE rate of inaccuracy: 3.0465, predict value: 30.9139367517145
+2023-06-09 00:02:51,496 DEBUG Sensor: temperature, data read from sensors: [26], MAPE rate of inaccuracy: 17.8976, predict value: 30.653378232040787
+2023-06-09 00:02:51,496 WARNING Sensor temperature give unsual data
+2023-06-09 00:02:51,496 INFO Not enough data read recently for using ARMA with sensor: co2
+2023-06-09 00:02:51,496 INFO so2 values is: [29]humidity values is: [29]co values is: [-1]no2 values is: [-1]pm10 values is: [28]pm2_5 values is: [30]temperature values is: [-1]co2 values is: [28]
+2023-06-09 00:02:51,597 INFO {
+    "so2": {
+        "value": 30.0,
+        "AQI": 42,
+        "quality": "Good"
+    },
+    "humidity": {
+        "value": 31.83
+    },
+    "co": {
+        "value": 28.8,
+        "AQI": 290,
+        "quality": "Very Unhealthy"
+    },
+    "no2": {
+        "value": 30.0,
+        "AQI": 28,
+        "quality": "Good"
+    },
+    "pm10": {
+        "value": 29.0,
+        "AQI": 27,
+        "quality": "Good"
+    },
+    "pm2_5": {
+        "value": 31.7,
+        "AQI": 93,
+        "quality": "Moderate"
+    },
+    "temperature": {
+        "value": 31.0
+    },
+    "co2": {
+        "value": 29.5
+    }
+}
+2023-06-09 00:02:54,599 INFO Not enough data read recently for using ARMA with sensor: so2
+2023-06-09 00:02:54,884 DEBUG Sensor: humidity, data read from sensors: [29], MAPE rate of inaccuracy: 0.1098, predict value: 29.031834107345915
+2023-06-09 00:02:54,884 INFO Not enough data read recently for using ARMA with sensor: co
+2023-06-09 00:02:55,154 DEBUG Sensor: no2, data read from sensors: [34], MAPE rate of inaccuracy: 9.7249, predict value: 30.693542305478463
+2023-06-09 00:02:55,154 WARNING Sensor no2 give unsual data
+2023-06-09 00:02:55,154 INFO Not enough data read recently for using ARMA with sensor: pm10
+2023-06-09 00:02:55,486 DEBUG Sensor: pm2_5, data read from sensors: [34], MAPE rate of inaccuracy: 7.7632, predict value: 31.360522776941846
+2023-06-09 00:02:55,486 INFO Not enough data read recently for using ARMA with sensor: temperature
+2023-06-09 00:02:55,486 INFO Not enough data read recently for using ARMA with sensor: co2
+2023-06-09 00:02:55,486 INFO so2 values is: [31]humidity values is: [29]co values is: [32]no2 values is: [-1]pm10 values is: [28]pm2_5 values is: [34]temperature values is: [26]co2 values is: [30]
+2023-06-09 00:02:55,687 INFO {
+    "so2": {
+        "value": 30.0,
+        "AQI": 42,
+        "quality": "Good"
+    },
+    "humidity": {
+        "value": 31.0
+    },
+    "co": {
+        "value": 29.8,
+        "AQI": 296,
+        "quality": "Very Unhealthy"
+    },
+    "no2": {
+        "value": 30.0,
+        "AQI": 28,
+        "quality": "Good"
+    },
+    "pm10": {
+        "value": 28.0,
+        "AQI": 26,
+        "quality": "Good"
+    },
+    "pm2_5": {
+        "value": 32.3,
+        "AQI": 94,
+        "quality": "Moderate"
+    },
+    "temperature": {
+        "value": 30.0
+    },
+    "co2": {
+        "value": 28.83
+    }
+}
+2023-06-09 00:02:58,689 INFO Not enough data read recently for using ARMA with sensor: so2
+2023-06-09 00:02:58,990 DEBUG Sensor: humidity, data read from sensors: [28], MAPE rate of inaccuracy: 12.7896, predict value: 31.581074956073962
+2023-06-09 00:02:58,990 WARNING Sensor humidity give unsual data
+2023-06-09 00:02:58,990 INFO Not enough data read recently for using ARMA with sensor: co
+2023-06-09 00:02:58,990 INFO Not enough data read recently for using ARMA with sensor: no2
+2023-06-09 00:02:58,990 INFO Not enough data read recently for using ARMA with sensor: pm10
+2023-06-09 00:02:59,275 DEBUG Sensor: pm2_5, data read from sensors: [29], MAPE rate of inaccuracy: 4.0886, predict value: 30.185687882922366
+2023-06-09 00:02:59,275 INFO Not enough data read recently for using ARMA with sensor: temperature
+2023-06-09 00:02:59,275 INFO Not enough data read recently for using ARMA with sensor: co2
+2023-06-09 00:02:59,275 INFO so2 values is: [30]humidity values is: [-1]co values is: [26]no2 values is: [31]pm10 values is: [27]pm2_5 values is: [29]temperature values is: [32]co2 values is: [34]
+2023-06-09 00:02:59,476 INFO {
+    "so2": {
+        "value": 30.0,
+        "AQI": 42,
+        "quality": "Good"
+    },
+    "humidity": {
+        "value": 31.0
+    },
+    "co": {
+        "value": 29.3,
+        "AQI": 293,
+        "quality": "Very Unhealthy"
+    },
+    "no2": {
+        "value": 30.0,
+        "AQI": 28,
+        "quality": "Good"
+    },
+    "pm10": {
+        "value": 28.0,
+        "AQI": 26,
+        "quality": "Good"
+    },
+    "pm2_5": {
+        "value": 31.5,
+        "AQI": 92,
+        "quality": "Moderate"
+    },
+    "temperature": {
+        "value": 30.0
+    },
+    "co2": {
+        "value": 30.0
+    }
+}
+2023-06-09 00:03:02,479 INFO Not enough data read recently for using ARMA with sensor: so2
+2023-06-09 00:03:02,479 INFO Not enough data read recently for using ARMA with sensor: humidity
+2023-06-09 00:03:02,479 INFO Not enough data read recently for using ARMA with sensor: co
+2023-06-09 00:03:02,479 INFO Not enough data read recently for using ARMA with sensor: no2
+2023-06-09 00:03:02,479 INFO Not enough data read recently for using ARMA with sensor: pm10
+2023-06-09 00:03:02,780 DEBUG Sensor: pm2_5, data read from sensors: [30], MAPE rate of inaccuracy: 0.8274, predict value: 29.751790763878834
+2023-06-09 00:03:02,780 INFO Not enough data read recently for using ARMA with sensor: temperature
+2023-06-09 00:03:02,780 INFO Not enough data read recently for using ARMA with sensor: co2
+2023-06-09 00:03:02,780 INFO so2 values is: [27]humidity values is: [31]co values is: [28]no2 values is: [34]pm10 values is: [27]pm2_5 values is: [30]temperature values is: [30]co2 values is: [29]
+2023-06-09 00:03:02,958 INFO {
+    "so2": {
+        "value": 29.0,
+        "AQI": 41,
+        "quality": "Good"
+    },
+    "humidity": {
+        "value": 31.0
+    },
+    "co": {
+        "value": 29.5,
+        "AQI": 294,
+        "quality": "Very Unhealthy"
+    },
+    "no2": {
+        "value": 30.0,
+        "AQI": 28,
+        "quality": "Good"
+    },
+    "pm10": {
+        "value": 28.0,
+        "AQI": 26,
+        "quality": "Good"
+    },
+    "pm2_5": {
+        "value": 31.7,
+        "AQI": 93,
+        "quality": "Moderate"
+    },
+    "temperature": {
+        "value": 30.0
+    },
+    "co2": {
+        "value": 30.0
+    }
+}
+2023-06-09 00:03:05,961 INFO Not enough data read recently for using ARMA with sensor: so2
+2023-06-09 00:03:05,961 INFO Not enough data read recently for using ARMA with sensor: humidity
+2023-06-09 00:03:05,961 INFO Not enough data read recently for using ARMA with sensor: co
+2023-06-09 00:03:05,961 INFO Not enough data read recently for using ARMA with sensor: no2
+2023-06-09 00:03:05,961 INFO Not enough data read recently for using ARMA with sensor: pm10
+2023-06-09 00:03:06,230 DEBUG Sensor: pm2_5, data read from sensors: [30], MAPE rate of inaccuracy: 8.1244, predict value: 32.43731740363552
+2023-06-09 00:03:06,230 INFO Not enough data read recently for using ARMA with sensor: temperature
+2023-06-09 00:03:06,230 INFO Not enough data read recently for using ARMA with sensor: co2
+2023-06-09 00:03:06,230 INFO so2 values is: [30]humidity values is: [33]co values is: [34]no2 values is: [28]pm10 values is: [34]pm2_5 values is: [30]temperature values is: [32]co2 values is: [29]
+2023-06-09 00:03:06,446 INFO {
+    "so2": {
+        "value": 30.0,
+        "AQI": 42,
+        "quality": "Good"
+    },
+    "humidity": {
+        "value": 31.17
+    },
+    "co": {
+        "value": 30.0,
+        "AQI": 298,
+        "quality": "Very Unhealthy"
+    },
+    "no2": {
+        "value": 30.0,
+        "AQI": 28,
+        "quality": "Good"
     },
     "pm10": {
         "value": 28.0,
@@ -523,179 +2316,44 @@
         "AQI": 91,
         "quality": "Moderate"
     },
-    "no2": {
-        "value": 32.0,
-        "AQI": 30,
-        "quality": "Good"
-    },
-    "co": {
-        "value": 28.7,
-        "AQI": 289,
-        "quality": "Very Unhealthy"
-    },
-    "so2": {
-        "value": 32.0,
-        "AQI": 45,
-        "quality": "Good"
-    }
-}
-2023-06-08 23:52:43,602 INFO Not enough data read recently for using ARMA with sensor: temperature
-2023-06-08 23:52:43,602 INFO Not enough data read recently for using ARMA with sensor: humidity
-2023-06-08 23:52:43,602 INFO Not enough data read recently for using ARMA with sensor: co2
-2023-06-08 23:52:43,602 INFO Not enough data read recently for using ARMA with sensor: pm10
-2023-06-08 23:52:43,602 INFO Not enough data read recently for using ARMA with sensor: pm2_5
-2023-06-08 23:52:43,602 INFO Not enough data read recently for using ARMA with sensor: no2
-2023-06-08 23:52:43,602 INFO Not enough data read recently for using ARMA with sensor: co
-2023-06-08 23:52:43,602 INFO Not enough data read recently for using ARMA with sensor: so2
-2023-06-08 23:52:43,602 INFO temperature values is: [27]humidity values is: [31]co2 values is: [28]pm10 values is: [32]pm2_5 values is: [33]no2 values is: [34]co values is: [32]so2 values is: [34]
-2023-06-08 23:52:43,802 INFO {
     "temperature": {
-        "value": 26.0
-    },
-    "humidity": {
-        "value": 31.5
-    },
-    "co2": {
-        "value": 29.17
-    },
-    "pm10": {
-        "value": 29.0,
-        "AQI": 27,
-        "quality": "Good"
-    },
-    "pm2_5": {
-        "value": 31.5,
-        "AQI": 92,
-        "quality": "Moderate"
-    },
-    "no2": {
-        "value": 32.0,
-        "AQI": 30,
-        "quality": "Good"
-    },
-    "co": {
-        "value": 29.7,
-        "AQI": 296,
-        "quality": "Very Unhealthy"
-    },
-    "so2": {
-        "value": 33.0,
-        "AQI": 47,
-        "quality": "Good"
-    }
-}
-2023-06-08 23:52:46,807 INFO Not enough data read recently for using ARMA with sensor: temperature
-2023-06-08 23:52:46,807 INFO Not enough data read recently for using ARMA with sensor: humidity
-2023-06-08 23:52:46,807 INFO Not enough data read recently for using ARMA with sensor: co2
-2023-06-08 23:52:46,807 INFO Not enough data read recently for using ARMA with sensor: pm10
-2023-06-08 23:52:46,807 INFO Not enough data read recently for using ARMA with sensor: pm2_5
-2023-06-08 23:52:46,807 INFO Not enough data read recently for using ARMA with sensor: no2
-2023-06-08 23:52:46,807 INFO Not enough data read recently for using ARMA with sensor: co
-2023-06-08 23:52:46,807 INFO Not enough data read recently for using ARMA with sensor: so2
-2023-06-08 23:52:46,807 INFO temperature values is: [30]humidity values is: [29]co2 values is: [32]pm10 values is: [32]pm2_5 values is: [33]no2 values is: [30]co values is: [34]so2 values is: [32]
-2023-06-08 23:52:46,954 INFO {
-    "temperature": {
-        "value": 27.0
-    },
-    "humidity": {
-        "value": 31.0
-    },
-    "co2": {
-        "value": 29.17
-    },
-    "pm10": {
-        "value": 30.0,
-        "AQI": 28,
-        "quality": "Good"
-    },
-    "pm2_5": {
-        "value": 31.7,
-        "AQI": 93,
-        "quality": "Moderate"
-    },
-    "no2": {
-        "value": 31.0,
-        "AQI": 29,
-        "quality": "Good"
-    },
-    "co": {
-        "value": 30.3,
-        "AQI": 300,
-        "quality": "Very Unhealthy"
-    },
-    "so2": {
-        "value": 33.0,
-        "AQI": 47,
-        "quality": "Good"
-    }
-}
-2023-06-08 23:52:49,965 INFO Not enough data read recently for using ARMA with sensor: temperature
-2023-06-08 23:52:49,965 INFO Not enough data read recently for using ARMA with sensor: humidity
-2023-06-08 23:52:49,965 INFO Not enough data read recently for using ARMA with sensor: co2
-2023-06-08 23:52:49,965 INFO Not enough data read recently for using ARMA with sensor: pm10
-2023-06-08 23:52:49,965 INFO Not enough data read recently for using ARMA with sensor: pm2_5
-2023-06-08 23:52:49,965 INFO Not enough data read recently for using ARMA with sensor: no2
-2023-06-08 23:52:49,965 INFO Not enough data read recently for using ARMA with sensor: co
-2023-06-08 23:52:49,965 INFO Not enough data read recently for using ARMA with sensor: so2
-2023-06-08 23:52:49,965 INFO temperature values is: [34]humidity values is: [32]co2 values is: [27]pm10 values is: [33]pm2_5 values is: [29]no2 values is: [34]co values is: [26]so2 values is: [34]
-2023-06-08 23:52:50,065 INFO {
-    "temperature": {
-        "value": 28.0
-    },
-    "humidity": {
-        "value": 31.0
-    },
-    "co2": {
-        "value": 29.17
-    },
-    "pm10": {
-        "value": 30.0,
-        "AQI": 28,
-        "quality": "Good"
-    },
-    "pm2_5": {
-        "value": 31.0,
-        "AQI": 91,
-        "quality": "Moderate"
-    },
-    "no2": {
-        "value": 32.0,
-        "AQI": 30,
-        "quality": "Good"
-    },
-    "co": {
-        "value": 29.8,
-        "AQI": 296,
-        "quality": "Very Unhealthy"
-    },
-    "so2": {
-        "value": 33.0,
-        "AQI": 47,
-        "quality": "Good"
-    }
-}
-2023-06-08 23:52:53,068 INFO Not enough data read recently for using ARMA with sensor: temperature
-2023-06-08 23:52:53,068 INFO Not enough data read recently for using ARMA with sensor: humidity
-2023-06-08 23:52:53,068 INFO Not enough data read recently for using ARMA with sensor: co2
-2023-06-08 23:52:53,068 INFO Not enough data read recently for using ARMA with sensor: pm10
-2023-06-08 23:52:53,084 INFO Not enough data read recently for using ARMA with sensor: pm2_5
-2023-06-08 23:52:53,084 INFO Not enough data read recently for using ARMA with sensor: no2
-2023-06-08 23:52:53,084 INFO Not enough data read recently for using ARMA with sensor: co
-2023-06-08 23:52:53,084 INFO Not enough data read recently for using ARMA with sensor: so2
-2023-06-08 23:52:53,084 INFO temperature values is: [26]humidity values is: [28]co2 values is: [34]pm10 values is: [34]pm2_5 values is: [28]no2 values is: [32]co values is: [33]so2 values is: [27]
-2023-06-08 23:52:53,353 INFO {
-    "temperature": {
-        "value": 28.0
-    },
-    "humidity": {
         "value": 30.0
     },
     "co2": {
-        "value": 29.33
+        "value": 29.67
+    }
+}
+2023-06-09 00:03:09,449 INFO Not enough data read recently for using ARMA with sensor: so2
+2023-06-09 00:03:09,449 INFO Not enough data read recently for using ARMA with sensor: humidity
+2023-06-09 00:03:09,449 INFO Not enough data read recently for using ARMA with sensor: co
+2023-06-09 00:03:09,449 INFO Not enough data read recently for using ARMA with sensor: no2
+2023-06-09 00:03:09,449 INFO Not enough data read recently for using ARMA with sensor: pm10
+2023-06-09 00:03:09,750 DEBUG Sensor: pm2_5, data read from sensors: [28], MAPE rate of inaccuracy: 1.0923, predict value: 28.30584792260509
+2023-06-09 00:03:09,750 INFO Not enough data read recently for using ARMA with sensor: temperature
+2023-06-09 00:03:09,750 INFO Not enough data read recently for using ARMA with sensor: co2
+2023-06-09 00:03:09,750 INFO so2 values is: [28]humidity values is: [28]co values is: [34]no2 values is: [33]pm10 values is: [34]pm2_5 values is: [28]temperature values is: [32]co2 values is: [28]
+2023-06-09 00:03:09,966 INFO {
+    "so2": {
+        "value": 29.0,
+        "AQI": 41,
+        "quality": "Good"
+    },
+    "humidity": {
+        "value": 30.17
+    },
+    "co": {
+        "value": 31.0,
+        "AQI": 306,
+        "quality": "Hazadous"
+    },
+    "no2": {
+        "value": 30.0,
+        "AQI": 28,
+        "quality": "Good"
     },
     "pm10": {
-        "value": 31.0,
-        "AQI": 29,
+        "value": 30.0,
+        "AQI": 28,
         "quality": "Good"
     },
     "pm2_5": {
@@ -703,246 +2361,64 @@
         "AQI": 90,
         "quality": "Moderate"
     },
-    "no2": {
-        "value": 32.0,
-        "AQI": 30,
-        "quality": "Good"
-    },
-    "co": {
-        "value": 30.7,
-        "AQI": 303,
-        "quality": "Hazadous"
-    },
-    "so2": {
-        "value": 32.0,
-        "AQI": 45,
-        "quality": "Good"
-    }
-}
-2023-06-08 23:52:56,377 INFO Not enough data read recently for using ARMA with sensor: temperature
-2023-06-08 23:52:56,377 INFO Not enough data read recently for using ARMA with sensor: humidity
-2023-06-08 23:52:56,377 INFO Not enough data read recently for using ARMA with sensor: co2
-2023-06-08 23:52:56,377 INFO Not enough data read recently for using ARMA with sensor: pm10
-2023-06-08 23:52:56,377 INFO Not enough data read recently for using ARMA with sensor: pm2_5
-2023-06-08 23:52:56,377 INFO Not enough data read recently for using ARMA with sensor: no2
-2023-06-08 23:52:56,377 INFO Not enough data read recently for using ARMA with sensor: co
-2023-06-08 23:52:56,377 INFO Not enough data read recently for using ARMA with sensor: so2
-2023-06-08 23:52:56,377 INFO temperature values is: [29]humidity values is: [29]co2 values is: [28]pm10 values is: [28]pm2_5 values is: [26]no2 values is: [28]co values is: [26]so2 values is: [34]
-2023-06-08 23:52:56,577 INFO {
     "temperature": {
-        "value": 29.0
-    },
-    "humidity": {
-        "value": 29.83
+        "value": 30.0
     },
     "co2": {
         "value": 29.67
+    }
+}
+2023-06-09 00:03:12,969 INFO Not enough data read recently for using ARMA with sensor: so2
+2023-06-09 00:03:12,969 INFO Not enough data read recently for using ARMA with sensor: humidity
+2023-06-09 00:03:12,969 INFO Not enough data read recently for using ARMA with sensor: co
+2023-06-09 00:03:12,969 INFO Not enough data read recently for using ARMA with sensor: no2
+2023-06-09 00:03:12,969 INFO Not enough data read recently for using ARMA with sensor: pm10
+2023-06-09 00:03:13,068 DEBUG Sensor: pm2_5, data read from sensors: [30], MAPE rate of inaccuracy: 5.0827, predict value: 31.52481629840882
+2023-06-09 00:03:13,068 INFO Not enough data read recently for using ARMA with sensor: temperature
+2023-06-09 00:03:13,068 INFO Not enough data read recently for using ARMA with sensor: co2
+2023-06-09 00:03:13,068 INFO so2 values is: [26]humidity values is: [26]co values is: [32]no2 values is: [28]pm10 values is: [31]pm2_5 values is: [30]temperature values is: [32]co2 values is: [32]
+2023-06-09 00:03:13,269 INFO {
+    "so2": {
+        "value": 29.0,
+        "AQI": 41,
+        "quality": "Good"
     },
-    "pm10": {
+    "humidity": {
+        "value": 29.33
+    },
+    "co": {
+        "value": 31.0,
+        "AQI": 306,
+        "quality": "Hazadous"
+    },
+    "no2": {
         "value": 31.0,
         "AQI": 29,
         "quality": "Good"
     },
-    "pm2_5": {
-        "value": 29.2,
-        "AQI": 88,
-        "quality": "Moderate"
-    },
-    "no2": {
-        "value": 32.0,
-        "AQI": 30,
-        "quality": "Good"
-    },
-    "co": {
-        "value": 29.7,
-        "AQI": 296,
-        "quality": "Very Unhealthy"
-    },
-    "so2": {
-        "value": 32.0,
-        "AQI": 45,
-        "quality": "Good"
-    }
-}
-2023-06-08 23:52:59,580 INFO Not enough data read recently for using ARMA with sensor: temperature
-2023-06-08 23:52:59,580 INFO Not enough data read recently for using ARMA with sensor: humidity
-2023-06-08 23:52:59,580 INFO Not enough data read recently for using ARMA with sensor: co2
-2023-06-08 23:52:59,580 INFO Not enough data read recently for using ARMA with sensor: pm10
-2023-06-08 23:52:59,580 INFO Not enough data read recently for using ARMA with sensor: pm2_5
-2023-06-08 23:52:59,580 INFO Not enough data read recently for using ARMA with sensor: no2
-2023-06-08 23:52:59,580 INFO Not enough data read recently for using ARMA with sensor: co
-2023-06-08 23:52:59,580 INFO Not enough data read recently for using ARMA with sensor: so2
-2023-06-08 23:52:59,580 INFO temperature values is: [33]humidity values is: [31]co2 values is: [34]pm10 values is: [34]pm2_5 values is: [27]no2 values is: [32]co values is: [28]so2 values is: [30]
-2023-06-08 23:52:59,780 INFO {
-    "temperature": {
-        "value": 30.0
-    },
-    "humidity": {
-        "value": 30.0
-    },
-    "co2": {
-        "value": 30.5
-    },
     "pm10": {
-        "value": 32.0,
-        "AQI": 30,
-        "quality": "Good"
-    },
-    "pm2_5": {
-        "value": 29.3,
-        "AQI": 88,
-        "quality": "Moderate"
-    },
-    "no2": {
-        "value": 32.0,
-        "AQI": 30,
-        "quality": "Good"
-    },
-    "co": {
-        "value": 29.8,
-        "AQI": 296,
-        "quality": "Very Unhealthy"
-    },
-    "so2": {
-        "value": 32.0,
-        "AQI": 45,
-        "quality": "Good"
-    }
-}
-2023-06-08 23:53:02,788 INFO Not enough data read recently for using ARMA with sensor: temperature
-2023-06-08 23:53:02,788 INFO Not enough data read recently for using ARMA with sensor: humidity
-2023-06-08 23:53:02,788 INFO Not enough data read recently for using ARMA with sensor: co2
-2023-06-08 23:53:02,788 INFO Not enough data read recently for using ARMA with sensor: pm10
-2023-06-08 23:53:02,788 INFO Not enough data read recently for using ARMA with sensor: pm2_5
-2023-06-08 23:53:02,788 INFO Not enough data read recently for using ARMA with sensor: no2
-2023-06-08 23:53:02,788 INFO Not enough data read recently for using ARMA with sensor: co
-2023-06-08 23:53:02,788 INFO Not enough data read recently for using ARMA with sensor: so2
-2023-06-08 23:53:02,788 INFO temperature values is: [32]humidity values is: [30]co2 values is: [33]pm10 values is: [29]pm2_5 values is: [32]no2 values is: [27]co values is: [29]so2 values is: [34]
-2023-06-08 23:53:02,988 INFO {
-    "temperature": {
-        "value": 31.0
-    },
-    "humidity": {
-        "value": 29.83
-    },
-    "co2": {
-        "value": 31.33
-    },
-    "pm10": {
-        "value": 32.0,
-        "AQI": 30,
-        "quality": "Good"
-    },
-    "pm2_5": {
-        "value": 29.2,
-        "AQI": 88,
-        "quality": "Moderate"
-    },
-    "no2": {
         "value": 30.0,
         "AQI": 28,
         "quality": "Good"
     },
-    "co": {
-        "value": 29.3,
-        "AQI": 293,
-        "quality": "Very Unhealthy"
+    "pm2_5": {
+        "value": 30.2,
+        "AQI": 90,
+        "quality": "Moderate"
     },
-    "so2": {
-        "value": 32.0,
-        "AQI": 45,
-        "quality": "Good"
-    }
-}
-2023-06-08 23:53:05,992 INFO Not enough data read recently for using ARMA with sensor: temperature
-2023-06-08 23:53:05,992 INFO Not enough data read recently for using ARMA with sensor: humidity
-2023-06-08 23:53:05,992 INFO Not enough data read recently for using ARMA with sensor: co2
-2023-06-08 23:53:05,992 INFO Not enough data read recently for using ARMA with sensor: pm10
-2023-06-08 23:53:05,992 INFO Not enough data read recently for using ARMA with sensor: pm2_5
-2023-06-08 23:53:05,992 INFO Not enough data read recently for using ARMA with sensor: no2
-2023-06-08 23:53:05,992 INFO Not enough data read recently for using ARMA with sensor: co
-2023-06-08 23:53:05,992 INFO Not enough data read recently for using ARMA with sensor: so2
-2023-06-08 23:53:05,992 INFO temperature values is: [33]humidity values is: [32]co2 values is: [34]pm10 values is: [26]pm2_5 values is: [29]no2 values is: [29]co values is: [29]so2 values is: [33]
-2023-06-08 23:53:06,092 INFO {
     "temperature": {
         "value": 31.0
     },
-    "humidity": {
+    "co2": {
         "value": 30.33
-    },
-    "co2": {
-        "value": 31.67
-    },
-    "pm10": {
-        "value": 31.0,
-        "AQI": 29,
-        "quality": "Good"
-    },
-    "pm2_5": {
-        "value": 28.5,
-        "AQI": 86,
-        "quality": "Moderate"
-    },
-    "no2": {
-        "value": 30.0,
-        "AQI": 28,
-        "quality": "Good"
-    },
-    "co": {
-        "value": 28.5,
-        "AQI": 288,
-        "quality": "Very Unhealthy"
-    },
-    "so2": {
-        "value": 32.0,
-        "AQI": 45,
-        "quality": "Good"
     }
 }
-2023-06-08 23:53:09,365 DEBUG Sensor: temperature, data read from sensors: [30], MAPE rate of inaccuracy: 4.69, predict value: 31.40699414348403
-2023-06-08 23:53:09,643 DEBUG Sensor: humidity, data read from sensors: [34], MAPE rate of inaccuracy: 8.5327, predict value: 31.098881157112228
-2023-06-08 23:53:09,913 DEBUG Sensor: co2, data read from sensors: [27], MAPE rate of inaccuracy: 6.3972, predict value: 28.72724771837534
-2023-06-08 23:53:10,213 DEBUG Sensor: pm10, data read from sensors: [32], MAPE rate of inaccuracy: 3.3429, predict value: 30.930283786834245
-2023-06-08 23:53:10,314 DEBUG Sensor: pm2_5, data read from sensors: [27], MAPE rate of inaccuracy: 10.4162, predict value: 29.812367235264638
-2023-06-08 23:53:10,314 WARNING Sensor pm2_5 give unsual data
-2023-06-08 23:53:10,599 DEBUG Sensor: no2, data read from sensors: [29], MAPE rate of inaccuracy: 6.4624, predict value: 30.874095581712414
-2023-06-08 23:53:10,884 DEBUG Sensor: co, data read from sensors: [27], MAPE rate of inaccuracy: 9.4325, predict value: 29.546772108534874
-2023-06-08 23:53:10,984 DEBUG Sensor: so2, data read from sensors: [26], MAPE rate of inaccuracy: 26.3705, predict value: 32.8563206818008
-2023-06-08 23:53:10,984 WARNING Sensor so2 give unsual data
-2023-06-08 23:53:10,984 INFO temperature values is: [30]humidity values is: [34]co2 values is: [27]pm10 values is: [32]pm2_5 values is: [-1]no2 values is: [29]co values is: [27]so2 values is: [-1]
-2023-06-08 23:53:11,084 INFO {
-    "temperature": {
-        "value": 30.0
-    },
-    "humidity": {
-        "value": 30.67
-    },
-    "co2": {
-        "value": 31.67
-    },
-    "pm10": {
-        "value": 30.0,
-        "AQI": 28,
-        "quality": "Good"
-    },
-    "pm2_5": {
-        "value": 28.5,
-        "AQI": 86,
-        "quality": "Moderate"
-    },
-    "no2": {
-        "value": 30.0,
-        "AQI": 28,
-        "quality": "Good"
-    },
-    "co": {
-        "value": 28.7,
-        "AQI": 289,
-        "quality": "Very Unhealthy"
-    },
-    "so2": {
-        "value": 32.0,
-        "AQI": 45,
-        "quality": "Good"
-    }
-}
+2023-06-09 00:03:16,271 INFO Not enough data read recently for using ARMA with sensor: so2
+2023-06-09 00:03:16,271 INFO Not enough data read recently for using ARMA with sensor: humidity
+2023-06-09 00:03:16,271 INFO Not enough data read recently for using ARMA with sensor: co
+2023-06-09 00:03:16,271 INFO Not enough data read recently for using ARMA with sensor: no2
+2023-06-09 00:03:16,271 INFO Not enough data read recently for using ARMA with sensor: pm10
+2023-06-09 00:03:16,371 DEBUG Sensor: pm2_5, data read from sensors: [34], MAPE rate of inaccuracy: 9.6282, predict value: 30.726398998742958
+2023-06-09 00:03:16,371 INFO Not enough data read recently for using ARMA with sensor: temperature
+2023-06-09 00:03:16,371 INFO Not enough data read recently for using ARMA with sensor: co2
+2023-06-09 00:03:16,378 INFO so2 values is: [29]humidity values is: [26]co values is: [32]no2 values is: [27]pm10 values is: [33]pm2_5 values is: [34]temperature values is: [34]co2 values is: [27]

@@ -298,7 +298,7 @@ class Physical:
                                        .format(sensor, self.sensorsData[sensor],
                                                failure_per, predictVal))
 
-                    if failure_per > VALIDATING_THRESHOLD:
+                    if failure_per > VALIDATING_THRESHOLD[sensor]:
                             # -1 mean unvalid data
                             self.sensorsData[sensor][0] = -1
 

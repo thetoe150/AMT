@@ -10,4 +10,13 @@ NUMBER_FOR_PREDICTION_AQI = 20
 CO_THRESHOLD = 60
 TEM_THRESHOLD = 60
 
-VALIDATING_THRESHOLD = 10
+VALIDATING_THRESHOLD = {
+    "temperature" : 5,
+    "humidity" : 10,
+    "co" : 5,
+    "co2": 15,
+    "so2": 5,
+    "no2": 5,
+    "pm2_5": 10,
+    "pm10":  10
+}
