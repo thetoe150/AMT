@@ -329,10 +329,11 @@ class Physical:
         return self.sensorsData
         #self.printAQI()
 
-    def setGlobalDetectVal(self):
+    def setIsFireSensor(self):
         global isFireSensor
         if 'co' in self.sensorsData or 'temperature' in self.sensorsData:
-            if self.sensorsData['co'] > CO_THRESHOLD or self.sensorsData['temperature'] > TEM_THRESHOLD:
+            if self.sensorsData['co'][0] > CO_THRESHOLD \
+            or self.sensorsData['temperature'][0] > TEM_THRESHOLD:
                 isFireSensor = 2
             else:
                 isFireSensor = 1

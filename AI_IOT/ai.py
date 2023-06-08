@@ -208,9 +208,9 @@ class AICam:
         elif self.isFireThermal and self.isFireAI:
             self.alertLevel = "High"
     
-    def setGlobalDetectVal(self):
-        global isFireCam
-        isFireCam = self.alertLevel
+    def setIsFireCam(self):
+        self.integrateResult()
+        return self.alertLevel
 
     def publishData(self, value):
         if value == 'Medium' or value == 'High':

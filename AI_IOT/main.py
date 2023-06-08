@@ -24,7 +24,7 @@ def GetDebugOption():
 
 PHYSICAL_READ_TIME_INTERVAL = gc.PHYSICAL_READ_TIME_INTERVAL
 NUMBER_OF_DATAPOINTS = gc.NUMBER_OF_DATAPOINTS
-PHYSICAL_PUBLISH_TIME_INTERVAL = PHYSICAL_READ_TIME_INTERVAL * NUMBER_OF_DATAPOINTS
+PHYSICAL_PUBLISH_TIME_INTERVAL = PHYSICAL_READ_TIME_INTERVAL * NUMBER_OF_DATAPOINTS + 1
 
 SYSTEM_COMPONENT_COUNTER = {
     # CPU bounded - often takes around 2s
@@ -36,22 +36,16 @@ SYSTEM_COMPONENT_COUNTER = {
     'PublishingPhysical' : PHYSICAL_PUBLISH_TIME_INTERVAL
 }
 
-isFireSensor = 0
-isFireCam = 'None'
-
-def GetAlertLevel():
+def GetAlertLevel(isFireCam, isFireSensor):
     # cam have 3 stage
     # None
     # Low
-    # Medium
     # High
-    global isFireCam
 
     # sensors have 3 stage
     # 0: don't have sensors or we don't consider sensors data
     # 1: Usual data
     # 2: Unpredicted data
-    global isFireSensor
 
     if isFireCam == 'None':
         return 'None'
@@ -67,6 +61,12 @@ def GetAlertLevel():
         if isFireCam == 'High' and isFireSensor == 2:
             return 'High'
 
+    # return value has 4 possible stage
+    # None
+    # Low
+    # Medium
+    # High
+
 
 class systemAMT:
     def __init__(self, isDebug):
@@ -74,6 +74,9 @@ class systemAMT:
         self.physicalSensors = physical.Physical(isDebug)
         self.aiCamera = ai.AICam(isDebug)
         self.thread_list = []
+
+        self.isFireCam = "None"
+        self.isFireSensor = 0
 
         self.log = log.setupLogger('thread_log', 'log/thread.log')
 
@@ -88,8 +91,8 @@ class systemAMT:
                     print("******************* Trying to read sersors from all serial ports *******************")
                     self.physicalSensors.readSensors()
                     self.physicalSensors.validateData()
+                    self.isFireSensor = self.physicalSensors.setIsFireSensor()
                     self.physicalSensors.storeInstanceData()
-
 
                     self.log.info('Time to read sensor: {}'.format(str(time() - start_time)))
                 except Exception as ex:
@@ -99,7 +102,6 @@ class systemAMT:
                 try:
                     print("******************* Trying to publish sensors data to server *******************")
                     self.physicalSensors.getAverageData()
-                    #self.physicalSensors.setGlobalDetectVal()
                     self.physicalSensors.publishData()
                     self.log.info('Time to publish sensor data: {}'.format(str(time() - start_time)))
                 except Exception as ex:
@@ -110,8 +112,9 @@ class systemAMT:
                     print("******************* Trying to detect fire from all cam ports *******************")
                     self.aiCamera.readCams()
                     self.aiCamera.readInferedCam()
-                    #self.aiCamera.setGlobalDetectVal()
-                    self.aiCamera.publishData(GetAlertLevel())
+                    self.isFireCam = self.aiCamera.setIsFireCam()
+                    res = GetAlertLevel(self.isFireCam, self.isFireSensor)
+                    self.aiCamera.publishData(res)
                     self.log.info('Time to read cam and detect fire: {}'.format(str(time() - start_time)))
                 except Exception as ex:
                     self.log.error('Failed to read cam and detect fire: {}'.format(ex))
