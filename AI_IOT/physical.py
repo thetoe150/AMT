@@ -121,7 +121,7 @@ class Physical:
         self.dataStorage =  database.SensorDataStorage()
 
         self.physicalClient = IOT.Client()
-        self.physicalClient.client.on_message = self.handleRelay
+        self.physicalClient.client.on_message = self.handleMessage
         self.physicalClient.client.connect()
         self.physicalClient.client.loop_background()
 
@@ -166,7 +166,7 @@ class Physical:
         
         return commPort
 
-    def handleRelay(self, client, feed_id, payload):
+    def handleMessage(self, client, feed_id, payload):
         #relay_state = self.physicalClient.receiveFeed("led")
         if feed_id == "led":
             for port_idx in range (self.portsLength):
@@ -177,6 +177,10 @@ class Physical:
                     ser.write(relay1_ON)
                 elif payload == "0":
                     ser.write(relay1_OFF)
+
+        if feed_id == "calib":
+            if payload == "1":
+                self.adjustCalibCoeff()
 
 
     def serial_read_data(self, ser):
@@ -382,48 +386,70 @@ class Physical:
         dominent_parp = aqi_dict["data"]["dominentpol"]
         val = aqi_dict["data"]["iaqi"][dominent_parp]["v"]
 
+        if dominent_parp == 'pm25':
+            dominent_parp = 'pm2_5'
+
         return dominent_parp, val
 
 
     ########## Calibrate sensors functionality #############
     def buildCalibStr(self, type, a, b):
+        a = round(a, 4)
+        b = round(b, 4)
         Str = ''
-        Str += '"' + str(type) + '": ' + str(a) + '"x1 + ' + str(b) + ',"'
+        Str += '"' + str(type) + '": "' + str(a) + 'x1 + (' + str(b) + ')"'
         return Str
 
-    def buildCalibJson(self):
-        Json = '{'
-        Json += self.buildCalibStr(0.8, 1)
+    def buildCalibJson(self, type, a, b):
+        # loop here if need to calibrate multiple sensors
+        dataStr = self.buildCalibStr(type, a, b)
+        Json = '{"source": "WAQI", '
+        Json += dataStr
         Json += '}'
         return Json
 
-    def publishCalibData(self):
-        json = self.buildCalibJson()
+    def publishCalibData(self, json):
         if json != '':
-            self.physicalClient.publishFeed("calib", json)
-
-    def handleCalib(self, client, feed_id, payload):
-        if feed_id == "calib":
-            if payload == "1":
-                self.calibrateSensor()
+            self.physicalClient.publishFeed("calib-info", json)
 
 
-    def calibrateLinearitySensor(self, x1, x2, y1, y2):
-        if x1 == y1 and x2 == y2:
-            return 1, 0
+    def adjustLinearCalibCoeff(self, x1, x2, y1, y2):
         dx = x2 - x1
         dy = y2 - y1
 
-        a = dy / dx
-        b = y1 - a * x1
+        if dx == 0:
+            if dy == 0:
+                a = 1 
+                b = y1 - x1
+            else:
+                if self.isDebug:
+                    self.log.warning('calibrateLinearitySensor(): \
+                                        dx didnt change, \
+                                    divided by 0')
+                return 1, 0
+        else:
+            a = dy / dx
+            b = y1 - a * x1
+
         return a, b
 
-    def calibrateSensor(self):
+    def adjustCalibCoeff(self):
         exType, exVal = self.getExternData()
-        baseVal = getDataBase(exType, 1)
-        # use only 1 value point to evaluate
-        calibrateLinearitySensor(baseVal, baseVal, exVal, exVal)
-        #calibrateLinearitySensor
+        if exType in sensors: 
+            # the case of one value only
+            baseVal = self.dataStorage.getDataBase(exType, 1)
+            x1 = baseVal[0]
+            x2 = baseVal[0] + 1
+            y1 = exVal
+            y2 = exVal + 2
+            # use only 1 value point to evaluate
+            a, b = self.adjustLinearCalibCoeff(x1, x2, y1, y2)
+            json = self.buildCalibJson(exType, a, b)
+            self.publishCalibData(json)
+            #calibrateLinearitySensor
+        else:
+            if self.isDebug:
+                self.log.error('the type of external data is invalid')
 
 
     ########## Predict sensors data functionality #########
@@ -439,7 +465,7 @@ class Physical:
 
     def simulateReadSensors(self):
         for sensor in sensors:
-            self.sensorsData[sensor] = np.random.randint(0, 3, size= 1)
+            self.sensorsData[sensor] = np.random.randint(26, 35, size= 1)
         print('self.sensorsData[sensor]: ', self.sensorsData[sensor])
 
 if __name__ == '__main__':
@@ -450,7 +476,7 @@ if __name__ == '__main__':
         # because they operate on the same data member self.sensorsData
 
         if isSimulate:
-            physical.simulateReadSensors()
+           physical.simulateReadSensors()
         else:
             physical.readSensors()
 
@@ -464,9 +490,9 @@ if __name__ == '__main__':
         physical.getAverageData()
         physical.publishData()
 
-        #print(physical.calibrateSensor(27, 34, 29, 33))
-        #print(physical.calibrateSensor(29, 32, 27, 33))
-        print(physical.getExternData())
+        # print(physical.calibrateSensor(27, 34, 29, 33))
+        # print(physical.calibrateSensor(29, 32, 27, 33))
+        # print(physical.getExternData())
 
         #print(physical.publishCalibData())
         time.sleep(3)

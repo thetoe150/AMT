@@ -172,12 +172,26 @@ class SensorDataStorage:
         self.sensorDatabase.commit()
 
         return deletedRec
+
     
     def getDataPoints(self, sensor_type):
         c = self.sensorDataPoints.cursor()
         c.execute("SELECT * FROM sensorDataPoints \
          WHERE category = :category",\
          {'category' : sensor_type})
+        res = []
+        data = c.fetchall()
+        for item in data:
+            res.append(item[1])
+
+        return res
+
+    def getDataBase(self, sensor_type, data_num):
+        c = self.sensorDatabase.cursor()
+        c.execute("SELECT * FROM sensorDatabase \
+         WHERE category = :category\
+         ORDER BY date DESC LIMIT :dataPointNum",\
+         {'category' : sensor_type, 'dataPointNum' : data_num})
         res = []
         data = c.fetchall()
         for item in data:

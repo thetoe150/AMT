@@ -56,11 +56,21 @@ def MAPE_detect(y_true, y_pred):
 
 def testingARMA():
     np.random.seed(42)
-    y = np.random.randn(100)
 
+    y = np.random.randint(20, 39, size= 70)
+    print('y value: ',y)
     # Fit an ARMA(1,1) model
     model = sm.tsa.ARIMA(y, order=(1, 0, 1))
     results = model.fit()
+
+    forecast = results.predict(start=len(arr), end=len(arr) + 8)
+    print('forecast value: ', forecast)
+
+    # generate predictions with 95% confidence intervals
+    pred_ci = results.conf_int(alpha=0.02)
+
+    # print the predicted values and their confidence intervals
+    print('prediction confident interval: ', pred_ci)
 
     # Print the model summary
     print(results.summary())
@@ -72,11 +82,11 @@ if __name__ == '__main__':
     arr = np.random.randint(27,37, size=10)
     print(arr)
 
-    print(ARMA_forecast(arr, 5))
+    #print(ARMA_forecast(arr, 5))
 
     #arr = [27]
     #print(MAPE_detect(arr, 30))
-    #testingARMA()
+    testingARMA()
 
     # print(sm.robust.scale.mad(y))
     #print(y)
