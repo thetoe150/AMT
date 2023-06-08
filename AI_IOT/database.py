@@ -38,6 +38,13 @@ class SensorDataStorage:
             concentration FLOAT,
             date DATE
             )""")
+
+        c = self.sensorDatabase.cursor()
+        c.execute(""" CREATE TABLE IF NOT EXISTS sensorDataCalib (
+            category TEXT,
+            calib TEXT,
+            date DATE
+            )""")
         
         self.sensorDatabase.commit()
         self.sensorDataPoints.commit()
@@ -51,6 +58,39 @@ class SensorDataStorage:
         c = self.sensorDatabase.cursor()
         c.execute("SELECT * FROM sensorDatabase")
         print("Database: ", c.fetchall())
+
+    def printDataCalib(self):
+        c = self.sensorDatabase.cursor()
+        c.execute("SELECT * FROM sensorDataCalib")
+        print("Data Point: ", c.fetchall())
+
+    def updateDataCalib(self, sensor, value):
+        now = datetime.now()
+        date = now.strftime('%Y-%m-%d %H:%M:%S')
+
+        c = self.sensorDatabase.cursor()
+
+        c.execute("DELETE FROM sensorDataCalib\
+                WHERE category = :category", 
+                {'category': sensor})
+
+        c.execute("INSERT INTO sensorDataCalib \
+                VALUES (:category, :calib, :date)", 
+            {'category': sensor, 'calib': value, 'date': date})
+
+        self.sensorDatabase.commit()
+
+    def getDataCalib(self, sensor):
+        c = self.sensorDatabase.cursor()
+        c.execute("SELECT * FROM sensorDataCalib\
+                WHERE category = :category",
+                  {'category': sensor})
+
+        res = c.fetchall() 
+        if not res:
+            return -1
+
+        return res[0][1]
 
     def addDataPoints(self, sensorsData):
         c = self.sensorDataPoints.cursor()
@@ -129,26 +169,6 @@ class SensorDataStorage:
 
         return res
 
-    def tableInfo(self):
-        c = self.sensorDataPoints.cursor()
-        c.execute('PRAGMA table_info(sensorDataPoints)')
-        print(c.fetchall())
-
-    def resetDataPoints(self):
-        c = self.sensorDataPoints.cursor()
-        c.execute("DELETE  FROM sensorDataPoints")
-        self.sensorDataPoints.commit()
-
-    def deleteDataPoints(self):
-        c = self.sensorDataPoints.cursor()
-        c.execute("DROP TABLE sensorDataPoints")
-        self.sensorDataPoints.commit()
-
-    def resetDatabase(self):
-        c = self.sensorDatabase.cursor()
-        c.execute("DELETE  FROM sensorDatabase")
-        self.sensorDatabase.commit()
-
     def trimDataPoints(self):
         c = self.sensorDataPoints.cursor()
         c.execute("SELECT COUNT(*) FROM sensorDataPoints")
@@ -210,6 +230,30 @@ class SensorDataStorage:
         print('number of record in sensors database',c.fetchall()[0][0])
         return dataPoint
         
+    def tableInfo(self):
+        c = self.sensorDataPoints.cursor()
+        c.execute('PRAGMA table_info(sensorDataPoints)')
+        print(c.fetchall())
+
+    def resetDataPoints(self):
+        c = self.sensorDataPoints.cursor()
+        c.execute("DELETE  FROM sensorDataPoints")
+        self.sensorDataPoints.commit()
+
+    def deleteDataPoints(self):
+        c = self.sensorDataPoints.cursor()
+        c.execute("DROP TABLE sensorDataPoints")
+        self.sensorDataPoints.commit()
+
+    def resetDatabase(self):
+        c = self.sensorDatabase.cursor()
+        c.execute("DELETE  FROM sensorDatabase")
+        self.sensorDatabase.commit()
+
+    def resetDataCalib(self):
+        c = self.sensorDatabase.cursor()
+        c.execute("DELETE  FROM sensorDataCalib")
+        self.sensorDatabase.commit()
 
 if __name__ == '__main__':
     data1 = {
@@ -234,7 +278,18 @@ if __name__ == '__main__':
     #dataStorage.printDatabase()
     # dataStorage.resetDatabase()
     #dataStorage = SensorDataStorage()
-    dataStorage.tableInfo()
+    # dataStorage.tableInfo()
 
-    print(dataStorage.selectByDate())
+    # dataStorage.updateDataCalib("pm2_5", 34)
+    # dataStorage.updateDataCalib("pm2_5", 34)
+    # dataStorage.updateDataCalib("co", 34)
+    # dataStorage.updateDataCalib("temperature", 34)
+    #dataStorage.printDataCalib()
+    print(dataStorage.getDataCalib("pm2_5"))
+    print(dataStorage.getDataCalib("co"))
+    print(dataStorage.getDataCalib("hehe"))
+
+    
+
+    #print(dataStorage.selectByDate())
     #print(PHYSICAL_READ_TIME_INTERVAL)

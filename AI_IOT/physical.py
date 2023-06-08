@@ -181,6 +181,15 @@ class Physical:
         if feed_id == "calib":
             if payload == "1":
                 self.adjustCalibCoeff()
+            if payload == "0":
+                CalibStr = self.dataStorage.getDataCalib("pm2_5")
+                if CalibStr == -1:
+                    print("No previous calib coeff founded")
+                    if self.isDebug:
+                        self.log.info('No previous calib coeff founded')
+
+                json = '{' + CalibStr + '}'
+                self.publishCalibData(json)
 
 
     def serial_read_data(self, ser):
@@ -396,15 +405,14 @@ class Physical:
     def buildCalibStr(self, type, a, b):
         a = round(a, 4)
         b = round(b, 4)
-        Str = ''
-        Str += '"' + str(type) + '": "' + str(a) + 'x1 + (' + str(b) + ')"'
+
+        Str = '"' + str(type) + '": "' + str(a) + 'x1 + (' + str(b) + ')"'
         return Str
 
-    def buildCalibJson(self, type, a, b):
+    def buildCalibJson(self, CalibStr):
         # loop here if need to calibrate multiple sensors
-        dataStr = self.buildCalibStr(type, a, b)
         Json = '{"source": "WAQI", '
-        Json += dataStr
+        Json += CalibStr
         Json += '}'
         return Json
 
@@ -444,7 +452,10 @@ class Physical:
             y2 = exVal + 2
             # use only 1 value point to evaluate
             a, b = self.adjustLinearCalibCoeff(x1, x2, y1, y2)
-            json = self.buildCalibJson(exType, a, b)
+            CalibStr = self.buildCalibStr(exType, a, b)
+
+            self.dataStorage.updateDataCalib(exType, CalibStr)
+            json = self.buildCalibJson(CalibStr)
             self.publishCalibData(json)
             #calibrateLinearitySensor
         else:
