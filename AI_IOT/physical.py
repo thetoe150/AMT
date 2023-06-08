@@ -477,14 +477,14 @@ class Physical:
             res = dp.ARMA_forecast(arr, int(n))
 
             for i in range(n):
-                aqi, cate = AQI.AQI.calculateAQI(sensor, res[i])
-                json += str(aqi) + ', '
+                val, cate = AQI.AQI.calculateAQI(sensor, res[i])
+                if val == -1:
+                    val = round(res[i], 2)
+                json += str(val) + ', '
 
             json = json[:-2] + '], '
 
         json = json[:-2] + '}'
-
-        print('predict AQQQQQQQQQQQQI', json)
 
         self.physicalClient.publishFeed("future-info", json)
 
