@@ -22,6 +22,7 @@ def GetDebugOption():
     
     return False
 
+CAM_READ_TIME_INTERVAL = gc.CAM_READ_TIME_INTERVAL
 PHYSICAL_READ_TIME_INTERVAL = gc.PHYSICAL_READ_TIME_INTERVAL
 NUMBER_OF_DATAPOINTS = gc.NUMBER_OF_DATAPOINTS
 PHYSICAL_PUBLISH_TIME_INTERVAL = PHYSICAL_READ_TIME_INTERVAL * NUMBER_OF_DATAPOINTS + 1
@@ -29,7 +30,7 @@ PHYSICAL_PUBLISH_TIME_INTERVAL = PHYSICAL_READ_TIME_INTERVAL * NUMBER_OF_DATAPOI
 SYSTEM_COMPONENT_COUNTER = {
     # CPU bounded - often takes around 2s
     # recieve number should be > 3
-    'AI_Camera' : 600,
+    'AI_Camera' : CAM_READ_TIME_INTERVAL,
     # IO bounded - takes 1s for each of 16 total sensors
     # recieve number should be > 20
     'Physical' : PHYSICAL_READ_TIME_INTERVAL, 
@@ -94,7 +95,7 @@ class systemAMT:
                     self.isFireSensor = self.physicalSensors.setIsFireSensor()
                     self.physicalSensors.storeInstanceData()
 
-                    self.log.info('Time to read sensor: {}'.format(str(time() - start_time)))
+                    self.log.info('Time to read sensor: {} from thread {}'.format(str(time() - start_time), threading.get_ident()))
                 except Exception as ex:
                     self.log.error('Failed to read sensor: {}'.format(ex))
 
@@ -103,7 +104,7 @@ class systemAMT:
                     print("******************* Trying to publish sensors data to server *******************")
                     self.physicalSensors.getAverageData()
                     self.physicalSensors.publishData()
-                    self.log.info('Time to publish sensor data: {}'.format(str(time() - start_time)))
+                    self.log.info('Time to publish AQI: {} from thread {}'.format(str(time() - start_time), threading.get_ident()))
                 except Exception as ex:
                     self.log.error('Failed to publish sensor data: {}'.format(ex))
 
@@ -115,7 +116,7 @@ class systemAMT:
                     self.isFireCam = self.aiCamera.setIsFireCam()
                     res = GetAlertLevel(self.isFireCam, self.isFireSensor)
                     self.aiCamera.publishData(res)
-                    self.log.info('Time to read cam and detect fire: {}'.format(str(time() - start_time)))
+                    self.log.info('Time to read cam and detect fire: {} from thread {}'.format(str(time() - start_time), threading.get_ident()))
                 except Exception as ex:
                     self.log.error('Failed to read cam and detect fire: {}'.format(ex))
 

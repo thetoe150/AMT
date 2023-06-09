@@ -216,7 +216,7 @@ class AICam:
         return self.alertLevel
 
     def publishData(self, value):
-        if value == 'Medium' or value == 'High':
+        if value == 'Low' or value == 'Medium' or value == 'High':
             self.camClient.publishFeed("nj1.isfire", value)
 
         if self.isDebug:

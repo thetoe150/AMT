@@ -1,48 +1,28 @@
-2023-06-01 16:26:46,011 INFO tensor([], size=(0, 4))
-2023-06-01 16:26:46,012 INFO tensor([])
-2023-06-01 16:26:46,430 INFO reading infered cam
-2023-06-01 16:26:50,144 INFO tensor([], size=(0, 4))
-2023-06-01 16:26:50,144 INFO tensor([])
-2023-06-01 16:26:50,167 INFO reading infered cam
-2023-06-01 16:26:55,271 INFO tensor([], size=(0, 4))
-2023-06-01 16:26:55,272 INFO tensor([])
-2023-06-01 16:26:55,277 INFO reading infered cam
-2023-06-01 16:27:00,209 INFO tensor([], size=(0, 4))
-2023-06-01 16:27:00,210 INFO tensor([])
-2023-06-01 16:27:00,227 INFO reading infered cam
-2023-06-01 16:27:05,342 INFO tensor([], size=(0, 4))
-2023-06-01 16:27:05,343 INFO tensor([])
-2023-06-01 16:27:05,347 INFO reading infered cam
-2023-06-01 16:27:10,150 INFO tensor([], size=(0, 4))
-2023-06-01 16:27:10,150 INFO tensor([])
-2023-06-01 16:27:10,156 INFO reading infered cam
-2023-06-01 16:27:15,333 INFO tensor([], size=(0, 4))
-2023-06-01 16:27:15,333 INFO tensor([])
-2023-06-01 16:27:15,339 INFO reading infered cam
-2023-06-01 16:27:20,144 INFO tensor([], size=(0, 4))
-2023-06-01 16:27:20,144 INFO tensor([])
-2023-06-01 16:27:20,150 INFO reading infered cam
-2023-06-01 16:27:25,359 INFO tensor([], size=(0, 4))
-2023-06-01 16:27:25,359 INFO tensor([])
-2023-06-01 16:27:25,365 INFO reading infered cam
-2023-06-01 16:27:30,190 INFO tensor([], size=(0, 4))
-2023-06-01 16:27:30,191 INFO tensor([])
-2023-06-01 16:27:30,197 INFO reading infered cam
-2023-06-01 16:27:35,347 INFO tensor([], size=(0, 4))
-2023-06-01 16:27:35,347 INFO tensor([])
-2023-06-01 16:27:35,353 INFO reading infered cam
-2023-06-01 16:27:40,176 INFO tensor([], size=(0, 4))
-2023-06-01 16:27:40,177 INFO tensor([])
-2023-06-01 16:27:40,183 INFO reading infered cam
-2023-06-01 16:27:45,342 INFO tensor([], size=(0, 4))
-2023-06-01 16:27:45,343 INFO tensor([])
-2023-06-01 16:27:45,348 INFO reading infered cam
-2023-06-01 16:27:50,172 INFO tensor([], size=(0, 4))
-2023-06-01 16:27:50,172 INFO tensor([])
-2023-06-01 16:27:50,178 INFO reading infered cam
-2023-06-01 16:27:55,372 INFO tensor([], size=(0, 4))
-2023-06-01 16:27:55,373 INFO tensor([])
-2023-06-01 16:27:55,379 INFO reading infered cam
-2023-06-01 16:28:00,434 INFO tensor([], size=(0, 4))
-2023-06-01 16:28:00,435 INFO tensor([])
-2023-06-01 16:28:00,450 INFO reading infered cam
+2023-06-09 13:56:52,955 INFO tensor([], size=(0, 4))
+2023-06-09 13:56:52,955 INFO tensor([])
+2023-06-09 13:56:53,574 INFO reading infered cam
+2023-06-09 13:56:54,528 INFO Publishing fire level: None
+2023-06-09 13:56:56,153 INFO tensor([], size=(0, 4))
+2023-06-09 13:56:56,153 INFO tensor([])
+2023-06-09 13:56:56,175 INFO reading infered cam
+2023-06-09 13:56:56,947 INFO Publishing fire level: None
+2023-06-09 13:57:00,107 INFO tensor([], size=(0, 4))
+2023-06-09 13:57:00,107 INFO tensor([])
+2023-06-09 13:57:00,115 INFO reading infered cam
+2023-06-09 13:57:01,021 INFO Publishing fire level: None
+2023-06-09 13:57:04,112 INFO tensor([], size=(0, 4))
+2023-06-09 13:57:04,113 INFO tensor([])
+2023-06-09 13:57:04,118 INFO reading infered cam
+2023-06-09 13:57:04,587 INFO Publishing fire level: None
+2023-06-09 13:57:08,107 INFO tensor([], size=(0, 4))
+2023-06-09 13:57:08,107 INFO tensor([])
+2023-06-09 13:57:08,113 INFO reading infered cam
+2023-06-09 13:57:08,665 INFO Publishing fire level: None
+2023-06-09 13:57:12,117 INFO tensor([], size=(0, 4))
+2023-06-09 13:57:12,118 INFO tensor([])
+2023-06-09 13:57:12,124 INFO reading infered cam
+2023-06-09 13:57:12,743 INFO Publishing fire level: None
+2023-06-09 13:57:16,103 INFO tensor([], size=(0, 4))
+2023-06-09 13:57:16,104 INFO tensor([])
+2023-06-09 13:57:16,125 INFO reading infered cam
+2023-06-09 13:57:16,822 INFO Publishing fire level: None
