@@ -476,6 +476,11 @@ class Physical:
         for sensor in sensors:
             json += '"' + sensor + '": ['
             arr = self.dataStorage.getDataBase(sensor, NUMBER_FOR_PREDICTION_AQI)
+            if len(arr) < NUMBER_FOR_PREDICTION_AQI:
+                if self.isDebug:
+                    self.log.error('Low amount of data to predict future AQI')
+                print('Low amount of data to predict future AQI')
+
             res = dp.ARMA_forecast(arr, int(n))
 
             for i in range(n):

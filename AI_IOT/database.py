@@ -240,10 +240,11 @@ class SensorDataStorage:
         c.execute("DELETE  FROM sensorDataPoints")
         self.sensorDataPoints.commit()
 
-    def deleteDataPoints(self):
+    def countDatabase(self):
         c = self.sensorDataPoints.cursor()
-        c.execute("DROP TABLE sensorDataPoints")
-        self.sensorDataPoints.commit()
+        c.execute("SELECT COUNT(*) FROM sensorDataPoints")
+        # fetchall seem to always return an array of tuple
+        return c.fetchall()[0][0]
 
     def resetDatabase(self):
         c = self.sensorDatabase.cursor()
@@ -279,16 +280,16 @@ if __name__ == '__main__':
     # dataStorage.resetDatabase()
     #dataStorage = SensorDataStorage()
     # dataStorage.tableInfo()
-    dataStorage.resetDatabase()
+    print(dataStorage.countDatabase())
 
     # dataStorage.updateDataCalib("pm2_5", 34)
     # dataStorage.updateDataCalib("pm2_5", 34)
     # dataStorage.updateDataCalib("co", 34)
     # dataStorage.updateDataCalib("temperature", 34)
     #dataStorage.printDataCalib()
-    print(dataStorage.getDataCalib("pm2_5"))
-    print(dataStorage.getDataCalib("co"))
-    print(dataStorage.getDataCalib("hehe"))
+    # print(dataStorage.getDataCalib("pm2_5"))
+    # print(dataStorage.getDataCalib("co"))
+    # print(dataStorage.getDataCalib("hehe"))
 
     
 

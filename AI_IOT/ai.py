@@ -217,7 +217,7 @@ class AICam:
             self.camClient.publishFeed("nj1.isfire", value)
 
         if self.isDebug:
-            self.log('Publishing fire level: {}'.format(value))
+            self.log.info('Publishing fire level: {}'.format(value))
 
 if __name__ == '__main__':
     fireDetector = AICam(True)
