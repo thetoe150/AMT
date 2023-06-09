@@ -47,9 +47,7 @@ class Client:
         self.client.loop_background()
 
     def publishFeed(self, feedName, data):
-        print('Publishing json: ')
         self.client.publish(feedName, data)
-        print(feedName)
         print(data)
 
     def receiveFeed(self, feedName):

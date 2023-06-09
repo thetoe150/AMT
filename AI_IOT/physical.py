@@ -149,7 +149,7 @@ class Physical:
         fullPortsName = serial.tools.list_ports.comports()
         self.portsLength = len(fullPortsName)
         commPort = []
-        print('\n ---------Check for existing ports---------')
+        print('\n ---------Check for existing sensors ports---------\n')
         if self.portsLength == 0:
             print('Detect no port')
             if self.isDebug:
@@ -227,6 +227,7 @@ class Physical:
         return value * sensors_calibrate[sensor_name]
 
     def readSensors(self):
+        print('\n ---------Start reading sensors---------\n')
         # check input serial ports every reading cycle
         #self.ports = self.getPortName()
 
@@ -235,8 +236,7 @@ class Physical:
             read_port = self.ports[port_idx]
             ser = serial.Serial(port = read_port, baudrate=9600) 
 
-            if self.isDebug:
-                self.log.info("--------Reading sensors of Port number {} ----------".format(read_port))
+            print("\n--------Reading sensors of Port number {} ---------- \n".format(read_port))
 
             # loop through all sensors of the detected port
             for sensor in sensors:
@@ -274,12 +274,14 @@ class Physical:
         self.printData()
 
     def publishInvalidSensor(self, sensor, failure):
+        print('\n ---------Publish Invalid Sensor---------\n')
         json = '{'
         json += 'sensor: ' + str(sensor) + ', MAPE: ' + str(failure) + '}'
 
         self.physicalClient.publishFeed("invalid-sensor", json)
         
     def validateData(self):
+        print('\n ---------Validate sensors data---------\n')
         for sensor in self.sensorsData:
             sensorCount = len(self.sensorsData[sensor])
             if  sensorCount >= 1:
@@ -304,8 +306,10 @@ class Physical:
                             self.sensorsData[sensor][0] = -1
 
                             self.publishInvalidSensor(sensor, failure_per)
+
                             if self.isDebug:
                                 self.log.warning('Sensor {} give unsual data'.format(sensor))
+                            print('Sensor {} give unsual data'.format(sensor))
 
                             continue
 
@@ -314,6 +318,8 @@ class Physical:
 
                 if predictVal == -1 and self.isDebug:
                     self.log.info('Not enough data read recently for using ARMA with sensor: {}'.format(sensor))
+
+                    print('Not enough data read recently for using ARMA with sensor: {}'.format(sensor))
 
                 for value in self.sensorsData[sensor]:
                     sum += value
@@ -343,10 +349,12 @@ class Physical:
 
 
     def storeInstanceData(self):
+        print('\n ---------Store sensors data point to database---------\n')
         self.dataStorage.addDataPoints(self.sensorsData)
         self.resetsensorsData()
 
     def getAverageData(self):
+        print('\n ---------Get average sensors data from database---------\n')
         self.sensorsData = self.dataStorage.dumpDataPoints()
 
     def buildJson(self):
@@ -388,6 +396,8 @@ class Physical:
 
     def publishData(self):
         json = self.buildJson()
+        print('\n ---------Publish air quality---------\n')
+
         if json != '':
             self.physicalClient.publishFeed("nj1.jdata", json)
 
@@ -395,6 +405,7 @@ class Physical:
 
     ########## get external data source functionality #########
     def getExternData(self):
+        print('\n ---------Get AQI from external server---------\n')
         aqi_json = AQI.AQI.getJsonFromWAQI()
         aqi_dict = json.loads(aqi_json)
 
@@ -423,6 +434,7 @@ class Physical:
         return Json
 
     def publishCalibData(self, json):
+        print('\n ---------Publish calibrate info---------\n')
         if json != '':
             self.physicalClient.publishFeed("calib-info", json)
 
@@ -462,6 +474,7 @@ class Physical:
 
             self.dataStorage.updateDataCalib(exType, CalibStr)
             json = self.buildCalibJson(CalibStr)
+
             self.publishCalibData(json)
             #calibrateLinearitySensor
         else:
@@ -471,6 +484,7 @@ class Physical:
 
     ########## Predict sensors data functionality #########
     def predictAQI(self, num_predict):
+        print('\n ---------Use ARMA to predict AQI---------\n')
         n = int(num_predict)
         json = '{'
         for sensor in sensors:
@@ -493,10 +507,12 @@ class Physical:
 
         json = json[:-2] + '}'
 
+        print('\n ---------Publish future air quality---------\n')
         self.physicalClient.publishFeed("future-info", json)
 
 
     def predictDataPoint(self, category):
+        print('\n ---------Use ARMA to predict {} data point---------\n'.format(category))
         arr = self.dataStorage.getDataPoints(category)
         if len(arr) < NUMBER_FOR_PREDICTION_DATA:
             return -1
@@ -505,7 +521,7 @@ class Physical:
 
     def simulateReadSensors(self):
         for sensor in sensors:
-            self.sensorsData[sensor] = np.random.randint(0, 1, size= 2)
+            self.sensorsData[sensor] = np.random.randint(28, 36, size= 2)
         print('self.sensorsData[sensor]: ', self.sensorsData[sensor])
 
 if __name__ == '__main__':

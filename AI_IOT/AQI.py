@@ -115,7 +115,6 @@ class AQI:
             payload["format"] = "application/json"
             payload["API_KEY"] = airnow_api_key
 
-            print(type)
             response = requests.get(requestUrl, params=payload, headers={'Cache-Control': 'no-cache'})
 
             # if response.history:
@@ -183,7 +182,6 @@ class AQI:
             payload = {}
             payload["token"] = waqi_api_token
 
-            print(type)
             response = requests.get(requestUrl, params=payload, headers={'Cache-Control': 'no-cache'})
 
             if response.history:
@@ -197,6 +195,8 @@ class AQI:
 
             data = json.loads(response.text)
             pretty = json.dumps(data, indent=4)
+
+            print(pretty)
 
             return pretty
     

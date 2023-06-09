@@ -53,6 +53,7 @@ class AICam:
         """
         Test the ports and returns a tuple with the available ports and the ones that are working.
         """
+        print('\n ---------Check for existing camera ports---------\n')
         non_working_ports = []
         dev_port = 0
 
@@ -73,6 +74,7 @@ class AICam:
             dev_port += 1
     
     def initCams(self):
+        print('\n ---------Initialize RGB camera connection---------\n')
         if self.camPorts.__len__() != 0:
             for cam in self.camPorts:
                 self.camCaps.append(cv2.VideoCapture(cam))
@@ -82,6 +84,7 @@ class AICam:
             #vid = cv2.VideoCapture('http://192.168.50.116:8080/video')
             
     def readCams(self):
+        print('\n ---------Reading RGB camera---------\n')
         # WARNING: using for loop to iterate through the list of camture objects
                 # significantly reduce speed
 
@@ -151,11 +154,10 @@ class AICam:
             self.isFireAI = False
 
     def initInferedCam(self):
-        print("Initializing MLX90640")
+        print('\n ---------Initialize inferred camera connection---------\n')
         self.i2c = busio.I2C(board.SCL, board.SDA, frequency=800000) # setup I2C
         self.mlx = adafruit_mlx90640.MLX90640(self.i2c) # begin MLX90640 with I2C comm
         self.mlx.refresh_rate = adafruit_mlx90640.RefreshRate.REFRESH_2_HZ # set refresh rate
-        print("Initialized")
     
     def initInferedImage(self):
         # setup the figure for plotting
@@ -166,6 +168,7 @@ class AICam:
         self.cbar.set_label('Temperature [$^{\circ}$C]',fontsize=14) # colorbar label
 
     def readInferedCam(self):
+        print('\n ---------Reading Inferred camera---------\n')
         if self.isDebug:
             self.log.info("reading infered cam")
         frame = np.zeros((24*32,)) # setup array for storing all 768 temperatures
@@ -217,6 +220,7 @@ class AICam:
 
     def publishData(self, value):
         if value == 'Low' or value == 'Medium' or value == 'High':
+            print('\n ---------Publish Fire warning---------\n')
             self.camClient.publishFeed("nj1.isfire", value)
 
         if self.isDebug:
@@ -225,8 +229,8 @@ class AICam:
 if __name__ == '__main__':
     fireDetector = AICam(True)
     while True:
-        #fireDetector.readCams()
-        fireDetector.readInferedCam()
+        fireDetector.readCams()
+        # fireDetector.readInferedCam()
 
         #fireDetector.integrateResult()
         #fireDetector.setGlobalDetectVal()

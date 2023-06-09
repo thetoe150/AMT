@@ -108,8 +108,6 @@ class SensorDataStorage:
                 if sensor not in self.sensorType:
                     self.sensorType.append(sensor)
 
-                print('inside addd Data POint', value)
-
                 c.execute("INSERT INTO sensorDataPoints \
                         VALUES (:category, :concentration, :date)", 
                           {'category': sensor, 'concentration': float(value), 'date': date})
@@ -118,14 +116,14 @@ class SensorDataStorage:
             print(e)
             self.sensorDataPoints.rollback()
 
-        self.printDataPoint()
+        # self.printDataPoint()
         self.sensorDataPoints.commit()
 
     def dumpDataPoints(self):
 
         now = datetime.now()
         date = now.strftime('%Y-%m-%d %H:%M:%S')
-        print(date)
+        # print(date)
 
         res = {}
         # retrive data for each type of sensor from the memory database
@@ -144,11 +142,11 @@ class SensorDataStorage:
                     continue
                 # loop through data in form of python tuple of each sensors
                 for data in dataPoint:
-                    print(data[1])
+                    # print(data[1])
                     store_data += data[1]  # concentration is at the 2th posion of the tuple
 
-                print("length of data point = ", data_length)
-                print("data Point of {}: {}".format(sensor, dataPoint))
+                # print("length of data point = ", data_length)
+                # print("data Point of {}: {}".format(sensor, dataPoint))
                 # average value
                 store_data /= data_length
                 # return res containing hourly average for calculating AQI

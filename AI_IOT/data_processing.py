@@ -1,6 +1,11 @@
 import statsmodels.api as sm
 import numpy as np
 
+import warnings
+from statsmodels.tools.sm_exceptions import ConvergenceWarning
+warnings.simplefilter('ignore', ConvergenceWarning)
+warnings.simplefilter('ignore', category=UserWarning)
+
 # K is a scale factor which assumes normally distributed data.
 K = 1.4826 
     
@@ -28,7 +33,8 @@ def ARMA_forecast(arr, predictNum=1):
     results = model.fit()
 
     # Print the model summary
-    #print(results.summary())
+    print(results.summary())
+
     # constant_term + AR(1)*y(t-1) + ... + AR(p)*y(t-p) + MA(1)*e(t-1) + ... + MA(q)*e(t-q) + e(t)constconstant_term + AR(1)*y(t-1) + ... + AR(p)*y(t-p) + MA(1)*e(t-1) + ... + MA(q)*e(t-q) + e(t)
     #print(results.params)
     #print(results.arparams)
