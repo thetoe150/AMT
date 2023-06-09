@@ -279,6 +279,7 @@ if __name__ == '__main__':
     # dataStorage.resetDatabase()
     #dataStorage = SensorDataStorage()
     # dataStorage.tableInfo()
+    dataStorage.resetDatabase()
 
     # dataStorage.updateDataCalib("pm2_5", 34)
     # dataStorage.updateDataCalib("pm2_5", 34)

@@ -1,4 +1,4 @@
-PHYSICAL_READ_TIME_INTERVAL = 10 
+PHYSICAL_READ_TIME_INTERVAL = 5
 NUMBER_OF_DATAPOINTS = 6
 
 #NUMBER_OF_PREDICTION_DATA should be > NUMBER_OF_DATAPOINTS
@@ -13,10 +13,10 @@ TEM_THRESHOLD = 60
 VALIDATING_THRESHOLD = {
     "temperature" : 25,
     "humidity" : 25,
-    "co" : 25,
-    "co2": 25,
-    "so2": 25,
-    "no2": 25,
-    "pm2_5": 25,
-    "pm10": 25 
+    "co" : 5,
+    "co2": 5,
+    "so2": 5,
+    "no2": 5,
+    "pm2_5": 5,
+    "pm10": 5 
 }
