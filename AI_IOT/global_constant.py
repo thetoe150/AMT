@@ -11,12 +11,12 @@ CO_THRESHOLD = 60
 TEM_THRESHOLD = 60
 
 VALIDATING_THRESHOLD = {
-    "temperature" : 5,
-    "humidity" : 10,
-    "co" : 5,
-    "co2": 15,
-    "so2": 5,
-    "no2": 5,
-    "pm2_5": 10,
-    "pm10":  10
+    "temperature" : 25,
+    "humidity" : 25,
+    "co" : 25,
+    "co2": 25,
+    "so2": 25,
+    "no2": 25,
+    "pm2_5": 25,
+    "pm10": 25 
 }

@@ -81,12 +81,13 @@ def GetSimulateOption():
             return True
     return False
 
-
 CO_THRESHOLD = gc.CO_THRESHOLD
 TEM_THRESHOLD = gc.TEM_THRESHOLD
+VALIDATING_THRESHOLD = gc.VALIDATING_THRESHOLD
+
+NUMBER_OF_DATAPOINTS = gc.NUMBER_OF_DATAPOINTS
 NUMBER_FOR_PREDICTION_DATA = gc.NUMBER_FOR_PREDICTION_DATA
 NUMBER_FOR_PREDICTION_AQI = gc.NUMBER_FOR_PREDICTION_AQI
-VALIDATING_THRESHOLD = gc.VALIDATING_THRESHOLD
 # The name of OS on window isn't Windows
 #OS = platform.system
 #if OS == "Windows":
@@ -499,7 +500,7 @@ class Physical:
 
     def simulateReadSensors(self):
         for sensor in sensors:
-            self.sensorsData[sensor] = np.random.randint(26, 35, size= 1)
+            self.sensorsData[sensor] = np.random.randint(0, 1, size= 2)
         print('self.sensorsData[sensor]: ', self.sensorsData[sensor])
 
 if __name__ == '__main__':
@@ -509,17 +510,19 @@ if __name__ == '__main__':
         # these 4 physical method have to be called in the following order
         # because they operate on the same data member self.sensorsData
 
-        if isSimulate:
-           physical.simulateReadSensors()
-        else:
-            physical.readSensors()
+        for i in range(NUMBER_OF_DATAPOINTS):
+            if isSimulate:
+               physical.simulateReadSensors()
+            else:
+                physical.readSensors()
 
-        #print('sensorsData after reading: ',physical.sensorsData)
+            #print('sensorsData after reading: ',physical.sensorsData)
 
-        physical.validateData()
-        # print('sensorsData after validating: ',physical.sensorsData)
-        # # store 1 instace of data point
-        physical.storeInstanceData()
+            physical.validateData()
+            # print('sensorsData after validating: ',physical.sensorsData)
+            # # store 1 instace of data point
+            physical.storeInstanceData()
+
         # print('sensorsData after storing: ',physical.sensorsData)
         physical.getAverageData()
         physical.publishData()
@@ -529,6 +532,6 @@ if __name__ == '__main__':
         # print(physical.getExternData())
 
         #print(physical.publishCalibData())
-        time.sleep(3)
+        time.sleep(5)
 
 
