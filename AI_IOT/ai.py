@@ -166,7 +166,8 @@ class AICam:
         self.cbar.set_label('Temperature [$^{\circ}$C]',fontsize=14) # colorbar label
 
     def readInferedCam(self):
-        self.log.info("reading infered cam")
+        if self.isDebug:
+            self.log.info("reading infered cam")
         frame = np.zeros((24*32,)) # setup array for storing all 768 temperatures
         # t_array = []
             # t1 = time.monotonic()
@@ -196,7 +197,9 @@ class AICam:
             # t_array.append(time.monotonic()-t1)
             # print('Sample Rate: {0:2.1f}fps'.format(len(t_array)/np.sum(t_array)))
         except ValueError:
-            self.log.error('Error reading isFireThermal camera')
+            if self.isDebug:
+                self.log.error('Error reading isFireThermal camera')
+            print('Error reading isFireThermal camera')
     
     def integrateResult(self):
         if not self.isFireThermal and not self.isFireAI:
