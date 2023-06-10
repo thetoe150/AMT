@@ -93,6 +93,7 @@ class systemAMT:
                     self.physicalSensors.readSensors()
                     self.physicalSensors.validateData()
                     self.isFireSensor = self.physicalSensors.setIsFireSensor()
+                    print('Sensor detect fire: {}'.format(self.isFireSensor))
                     self.physicalSensors.storeInstanceData()
 
                     self.log.info('Time to read sensor: {} from thread {}'.format(str(time() - start_time), threading.get_ident()))
@@ -114,7 +115,9 @@ class systemAMT:
                     self.aiCamera.readCams()
                     self.aiCamera.readInferedCam()
                     self.isFireCam = self.aiCamera.setIsFireCam()
+                    print('Camera detect fire: {}'.format(self.isFireCam))
                     res = GetAlertLevel(self.isFireCam, self.isFireSensor)
+                    print('Level of fire warning: {}'.format(res))
                     self.aiCamera.publishData(res)
                     self.log.info('Time to read cam and detect fire: {} from thread {}'.format(str(time() - start_time), threading.get_ident()))
                 except Exception as ex:
