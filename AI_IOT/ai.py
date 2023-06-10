@@ -150,6 +150,7 @@ class AICam:
                 self.log.info('Normal cam detect fire !')
 
             self.isFireAI = True
+            print('RGB camera detect fire!')
         else:
             self.isFireAI = False
 
@@ -188,9 +189,12 @@ class AICam:
 #             fire_count = np.sum(data_array > FIRE_THRESHOLD) # count the number of pixels above the fire threshold
             max_temp = np.max(data_array)
             if (max_temp >= 50): # if more than half of the pixels exceed the threshold
+
                 self.isFireThermal = True
+                print('Infered camera detect fire!')
                 if self.isDebug:
                     self.log.info('Infered cam detect fire!')
+
             else:
                 self.isFireThermal = False
 

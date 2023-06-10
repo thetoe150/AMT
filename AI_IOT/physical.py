@@ -288,11 +288,13 @@ class Physical:
                 sum = 0
                 #predict value using arma, we only predict 1 value
                 # it's the first ele of the array
-                predictVal = self.predictDataPoint(sensor)
+                predictVal = None
+                if sensor == 'pm2_5':
+                    predictVal = self.predictDataPoint(sensor)
 
                 # ARMA may fail and return NoneObject
                 if predictVal is not None and predictVal != -1 \
-                        and round(predictVal, 0) != 0:
+                        and round(predictVal, 0) != 0 and sensor == 'pm2_5':
                     failure_per = dp.MAPE_detect(self.sensorsData[sensor], predictVal)
                     failure_per = round(failure_per, 4)
 
