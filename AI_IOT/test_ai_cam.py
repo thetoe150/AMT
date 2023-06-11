@@ -3,7 +3,7 @@ import torch
 from time import time, sleep
 
 
-model = torch.hub.load('ultralytics/yolov5', 'custom', 'best.pt')
+model = torch.hub.load('ultralytics/yolov5', 'custom', 'best2.pt')
 
 dev_port = 0
 non_working_ports = []

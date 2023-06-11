@@ -25,7 +25,7 @@ class AICam:
         self.alertLevel = "Low"
         ######## Set up AI model ########
 
-        self.model = torch.hub.load('ultralytics/yolov5', 'custom', 'best.pt')
+        self.model = torch.hub.load('ultralytics/yolov5', 'custom', 'best2.pt')
         ######## Set up ports and camera Capture instance for normal camera ########
         self.camPorts = []
         self.getPorts()
@@ -236,4 +236,4 @@ if __name__ == '__main__':
         fireDetector.readCams()
         fireDetector.readInferedCam()
         fireDetector.integrateResult()
-        fireDetector.publishData(self.alertLevel)
+        fireDetector.publishData(fireDetector.alertLevel)
