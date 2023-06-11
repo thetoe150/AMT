@@ -147,10 +147,10 @@ class AICam:
         if result.__contains__("fire"):
 
             if self.isDebug:
-                self.log.info('Normal cam detect fire !')
+                self.log.info('Normal cam detect fire !!!!')
 
             self.isFireAI = True
-            print('RGB camera detect fire!')
+            print('RGB camera detect fire!!!!')
         else:
             self.isFireAI = False
 
@@ -191,9 +191,9 @@ class AICam:
             if (max_temp >= 50): # if more than half of the pixels exceed the threshold
 
                 self.isFireThermal = True
-                print('Infered camera detect fire!')
+                print('Infered camera detect fire!!!!')
                 if self.isDebug:
-                    self.log.info('Infered cam detect fire!')
+                    self.log.info('Infered cam detect fire!!!!')
 
             else:
                 self.isFireThermal = False
