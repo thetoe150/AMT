@@ -348,7 +348,7 @@ class Physical:
     def publishInvalidSensor(self, sensor, failure):
         print('\n ---------Publish Invalid Sensor---------\n')
         json = '{'
-        json += 'sensor: ' + str(sensor) + ', MAPE: ' + str(failure) + '}'
+        json += '"sensor": ' + str(sensor) + ', "MAPE": ' + str(failure) + '}'
 
         self.physicalClient.publishFeed("invalid-sensor", json)
         

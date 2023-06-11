@@ -244,4 +244,4 @@ if __name__ == '__main__':
     #print(AQI.getJsonFromWAQI())
 
 
-    print(AQI.reverseAQI('pm2_5', 48))
+    print(AQI.reverseAQI('pm2_5', 57))

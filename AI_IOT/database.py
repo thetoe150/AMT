@@ -254,6 +254,19 @@ class SensorDataStorage:
         c.execute("DELETE  FROM sensorDataCalib")
         self.sensorDatabase.commit()
 
+    def getDatabaseByDay(self, date):
+        c = self.sensorDatabase.cursor()
+        c.execute("SELECT * FROM sensorDatabase \
+         WHERE date LIKE :date",\
+         {'date' : '%' + date + '%'})
+        res = []
+        data = c.fetchall()
+        for item in data:
+            res.append(item[1])
+
+        return res
+
+
 if __name__ == '__main__':
     data1 = {
         'CO2' : [105],
@@ -278,6 +291,7 @@ if __name__ == '__main__':
     # dataStorage.resetDatabase()
     #dataStorage = SensorDataStorage()
     # dataStorage.tableInfo()
+    print(dataStorage.getDatabaseByDay("2023-06-11"))
     print(dataStorage.printDataCalib())
 
     # dataStorage.updateDataCalib("pm2_5", 34)

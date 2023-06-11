@@ -1,68 +1,139 @@
-2023-06-11 23:21:58,488 WARNING Detect no port
-2023-06-11 23:21:59,528 INFO ARMA complaint data dont regress with sensor: humidity
-2023-06-11 23:21:59,528 INFO ARMA complaint data dont regress with sensor: pm10
-2023-06-11 23:21:59,528 INFO ARMA complaint data dont regress with sensor: temperature
-2023-06-11 23:21:59,528 INFO ARMA complaint data dont regress with sensor: so2
-2023-06-11 23:21:59,528 INFO ARMA complaint data dont regress with sensor: no2
-2023-06-11 23:21:59,528 INFO ARMA complaint data dont regress with sensor: co
-2023-06-11 23:21:59,528 INFO ARMA complaint data dont regress with sensor: co2
-2023-06-11 23:21:59,528 INFO Not enough data read recently for using ARMA with sensor: pm2_5
-2023-06-11 23:21:59,528 INFO ARMA complaint data dont regress with sensor: humidity
-2023-06-11 23:21:59,528 INFO ARMA complaint data dont regress with sensor: pm10
-2023-06-11 23:21:59,528 INFO ARMA complaint data dont regress with sensor: temperature
-2023-06-11 23:21:59,528 INFO ARMA complaint data dont regress with sensor: so2
-2023-06-11 23:21:59,528 INFO ARMA complaint data dont regress with sensor: no2
-2023-06-11 23:21:59,528 INFO ARMA complaint data dont regress with sensor: co
-2023-06-11 23:21:59,528 INFO ARMA complaint data dont regress with sensor: co2
-2023-06-11 23:21:59,528 INFO Not enough data read recently for using ARMA with sensor: pm2_5
-2023-06-11 23:21:59,528 INFO ARMA complaint data dont regress with sensor: humidity
-2023-06-11 23:21:59,528 INFO ARMA complaint data dont regress with sensor: pm10
-2023-06-11 23:21:59,528 INFO ARMA complaint data dont regress with sensor: temperature
-2023-06-11 23:21:59,528 INFO ARMA complaint data dont regress with sensor: so2
-2023-06-11 23:21:59,528 INFO ARMA complaint data dont regress with sensor: no2
-2023-06-11 23:21:59,528 INFO ARMA complaint data dont regress with sensor: co
-2023-06-11 23:21:59,528 INFO ARMA complaint data dont regress with sensor: co2
-2023-06-11 23:21:59,528 INFO Not enough data read recently for using ARMA with sensor: pm2_5
-2023-06-11 23:21:59,543 INFO ARMA complaint data dont regress with sensor: humidity
-2023-06-11 23:21:59,543 INFO ARMA complaint data dont regress with sensor: pm10
-2023-06-11 23:21:59,543 INFO ARMA complaint data dont regress with sensor: temperature
-2023-06-11 23:21:59,543 INFO ARMA complaint data dont regress with sensor: so2
-2023-06-11 23:21:59,543 INFO ARMA complaint data dont regress with sensor: no2
-2023-06-11 23:21:59,543 INFO ARMA complaint data dont regress with sensor: co
-2023-06-11 23:21:59,543 INFO ARMA complaint data dont regress with sensor: co2
-2023-06-11 23:21:59,543 INFO Not enough data read recently for using ARMA with sensor: pm2_5
-2023-06-11 23:21:59,543 INFO ARMA complaint data dont regress with sensor: humidity
-2023-06-11 23:21:59,543 INFO ARMA complaint data dont regress with sensor: pm10
-2023-06-11 23:21:59,543 INFO ARMA complaint data dont regress with sensor: temperature
-2023-06-11 23:21:59,543 INFO ARMA complaint data dont regress with sensor: so2
-2023-06-11 23:21:59,543 INFO ARMA complaint data dont regress with sensor: no2
-2023-06-11 23:21:59,543 INFO ARMA complaint data dont regress with sensor: co
-2023-06-11 23:21:59,543 INFO ARMA complaint data dont regress with sensor: co2
-2023-06-11 23:21:59,543 INFO Not enough data read recently for using ARMA with sensor: pm2_5
-2023-06-11 23:21:59,543 INFO ARMA complaint data dont regress with sensor: humidity
-2023-06-11 23:21:59,543 INFO ARMA complaint data dont regress with sensor: pm10
-2023-06-11 23:21:59,543 INFO ARMA complaint data dont regress with sensor: temperature
-2023-06-11 23:21:59,543 INFO ARMA complaint data dont regress with sensor: so2
-2023-06-11 23:21:59,543 INFO ARMA complaint data dont regress with sensor: no2
-2023-06-11 23:21:59,543 INFO ARMA complaint data dont regress with sensor: co
-2023-06-11 23:21:59,543 INFO ARMA complaint data dont regress with sensor: co2
-2023-06-11 23:21:59,543 INFO Not enough data read recently for using ARMA with sensor: pm2_5
-2023-06-11 23:21:59,746 INFO {
-    "humidity": {
-        "value": 31.67
+2023-06-12 01:25:30,292 WARNING Detect no port
+2023-06-12 01:25:31,475 INFO ARMA complaint data dont regress with sensor: temperature
+2023-06-12 01:25:31,475 INFO ARMA complaint data dont regress with sensor: no2
+2023-06-12 01:25:31,475 INFO ARMA complaint data dont regress with sensor: co
+2023-06-12 01:25:31,475 INFO ARMA complaint data dont regress with sensor: humidity
+2023-06-12 01:25:31,475 INFO ARMA complaint data dont regress with sensor: pm10
+2023-06-12 01:25:31,475 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-12 01:25:31,475 INFO ARMA complaint data dont regress with sensor: co2
+2023-06-12 01:25:31,476 INFO ARMA complaint data dont regress with sensor: so2
+2023-06-12 01:25:31,477 INFO ARMA complaint data dont regress with sensor: temperature
+2023-06-12 01:25:31,477 INFO ARMA complaint data dont regress with sensor: no2
+2023-06-12 01:25:31,477 INFO ARMA complaint data dont regress with sensor: co
+2023-06-12 01:25:31,477 INFO ARMA complaint data dont regress with sensor: humidity
+2023-06-12 01:25:31,477 INFO ARMA complaint data dont regress with sensor: pm10
+2023-06-12 01:25:31,478 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-12 01:25:31,478 INFO ARMA complaint data dont regress with sensor: co2
+2023-06-12 01:25:31,478 INFO ARMA complaint data dont regress with sensor: so2
+2023-06-12 01:25:31,479 INFO ARMA complaint data dont regress with sensor: temperature
+2023-06-12 01:25:31,479 INFO ARMA complaint data dont regress with sensor: no2
+2023-06-12 01:25:31,479 INFO ARMA complaint data dont regress with sensor: co
+2023-06-12 01:25:31,479 INFO ARMA complaint data dont regress with sensor: humidity
+2023-06-12 01:25:31,479 INFO ARMA complaint data dont regress with sensor: pm10
+2023-06-12 01:25:31,479 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-12 01:25:31,479 INFO ARMA complaint data dont regress with sensor: co2
+2023-06-12 01:25:31,479 INFO ARMA complaint data dont regress with sensor: so2
+2023-06-12 01:25:31,480 INFO ARMA complaint data dont regress with sensor: temperature
+2023-06-12 01:25:31,481 INFO ARMA complaint data dont regress with sensor: no2
+2023-06-12 01:25:31,481 INFO ARMA complaint data dont regress with sensor: co
+2023-06-12 01:25:31,481 INFO ARMA complaint data dont regress with sensor: humidity
+2023-06-12 01:25:31,481 INFO ARMA complaint data dont regress with sensor: pm10
+2023-06-12 01:25:31,481 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-12 01:25:31,482 INFO ARMA complaint data dont regress with sensor: co2
+2023-06-12 01:25:31,482 INFO ARMA complaint data dont regress with sensor: so2
+2023-06-12 01:25:31,483 INFO ARMA complaint data dont regress with sensor: temperature
+2023-06-12 01:25:31,483 INFO ARMA complaint data dont regress with sensor: no2
+2023-06-12 01:25:31,483 INFO ARMA complaint data dont regress with sensor: co
+2023-06-12 01:25:31,483 INFO ARMA complaint data dont regress with sensor: humidity
+2023-06-12 01:25:31,483 INFO ARMA complaint data dont regress with sensor: pm10
+2023-06-12 01:25:31,483 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-12 01:25:31,483 INFO ARMA complaint data dont regress with sensor: co2
+2023-06-12 01:25:31,483 INFO ARMA complaint data dont regress with sensor: so2
+2023-06-12 01:25:31,484 INFO ARMA complaint data dont regress with sensor: temperature
+2023-06-12 01:25:31,484 INFO ARMA complaint data dont regress with sensor: no2
+2023-06-12 01:25:31,484 INFO ARMA complaint data dont regress with sensor: co
+2023-06-12 01:25:31,484 INFO ARMA complaint data dont regress with sensor: humidity
+2023-06-12 01:25:31,484 INFO ARMA complaint data dont regress with sensor: pm10
+2023-06-12 01:25:31,484 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-12 01:25:31,485 INFO ARMA complaint data dont regress with sensor: co2
+2023-06-12 01:25:31,485 INFO ARMA complaint data dont regress with sensor: so2
+2023-06-12 01:25:31,619 INFO {
+    "temperature": {
+        "value": 30.0
     },
-    "pm10": {
-        "value": 31.0,
-        "AQI": 29,
+    "no2": {
+        "value": 32.0,
+        "AQI": 30,
         "quality": "Good"
     },
-    "temperature": {
-        "value": 32.0
+    "co": {
+        "value": 32.0,
+        "AQI": 316,
+        "quality": "Hazadous"
+    },
+    "humidity": {
+        "value": 30.67
+    },
+    "pm10": {
+        "value": 32.0,
+        "AQI": 30,
+        "quality": "Good"
+    },
+    "pm2_5": {
+        "value": 32.8,
+        "AQI": 95,
+        "quality": "Moderate"
+    },
+    "co2": {
+        "value": 31.0
     },
     "so2": {
         "value": 32.0,
         "AQI": 45,
         "quality": "Good"
+    }
+}
+2023-06-12 01:25:36,622 INFO ARMA complaint data dont regress with sensor: temperature
+2023-06-12 01:25:36,622 INFO ARMA complaint data dont regress with sensor: no2
+2023-06-12 01:25:36,622 INFO ARMA complaint data dont regress with sensor: co
+2023-06-12 01:25:36,622 INFO ARMA complaint data dont regress with sensor: humidity
+2023-06-12 01:25:36,622 INFO ARMA complaint data dont regress with sensor: pm10
+2023-06-12 01:25:36,622 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-12 01:25:36,622 INFO ARMA complaint data dont regress with sensor: co2
+2023-06-12 01:25:36,622 INFO ARMA complaint data dont regress with sensor: so2
+2023-06-12 01:25:36,623 INFO ARMA complaint data dont regress with sensor: temperature
+2023-06-12 01:25:36,623 INFO ARMA complaint data dont regress with sensor: no2
+2023-06-12 01:25:36,623 INFO ARMA complaint data dont regress with sensor: co
+2023-06-12 01:25:36,623 INFO ARMA complaint data dont regress with sensor: humidity
+2023-06-12 01:25:36,623 INFO ARMA complaint data dont regress with sensor: pm10
+2023-06-12 01:25:36,624 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-12 01:25:36,624 INFO ARMA complaint data dont regress with sensor: co2
+2023-06-12 01:25:36,624 INFO ARMA complaint data dont regress with sensor: so2
+2023-06-12 01:25:36,625 INFO ARMA complaint data dont regress with sensor: temperature
+2023-06-12 01:25:36,625 INFO ARMA complaint data dont regress with sensor: no2
+2023-06-12 01:25:36,625 INFO ARMA complaint data dont regress with sensor: co
+2023-06-12 01:25:36,625 INFO ARMA complaint data dont regress with sensor: humidity
+2023-06-12 01:25:36,625 INFO ARMA complaint data dont regress with sensor: pm10
+2023-06-12 01:25:36,625 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-12 01:25:36,626 INFO ARMA complaint data dont regress with sensor: co2
+2023-06-12 01:25:36,626 INFO ARMA complaint data dont regress with sensor: so2
+2023-06-12 01:25:36,627 INFO ARMA complaint data dont regress with sensor: temperature
+2023-06-12 01:25:36,627 INFO ARMA complaint data dont regress with sensor: no2
+2023-06-12 01:25:36,627 INFO ARMA complaint data dont regress with sensor: co
+2023-06-12 01:25:36,627 INFO ARMA complaint data dont regress with sensor: humidity
+2023-06-12 01:25:36,627 INFO ARMA complaint data dont regress with sensor: pm10
+2023-06-12 01:25:36,627 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-12 01:25:36,627 INFO ARMA complaint data dont regress with sensor: co2
+2023-06-12 01:25:36,627 INFO ARMA complaint data dont regress with sensor: so2
+2023-06-12 01:25:36,628 INFO ARMA complaint data dont regress with sensor: temperature
+2023-06-12 01:25:36,628 INFO ARMA complaint data dont regress with sensor: no2
+2023-06-12 01:25:36,628 INFO ARMA complaint data dont regress with sensor: co
+2023-06-12 01:25:36,628 INFO ARMA complaint data dont regress with sensor: humidity
+2023-06-12 01:25:36,628 INFO ARMA complaint data dont regress with sensor: pm10
+2023-06-12 01:25:36,970 DEBUG Sensor: pm2_5, data read from sensors: [32 30], MAPE rate of inaccuracy: 6.994, predict value: 33.13363853506104
+2023-06-12 01:25:36,970 INFO ARMA complaint data dont regress with sensor: co2
+2023-06-12 01:25:36,970 INFO ARMA complaint data dont regress with sensor: so2
+2023-06-12 01:25:36,971 INFO ARMA complaint data dont regress with sensor: temperature
+2023-06-12 01:25:36,971 INFO ARMA complaint data dont regress with sensor: no2
+2023-06-12 01:25:36,971 INFO ARMA complaint data dont regress with sensor: co
+2023-06-12 01:25:36,971 INFO ARMA complaint data dont regress with sensor: humidity
+2023-06-12 01:25:36,971 INFO ARMA complaint data dont regress with sensor: pm10
+2023-06-12 01:25:37,244 DEBUG Sensor: pm2_5, data read from sensors: [32 31], MAPE rate of inaccuracy: 1.5824, predict value: 31.395408853819884
+2023-06-12 01:25:37,244 INFO ARMA complaint data dont regress with sensor: co2
+2023-06-12 01:25:37,244 INFO ARMA complaint data dont regress with sensor: so2
+2023-06-12 01:25:37,476 INFO {
+    "temperature": {
+        "value": 32.0
     },
     "no2": {
         "value": 32.0,
@@ -74,163 +145,163 @@
         "AQI": 311,
         "quality": "Hazadous"
     },
-    "co2": {
-        "value": 30.83
-    },
-    "pm2_5": {
-        "value": 31.7,
-        "AQI": 93,
-        "quality": "Moderate"
-    }
-}
-2023-06-11 23:22:04,759 INFO ARMA complaint data dont regress with sensor: humidity
-2023-06-11 23:22:04,759 INFO ARMA complaint data dont regress with sensor: pm10
-2023-06-11 23:22:04,759 INFO ARMA complaint data dont regress with sensor: temperature
-2023-06-11 23:22:04,759 INFO ARMA complaint data dont regress with sensor: so2
-2023-06-11 23:22:04,759 INFO ARMA complaint data dont regress with sensor: no2
-2023-06-11 23:22:04,759 INFO ARMA complaint data dont regress with sensor: co
-2023-06-11 23:22:04,759 INFO ARMA complaint data dont regress with sensor: co2
-2023-06-11 23:22:04,759 INFO Not enough data read recently for using ARMA with sensor: pm2_5
-2023-06-11 23:22:04,762 INFO ARMA complaint data dont regress with sensor: humidity
-2023-06-11 23:22:04,762 INFO ARMA complaint data dont regress with sensor: pm10
-2023-06-11 23:22:04,762 INFO ARMA complaint data dont regress with sensor: temperature
-2023-06-11 23:22:04,762 INFO ARMA complaint data dont regress with sensor: so2
-2023-06-11 23:22:04,762 INFO ARMA complaint data dont regress with sensor: no2
-2023-06-11 23:22:04,762 INFO ARMA complaint data dont regress with sensor: co
-2023-06-11 23:22:04,762 INFO ARMA complaint data dont regress with sensor: co2
-2023-06-11 23:22:04,763 INFO Not enough data read recently for using ARMA with sensor: pm2_5
-2023-06-11 23:22:04,765 INFO ARMA complaint data dont regress with sensor: humidity
-2023-06-11 23:22:04,765 INFO ARMA complaint data dont regress with sensor: pm10
-2023-06-11 23:22:04,765 INFO ARMA complaint data dont regress with sensor: temperature
-2023-06-11 23:22:04,765 INFO ARMA complaint data dont regress with sensor: so2
-2023-06-11 23:22:04,765 INFO ARMA complaint data dont regress with sensor: no2
-2023-06-11 23:22:04,765 INFO ARMA complaint data dont regress with sensor: co
-2023-06-11 23:22:04,765 INFO ARMA complaint data dont regress with sensor: co2
-2023-06-11 23:22:04,766 INFO Not enough data read recently for using ARMA with sensor: pm2_5
-2023-06-11 23:22:04,767 INFO ARMA complaint data dont regress with sensor: humidity
-2023-06-11 23:22:04,767 INFO ARMA complaint data dont regress with sensor: pm10
-2023-06-11 23:22:04,767 INFO ARMA complaint data dont regress with sensor: temperature
-2023-06-11 23:22:04,767 INFO ARMA complaint data dont regress with sensor: so2
-2023-06-11 23:22:04,767 INFO ARMA complaint data dont regress with sensor: no2
-2023-06-11 23:22:04,767 INFO ARMA complaint data dont regress with sensor: co
-2023-06-11 23:22:04,767 INFO ARMA complaint data dont regress with sensor: co2
-2023-06-11 23:22:04,768 INFO Not enough data read recently for using ARMA with sensor: pm2_5
-2023-06-11 23:22:04,769 INFO ARMA complaint data dont regress with sensor: humidity
-2023-06-11 23:22:04,769 INFO ARMA complaint data dont regress with sensor: pm10
-2023-06-11 23:22:04,769 INFO ARMA complaint data dont regress with sensor: temperature
-2023-06-11 23:22:04,769 INFO ARMA complaint data dont regress with sensor: so2
-2023-06-11 23:22:04,769 INFO ARMA complaint data dont regress with sensor: no2
-2023-06-11 23:22:04,769 INFO ARMA complaint data dont regress with sensor: co
-2023-06-11 23:22:04,769 INFO ARMA complaint data dont regress with sensor: co2
-2023-06-11 23:22:05,166 DEBUG Sensor: pm2_5, data read from sensors: [31 29], MAPE rate of inaccuracy: 4.4009, predict value: 31.28545899775185
-2023-06-11 23:22:05,166 INFO ARMA complaint data dont regress with sensor: humidity
-2023-06-11 23:22:05,166 INFO ARMA complaint data dont regress with sensor: pm10
-2023-06-11 23:22:05,166 INFO ARMA complaint data dont regress with sensor: temperature
-2023-06-11 23:22:05,166 INFO ARMA complaint data dont regress with sensor: so2
-2023-06-11 23:22:05,166 INFO ARMA complaint data dont regress with sensor: no2
-2023-06-11 23:22:05,166 INFO ARMA complaint data dont regress with sensor: co
-2023-06-11 23:22:05,166 INFO ARMA complaint data dont regress with sensor: co2
-2023-06-11 23:22:05,501 DEBUG Sensor: pm2_5, data read from sensors: [30 33], MAPE rate of inaccuracy: 4.7115, predict value: 31.095837975156293
-2023-06-11 23:22:05,713 INFO {
     "humidity": {
-        "value": 31.0
+        "value": 30.0
     },
     "pm10": {
         "value": 31.0,
         "AQI": 29,
         "quality": "Good"
     },
+    "pm2_5": {
+        "value": 31.7,
+        "AQI": 93,
+        "quality": "Moderate"
+    },
+    "co2": {
+        "value": 30.67
+    },
+    "so2": {
+        "value": 31.0,
+        "AQI": 44,
+        "quality": "Good"
+    }
+}
+2023-06-12 01:25:42,480 INFO ARMA complaint data dont regress with sensor: temperature
+2023-06-12 01:25:42,480 INFO ARMA complaint data dont regress with sensor: no2
+2023-06-12 01:25:42,480 INFO ARMA complaint data dont regress with sensor: co
+2023-06-12 01:25:42,480 INFO ARMA complaint data dont regress with sensor: humidity
+2023-06-12 01:25:42,480 INFO ARMA complaint data dont regress with sensor: pm10
+2023-06-12 01:25:42,480 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-12 01:25:42,480 INFO ARMA complaint data dont regress with sensor: co2
+2023-06-12 01:25:42,480 INFO ARMA complaint data dont regress with sensor: so2
+2023-06-12 01:25:42,484 INFO ARMA complaint data dont regress with sensor: temperature
+2023-06-12 01:25:42,484 INFO ARMA complaint data dont regress with sensor: no2
+2023-06-12 01:25:42,484 INFO ARMA complaint data dont regress with sensor: co
+2023-06-12 01:25:42,484 INFO ARMA complaint data dont regress with sensor: humidity
+2023-06-12 01:25:42,484 INFO ARMA complaint data dont regress with sensor: pm10
+2023-06-12 01:25:42,484 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-12 01:25:42,484 INFO ARMA complaint data dont regress with sensor: co2
+2023-06-12 01:25:42,484 INFO ARMA complaint data dont regress with sensor: so2
+2023-06-12 01:25:42,484 INFO ARMA complaint data dont regress with sensor: temperature
+2023-06-12 01:25:42,484 INFO ARMA complaint data dont regress with sensor: no2
+2023-06-12 01:25:42,484 INFO ARMA complaint data dont regress with sensor: co
+2023-06-12 01:25:42,484 INFO ARMA complaint data dont regress with sensor: humidity
+2023-06-12 01:25:42,484 INFO ARMA complaint data dont regress with sensor: pm10
+2023-06-12 01:25:42,484 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-12 01:25:42,484 INFO ARMA complaint data dont regress with sensor: co2
+2023-06-12 01:25:42,484 INFO ARMA complaint data dont regress with sensor: so2
+2023-06-12 01:25:42,484 INFO ARMA complaint data dont regress with sensor: temperature
+2023-06-12 01:25:42,484 INFO ARMA complaint data dont regress with sensor: no2
+2023-06-12 01:25:42,484 INFO ARMA complaint data dont regress with sensor: co
+2023-06-12 01:25:42,484 INFO ARMA complaint data dont regress with sensor: humidity
+2023-06-12 01:25:42,484 INFO ARMA complaint data dont regress with sensor: pm10
+2023-06-12 01:25:42,484 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-12 01:25:42,484 INFO ARMA complaint data dont regress with sensor: co2
+2023-06-12 01:25:42,484 INFO ARMA complaint data dont regress with sensor: so2
+2023-06-12 01:25:42,488 INFO ARMA complaint data dont regress with sensor: temperature
+2023-06-12 01:25:42,488 INFO ARMA complaint data dont regress with sensor: no2
+2023-06-12 01:25:42,488 INFO ARMA complaint data dont regress with sensor: co
+2023-06-12 01:25:42,488 INFO ARMA complaint data dont regress with sensor: humidity
+2023-06-12 01:25:42,488 INFO ARMA complaint data dont regress with sensor: pm10
+2023-06-12 01:25:42,764 DEBUG Sensor: pm2_5, data read from sensors: [28 35], MAPE rate of inaccuracy: 11.5812, predict value: 32.42725480677158
+2023-06-12 01:25:42,764 INFO ARMA complaint data dont regress with sensor: co2
+2023-06-12 01:25:42,764 INFO ARMA complaint data dont regress with sensor: so2
+2023-06-12 01:25:42,766 INFO ARMA complaint data dont regress with sensor: temperature
+2023-06-12 01:25:42,766 INFO ARMA complaint data dont regress with sensor: no2
+2023-06-12 01:25:42,766 INFO ARMA complaint data dont regress with sensor: co
+2023-06-12 01:25:42,766 INFO ARMA complaint data dont regress with sensor: humidity
+2023-06-12 01:25:42,766 INFO ARMA complaint data dont regress with sensor: pm10
+2023-06-12 01:25:43,060 DEBUG Sensor: pm2_5, data read from sensors: [28 28], MAPE rate of inaccuracy: 12.2098, predict value: 31.41874291963602
+2023-06-12 01:25:43,060 INFO ARMA complaint data dont regress with sensor: co2
+2023-06-12 01:25:43,060 INFO ARMA complaint data dont regress with sensor: so2
+2023-06-12 01:25:43,267 INFO {
     "temperature": {
         "value": 32.0
     },
-    "so2": {
-        "value": 32.0,
-        "AQI": 45,
-        "quality": "Good"
-    },
     "no2": {
-        "value": 30.0,
-        "AQI": 28,
+        "value": 32.0,
+        "AQI": 30,
         "quality": "Good"
     },
     "co": {
-        "value": 30.3,
-        "AQI": 300,
-        "quality": "Very Unhealthy"
+        "value": 32.2,
+        "AQI": 318,
+        "quality": "Hazadous"
     },
-    "co2": {
-        "value": 31.83
-    },
-    "pm2_5": {
-        "value": 30.5,
-        "AQI": 90,
-        "quality": "Moderate"
-    }
-}
-2023-06-11 23:22:10,722 INFO ARMA complaint data dont regress with sensor: humidity
-2023-06-11 23:22:10,722 INFO ARMA complaint data dont regress with sensor: pm10
-2023-06-11 23:22:10,722 INFO ARMA complaint data dont regress with sensor: temperature
-2023-06-11 23:22:10,722 INFO ARMA complaint data dont regress with sensor: so2
-2023-06-11 23:22:10,722 INFO ARMA complaint data dont regress with sensor: no2
-2023-06-11 23:22:10,722 INFO ARMA complaint data dont regress with sensor: co
-2023-06-11 23:22:10,722 INFO ARMA complaint data dont regress with sensor: co2
-2023-06-11 23:22:10,722 INFO Not enough data read recently for using ARMA with sensor: pm2_5
-2023-06-11 23:22:10,724 INFO ARMA complaint data dont regress with sensor: humidity
-2023-06-11 23:22:10,724 INFO ARMA complaint data dont regress with sensor: pm10
-2023-06-11 23:22:10,724 INFO ARMA complaint data dont regress with sensor: temperature
-2023-06-11 23:22:10,724 INFO ARMA complaint data dont regress with sensor: so2
-2023-06-11 23:22:10,724 INFO ARMA complaint data dont regress with sensor: no2
-2023-06-11 23:22:10,724 INFO ARMA complaint data dont regress with sensor: co
-2023-06-11 23:22:10,724 INFO ARMA complaint data dont regress with sensor: co2
-2023-06-11 23:22:10,725 INFO Not enough data read recently for using ARMA with sensor: pm2_5
-2023-06-11 23:22:10,726 INFO ARMA complaint data dont regress with sensor: humidity
-2023-06-11 23:22:10,726 INFO ARMA complaint data dont regress with sensor: pm10
-2023-06-11 23:22:10,726 INFO ARMA complaint data dont regress with sensor: temperature
-2023-06-11 23:22:10,726 INFO ARMA complaint data dont regress with sensor: so2
-2023-06-11 23:22:10,726 INFO ARMA complaint data dont regress with sensor: no2
-2023-06-11 23:22:10,726 INFO ARMA complaint data dont regress with sensor: co
-2023-06-11 23:22:10,726 INFO ARMA complaint data dont regress with sensor: co2
-2023-06-11 23:22:10,726 INFO Not enough data read recently for using ARMA with sensor: pm2_5
-2023-06-11 23:22:10,727 INFO ARMA complaint data dont regress with sensor: humidity
-2023-06-11 23:22:10,727 INFO ARMA complaint data dont regress with sensor: pm10
-2023-06-11 23:22:10,727 INFO ARMA complaint data dont regress with sensor: temperature
-2023-06-11 23:22:10,727 INFO ARMA complaint data dont regress with sensor: so2
-2023-06-11 23:22:10,727 INFO ARMA complaint data dont regress with sensor: no2
-2023-06-11 23:22:10,727 INFO ARMA complaint data dont regress with sensor: co
-2023-06-11 23:22:10,727 INFO ARMA complaint data dont regress with sensor: co2
-2023-06-11 23:22:10,728 INFO Not enough data read recently for using ARMA with sensor: pm2_5
-2023-06-11 23:22:10,728 INFO ARMA complaint data dont regress with sensor: humidity
-2023-06-11 23:22:10,728 INFO ARMA complaint data dont regress with sensor: pm10
-2023-06-11 23:22:10,728 INFO ARMA complaint data dont regress with sensor: temperature
-2023-06-11 23:22:10,728 INFO ARMA complaint data dont regress with sensor: so2
-2023-06-11 23:22:10,728 INFO ARMA complaint data dont regress with sensor: no2
-2023-06-11 23:22:10,729 INFO ARMA complaint data dont regress with sensor: co
-2023-06-11 23:22:10,729 INFO ARMA complaint data dont regress with sensor: co2
-2023-06-11 23:22:11,009 DEBUG Sensor: pm2_5, data read from sensors: [35 35], MAPE rate of inaccuracy: 10.0129, predict value: 31.49547122588311
-2023-06-11 23:22:11,011 INFO ARMA complaint data dont regress with sensor: humidity
-2023-06-11 23:22:11,011 INFO ARMA complaint data dont regress with sensor: pm10
-2023-06-11 23:22:11,011 INFO ARMA complaint data dont regress with sensor: temperature
-2023-06-11 23:22:11,011 INFO ARMA complaint data dont regress with sensor: so2
-2023-06-11 23:22:11,011 INFO ARMA complaint data dont regress with sensor: no2
-2023-06-11 23:22:11,011 INFO ARMA complaint data dont regress with sensor: co
-2023-06-11 23:22:11,011 INFO ARMA complaint data dont regress with sensor: co2
-2023-06-11 23:22:11,322 DEBUG Sensor: pm2_5, data read from sensors: [34 33], MAPE rate of inaccuracy: 2.4913, predict value: 34.3269438226684
-2023-06-11 23:22:11,522 INFO {
     "humidity": {
-        "value": 32.17
+        "value": 30.83
     },
     "pm10": {
         "value": 32.0,
         "AQI": 30,
         "quality": "Good"
     },
-    "temperature": {
-        "value": 32.0
+    "pm2_5": {
+        "value": 30.3,
+        "AQI": 90,
+        "quality": "Moderate"
+    },
+    "co2": {
+        "value": 31.33
     },
     "so2": {
-        "value": 32.0,
-        "AQI": 45,
+        "value": 31.0,
+        "AQI": 44,
         "quality": "Good"
+    }
+}
+2023-06-12 01:25:48,270 INFO ARMA complaint data dont regress with sensor: temperature
+2023-06-12 01:25:48,270 INFO ARMA complaint data dont regress with sensor: no2
+2023-06-12 01:25:48,270 INFO ARMA complaint data dont regress with sensor: co
+2023-06-12 01:25:48,270 INFO ARMA complaint data dont regress with sensor: humidity
+2023-06-12 01:25:48,270 INFO ARMA complaint data dont regress with sensor: pm10
+2023-06-12 01:25:48,270 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-12 01:25:48,270 INFO ARMA complaint data dont regress with sensor: co2
+2023-06-12 01:25:48,270 INFO ARMA complaint data dont regress with sensor: so2
+2023-06-12 01:25:48,273 INFO ARMA complaint data dont regress with sensor: temperature
+2023-06-12 01:25:48,273 INFO ARMA complaint data dont regress with sensor: no2
+2023-06-12 01:25:48,273 INFO ARMA complaint data dont regress with sensor: co
+2023-06-12 01:25:48,273 INFO ARMA complaint data dont regress with sensor: humidity
+2023-06-12 01:25:48,273 INFO ARMA complaint data dont regress with sensor: pm10
+2023-06-12 01:25:48,274 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-12 01:25:48,274 INFO ARMA complaint data dont regress with sensor: co2
+2023-06-12 01:25:48,274 INFO ARMA complaint data dont regress with sensor: so2
+2023-06-12 01:25:48,275 INFO ARMA complaint data dont regress with sensor: temperature
+2023-06-12 01:25:48,275 INFO ARMA complaint data dont regress with sensor: no2
+2023-06-12 01:25:48,275 INFO ARMA complaint data dont regress with sensor: co
+2023-06-12 01:25:48,275 INFO ARMA complaint data dont regress with sensor: humidity
+2023-06-12 01:25:48,275 INFO ARMA complaint data dont regress with sensor: pm10
+2023-06-12 01:25:48,276 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-12 01:25:48,276 INFO ARMA complaint data dont regress with sensor: co2
+2023-06-12 01:25:48,276 INFO ARMA complaint data dont regress with sensor: so2
+2023-06-12 01:25:48,277 INFO ARMA complaint data dont regress with sensor: temperature
+2023-06-12 01:25:48,277 INFO ARMA complaint data dont regress with sensor: no2
+2023-06-12 01:25:48,277 INFO ARMA complaint data dont regress with sensor: co
+2023-06-12 01:25:48,277 INFO ARMA complaint data dont regress with sensor: humidity
+2023-06-12 01:25:48,277 INFO ARMA complaint data dont regress with sensor: pm10
+2023-06-12 01:25:48,590 DEBUG Sensor: pm2_5, data read from sensors: [33 35], MAPE rate of inaccuracy: 13.151, predict value: 29.503106349935212
+2023-06-12 01:25:48,590 INFO ARMA complaint data dont regress with sensor: co2
+2023-06-12 01:25:48,590 INFO ARMA complaint data dont regress with sensor: so2
+2023-06-12 01:25:48,592 INFO ARMA complaint data dont regress with sensor: temperature
+2023-06-12 01:25:48,592 INFO ARMA complaint data dont regress with sensor: no2
+2023-06-12 01:25:48,592 INFO ARMA complaint data dont regress with sensor: co
+2023-06-12 01:25:48,592 INFO ARMA complaint data dont regress with sensor: humidity
+2023-06-12 01:25:48,592 INFO ARMA complaint data dont regress with sensor: pm10
+2023-06-12 01:25:48,888 DEBUG Sensor: pm2_5, data read from sensors: [32 32], MAPE rate of inaccuracy: 3.7053, predict value: 30.81431431536206
+2023-06-12 01:25:48,888 INFO ARMA complaint data dont regress with sensor: co2
+2023-06-12 01:25:48,888 INFO ARMA complaint data dont regress with sensor: so2
+2023-06-12 01:25:48,888 INFO ARMA complaint data dont regress with sensor: temperature
+2023-06-12 01:25:48,888 INFO ARMA complaint data dont regress with sensor: no2
+2023-06-12 01:25:48,888 INFO ARMA complaint data dont regress with sensor: co
+2023-06-12 01:25:48,888 INFO ARMA complaint data dont regress with sensor: humidity
+2023-06-12 01:25:48,888 INFO ARMA complaint data dont regress with sensor: pm10
+2023-06-12 01:25:49,207 DEBUG Sensor: pm2_5, data read from sensors: [35 34], MAPE rate of inaccuracy: 8.6102, predict value: 31.52286276936308
+2023-06-12 01:25:49,207 INFO ARMA complaint data dont regress with sensor: co2
+2023-06-12 01:25:49,207 INFO ARMA complaint data dont regress with sensor: so2
+2023-06-12 01:25:49,345 INFO {
+    "temperature": {
+        "value": 31.0
     },
     "no2": {
         "value": 31.0,
@@ -242,135 +313,155 @@
         "AQI": 314,
         "quality": "Hazadous"
     },
-    "co2": {
-        "value": 30.17
-    },
-    "pm2_5": {
-        "value": 32.3,
-        "AQI": 94,
-        "quality": "Moderate"
-    }
-}
-2023-06-11 23:22:16,532 INFO ARMA complaint data dont regress with sensor: humidity
-2023-06-11 23:22:16,532 INFO ARMA complaint data dont regress with sensor: pm10
-2023-06-11 23:22:16,532 INFO ARMA complaint data dont regress with sensor: temperature
-2023-06-11 23:22:16,532 INFO ARMA complaint data dont regress with sensor: so2
-2023-06-11 23:22:16,532 INFO ARMA complaint data dont regress with sensor: no2
-2023-06-11 23:22:16,532 INFO ARMA complaint data dont regress with sensor: co
-2023-06-11 23:22:16,532 INFO ARMA complaint data dont regress with sensor: co2
-2023-06-11 23:22:16,533 INFO Not enough data read recently for using ARMA with sensor: pm2_5
-2023-06-11 23:22:16,534 INFO ARMA complaint data dont regress with sensor: humidity
-2023-06-11 23:22:16,534 INFO ARMA complaint data dont regress with sensor: pm10
-2023-06-11 23:22:16,534 INFO ARMA complaint data dont regress with sensor: temperature
-2023-06-11 23:22:16,534 INFO ARMA complaint data dont regress with sensor: so2
-2023-06-11 23:22:16,534 INFO ARMA complaint data dont regress with sensor: no2
-2023-06-11 23:22:16,534 INFO ARMA complaint data dont regress with sensor: co
-2023-06-11 23:22:16,535 INFO ARMA complaint data dont regress with sensor: co2
-2023-06-11 23:22:16,535 INFO Not enough data read recently for using ARMA with sensor: pm2_5
-2023-06-11 23:22:16,536 INFO ARMA complaint data dont regress with sensor: humidity
-2023-06-11 23:22:16,536 INFO ARMA complaint data dont regress with sensor: pm10
-2023-06-11 23:22:16,536 INFO ARMA complaint data dont regress with sensor: temperature
-2023-06-11 23:22:16,536 INFO ARMA complaint data dont regress with sensor: so2
-2023-06-11 23:22:16,536 INFO ARMA complaint data dont regress with sensor: no2
-2023-06-11 23:22:16,536 INFO ARMA complaint data dont regress with sensor: co
-2023-06-11 23:22:16,537 INFO ARMA complaint data dont regress with sensor: co2
-2023-06-11 23:22:16,875 DEBUG Sensor: pm2_5, data read from sensors: [31 34], MAPE rate of inaccuracy: 4.5485, predict value: 31.96102221411169
-2023-06-11 23:22:16,875 INFO ARMA complaint data dont regress with sensor: humidity
-2023-06-11 23:22:16,875 INFO ARMA complaint data dont regress with sensor: pm10
-2023-06-11 23:22:16,875 INFO ARMA complaint data dont regress with sensor: temperature
-2023-06-11 23:22:16,875 INFO ARMA complaint data dont regress with sensor: so2
-2023-06-11 23:22:16,875 INFO ARMA complaint data dont regress with sensor: no2
-2023-06-11 23:22:16,875 INFO ARMA complaint data dont regress with sensor: co
-2023-06-11 23:22:16,875 INFO ARMA complaint data dont regress with sensor: co2
-2023-06-11 23:22:17,195 DEBUG Sensor: pm2_5, data read from sensors: [34 28], MAPE rate of inaccuracy: 9.9764, predict value: 31.65829941110706
-2023-06-11 23:22:17,197 INFO ARMA complaint data dont regress with sensor: humidity
-2023-06-11 23:22:17,197 INFO ARMA complaint data dont regress with sensor: pm10
-2023-06-11 23:22:17,197 INFO ARMA complaint data dont regress with sensor: temperature
-2023-06-11 23:22:17,197 INFO ARMA complaint data dont regress with sensor: so2
-2023-06-11 23:22:17,197 INFO ARMA complaint data dont regress with sensor: no2
-2023-06-11 23:22:17,197 INFO ARMA complaint data dont regress with sensor: co
-2023-06-11 23:22:17,197 INFO ARMA complaint data dont regress with sensor: co2
-2023-06-11 23:22:17,568 DEBUG Sensor: pm2_5, data read from sensors: [28 31], MAPE rate of inaccuracy: 5.1858, predict value: 30.008724346246982
-2023-06-11 23:22:17,571 INFO ARMA complaint data dont regress with sensor: humidity
-2023-06-11 23:22:17,571 INFO ARMA complaint data dont regress with sensor: pm10
-2023-06-11 23:22:17,571 INFO ARMA complaint data dont regress with sensor: temperature
-2023-06-11 23:22:17,571 INFO ARMA complaint data dont regress with sensor: so2
-2023-06-11 23:22:17,571 INFO ARMA complaint data dont regress with sensor: no2
-2023-06-11 23:22:17,571 INFO ARMA complaint data dont regress with sensor: co
-2023-06-11 23:22:17,571 INFO ARMA complaint data dont regress with sensor: co2
-2023-06-11 23:22:17,853 DEBUG Sensor: pm2_5, data read from sensors: [32 30], MAPE rate of inaccuracy: 3.2519, predict value: 31.218499382901104
-2023-06-11 23:22:17,959 INFO {
     "humidity": {
-        "value": 31.33
+        "value": 32.17
     },
     "pm10": {
         "value": 32.0,
         "AQI": 30,
         "quality": "Good"
     },
-    "temperature": {
-        "value": 32.0
+    "pm2_5": {
+        "value": 32.7,
+        "AQI": 95,
+        "quality": "Moderate"
+    },
+    "co2": {
+        "value": 31.33
     },
     "so2": {
         "value": 32.0,
         "AQI": 45,
         "quality": "Good"
-    },
-    "no2": {
-        "value": 67.0,
-        "AQI": 65,
-        "quality": "Moderate"
-    },
-    "co": {
-        "value": 30.5,
-        "AQI": 301,
-        "quality": "Hazadous"
-    },
-    "co2": {
-        "value": 32.0
-    },
-    "pm2_5": {
-        "value": 30.8,
-        "AQI": 91,
-        "quality": "Moderate"
     }
 }
-2023-06-11 23:22:22,963 INFO ARMA complaint data dont regress with sensor: humidity
-2023-06-11 23:22:22,963 INFO ARMA complaint data dont regress with sensor: pm10
-2023-06-11 23:22:22,963 INFO ARMA complaint data dont regress with sensor: temperature
-2023-06-11 23:22:22,963 INFO ARMA complaint data dont regress with sensor: so2
-2023-06-11 23:22:22,963 INFO ARMA complaint data dont regress with sensor: no2
-2023-06-11 23:22:22,963 INFO ARMA complaint data dont regress with sensor: co
-2023-06-11 23:22:22,963 INFO ARMA complaint data dont regress with sensor: co2
-2023-06-11 23:22:22,964 INFO Not enough data read recently for using ARMA with sensor: pm2_5
-2023-06-11 23:22:22,965 INFO ARMA complaint data dont regress with sensor: humidity
-2023-06-11 23:22:22,965 INFO ARMA complaint data dont regress with sensor: pm10
-2023-06-11 23:22:22,965 INFO ARMA complaint data dont regress with sensor: temperature
-2023-06-11 23:22:22,965 INFO ARMA complaint data dont regress with sensor: so2
-2023-06-11 23:22:22,965 INFO ARMA complaint data dont regress with sensor: no2
-2023-06-11 23:22:22,965 INFO ARMA complaint data dont regress with sensor: co
-2023-06-11 23:22:22,965 INFO ARMA complaint data dont regress with sensor: co2
-2023-06-11 23:22:22,966 INFO Not enough data read recently for using ARMA with sensor: pm2_5
-2023-06-11 23:22:22,967 INFO ARMA complaint data dont regress with sensor: humidity
-2023-06-11 23:22:22,967 INFO ARMA complaint data dont regress with sensor: pm10
-2023-06-11 23:22:22,967 INFO ARMA complaint data dont regress with sensor: temperature
-2023-06-11 23:22:22,967 INFO ARMA complaint data dont regress with sensor: so2
-2023-06-11 23:22:22,967 INFO ARMA complaint data dont regress with sensor: no2
-2023-06-11 23:22:22,967 INFO ARMA complaint data dont regress with sensor: co
-2023-06-11 23:22:22,967 INFO ARMA complaint data dont regress with sensor: co2
-2023-06-11 23:22:23,262 DEBUG Sensor: pm2_5, data read from sensors: [32 29], MAPE rate of inaccuracy: 5.0676, predict value: 31.35144681524489
-2023-06-11 23:22:23,265 INFO ARMA complaint data dont regress with sensor: humidity
-2023-06-11 23:22:23,265 INFO ARMA complaint data dont regress with sensor: pm10
-2023-06-11 23:22:23,265 INFO ARMA complaint data dont regress with sensor: temperature
-2023-06-11 23:22:23,265 INFO ARMA complaint data dont regress with sensor: so2
-2023-06-11 23:22:23,265 INFO ARMA complaint data dont regress with sensor: no2
-2023-06-11 23:22:23,265 INFO ARMA complaint data dont regress with sensor: co
-2023-06-11 23:22:23,265 INFO ARMA complaint data dont regress with sensor: co2
-2023-06-11 23:22:23,557 DEBUG Sensor: pm2_5, data read from sensors: [33 32], MAPE rate of inaccuracy: 4.3776, predict value: 31.06991950140827
-2023-06-11 23:22:23,560 INFO ARMA complaint data dont regress with sensor: humidity
-2023-06-11 23:22:23,560 INFO ARMA complaint data dont regress with sensor: pm10
-2023-06-11 23:22:23,560 INFO ARMA complaint data dont regress with sensor: temperature
-2023-06-11 23:22:23,560 INFO ARMA complaint data dont regress with sensor: so2
-2023-06-11 23:22:23,560 INFO ARMA complaint data dont regress with sensor: no2
-2023-06-11 23:22:23,560 INFO ARMA complaint data dont regress with sensor: co
-2023-06-11 23:22:23,560 INFO ARMA complaint data dont regress with sensor: co2
+2023-06-12 01:25:54,359 INFO ARMA complaint data dont regress with sensor: temperature
+2023-06-12 01:25:54,359 INFO ARMA complaint data dont regress with sensor: no2
+2023-06-12 01:25:54,359 INFO ARMA complaint data dont regress with sensor: co
+2023-06-12 01:25:54,359 INFO ARMA complaint data dont regress with sensor: humidity
+2023-06-12 01:25:54,359 INFO ARMA complaint data dont regress with sensor: pm10
+2023-06-12 01:25:54,360 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-12 01:25:54,360 INFO ARMA complaint data dont regress with sensor: co2
+2023-06-12 01:25:54,360 INFO ARMA complaint data dont regress with sensor: so2
+2023-06-12 01:25:54,361 INFO ARMA complaint data dont regress with sensor: temperature
+2023-06-12 01:25:54,361 INFO ARMA complaint data dont regress with sensor: no2
+2023-06-12 01:25:54,361 INFO ARMA complaint data dont regress with sensor: co
+2023-06-12 01:25:54,361 INFO ARMA complaint data dont regress with sensor: humidity
+2023-06-12 01:25:54,361 INFO ARMA complaint data dont regress with sensor: pm10
+2023-06-12 01:25:54,362 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-12 01:25:54,362 INFO ARMA complaint data dont regress with sensor: co2
+2023-06-12 01:25:54,362 INFO ARMA complaint data dont regress with sensor: so2
+2023-06-12 01:25:54,363 INFO ARMA complaint data dont regress with sensor: temperature
+2023-06-12 01:25:54,363 INFO ARMA complaint data dont regress with sensor: no2
+2023-06-12 01:25:54,363 INFO ARMA complaint data dont regress with sensor: co
+2023-06-12 01:25:54,363 INFO ARMA complaint data dont regress with sensor: humidity
+2023-06-12 01:25:54,363 INFO ARMA complaint data dont regress with sensor: pm10
+2023-06-12 01:25:54,363 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-12 01:25:54,363 INFO ARMA complaint data dont regress with sensor: co2
+2023-06-12 01:25:54,363 INFO ARMA complaint data dont regress with sensor: so2
+2023-06-12 01:25:54,363 INFO ARMA complaint data dont regress with sensor: temperature
+2023-06-12 01:25:54,363 INFO ARMA complaint data dont regress with sensor: no2
+2023-06-12 01:25:54,363 INFO ARMA complaint data dont regress with sensor: co
+2023-06-12 01:25:54,363 INFO ARMA complaint data dont regress with sensor: humidity
+2023-06-12 01:25:54,363 INFO ARMA complaint data dont regress with sensor: pm10
+2023-06-12 01:25:54,706 DEBUG Sensor: pm2_5, data read from sensors: [32 32], MAPE rate of inaccuracy: 1.1793, predict value: 32.37737332573183
+2023-06-12 01:25:54,706 INFO ARMA complaint data dont regress with sensor: co2
+2023-06-12 01:25:54,706 INFO ARMA complaint data dont regress with sensor: so2
+2023-06-12 01:25:54,710 INFO ARMA complaint data dont regress with sensor: temperature
+2023-06-12 01:25:54,710 INFO ARMA complaint data dont regress with sensor: no2
+2023-06-12 01:25:54,710 INFO ARMA complaint data dont regress with sensor: co
+2023-06-12 01:25:54,710 INFO ARMA complaint data dont regress with sensor: humidity
+2023-06-12 01:25:54,710 INFO ARMA complaint data dont regress with sensor: pm10
+2023-06-12 01:25:55,010 DEBUG Sensor: pm2_5, data read from sensors: [30 34], MAPE rate of inaccuracy: 6.046, predict value: 30.83480507594175
+2023-06-12 01:25:55,010 INFO ARMA complaint data dont regress with sensor: co2
+2023-06-12 01:25:55,010 INFO ARMA complaint data dont regress with sensor: so2
+2023-06-12 01:25:55,014 INFO ARMA complaint data dont regress with sensor: temperature
+2023-06-12 01:25:55,014 INFO ARMA complaint data dont regress with sensor: no2
+2023-06-12 01:25:55,014 INFO ARMA complaint data dont regress with sensor: co
+2023-06-12 01:25:55,014 INFO ARMA complaint data dont regress with sensor: humidity
+2023-06-12 01:25:55,014 INFO ARMA complaint data dont regress with sensor: pm10
+2023-06-12 01:25:55,353 DEBUG Sensor: pm2_5, data read from sensors: [29 30], MAPE rate of inaccuracy: 19.0027, predict value: 35.09570304967214
+2023-06-12 01:25:55,353 WARNING Sensor pm2_5 give unsual data
+2023-06-12 01:25:55,353 INFO ARMA complaint data dont regress with sensor: co2
+2023-06-12 01:25:55,353 INFO ARMA complaint data dont regress with sensor: so2
+2023-06-12 01:25:55,452 INFO {
+    "temperature": {
+        "value": 32.0
+    },
+    "no2": {
+        "value": 31.0,
+        "AQI": 29,
+        "quality": "Good"
+    },
+    "co": {
+        "value": 31.3,
+        "AQI": 309,
+        "quality": "Hazadous"
+    },
+    "humidity": {
+        "value": 31.5
+    },
+    "pm10": {
+        "value": 32.0,
+        "AQI": 30,
+        "quality": "Good"
+    },
+    "pm2_5": {
+        "value": 31.5,
+        "AQI": 92,
+        "quality": "Moderate"
+    },
+    "co2": {
+        "value": 32.33
+    },
+    "so2": {
+        "value": 32.0,
+        "AQI": 45,
+        "quality": "Good"
+    }
+}
+2023-06-12 01:26:00,461 INFO ARMA complaint data dont regress with sensor: temperature
+2023-06-12 01:26:00,461 INFO ARMA complaint data dont regress with sensor: no2
+2023-06-12 01:26:00,461 INFO ARMA complaint data dont regress with sensor: co
+2023-06-12 01:26:00,461 INFO ARMA complaint data dont regress with sensor: humidity
+2023-06-12 01:26:00,461 INFO ARMA complaint data dont regress with sensor: pm10
+2023-06-12 01:26:00,461 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-12 01:26:00,461 INFO ARMA complaint data dont regress with sensor: co2
+2023-06-12 01:26:00,461 INFO ARMA complaint data dont regress with sensor: so2
+2023-06-12 01:26:00,463 INFO ARMA complaint data dont regress with sensor: temperature
+2023-06-12 01:26:00,463 INFO ARMA complaint data dont regress with sensor: no2
+2023-06-12 01:26:00,463 INFO ARMA complaint data dont regress with sensor: co
+2023-06-12 01:26:00,463 INFO ARMA complaint data dont regress with sensor: humidity
+2023-06-12 01:26:00,463 INFO ARMA complaint data dont regress with sensor: pm10
+2023-06-12 01:26:00,463 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-12 01:26:00,464 INFO ARMA complaint data dont regress with sensor: co2
+2023-06-12 01:26:00,464 INFO ARMA complaint data dont regress with sensor: so2
+2023-06-12 01:26:00,465 INFO ARMA complaint data dont regress with sensor: temperature
+2023-06-12 01:26:00,465 INFO ARMA complaint data dont regress with sensor: no2
+2023-06-12 01:26:00,465 INFO ARMA complaint data dont regress with sensor: co
+2023-06-12 01:26:00,465 INFO ARMA complaint data dont regress with sensor: humidity
+2023-06-12 01:26:00,465 INFO ARMA complaint data dont regress with sensor: pm10
+2023-06-12 01:26:00,465 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-12 01:26:00,465 INFO ARMA complaint data dont regress with sensor: co2
+2023-06-12 01:26:00,465 INFO ARMA complaint data dont regress with sensor: so2
+2023-06-12 01:26:00,466 INFO ARMA complaint data dont regress with sensor: temperature
+2023-06-12 01:26:00,466 INFO ARMA complaint data dont regress with sensor: no2
+2023-06-12 01:26:00,466 INFO ARMA complaint data dont regress with sensor: co
+2023-06-12 01:26:00,466 INFO ARMA complaint data dont regress with sensor: humidity
+2023-06-12 01:26:00,466 INFO ARMA complaint data dont regress with sensor: pm10
+2023-06-12 01:26:00,466 INFO Not enough data read recently for using ARMA with sensor: pm2_5
+2023-06-12 01:26:00,466 INFO ARMA complaint data dont regress with sensor: co2
+2023-06-12 01:26:00,466 INFO ARMA complaint data dont regress with sensor: so2
+2023-06-12 01:26:00,466 INFO ARMA complaint data dont regress with sensor: temperature
+2023-06-12 01:26:00,466 INFO ARMA complaint data dont regress with sensor: no2
+2023-06-12 01:26:00,466 INFO ARMA complaint data dont regress with sensor: co
+2023-06-12 01:26:00,466 INFO ARMA complaint data dont regress with sensor: humidity
+2023-06-12 01:26:00,466 INFO ARMA complaint data dont regress with sensor: pm10
+2023-06-12 01:26:01,059 DEBUG Sensor: pm2_5, data read from sensors: [29 33], MAPE rate of inaccuracy: 6.4529, predict value: 30.877338429698092
+2023-06-12 01:26:01,059 INFO ARMA complaint data dont regress with sensor: co2
+2023-06-12 01:26:01,059 INFO ARMA complaint data dont regress with sensor: so2
+2023-06-12 01:26:01,062 INFO ARMA complaint data dont regress with sensor: temperature
+2023-06-12 01:26:01,062 INFO ARMA complaint data dont regress with sensor: no2
+2023-06-12 01:26:01,062 INFO ARMA complaint data dont regress with sensor: co
+2023-06-12 01:26:01,062 INFO ARMA complaint data dont regress with sensor: humidity
+2023-06-12 01:26:01,062 INFO ARMA complaint data dont regress with sensor: pm10
