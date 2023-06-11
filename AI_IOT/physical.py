@@ -195,18 +195,66 @@ class Physical:
         if feed_id == "calib":
             if payload == "1":
                 self.adjustCalibCoeff()
-            if payload == "0":
+            elif payload == "0":
                 CalibStr = self.dataStorage.getDataCalib("pm2_5")
                 if CalibStr == -1:
                     print("No previous calib coeff founded")
                     if self.isDebug:
                         self.log.info('No previous calib coeff founded')
 
-                json = '{' + CalibStr + '}'
-                self.publishCalibData(json)
+                jsonStr = '{"pm2_5": "' + CalibStr + '"}'
+                self.publishCalibData(jsonStr)
+            else:
+                payload_dict = json.loads(payload)
+
+                for key, val in payload_dict.items():
+                    sensor = key
+                    strExp = val
+
+                self.dataStorage.updateDataCalib(sensor, strExp)
+                    
+                print("sensor {}, strExp: {}".format(sensor, strExp))
+
+                a,b = self.loadCalibStr(strExp)
+
+                print("!!!!!!!!!!!a = {} !!!!! b = {}".format(a,b))
+
+                self.publishCalibData(payload)
+
+                self.updateCalibCoeff(sensor, a, b)
 
         if feed_id == "future":
             self.predictAQI(payload)
+
+    def loadCalibDatabase(self):
+        for sensor in sensors:
+
+            str_arr = self.dataStorage.printDataCalib()
+            str_arr = self.dataStorage.getDataCalib(sensor)
+            if not str_arr:
+                print("no calibrate infomation for {} sensor".format(sensor))
+                continue
+            print(str_arr)
+            strExp = str_arr[0][1]
+            a,b = self.loadCalibStr(strExp)
+            self.updateCalibCoeff(sensor, a, b)
+
+
+    def loadCalibStr(self, strExp):
+        str_arr = strExp.split('x')
+        if len(str_arr) < 2:
+            print('invalid calibrate string from user')
+            return
+
+        a = float(str_arr[0])
+        left_x = str_arr[1]
+        if len(left_x.split('+')) < 2:
+            print('invalid calibrate string from user')
+            return
+
+        b = float(left_x.split('+')[1])
+
+        return a, b
 
 
     def serial_read_data(self, ser):
@@ -284,8 +332,12 @@ class Physical:
             #self.setDevice2(ser, False)
             #time.sleep(2)
 
+
     def calibrateSensors(self):
         print('\n ---------Calibrate Sensors with manual coef---------\n')
+        # load saved calibrate coeff
+        # self.loadCalibDatabase()
+
         for sensor in self.sensorsData:
             for i in range(len(self.sensorsData[sensor])):
                 self.sensorsData[sensor][i] *= self.manualCalib[sensor][0]
