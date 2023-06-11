@@ -90,6 +90,38 @@ class AQI:
 
 
     @staticmethod
+    def reverseAQI(particle_type, pI):
+        if pI < 0:
+            print('Negagive concentration!!!')
+            return -1
+
+        breakpoint = []
+        for name, bp in particle_breakpoints.items():
+            if name == particle_type:
+                breakpoint = bp
+
+        # No breakpoint info for the current particle
+        if len(breakpoint) == 0:
+            print('AQI warning: have no breakpoint data for this particle: ', particle_type)
+            return -1
+
+        low_idx = 0
+        category = 'Beyone the AQI - Extremely Hazadous' 
+        for i in range(CATEGORY_NUM):
+            if pI >= I[i] and pI < I[i+1]:
+                low_idx = i
+                break
+        
+        high_idx = i + 1
+        print(low_idx)
+        print(high_idx)
+        lerp_factor = (breakpoint[high_idx] - breakpoint[low_idx]) / (I[high_idx] - I[low_idx])
+        concentration = (pI - I[low_idx]) * lerp_factor + breakpoint[low_idx]
+
+        return concentration
+
+
+    @staticmethod
     def getJsonFromAirNow(mode, type, lon = longitude, lat = latitude):
         # Validate Arguments
         if (lat < -90 or 90 < lat):
@@ -208,5 +240,8 @@ if __name__ == '__main__':
 
     #print(AQI.getJsonFromAirNow('observation','OZONE,PM25,PM10,CO,NO2,SO2'))
     #print(AQI.getJsonFromAirNow())
-    print(AQI.getJsonFromIQAir())
-    prin(AQI.getJsonFromWAQI())
+    #print(AQI.getJsonFromIQAir())
+    #print(AQI.getJsonFromWAQI())
+
+
+    print(AQI.reverseAQI('pm2_5', 158))

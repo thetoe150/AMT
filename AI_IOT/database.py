@@ -62,7 +62,7 @@ class SensorDataStorage:
     def printDataCalib(self):
         c = self.sensorDatabase.cursor()
         c.execute("SELECT * FROM sensorDataCalib")
-        print("Data Point: ", c.fetchall())
+        print("Calibrate Data: ", c.fetchall())
 
     def updateDataCalib(self, sensor, value):
         now = datetime.now()
@@ -278,7 +278,7 @@ if __name__ == '__main__':
     # dataStorage.resetDatabase()
     #dataStorage = SensorDataStorage()
     # dataStorage.tableInfo()
-    print(dataStorage.countDatabase())
+    print(dataStorage.printDataCalib())
 
     # dataStorage.updateDataCalib("pm2_5", 34)
     # dataStorage.updateDataCalib("pm2_5", 34)

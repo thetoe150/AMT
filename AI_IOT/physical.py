@@ -114,6 +114,16 @@ class Physical:
         # of float
         # after the method pulbish is called, we clear this dict 
         # so it start a new life of dict of list of multiple value again
+        self.manualCalib = {
+            "temperature" : [1.0, 0.0],
+            "humidity" : [1.0, 0.0],
+            "co" : [1.0, 0.0],
+            "co2": [1.0, 0.0],
+            "so2": [1.0, 0.0],
+            "no2": [1.0, 0.0],
+            "pm2_5": [1.0, 0.0],
+            "pm10":  [1.0, 0.0]
+        }
         self.sensorsData = {}
 
         self.sensorFaulty = False
@@ -140,6 +150,8 @@ class Physical:
         res = ''
         for sensor in self.sensorsData:
             res += '{} values is: {}'.format(sensor, self.sensorsData[sensor])
+
+        print(res)
 
         if self.isDebug and res != '':
             self.log.info(res)
@@ -271,7 +283,15 @@ class Physical:
             #time.sleep(2)
             #self.setDevice2(ser, False)
             #time.sleep(2)
-        self.printData()
+
+    def calibrateSensors(self):
+        print('\n ---------Calibrate Sensors with manual coef---------\n')
+        for sensor in self.sensorsData:
+            for i in range(len(self.sensorsData[sensor])):
+                self.sensorsData[sensor][i] *= self.manualCalib[sensor][0]
+                self.sensorsData[sensor][i] += self.manualCalib[sensor][1]
+
+        #print(self.printData())
 
     def publishInvalidSensor(self, sensor, failure):
         print('\n ---------Publish Invalid Sensor---------\n')
@@ -333,8 +353,6 @@ class Physical:
                 # only the average value remain in dict
                 #del self.sensorsData[sensor][1:]
         
-        if self.isDebug:
-            self.printData()
         return self.sensorsData
         #self.printAQI()
 
@@ -421,6 +439,10 @@ class Physical:
 
 
     ########## Calibrate sensors functionality #############
+    def updateCalibCoeff(self, category, a, b):
+        self.manualCalib[category][0] = a
+        self.manualCalib[category][1] = b
+
     def buildCalibStr(self, type, a, b):
         a = round(a, 4)
         b = round(b, 4)
@@ -463,15 +485,23 @@ class Physical:
 
     def adjustCalibCoeff(self):
         exType, exVal = self.getExternData()
+        exVal = AQI.AQI.reverseAQI(exType, exVal)
         if exType in sensors: 
             # the case of one value only
             baseVal = self.dataStorage.getDataBase(exType, 1)
+            if not baseVal:
+                json = self.buildCalibJson('No calibrate data in \
+                        local database')
+
             x1 = baseVal[0]
-            x2 = baseVal[0] + 1
+            x2 = baseVal[0] + 0.06
             y1 = exVal
-            y2 = exVal + 2
+            y2 = exVal + 0.1
             # use only 1 value point to evaluate
             a, b = self.adjustLinearCalibCoeff(x1, x2, y1, y2)
+
+            self.updateCalibCoeff(exType, a, b)
+
             CalibStr = self.buildCalibStr(exType, a, b)
 
             self.dataStorage.updateDataCalib(exType, CalibStr)
@@ -541,6 +571,8 @@ if __name__ == '__main__':
 
             #print('sensorsData after reading: ',physical.sensorsData)
 
+            physical.calibrateSensors()
+
             physical.validateData()
             # print('sensorsData after validating: ',physical.sensorsData)
             # # store 1 instace of data point
@@ -556,5 +588,4 @@ if __name__ == '__main__':
 
         #print(physical.publishCalibData())
         time.sleep(5)
-
 
